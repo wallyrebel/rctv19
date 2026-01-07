@@ -54,3 +54,55 @@ collections:
           - { label: "Site Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "text" }
           - { label: "Watch Live URL", name: "watchLiveUrl", widget: "string" }
+      - label: Advertising
+        name: ads
+        file: src/_data/ads.json
+        fields:
+          - { label: "AdSense Publisher ID", name: "adsensePublisherId", widget: "string", hint: "Your Google AdSense ID (ca-pub-XXXX)" }
+          - label: "Top Banner Ad"
+            name: "topBanner"
+            widget: "object"
+            fields:
+              - { label: "Enabled", name: "enabled", widget: "boolean", default: true }
+              - { label: "Type", name: "type", widget: "select", options: ["sponsor", "adsense"] }
+              - { label: "Image URL", name: "image", widget: "image", required: false }
+              - { label: "Link URL", name: "link", widget: "string", required: false }
+              - { label: "Alt Text", name: "alt", widget: "string", required: false }
+              - { label: "Label", name: "label", widget: "string", default: "Sponsored" }
+          - label: "Sidebar Ad 1"
+            name: "sidebar1"
+            widget: "object"
+            fields:
+              - { label: "Enabled", name: "enabled", widget: "boolean", default: true }
+              - { label: "Type", name: "type", widget: "select", options: ["sponsor", "adsense"] }
+              - { label: "AdSense Slot ID", name: "slot", widget: "string", required: false }
+              - { label: "Image URL", name: "image", widget: "image", required: false }
+              - { label: "Link URL", name: "link", widget: "string", required: false }
+              - { label: "Alt Text", name: "alt", widget: "string", required: false }
+          - label: "Sidebar Ad 2"
+            name: "sidebar2"
+            widget: "object"
+            fields:
+              - { label: "Enabled", name: "enabled", widget: "boolean", default: true }
+              - { label: "Type", name: "type", widget: "select", options: ["sponsor", "adsense"] }
+              - { label: "Image URL", name: "image", widget: "image", required: false }
+              - { label: "Link URL", name: "link", widget: "string", required: false }
+              - { label: "Alt Text", name: "alt", widget: "string", required: false }
+              - { label: "Label", name: "label", widget: "string", default: "Sponsored" }
+          - label: "Mobile Ad"
+            name: "mobile1"
+            widget: "object"
+            fields:
+              - { label: "Enabled", name: "enabled", widget: "boolean", default: true }
+              - { label: "Type", name: "type", widget: "select", options: ["sponsor", "adsense"] }
+              - { label: "AdSense Slot ID", name: "slot", widget: "string", required: false }
+          - label: "In-Feed Ad"
+            name: "inFeed"
+            widget: "object"
+            fields:
+              - { label: "Enabled", name: "enabled", widget: "boolean", default: true }
+              - { label: "Type", name: "type", widget: "select", options: ["sponsor", "adsense"] }
+              - { label: "Image URL", name: "image", widget: "image", required: false }
+              - { label: "Link URL", name: "link", widget: "string", required: false }
+              - { label: "Alt Text", name: "alt", widget: "string", required: false }
+              - { label: "Label", name: "label", widget: "string", default: "Sponsored" }
