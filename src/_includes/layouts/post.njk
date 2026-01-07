@@ -1,12 +1,43 @@
 ---
 layout: layouts/base.njk
 ---
-<article class="container">
+<!-- NewsArticle Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "{{ title }}",
+  "description": "{{ excerpt or (content | excerpt) }}",
+  "image": "{{ site.url }}{{ featuredImage or '/assets/img/rctv19-logo.jpg' }}",
+  "datePublished": "{{ date | dateISO }}",
+  "dateModified": "{{ date | dateISO }}",
+  "author": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/assets/img/rctv19-logo.jpg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+  "isAccessibleForFree": true
+}
+</script>
+
+<article class="container" itemscope itemtype="https://schema.org/NewsArticle">
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="{{ date | dateISO }}">{{ date | dateDisplay }}</time>
+      <time datetime="{{ date | dateISO }}" itemprop="datePublished">{{ date | dateDisplay }}</time>
     </div>
-    <h1 class="post-title">{{ title }}</h1>
+    <h1 class="post-title" itemprop="headline">{{ title }}</h1>
   </header>
   
   {% if featuredImage %}
