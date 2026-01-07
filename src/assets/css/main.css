@@ -613,6 +613,16 @@ select:focus-visible {
 .ad-slot--banner {
   padding: var(--space-sm);
   margin-bottom: var(--space-lg);
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ad-slot--banner img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
 }
 
 .ad-slot--rectangle {
