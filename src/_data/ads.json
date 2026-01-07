@@ -9,7 +9,7 @@
     "label": "Sponsored"
   },
   "sidebar1": {
-    "enabled": true,
+    "enabled": false,
     "type": "sponsor",
     "slot": "PASTE_YOUR_ADSENSE_SLOT_ID_HERE",
     "link": "",
@@ -20,7 +20,7 @@
     "label": "Advertisement"
   },
   "sidebar2": {
-    "enabled": true,
+    "enabled": false,
     "type": "sponsor",
     "image": "/assets/img/sponsors/sidebar-placeholder.jpg",
     "link": "https://example.com/sponsor2",
@@ -29,7 +29,7 @@
   },
   "mobile1": {
     "enabled": true,
-    "type": "adsense",
+    "type": "sponsor",
     "slot": "PASTE_YOUR_ADSENSE_SLOT_ID_HERE",
     "label": "Advertisement",
     "height": 250,
@@ -37,7 +37,7 @@
     "format": "rectangle"
   },
   "inFeed": {
-    "enabled": true,
+    "enabled": false,
     "type": "sponsor",
     "image": "/assets/img/sponsors/infeed-placeholder.jpg",
     "link": "https://example.com/sponsor3",
