@@ -1,28 +1,28 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
 
   // Passthrough copy
   eleventyConfig.addPassthroughCopy("src/assets");
-  eleventyConfig.addPassthroughCopy("public");
+  eleventyConfig.addPassthroughCopy({ "public/admin": "admin" });
 
   // Collections
-  eleventyConfig.addCollection("posts", function(collectionApi) {
+  eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/blog/*.md").sort((a, b) => {
       return b.date - a.date; // Newest first
     });
   });
 
-  eleventyConfig.addCollection("recentPosts", function(collectionApi) {
+  eleventyConfig.addCollection("recentPosts", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/blog/*.md")
       .sort((a, b) => b.date - a.date)
       .slice(0, 6);
   });
 
   // Filters
-  eleventyConfig.addFilter("dateDisplay", function(date) {
+  eleventyConfig.addFilter("dateDisplay", function (date) {
     if (!date) return "";
     const d = new Date(date);
     return d.toLocaleDateString("en-US", {
@@ -32,12 +32,12 @@ module.exports = function(eleventyConfig) {
     });
   });
 
-  eleventyConfig.addFilter("dateISO", function(date) {
+  eleventyConfig.addFilter("dateISO", function (date) {
     if (!date) return "";
     return new Date(date).toISOString();
   });
 
-  eleventyConfig.addFilter("excerpt", function(content) {
+  eleventyConfig.addFilter("excerpt", function (content) {
     if (!content) return "";
     // Strip HTML and limit to 150 chars
     const stripped = content.replace(/<[^>]*>/g, "");
@@ -45,11 +45,11 @@ module.exports = function(eleventyConfig) {
     return stripped.substring(0, 150).trim() + "...";
   });
 
-  eleventyConfig.addFilter("limit", function(arr, limit) {
+  eleventyConfig.addFilter("limit", function (arr, limit) {
     return arr.slice(0, limit);
   });
 
-  eleventyConfig.addFilter("shuffle", function(arr) {
+  eleventyConfig.addFilter("shuffle", function (arr) {
     const shuffled = [...arr];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
