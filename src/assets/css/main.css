@@ -1057,10 +1057,11 @@ select:focus-visible {
   gap: var(--space-md);
 }
 
-.footer-logo img {
-  height: 40px;
-  width: auto;
-  filter: brightness(0) invert(1);
+.footer-large-logo img {
+  border-radius: var(--radius-md);
+  margin-top: var(--space-md);
+  display: block;
+  max-width: 100%;
 }
 
 .footer-description {
