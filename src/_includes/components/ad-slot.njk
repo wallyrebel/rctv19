@@ -8,9 +8,13 @@
 
 {% if adData and adData.enabled %}
 {# Fix URL if missing protocol #}
-{% set adLink = adData.link %}
-{% if adLink and not adLink.startswith('http://') and not adLink.startswith('https://') and not adLink.startswith('/') %}
-  {% set adLink = 'https://' + adLink %}
+{% set adLink = adData.link or '' %}
+{% if adLink | length > 0 %}
+  {% if not ('http://' in adLink or 'https://' in adLink or adLink.startsWith('/')) %}
+    {% set adLink = 'https://' + adLink %}
+  {% endif %}
+{% else %}
+  {% set adLink = '#' %}
 {% endif %}
 
 <aside class="ad-slot ad-slot--{{ format or 'rectangle' }}" aria-label="Advertisement">
