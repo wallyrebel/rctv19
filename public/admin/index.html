@@ -4,196 +4,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RCTV19 Admin | Pages CMS</title>
-  <link href="https://pagescms.org/cms.css" rel="stylesheet">
+  <title>RCTV19 Admin | Content Manager</title>
+  <!-- Decap CMS (formerly Netlify CMS) -->
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </head>
 
 <body>
-  <script src="https://pagescms.org/cms.js" type="module"></script>
-
   <!-- 
-    Pages CMS Configuration
+    Decap CMS Configuration
     
     SETUP INSTRUCTIONS:
     
-    1. Create a GitHub OAuth App:
-       - Go to https://github.com/settings/developers
-       - Click "New OAuth App"
-       - Application name: RCTV19 CMS
-       - Homepage URL: https://rctv19.com
-       - Authorization callback URL: https://rctv19.com/admin/
-       - Save the Client ID and Client Secret
+    This CMS uses GitHub for authentication. Since you're on Cloudflare Pages,
+    you'll need to use the Git Gateway or external OAuth.
     
-    2. Configure the CMS:
-       - Update the 'owner' and 'repo' fields below
-       - Add your GitHub OAuth credentials
+    OPTION A: Use Netlify Identity (easiest - free tier available)
+    1. Create a free Netlify account at netlify.com
+    2. Import your GitHub repo to Netlify (you don't need to deploy there)
+    3. Enable Netlify Identity in Site Settings
+    4. Enable Git Gateway in Site Settings > Identity > Services
+    5. The CMS will then work automatically
     
-    3. For Cloudflare Pages:
-       - The CMS works automatically with GitHub integration
-       - Content changes are committed directly to your repo
-       - Pushes trigger automatic rebuilds
+    OPTION B: Use an external OAuth provider
+    See: https://decapcms.org/docs/external-oauth-clients/
     
-    For full documentation: https://pagescms.org/docs
+    For full documentation: https://decapcms.org/docs/
   -->
 
-  <script type="module">
-    import CMS from 'https://pagescms.org/cms.js';
-
+  <script>
+    // Decap CMS Configuration
     CMS.init({
-      // GitHub Repository Configuration
-      owner: 'wallyrebel',
-      repo: 'rctv19',
-      branch: 'main',
-
-      // Media Configuration
-      media: {
-        input: 'src/assets/img/posts',
-        output: '/assets/img/posts'
-      },
-
-      // Collections Configuration
-      collections: [
-        {
-          name: 'posts',
-          label: 'Blog Posts',
-          path: 'src/blog',
-          type: 'file',
-          extension: 'md',
-          fields: [
-            {
-              name: 'title',
-              label: 'Title',
-              type: 'string',
-              required: true
-            },
-            {
-              name: 'date',
-              label: 'Publish Date',
-              type: 'date',
-              required: true
-            },
-            {
-              name: 'excerpt',
-              label: 'Excerpt',
-              type: 'text',
-              description: 'Brief summary for listings (150 characters recommended)'
-            },
-            {
-              name: 'featuredImage',
-              label: 'Featured Image',
-              type: 'image',
-              description: 'Main image for the post (16:9 ratio recommended)'
-            },
-            {
-              name: 'body',
-              label: 'Content',
-              type: 'markdown',
-              required: true
-            }
-          ]
+      config: {
+        backend: {
+          name: 'github',
+          repo: 'wallyrebel/rctv19',
+          branch: 'main',
+          base_url: 'https://api.netlify.com',
+          auth_endpoint: 'auth'
         },
-        {
-          name: 'pages',
-          label: 'Site Pages',
-          path: 'src/pages',
-          type: 'file',
-          extension: 'md',
-          fields: [
-            {
-              name: 'title',
-              label: 'Page Title',
-              type: 'string',
-              required: true
-            },
-            {
-              name: 'description',
-              label: 'Meta Description',
-              type: 'text',
-              description: 'SEO description (160 characters recommended)'
-            },
-            {
-              name: 'body',
-              label: 'Page Content',
-              type: 'markdown',
-              required: true
-            }
-          ]
-        }
-      ],
 
-      // Data Files Configuration
-      data: [
-        {
-          name: 'ads',
-          label: 'Advertising',
-          path: 'src/_data/ads.json',
-          fields: [
-            {
-              name: 'adsensePublisherId',
-              label: 'AdSense Publisher ID',
-              type: 'string',
-              description: 'Your Google AdSense publisher ID (ca-pub-XXXXXXXX)'
-            },
-            {
-              name: 'topBanner',
-              label: 'Top Banner Ad',
-              type: 'object',
-              fields: [
-                { name: 'enabled', label: 'Enabled', type: 'boolean' },
-                { name: 'type', label: 'Type', type: 'select', options: ['sponsor', 'adsense'] },
-                { name: 'image', label: 'Sponsor Image', type: 'image' },
-                { name: 'link', label: 'Sponsor Link', type: 'string' },
-                { name: 'alt', label: 'Alt Text', type: 'string' },
-                { name: 'slot', label: 'AdSense Slot ID', type: 'string' }
-              ]
-            },
-            {
-              name: 'sidebar1',
-              label: 'Sidebar Ad 1',
-              type: 'object',
-              fields: [
-                { name: 'enabled', label: 'Enabled', type: 'boolean' },
-                { name: 'type', label: 'Type', type: 'select', options: ['sponsor', 'adsense'] },
-                { name: 'image', label: 'Sponsor Image', type: 'image' },
-                { name: 'link', label: 'Sponsor Link', type: 'string' },
-                { name: 'alt', label: 'Alt Text', type: 'string' },
-                { name: 'slot', label: 'AdSense Slot ID', type: 'string' }
-              ]
-            },
-            {
-              name: 'sidebar2',
-              label: 'Sidebar Ad 2',
-              type: 'object',
-              fields: [
-                { name: 'enabled', label: 'Enabled', type: 'boolean' },
-                { name: 'type', label: 'Type', type: 'select', options: ['sponsor', 'adsense'] },
-                { name: 'image', label: 'Sponsor Image', type: 'image' },
-                { name: 'link', label: 'Sponsor Link', type: 'string' },
-                { name: 'alt', label: 'Alt Text', type: 'string' },
-                { name: 'slot', label: 'AdSense Slot ID', type: 'string' }
-              ]
-            }
-          ]
-        },
-        {
-          name: 'site',
-          label: 'Site Settings',
-          path: 'src/_data/site.json',
-          fields: [
-            { name: 'title', label: 'Site Title', type: 'string' },
-            { name: 'description', label: 'Site Description', type: 'text' },
-            { name: 'watchLiveUrl', label: 'Watch Live URL', type: 'string', description: 'FrontLayer player URL' }
-          ]
-        }
-      ]
+        media_folder: 'src/assets/img/posts',
+        public_folder: '/assets/img/posts',
+
+        collections: [
+          {
+            name: 'blog',
+            label: 'Blog Posts',
+            folder: 'src/blog',
+            create: true,
+            slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
+            fields: [
+              { label: 'Title', name: 'title', widget: 'string', required: true },
+              { label: 'Publish Date', name: 'date', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: false, required: true },
+              { label: 'Excerpt', name: 'excerpt', widget: 'text', required: false, hint: 'Brief summary for listings (150 characters recommended)' },
+              { label: 'Featured Image', name: 'featuredImage', widget: 'image', required: false, hint: 'Main image for the post (16:9 ratio recommended)' },
+              { label: 'Body', name: 'body', widget: 'markdown', required: true }
+            ]
+          },
+          {
+            name: 'pages',
+            label: 'Site Pages',
+            files: [
+              {
+                label: 'About',
+                name: 'about',
+                file: 'src/pages/about.md',
+                fields: [
+                  { label: 'Title', name: 'title', widget: 'string' },
+                  { label: 'Description', name: 'description', widget: 'text' },
+                  { label: 'Body', name: 'body', widget: 'markdown' }
+                ]
+              },
+              {
+                label: 'Contact',
+                name: 'contact',
+                file: 'src/pages/contact.md',
+                fields: [
+                  { label: 'Title', name: 'title', widget: 'string' },
+                  { label: 'Description', name: 'description', widget: 'text' },
+                  { label: 'Body', name: 'body', widget: 'markdown' }
+                ]
+              },
+              {
+                label: 'Privacy Policy',
+                name: 'privacy',
+                file: 'src/pages/privacy.md',
+                fields: [
+                  { label: 'Title', name: 'title', widget: 'string' },
+                  { label: 'Description', name: 'description', widget: 'text' },
+                  { label: 'Body', name: 'body', widget: 'markdown' }
+                ]
+              }
+            ]
+          },
+          {
+            name: 'settings',
+            label: 'Site Settings',
+            files: [
+              {
+                label: 'General Settings',
+                name: 'site',
+                file: 'src/_data/site.json',
+                fields: [
+                  { label: 'Site Title', name: 'title', widget: 'string' },
+                  { label: 'Site Description', name: 'description', widget: 'text' },
+                  { label: 'Site URL', name: 'url', widget: 'string' },
+                  { label: 'Watch Live URL', name: 'watchLiveUrl', widget: 'string', hint: 'FrontLayer player URL' }
+                ]
+              },
+              {
+                label: 'Advertising',
+                name: 'ads',
+                file: 'src/_data/ads.json',
+                fields: [
+                  { label: 'AdSense Publisher ID', name: 'adsensePublisherId', widget: 'string', hint: 'Your Google AdSense publisher ID (ca-pub-XXXXXXXX)' }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     });
   </script>
-
-  <noscript>
-    <p style="padding: 2rem; text-align: center; font-family: system-ui, sans-serif;">
-      JavaScript is required to use the CMS. Please enable JavaScript and refresh the page.
-    </p>
-  </noscript>
 </body>
 
 </html>
