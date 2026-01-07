@@ -7,12 +7,18 @@
 {% set adData = ads[slotName] %}
 
 {% if adData and adData.enabled %}
+{# Fix URL if missing protocol #}
+{% set adLink = adData.link %}
+{% if adLink and not adLink.startswith('http://') and not adLink.startswith('https://') and not adLink.startswith('/') %}
+  {% set adLink = 'https://' + adLink %}
+{% endif %}
+
 <aside class="ad-slot ad-slot--{{ format or 'rectangle' }}" aria-label="Advertisement">
   <span class="ad-slot-label">{{ adData.label or 'Sponsored' }}</span>
   
   {% if adData.type == 'sponsor' %}
     {# Local Sponsor Ad #}
-    <a href="{{ adData.link }}" target="_blank" rel="noopener sponsored" aria-label="{{ adData.alt }}">
+    <a href="{{ adLink }}" target="_blank" rel="noopener sponsored" aria-label="{{ adData.alt }}">
       <img 
         src="{{ adData.image }}" 
         alt="{{ adData.alt }}"
