@@ -611,11 +611,13 @@ select:focus-visible {
 }
 
 .ad-slot--banner {
-  padding: var(--space-sm);
+  padding: 0;
   margin-bottom: var(--space-lg);
   width: 100%;
   height: auto;
   display: block;
+  border: none;
+  background: transparent;
 }
 
 .ad-slot--banner img {
