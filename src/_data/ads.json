@@ -28,7 +28,7 @@
     "label": "Sponsored"
   },
   "mobile1": {
-    "enabled": true,
+    "enabled": false,
     "type": "sponsor",
     "slot": "PASTE_YOUR_ADSENSE_SLOT_ID_HERE",
     "label": "Advertisement",
