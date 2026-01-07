@@ -1,11 +1,10 @@
 ---
-layout: layouts/page.njk
 title: Privacy Policy
 description: Privacy Policy for RCTV19.com - Learn how we collect, use, and protect your information.
+layout: layouts/page.njk
 permalink: /privacy/
 ---
-
-*Last Updated: January 1, 2026*
+_Last Updated: January 1, 2026_
 
 ## Introduction
 
@@ -87,9 +86,9 @@ We may update this privacy policy periodically. We will post any changes on this
 
 For questions about this privacy policy:
 
-- **Email**: privacy@rctv19.com
-- **Mail**: RCTV19, 123 Main Street, Ripley, MS 38663
+- **Email**: rctv19@gmail.com
+- **Mail**: RCTV19, 112 Jeffeson St, Ripley, MS 38663
 
 ---
 
-*By using our website, you agree to this privacy policy.*
+_By using our website, you agree to this privacy policy._
