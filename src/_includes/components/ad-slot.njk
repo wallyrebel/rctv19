@@ -18,7 +18,10 @@
 {% endif %}
 
 <aside class="ad-slot ad-slot--{{ format or 'rectangle' }}" aria-label="Advertisement">
-  <span class="ad-slot-label">{{ adData.label or 'Sponsored' }}</span>
+{% set labelText = adData.label if adData.label is defined else 'Sponsored' %}
+{% if labelText %}
+  <span class="ad-slot-label">{{ labelText }}</span>
+{% endif %}
   
   {% if adData.type == 'sponsor' %}
     {# Local Sponsor Ad #}
