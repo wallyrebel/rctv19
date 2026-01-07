@@ -611,8 +611,8 @@ select:focus-visible {
 }
 
 .top-ad-wrapper {
-  margin-top: var(--space-xl);
-  margin-bottom: var(--space-lg);
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-md);
 }
 
 .ad-slot--banner {
@@ -627,7 +627,9 @@ select:focus-visible {
 
 .ad-slot--banner img {
   width: 100%;
-  height: 200px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  max-height: 180px;
   margin: 0 auto;
   display: block;
   object-fit: cover;
