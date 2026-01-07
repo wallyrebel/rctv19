@@ -38,10 +38,10 @@
     "format": "rectangle"
   },
   "inFeed": {
-    "enabled": false,
+    "enabled": true,
     "type": "sponsor",
-    "image": "/assets/img/sponsors/infeed-placeholder.jpg",
-    "link": "https://example.com/sponsor3",
+    "image": "/assets/img/posts/og-which-wich (1).jpg",
+    "link": "",
     "alt": "Support Local Business",
     "label": "Sponsored"
   }
