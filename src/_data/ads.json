@@ -1,45 +1,47 @@
 {
-    "topBanner": {
-        "type": "sponsor",
-        "enabled": true,
-        "image": "/assets/img/sponsors/banner-placeholder.jpg",
-        "link": "https://example.com/sponsor",
-        "alt": "Your Business Name - Local Sponsor",
-        "label": "Sponsored"
-    },
-    "sidebar1": {
-        "type": "adsense",
-        "enabled": true,
-        "slot": "PASTE_YOUR_ADSENSE_SLOT_ID_HERE",
-        "format": "rectangle",
-        "width": 300,
-        "height": 250,
-        "label": "Advertisement"
-    },
-    "sidebar2": {
-        "type": "sponsor",
-        "enabled": true,
-        "image": "/assets/img/sponsors/sidebar-placeholder.jpg",
-        "link": "https://example.com/sponsor2",
-        "alt": "Local Business - Community Partner",
-        "label": "Sponsored"
-    },
-    "mobile1": {
-        "type": "adsense",
-        "enabled": true,
-        "slot": "PASTE_YOUR_ADSENSE_SLOT_ID_HERE",
-        "format": "rectangle",
-        "width": 300,
-        "height": 250,
-        "label": "Advertisement"
-    },
-    "inFeed": {
-        "type": "sponsor",
-        "enabled": true,
-        "image": "/assets/img/sponsors/infeed-placeholder.jpg",
-        "link": "https://example.com/sponsor3",
-        "alt": "Support Local Business",
-        "label": "Sponsored"
-    },
-    "adsensePublisherId": "ca-pub-XXXXXXXXXXXXXXXX"
+  "adsensePublisherId": "ca-pub-XXXXXXXXXXXXXXXX",
+  "topBanner": {
+    "enabled": true,
+    "type": "sponsor",
+    "image": "/assets/img/posts/ChatGPT Image Jan 6, 2026, 10_23_21 PM.png",
+    "link": "peoplesripley.com",
+    "alt": "The Peoples Bank",
+    "label": "Sponsored"
+  },
+  "sidebar1": {
+    "enabled": true,
+    "type": "sponsor",
+    "slot": "PASTE_YOUR_ADSENSE_SLOT_ID_HERE",
+    "link": "",
+    "alt": "",
+    "format": "rectangle",
+    "width": 300,
+    "height": 250,
+    "label": "Advertisement"
+  },
+  "sidebar2": {
+    "enabled": true,
+    "type": "sponsor",
+    "image": "/assets/img/sponsors/sidebar-placeholder.jpg",
+    "link": "https://example.com/sponsor2",
+    "alt": "Local Business - Community Partner",
+    "label": "Sponsored"
+  },
+  "mobile1": {
+    "enabled": true,
+    "type": "adsense",
+    "slot": "PASTE_YOUR_ADSENSE_SLOT_ID_HERE",
+    "label": "Advertisement",
+    "height": 250,
+    "width": 300,
+    "format": "rectangle"
+  },
+  "inFeed": {
+    "enabled": true,
+    "type": "sponsor",
+    "image": "/assets/img/sponsors/infeed-placeholder.jpg",
+    "link": "https://example.com/sponsor3",
+    "alt": "Support Local Business",
+    "label": "Sponsored"
+  }
 }
