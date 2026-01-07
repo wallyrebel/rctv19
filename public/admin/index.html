@@ -5,127 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RCTV19 Admin | Content Manager</title>
-  <!-- Decap CMS (formerly Netlify CMS) -->
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <!-- Sveltia CMS - Drop-in replacement for Decap CMS with built-in GitHub OAuth -->
+  <link href="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.css" rel="stylesheet">
+  <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js" type="module"></script>
 </head>
 
 <body>
   <!-- 
-    Decap CMS Configuration
+    Sveltia CMS uses GitHub OAuth directly.
     
-    SETUP INSTRUCTIONS:
+    When you first access /admin/, it will prompt you to:
+    1. Authorize with GitHub
+    2. Grant access to your repository
     
-    This CMS uses GitHub for authentication. Since you're on Cloudflare Pages,
-    you'll need to use the Git Gateway or external OAuth.
+    No Netlify Identity needed!
     
-    OPTION A: Use Netlify Identity (easiest - free tier available)
-    1. Create a free Netlify account at netlify.com
-    2. Import your GitHub repo to Netlify (you don't need to deploy there)
-    3. Enable Netlify Identity in Site Settings
-    4. Enable Git Gateway in Site Settings > Identity > Services
-    5. The CMS will then work automatically
-    
-    OPTION B: Use an external OAuth provider
-    See: https://decapcms.org/docs/external-oauth-clients/
-    
-    For full documentation: https://decapcms.org/docs/
+    The config.yml file contains all the CMS settings.
   -->
-
-  <script>
-    // Decap CMS Configuration
-    CMS.init({
-      config: {
-        backend: {
-          name: 'github',
-          repo: 'wallyrebel/rctv19',
-          branch: 'main',
-          base_url: 'https://api.netlify.com',
-          auth_endpoint: 'auth'
-        },
-
-        media_folder: 'src/assets/img/posts',
-        public_folder: '/assets/img/posts',
-
-        collections: [
-          {
-            name: 'blog',
-            label: 'Blog Posts',
-            folder: 'src/blog',
-            create: true,
-            slug: '{{year}}-{{month}}-{{day}}-{{slug}}',
-            fields: [
-              { label: 'Title', name: 'title', widget: 'string', required: true },
-              { label: 'Publish Date', name: 'date', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: false, required: true },
-              { label: 'Excerpt', name: 'excerpt', widget: 'text', required: false, hint: 'Brief summary for listings (150 characters recommended)' },
-              { label: 'Featured Image', name: 'featuredImage', widget: 'image', required: false, hint: 'Main image for the post (16:9 ratio recommended)' },
-              { label: 'Body', name: 'body', widget: 'markdown', required: true }
-            ]
-          },
-          {
-            name: 'pages',
-            label: 'Site Pages',
-            files: [
-              {
-                label: 'About',
-                name: 'about',
-                file: 'src/pages/about.md',
-                fields: [
-                  { label: 'Title', name: 'title', widget: 'string' },
-                  { label: 'Description', name: 'description', widget: 'text' },
-                  { label: 'Body', name: 'body', widget: 'markdown' }
-                ]
-              },
-              {
-                label: 'Contact',
-                name: 'contact',
-                file: 'src/pages/contact.md',
-                fields: [
-                  { label: 'Title', name: 'title', widget: 'string' },
-                  { label: 'Description', name: 'description', widget: 'text' },
-                  { label: 'Body', name: 'body', widget: 'markdown' }
-                ]
-              },
-              {
-                label: 'Privacy Policy',
-                name: 'privacy',
-                file: 'src/pages/privacy.md',
-                fields: [
-                  { label: 'Title', name: 'title', widget: 'string' },
-                  { label: 'Description', name: 'description', widget: 'text' },
-                  { label: 'Body', name: 'body', widget: 'markdown' }
-                ]
-              }
-            ]
-          },
-          {
-            name: 'settings',
-            label: 'Site Settings',
-            files: [
-              {
-                label: 'General Settings',
-                name: 'site',
-                file: 'src/_data/site.json',
-                fields: [
-                  { label: 'Site Title', name: 'title', widget: 'string' },
-                  { label: 'Site Description', name: 'description', widget: 'text' },
-                  { label: 'Site URL', name: 'url', widget: 'string' },
-                  { label: 'Watch Live URL', name: 'watchLiveUrl', widget: 'string', hint: 'FrontLayer player URL' }
-                ]
-              },
-              {
-                label: 'Advertising',
-                name: 'ads',
-                file: 'src/_data/ads.json',
-                fields: [
-                  { label: 'AdSense Publisher ID', name: 'adsensePublisherId', widget: 'string', hint: 'Your Google AdSense publisher ID (ca-pub-XXXXXXXX)' }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    });
-  </script>
 </body>
 
 </html>

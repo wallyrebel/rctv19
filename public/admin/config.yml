@@ -1,0 +1,56 @@
+backend:
+  name: github
+  repo: wallyrebel/rctv19
+  branch: main
+
+media_folder: src/assets/img/posts
+public_folder: /assets/img/posts
+
+collections:
+  - name: blog
+    label: Blog Posts
+    folder: src/blog
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Publish Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, required: true }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: false, hint: "Brief summary for listings" }
+      - { label: "Featured Image", name: "featuredImage", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown", required: true }
+
+  - name: pages
+    label: Site Pages
+    files:
+      - label: About
+        name: about
+        file: src/pages/about.md
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: Contact
+        name: contact
+        file: src/pages/contact.md
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: Privacy Policy
+        name: privacy
+        file: src/pages/privacy.md
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: settings
+    label: Settings
+    files:
+      - label: Site Settings
+        name: site
+        file: src/_data/site.json
+        fields:
+          - { label: "Site Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Watch Live URL", name: "watchLiveUrl", widget: "string" }
