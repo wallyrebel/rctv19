@@ -626,14 +626,13 @@ select:focus-visible {
 }
 
 .ad-slot--banner img {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9;
-  max-height: 180px;
+  max-height: 250px;
   margin: 0 auto;
   display: block;
-  object-fit: cover;
-  object-position: center;
+  object-fit: contain;
 }
 
 .ad-slot--rectangle {
