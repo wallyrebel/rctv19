@@ -1,0 +1,46 @@
+---
+layout: layouts/base.njk
+---
+<article class="container">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="{{ date | dateISO }}">{{ date | dateDisplay }}</time>
+    </div>
+    <h1 class="post-title">{{ title }}</h1>
+  </header>
+  
+  {% if featuredImage %}
+  <div class="post-featured-image">
+    <img 
+      src="{{ featuredImage }}" 
+      alt="{{ title }}"
+      loading="lazy"
+      width="900"
+      height="506"
+    >
+  </div>
+  {% endif %}
+  
+  <div class="post-content">
+    {{ content | safe }}
+  </div>
+  
+  {% include "components/share-links.njk" %}
+  
+  <!-- Related Posts -->
+  {% set relatedPosts = collections.posts | shuffle | limit(3) %}
+  {% if relatedPosts.length > 0 %}
+  <section class="related-posts">
+    <div class="section-header">
+      <h2 class="section-title">Related Stories</h2>
+    </div>
+    <div class="related-posts-grid">
+      {% for post in relatedPosts %}
+        {% if post.url != page.url %}
+          {% include "components/post-card.njk" %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</article>

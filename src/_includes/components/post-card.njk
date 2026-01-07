@@ -1,0 +1,44 @@
+{# 
+  Post Card Component
+  Usage: {% include "components/post-card.njk" %}
+  Expects: post object in scope
+  Optional: listStyle = true for horizontal layout
+#}
+{% set postData = post.data if post.data else post %}
+{% set postUrl = post.url if post.url else postData.url %}
+
+<article class="post-card{% if listStyle %} post-card--list{% endif %}">
+  <div class="post-card-image">
+    {% if postData.featuredImage %}
+    <img 
+      src="{{ postData.featuredImage }}" 
+      alt="{{ postData.title }}"
+      loading="lazy"
+      width="400"
+      height="225"
+    >
+    {% else %}
+    <img 
+      src="/assets/img/rctv19-logo.jpg" 
+      alt="{{ postData.title }}"
+      loading="lazy"
+      width="400"
+      height="225"
+      style="object-fit: contain; background: #f3f4f6; padding: 20px;"
+    >
+    {% endif %}
+  </div>
+  <div class="post-card-content">
+    <time class="post-card-date" datetime="{{ postData.date | dateISO }}">
+      {{ postData.date | dateDisplay }}
+    </time>
+    <h3 class="post-card-title">
+      <a href="{{ postUrl }}">{{ postData.title }}</a>
+    </h3>
+    {% if not listStyle and postData.excerpt %}
+    <p class="post-card-excerpt">{{ postData.excerpt }}</p>
+    {% elif not listStyle and post.templateContent %}
+    <p class="post-card-excerpt">{{ post.templateContent | excerpt }}</p>
+    {% endif %}
+  </div>
+</article>

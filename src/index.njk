@@ -1,0 +1,109 @@
+---
+layout: layouts/base.njk
+title: Home
+description: Your source for local news, events, and community coverage in Ripley and Tippah County. Watch RCTV19 live streaming.
+---
+
+<div class="container">
+  <!-- Top Banner Ad -->
+  {% set slotName = "topBanner" %}
+  {% set format = "banner" %}
+  {% include "components/ad-slot.njk" %}
+  
+  <div class="content-wrapper">
+    <div class="main-content">
+      <!-- Top Stories Section -->
+      <section class="top-stories">
+        <div class="section-header">
+          <h2 class="section-title">Top Stories</h2>
+          <a href="/blog/" class="section-link">View All →</a>
+        </div>
+        
+        <div class="top-stories-grid">
+          {% for post in collections.recentPosts %}
+            {% include "components/post-card.njk" %}
+          {% endfor %}
+        </div>
+      </section>
+      
+      <!-- Watch Live Badge -->
+      <section class="watch-live-section">
+        <a href="{{ site.watchLiveUrl }}" class="watch-live-badge" target="_blank" rel="noopener" aria-label="Watch RCTV19 Live">
+          <img 
+            src="/assets/img/watch-live-badge.png" 
+            alt="Watch RCTV19 Live - Ripley Community Television"
+            width="500"
+            height="125"
+            class="watch-live-pulse"
+          >
+        </a>
+        <p style="margin-top: 1rem; color: #6b7280;">
+          <a href="/watch-live/" style="color: #203090; font-weight: 600;">View full streaming page →</a>
+        </p>
+      </section>
+      
+      <!-- Mobile Ad (visible only on mobile) -->
+      <div class="mobile-ad">
+        {% set slotName = "mobile1" %}
+        {% set format = "rectangle" %}
+        {% include "components/ad-slot.njk" %}
+      </div>
+      
+      <!-- Latest Updates Section -->
+      <section class="latest-updates-section">
+        <div class="section-header">
+          <h2 class="section-title">Latest Updates</h2>
+        </div>
+        
+        <div class="latest-updates">
+          {% set allPosts = collections.posts %}
+          {% for post in allPosts | limit(10) %}
+            {% set listStyle = true %}
+            {% include "components/post-card.njk" %}
+            
+            {# Insert mobile ad after every 4 posts #}
+            {% if loop.index == 4 %}
+            <div class="mobile-ad">
+              {% set slotName = "inFeed" %}
+              {% set format = "rectangle" %}
+              {% include "components/ad-slot.njk" %}
+            </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        
+        <a href="/blog/" class="load-more">View More Stories</a>
+      </section>
+    </div>
+    
+    <!-- Sidebar (Desktop Only) -->
+    <aside class="sidebar">
+      <div class="sidebar-widget">
+        <h3 class="sidebar-widget-title">Advertisement</h3>
+        {% set slotName = "sidebar1" %}
+        {% set format = "rectangle" %}
+        {% include "components/ad-slot.njk" %}
+      </div>
+      
+      <div class="sidebar-widget">
+        <h3 class="sidebar-widget-title">Community Partner</h3>
+        {% set slotName = "sidebar2" %}
+        {% set format = "rectangle" %}
+        {% include "components/ad-slot.njk" %}
+      </div>
+      
+      <!-- Watch Live Quick Link -->
+      <div class="sidebar-widget" style="text-align: center; background: linear-gradient(135deg, #203090 0%, #2d40a8 100%); color: white;">
+        <a href="{{ site.watchLiveUrl }}" target="_blank" rel="noopener">
+          <img 
+            src="/assets/img/watch-live-icon.png" 
+            alt="Watch Live"
+            width="150"
+            height="150"
+            style="margin: 0 auto;"
+          >
+        </a>
+      </div>
+    </aside>
+  </div>
+</div>

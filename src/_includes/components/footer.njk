@@ -1,0 +1,40 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo">
+          <img src="/assets/img/rctv19-logo.jpg" alt="{{ site.title }}" width="150" height="45">
+        </a>
+        <p class="footer-description">
+          {{ site.description }}
+        </p>
+      </div>
+      
+      <div class="footer-nav">
+        <h3 class="footer-heading">Quick Links</h3>
+        <ul class="footer-links">
+          {% for item in site.navigation %}
+          <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      
+      <div class="footer-connect">
+        <h3 class="footer-heading">Connect</h3>
+        <ul class="footer-links">
+          {% if site.social.facebook %}
+          <li><a href="{{ site.social.facebook }}" target="_blank" rel="noopener">Facebook</a></li>
+          {% endif %}
+          {% if site.social.twitter %}
+          <li><a href="{{ site.social.twitter }}" target="_blank" rel="noopener">Twitter/X</a></li>
+          {% endif %}
+          <li><a href="/feed.xml">RSS Feed</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; {% year %} {{ site.title }}. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

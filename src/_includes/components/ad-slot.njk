@@ -1,0 +1,57 @@
+{#
+  Ad Slot Component
+  Usage: {% include "components/ad-slot.njk" %}
+  Expects: slotName (string) - key from ads.json
+  Optional: format - "banner" or "rectangle" (default: rectangle)
+#}
+{% set adData = ads[slotName] %}
+
+{% if adData and adData.enabled %}
+<aside class="ad-slot ad-slot--{{ format or 'rectangle' }}" aria-label="Advertisement">
+  <span class="ad-slot-label">{{ adData.label or 'Sponsored' }}</span>
+  
+  {% if adData.type == 'sponsor' %}
+    {# Local Sponsor Ad #}
+    <a href="{{ adData.link }}" target="_blank" rel="noopener sponsored" aria-label="{{ adData.alt }}">
+      <img 
+        src="{{ adData.image }}" 
+        alt="{{ adData.alt }}"
+        loading="lazy"
+        {% if format == 'banner' %}
+        width="728"
+        height="90"
+        {% else %}
+        width="{{ adData.width or 300 }}"
+        height="{{ adData.height or 250 }}"
+        {% endif %}
+      >
+    </a>
+  {% elif adData.type == 'adsense' %}
+    {# AdSense Placeholder #}
+    <div class="ad-slot-placeholder">
+      <!-- 
+        Google AdSense Ad Slot
+        
+        To activate this ad:
+        1. Replace ca-pub-XXXXXXXXXXXXXXXX in ads.json with your Publisher ID
+        2. Replace {{ adData.slot }} with your actual Ad Slot ID
+        3. Uncomment the script below
+        
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ ads.adsensePublisherId }}"
+          crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="{{ ads.adsensePublisherId }}"
+          data-ad-slot="{{ adData.slot }}"
+          data-ad-format="{{ adData.format }}"
+          data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      -->
+      <p>Ad Space</p>
+      <p style="font-size: 0.75rem; color: #9ca3af;">{{ adData.width or 300 }}x{{ adData.height or 250 }}</p>
+    </div>
+  {% endif %}
+</aside>
+{% endif %}

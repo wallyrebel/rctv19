@@ -1,0 +1,54 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="site-logo" aria-label="{{ site.title }} - Home">
+      <img src="/assets/img/rctv19-logo.jpg" alt="{{ site.title }}" width="200" height="60">
+    </a>
+    
+    <!-- Desktop Navigation -->
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        {% for item in site.navigation %}
+        <li>
+          <a 
+            href="{{ item.url }}" 
+            class="nav-link{% if item.highlight %} highlight{% endif %}"
+            {% if page.url == item.url %}aria-current="page"{% endif %}
+          >
+            {{ item.label }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    
+    <!-- Mobile Menu Toggle -->
+    <button 
+      class="menu-toggle" 
+      id="menu-toggle" 
+      aria-label="Toggle menu" 
+      aria-expanded="false" 
+      aria-controls="mobile-nav"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <ul class="mobile-nav-list">
+      {% for item in site.navigation %}
+      <li>
+        <a 
+          href="{{ item.url }}" 
+          class="mobile-nav-link{% if item.highlight %} highlight{% endif %}"
+          {% if page.url == item.url %}aria-current="page"{% endif %}
+        >
+          {{ item.label }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,38 @@
+{
+    "title": "RCTV19 - Ripley Community Television",
+    "description": "Your source for local news, events, and community coverage in Ripley and Tippah County.",
+    "url": "https://rctv19.com",
+    "author": "RCTV19",
+    "watchLiveUrl": "https://player.frontlayer.com/live/fl238965",
+    "social": {
+        "facebook": "https://facebook.com/rctv19",
+        "twitter": "https://twitter.com/rctv19"
+    },
+    "navigation": [
+        {
+            "label": "Home",
+            "url": "/"
+        },
+        {
+            "label": "Blog",
+            "url": "/blog/"
+        },
+        {
+            "label": "Watch Live",
+            "url": "/watch-live/",
+            "highlight": true
+        },
+        {
+            "label": "About",
+            "url": "/about/"
+        },
+        {
+            "label": "Contact",
+            "url": "/contact/"
+        },
+        {
+            "label": "Privacy Policy",
+            "url": "/privacy/"
+        }
+    ]
+}

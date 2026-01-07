@@ -1,0 +1,89 @@
+---
+layout: layouts/base.njk
+title: Watch Live
+description: Watch RCTV19 - Ripley Community Television live streaming. Your source for local news, sports, and community programming.
+permalink: /watch-live/
+---
+
+<div class="container">
+  <header class="page-header">
+    <h1 class="page-title">Watch RCTV19 Live</h1>
+    <p class="page-subtitle">Your Community. Your Stories. Your Station.</p>
+  </header>
+  
+  <div class="watch-live-container">
+    <!-- Large Watch Live Badge -->
+    <a href="{{ site.watchLiveUrl }}" class="watch-live-badge" target="_blank" rel="noopener" aria-label="Watch RCTV19 Live Stream">
+      <img 
+        src="/assets/img/watch-live-badge.png" 
+        alt="Watch RCTV19 Live - Ripley Community Television"
+        width="500"
+        height="125"
+        class="watch-live-pulse"
+      >
+    </a>
+    
+    <!-- Video Embed Area -->
+    <div class="video-embed">
+      <!-- 
+        Embedded Player
+        
+        If the embed doesn't load, viewers can use the direct link below.
+        To customize the embed, replace the placeholder below with your actual embed code.
+        
+        Example FrontLayer embed:
+        <iframe 
+          src="https://player.frontlayer.com/live/fl238965" 
+          width="100%" 
+          height="100%" 
+          frameborder="0" 
+          allowfullscreen
+          allow="autoplay; encrypted-media"
+        ></iframe>
+      -->
+      <div class="video-fallback">
+        <div class="video-fallback-icon">📺</div>
+        <p>Live Stream</p>
+        <p style="font-size: 0.875rem; margin-top: 0.5rem;">Click the badge above or the button below to watch</p>
+      </div>
+    </div>
+    
+    <!-- Direct Link (Always Visible) -->
+    <a href="{{ site.watchLiveUrl }}" class="direct-link" target="_blank" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+      Open Live Stream in New Window
+    </a>
+    
+    <div class="page-content" style="margin-top: 2rem; text-align: left;">
+      <h2>How to Watch</h2>
+      
+      <p>There are several ways to enjoy RCTV19 programming:</p>
+      
+      <ul>
+        <li><strong>Click the badge above</strong> to open our live stream in a new window</li>
+        <li><strong>Cable Channel 19</strong> - Available to local cable subscribers in Tippah County</li>
+        <li><strong>Mobile devices</strong> - Our stream works on smartphones and tablets</li>
+      </ul>
+      
+      <h2>Troubleshooting</h2>
+      
+      <p>If you're having trouble watching the stream:</p>
+      
+      <ul>
+        <li>Check your internet connection</li>
+        <li>Try refreshing the page</li>
+        <li>Clear your browser cache</li>
+        <li>Try a different browser (Chrome, Firefox, Safari, Edge)</li>
+        <li>Disable ad blockers which may interfere with the player</li>
+      </ul>
+      
+      <p>Still having issues? <a href="/contact/">Contact us</a> and we'll help you get connected.</p>
+      
+      <h2>Programming Schedule</h2>
+      
+      <p>RCTV19 broadcasts a variety of local programming throughout the week. Check our <a href="https://facebook.com/rctv19">Facebook page</a> for the latest schedule and special programming announcements.</p>
+    </div>
+  </div>
+</div>

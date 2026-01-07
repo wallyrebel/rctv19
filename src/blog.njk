@@ -1,0 +1,44 @@
+---
+layout: layouts/base.njk
+title: Blog
+description: Read the latest news, stories, and updates from RCTV19 - Ripley Community Television.
+pagination:
+  data: collections.posts
+  size: 12
+  alias: posts
+permalink: "blog/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+---
+
+<div class="container">
+  <header class="page-header">
+    <h1 class="page-title">Blog</h1>
+    <p class="page-subtitle">News, stories, and updates from your community</p>
+  </header>
+  
+  <div class="blog-grid">
+    {% for post in posts %}
+      {% include "components/post-card.njk" %}
+    {% endfor %}
+  </div>
+  
+  <!-- Pagination -->
+  {% if pagination.pages.length > 1 %}
+  <nav class="pagination" aria-label="Blog pagination">
+    {% if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}" class="pagination-link">
+      ← Previous
+    </a>
+    {% endif %}
+    
+    <span class="pagination-current">
+      Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}
+    </span>
+    
+    {% if pagination.href.next %}
+    <a href="{{ pagination.href.next }}" class="pagination-link">
+      Next →
+    </a>
+    {% endif %}
+  </nav>
+  {% endif %}
+</div>

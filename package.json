@@ -1,0 +1,24 @@
+{
+  "name": "rctv19-website",
+  "version": "1.0.0",
+  "description": "RCTV19 - Ripley Community Television website",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "debug": "DEBUG=Eleventy* eleventy"
+  },
+  "keywords": [
+    "rctv19",
+    "community-television",
+    "ripley",
+    "news",
+    "eleventy"
+  ],
+  "author": "RCTV19",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-rss": "^1.2.0"
+  }
+}
