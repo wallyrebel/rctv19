@@ -44,7 +44,7 @@ description: Your source for local news, events, and community coverage in Riple
       
       <!-- Mobile Ad (visible only on mobile) -->
       <div class="mobile-ad">
-        {% set slotName = "mobile1" %}
+        {% set slotName = "sidebar1" %}
         {% set format = "rectangle" %}
         {% include "components/ad-slot.njk" %}
       </div>
@@ -64,7 +64,7 @@ description: Your source for local news, events, and community coverage in Riple
             {# Insert mobile ad after every 4 posts #}
             {% if loop.index == 4 %}
             <div class="mobile-ad">
-              {% set slotName = "inFeed" %}
+              {% set slotName = "sidebar2" %}
               {% set format = "rectangle" %}
               {% include "components/ad-slot.njk" %}
             </div>
