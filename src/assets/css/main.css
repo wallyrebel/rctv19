@@ -43,7 +43,7 @@
   /* Layout */
   --container-max: 1200px;
   --sidebar-width: 320px;
-  --header-height: 100px;
+  --header-height: 140px;
 
   /* Shadows */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -608,6 +608,11 @@ select:focus-visible {
   border-radius: var(--radius-md);
   overflow: hidden;
   text-align: center;
+}
+
+.top-ad-wrapper {
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-lg);
 }
 
 .ad-slot--banner {

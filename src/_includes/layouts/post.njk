@@ -32,6 +32,13 @@ layout: layouts/base.njk
 }
 </script>
 
+<!-- Top Banner Ad -->
+<div class="container top-ad-wrapper">
+  {% set slotName = "topBanner" %}
+  {% set format = "banner" %}
+  {% include "components/ad-slot.njk" %}
+</div>
+
 <article class="container" itemscope itemtype="https://schema.org/NewsArticle">
   <header class="post-header">
     <div class="post-meta">

@@ -11,6 +11,13 @@ permalink: "blog/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber
 ---
 
 <div class="container">
+  <!-- Top Banner Ad -->
+  <div class="top-ad-wrapper">
+    {% set slotName = "topBanner" %}
+    {% set format = "banner" %}
+    {% include "components/ad-slot.njk" %}
+  </div>
+
   <header class="page-header">
     <h1 class="page-title">Blog</h1>
     <p class="page-subtitle">News, stories, and updates from your community</p>
