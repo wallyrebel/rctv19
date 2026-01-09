@@ -63,6 +63,13 @@ layout: layouts/base.njk
     {{ content | safe }}
   </div>
   
+  <!-- In-Feed Ad -->
+  <div class="in-feed-ad-wrapper">
+    {% set slotName = "inFeed" %}
+    {% set format = "rectangle" %}
+    {% include "components/ad-slot.njk" %}
+  </div>
+  
   {% include "components/share-links.njk" %}
   
   <!-- Related Posts -->

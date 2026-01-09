@@ -680,6 +680,22 @@ select:focus-visible {
   }
 }
 
+/* In-Feed Ad (within blog posts) */
+.in-feed-ad-wrapper {
+  margin: var(--space-xl) 0;
+  padding: var(--space-lg) 0;
+  border-top: 1px solid var(--gray-200);
+  border-bottom: 1px solid var(--gray-200);
+  display: flex;
+  justify-content: center;
+  background: var(--gray-50);
+  border-radius: var(--radius-md);
+}
+
+.in-feed-ad-wrapper .ad-slot {
+  margin: 0;
+}
+
 /* ========================================
    SINGLE POST
    ======================================== */
