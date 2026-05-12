@@ -20,5 +20,11 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.95.2",
+    "dotenv": "^17.4.2",
+    "rss-parser": "^3.13.0",
+    "slugify": "^1.6.9"
   }
 }
