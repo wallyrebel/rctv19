@@ -143,10 +143,19 @@ async function main() {
       const itemsToProcess = feed.items.slice(0, 3);
       
       for (const item of itemsToProcess) {
+        const pubDate = item.pubDate ? new Date(item.pubDate) : new Date();
+        const now = new Date();
+        const hoursDiff = (now.getTime() - pubDate.getTime()) / (1000 * 3600);
+        
         const guid = item.guid || item.id || item.link || crypto.createHash('md5').update(item.title).digest('hex');
         
         if (processedItems.includes(guid)) {
           console.log(`Skipping already processed item: ${item.title}`);
+          continue;
+        }
+
+        if (hoursDiff > 24) {
+          console.log(`Skipping item older than 24 hours (${Math.round(hoursDiff)}h old): ${item.title}`);
           continue;
         }
 
@@ -165,7 +174,6 @@ async function main() {
         }
 
         // Generate Markdown
-        const pubDate = item.pubDate ? new Date(item.pubDate) : new Date();
         const markdown = generateMarkdown(rewritten, localImgPath, pubDate);
         
         // Save File
