@@ -92,7 +92,7 @@ Original Content: ${item['content:encoded'] || item.content || item.description 
   `;
 
   const msg = await anthropic.messages.create({
-    model: "claude-3-haiku-20240307",
+    model: "claude-3-5-haiku-20241022",
     max_tokens: 1500,
     temperature: 0.7,
     system: "You are a professional journalist. Rewrite the provided RSS feed item into a comprehensive news article. Return the result strictly as a JSON object with three keys: 'title' (a catchy headline), 'excerpt' (a 1-2 sentence summary), and 'article' (the rewritten article formatted in Markdown). Do not wrap the JSON in markdown backticks, return only the raw JSON.",
