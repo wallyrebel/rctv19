@@ -92,7 +92,7 @@ Original Content: ${item['content:encoded'] || item.content || item.description 
   `;
 
   const msg = await anthropic.messages.create({
-    model: "claude-3-5-haiku-20241022",
+    model: "claude-haiku-4-5-20251001",
     max_tokens: 1500,
     temperature: 0.7,
     system: "You are a professional journalist. Rewrite the provided RSS feed item into a comprehensive news article. Return the result strictly as a JSON object with three keys: 'title' (a catchy headline), 'excerpt' (a 1-2 sentence summary), and 'article' (the rewritten article formatted in Markdown). Do not wrap the JSON in markdown backticks, return only the raw JSON.",
@@ -154,8 +154,8 @@ async function main() {
           continue;
         }
 
-        if (hoursDiff > 24) {
-          console.log(`Skipping item older than 24 hours (${Math.round(hoursDiff)}h old): ${item.title}`);
+        if (hoursDiff > 48) {
+          console.log(`Skipping item older than 48 hours (${Math.round(hoursDiff)}h old): ${item.title}`);
           continue;
         }
 
