@@ -1,6 +1,7 @@
 ---
 title: "Content Unavailable: Understanding Why Posts Disappear from Social Media"
 date: 2026-09-05
+permalink: /blog/2026-09-05-content-unavailable-understanding-why-posts-disapp/index.html
 excerpt: "Social media content frequently becomes inaccessible to users due to privacy settings, sharing restrictions, or deletion by the original poster. Understanding these common scenarios can help clarify why you're unable to view previously available content."
 ---
 

@@ -246,6 +246,23 @@ rctv19-website/
 
 3. Commit and push to deploy
 
+### Automated publishing safeguards
+
+RSS articles have explicit permalinks containing their publication date, headline slug,
+and SHA-256 identity derived from the feed URL and source item ID. Repeated headlines
+and headlines truncated to the same slug therefore have separate filenames and URLs.
+Existing published URLs are preserved; the two conflicting later articles have explicit
+date-prefixed URLs. Do not remove those permalink overrides.
+
+The RSS workflow runs `npm test` and a complete `npm run build` before committing
+generated content. Writes refuse to overwrite existing articles, and processing errors
+fail the workflow. A separate validation workflow also checks pushes and pull requests.
+For manually added posts with repeated slugs, set a unique explicit `permalink`.
+
+Run `npm test` to verify repeated-headline pages build separately and existing articles
+cannot be overwritten. Cloudflare's deployment status must still be checked: a successful
+RSS workflow means the content was validated and saved, not that hosting has deployed it.
+
 ### Adding Images
 
 1. Place images in `src/assets/img/posts/`

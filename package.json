@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "RCTV19 - Ripley Community Television website",
   "scripts": {
+    "test": "node --test",
     "dev": "eleventy --serve",
     "build": "eleventy",
     "serve": "eleventy --serve",

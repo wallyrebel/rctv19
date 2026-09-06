@@ -4,6 +4,7 @@ const slugify = require('slugify');
 const fs = require('fs').promises;
 const path = require('path');
 const crypto = require('crypto');
+const { postOutput, generateMarkdown, writeNewPost } = require('./post-output');
 require('dotenv').config();
 
 const parser = new Parser({
@@ -116,23 +117,10 @@ Original Content: ${item['content:encoded'] || item.content || item.description 
   }
 }
 
-function generateMarkdown(rewritten, localImgPath, date) {
-  const formattedDate = date.toISOString().split('T')[0];
-  let frontmatter = `---
-title: "${rewritten.title.replace(/"/g, '\\"')}"
-date: ${formattedDate}
-excerpt: "${rewritten.excerpt.replace(/"/g, '\\"')}"
-`;
-  if (localImgPath) {
-    frontmatter += `featuredImage: ${localImgPath}\n`;
-  }
-  frontmatter += `---\n\n${rewritten.article}\n`;
-  return frontmatter;
-}
-
 async function main() {
   const processedItems = await getProcessedItems();
   let hasNewItems = false;
+  let hadErrors = false;
 
   for (const feedUrl of FEEDS) {
     try {
@@ -174,15 +162,14 @@ async function main() {
         }
 
         // Generate Markdown
-        const markdown = generateMarkdown(rewritten, localImgPath, pubDate);
+        const output = postOutput(rewritten.title, pubDate, feedUrl, guid);
+        const markdown = generateMarkdown(rewritten, localImgPath, pubDate, output.permalink);
         
         // Save File
-        const fileNameDate = pubDate.toISOString().split('T')[0];
-        const fileName = `${fileNameDate}-${itemSlug}.md`;
-        const filePath = path.join(BLOG_DIR, fileName);
+        const filePath = path.join(BLOG_DIR, output.fileName);
         
         await fs.mkdir(BLOG_DIR, { recursive: true });
-        await fs.writeFile(filePath, markdown);
+        await writeNewPost(filePath, markdown);
         console.log(`Created post: ${filePath}`);
         
         // Mark as processed
@@ -190,6 +177,7 @@ async function main() {
         hasNewItems = true;
       }
     } catch (error) {
+      hadErrors = true;
       console.error(`Error processing feed ${feedUrl}:`, error);
     }
   }
@@ -200,6 +188,10 @@ async function main() {
   } else {
     console.log('No new items found.');
   }
+  if (hadErrors) throw new Error('RSS processing failed; refusing to publish this batch.');
 }
 
-main().catch(console.error);
+main().catch(error => {
+  console.error(error);
+  process.exitCode = 1;
+});

@@ -1,6 +1,7 @@
 ---
 title: "Tippah County Volleyball Teams Take Center Stage in Competitive Tuesday Night Matchups"
 date: 2026-08-11
+permalink: /blog/2026-08-11-tippah-county-volleyball-teams-take-center-stage-i/index.html
 excerpt: "Local volleyball teams are set to compete in exciting matches across Tippah County on Tuesday evening, August 11, 2026. Fans are encouraged to come out and support their athletes as rivals face off on the courts."
 featuredImage: /assets/img/posts/tippah-county-volleyball-teams-take-center-stage-i-1786454783266.jpg
 ---
