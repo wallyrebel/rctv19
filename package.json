@@ -4,8 +4,8 @@
   "description": "RCTV19 - Ripley Community Television website",
   "scripts": {
     "test": "node --test",
-    "dev": "npm run build && eleventy --serve",
-    "build": "eleventy && node scripts/optimize-images.js && node scripts/validate-site.js",
+    "dev": "eleventy --serve",
+    "build": "eleventy",
     "serve": "npm run dev",
     "debug": "DEBUG=Eleventy* eleventy"
   },

@@ -37,8 +37,10 @@ layout: layouts/base.njk
   <div class="post-featured-image">
     <img 
       src="{{ featuredImage | optimizedImage(960) }}"
+      {% if (featuredImage | optimizedImage(480)) != featuredImage %}
       srcset="{{ featuredImage | optimizedImage(480) }} 480w, {{ featuredImage | optimizedImage(960) }} 960w"
       sizes="(max-width: 960px) 100vw, 900px"
+      {% endif %}
       alt="{{ title }}"
       loading="eager"
       fetchpriority="high"

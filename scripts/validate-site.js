@@ -1,7 +1,8 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
-const root = path.resolve('_site');
+function validateSite(outputDir = '_site') {
+const root = path.resolve(outputDir);
 const ads = require('../src/_data/ads.json');
 const files = fs.readdirSync(root, { recursive: true }).filter(f => f.endsWith('.html') && !f.startsWith('admin'));
 const errors = [];
@@ -26,6 +27,12 @@ for (const file of files) {
       if(fs.existsSync(target) && fs.statSync(target).isDirectory()) target=path.join(target,'index.html');
       assert.ok(fs.existsSync(target),`Missing internal resource: ${url}`);
     }
+    for (const match of html.matchAll(/srcset="([^"]+)"/g)) {
+      for (const candidate of match[1].split(',')) {
+        const url = candidate.trim().split(/\s+/)[0];
+        if (url.startsWith('/')) assert.ok(fs.existsSync(path.join(root, decodeURIComponent(url))), `Missing responsive image: ${url}`);
+      }
+    }
     if (!ads.adsenseEnabled) assert.doesNotMatch(html, /<script[^>]+pagead2\.googlesyndication/,'Ad serving is disabled');
   } catch(e) { errors.push(`${file}: ${e.message}`); }
 }
@@ -36,5 +43,8 @@ const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 const urls=[...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>m[1]);
 assert.equal(new Set(urls).size,urls.length,'Sitemap URLs must be unique');
 assert.ok(urls.includes('https://rctv19.com/blog/page/2/'),'Paginated archives in sitemap');
-if(errors.length) { console.error(errors.join('\n')); process.exitCode=1; }
+if(errors.length) { throw new Error(errors.join('\n')); }
 else console.log(`Validated ${files.length} HTML pages, ${articles} article schemas, internal resources, sitemap and ad safeguards.`);
+}
+module.exports = { validateSite };
+if (require.main === module) validateSite(process.argv[2]);

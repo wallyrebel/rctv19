@@ -343,4 +343,4 @@ MIT License - See LICENSE file for details.
 
 The current setup supersedes the original advertising instructions above. Follow [the audit and activation guide](docs/adsense-readiness.md). AdSense account verification and ads.txt are configured; Google ad serving is disabled until consent, approval, and page eligibility are ready. The original global Analytics tag has also been removed pending consent-aware setup. Local sponsor ads continue to display.
 
-Use Node 22 or 24. Always deploy with `npm run build`, which builds Eleventy, generates optimized images, and validates the output. `npm run dev` performs that build before starting the preview server. Run a full build again after adding or replacing images during development. Existing article permalinks remain unchanged.
+Use Node 22 or 24. `npm run build` builds Eleventy, generates optimized images, and validates the output. Image generation and validation run inside Eleventy's awaited after-build hook, so direct `eleventy` commands and `npm run dev` also include the required images. Existing article permalinks remain unchanged.

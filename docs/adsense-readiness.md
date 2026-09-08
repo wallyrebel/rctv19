@@ -34,6 +34,6 @@ The owner confirmed that the automated sources and RCTV19 share a parent company
 
 ## Validation
 
-Run `npm ci`, `npm test`, and `npm run build`. The production build generates image variants and validates every output page for local resources, H1, unique title, description, canonical and parseable JSON-LD. It also checks ads.txt, sitemap uniqueness, paginated archive inclusion and the error-page noindex setting. The build must finish before deployment; `eleventy` alone does not generate optimized images.
+Run `npm ci`, `npm test`, and `npm run build`. Eleventy's awaited after-build hook generates image variants and validates every output page for local resources (including responsive image candidates), H1, unique title, description, canonical and parseable JSON-LD. It also checks ads.txt, sitemap uniqueness, paginated archive inclusion and the error-page noindex setting. Direct `eleventy` builds and development rebuilds run the same hook; image generation cannot be skipped by bypassing npm scripts. A regression test builds into a fresh output directory and decodes the homepage's optimized images, including sponsor ads.
 
 The audit does not establish advertising approval, account eligibility, video rights, every historical article's factual accuracy, or measured Google field performance. Live deployment status and response codes must be verified after merge.

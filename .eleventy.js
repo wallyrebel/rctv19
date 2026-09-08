@@ -1,7 +1,15 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const { optimizedImage } = require('./scripts/image-assets');
+const { optimizeImages } = require('./scripts/optimize-images');
+const { validateSite } = require('./scripts/validate-site');
 
 module.exports = function (eleventyConfig) {
+  // Run for direct Eleventy builds too, including Cloudflare's existing command.
+  eleventyConfig.on('eleventy.after', async ({ directories, outputMode }) => {
+    if (outputMode !== 'fs') return;
+    await optimizeImages(directories.output);
+    validateSite(directories.output);
+  });
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
 
