@@ -3,10 +3,10 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs/promises');
 const os = require('node:os');
 const path = require('node:path');
-const Eleventy = require('@11ty/eleventy');
 const { postOutput, generateMarkdown, writeNewPost } = require('../scripts/post-output');
 
 test('repeated and truncated headlines build to distinct pages', async t => {
+  const { default: Eleventy } = await import('@11ty/eleventy');
   const root = await fs.mkdtemp(path.join(process.cwd(), 'rctv-posts-'));
   t.after(() => fs.rm(root, { recursive: true, force: true }));
   const input = path.join(root, 'input');

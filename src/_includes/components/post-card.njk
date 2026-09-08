@@ -11,9 +11,11 @@
   <div class="post-card-image">
     {% if postData.featuredImage %}
     <img 
-      src="{{ postData.featuredImage }}" 
+      src="{{ postData.featuredImage | optimizedImage(480) }}"
+      srcset="{{ postData.featuredImage | optimizedImage(480) }} 480w, {{ postData.featuredImage | optimizedImage(960) }} 960w"
+      sizes="(max-width: 600px) 100vw, 400px"
       alt="{{ postData.title }}"
-      loading="lazy"
+      loading="{% if page.url == '/' and loop.first and not listStyle %}eager{% else %}lazy{% endif %}"
       width="400"
       height="225"
     >

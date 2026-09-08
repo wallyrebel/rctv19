@@ -10,5 +10,3 @@ Sitemap: https://rctv19.com/sitemap.xml
 # Disallow admin area from indexing
 Disallow: /admin/
 
-# Crawl-delay (optional, be nice to servers)
-Crawl-delay: 1

@@ -6,7 +6,7 @@
 #}
 {% set adData = ads[slotName] %}
 
-{% if adData and adData.enabled %}
+{% if adData and adData.enabled and (adData.type == 'sponsor' or (adData.type == 'adsense' and ads.adsenseEnabled and adsEligible and not noindex and (ads.adsensePublisherId | validPublisher) and (adData.slot | validSlot))) %}
 {# Fix URL if missing protocol #}
 {% set adLink = adData.link or '' %}
 {% if adLink | length > 0 %}
@@ -27,7 +27,7 @@
     {# Local Sponsor Ad #}
     <a href="{{ adLink }}" target="_blank" rel="noopener sponsored" aria-label="{{ adData.alt }}">
       <img 
-        src="{{ adData.image }}" 
+        src="{{ adData.image | optimizedImage(960) }}"
         alt="{{ adData.alt }}"
         loading="lazy"
         {% if format == 'banner' %}
@@ -40,31 +40,8 @@
       >
     </a>
   {% elif adData.type == 'adsense' %}
-    {# AdSense Placeholder #}
-    <div class="ad-slot-placeholder">
-      <!-- 
-        Google AdSense Ad Slot
-        
-        To activate this ad:
-        1. Replace ca-pub-XXXXXXXXXXXXXXXX in ads.json with your Publisher ID
-        2. Replace {{ adData.slot }} with your actual Ad Slot ID
-        3. Uncomment the script below
-        
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ ads.adsensePublisherId }}"
-          crossorigin="anonymous"></script>
-        <ins class="adsbygoogle"
-          style="display:block"
-          data-ad-client="{{ ads.adsensePublisherId }}"
-          data-ad-slot="{{ adData.slot }}"
-          data-ad-format="{{ adData.format }}"
-          data-full-width-responsive="true"></ins>
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      -->
-      <p>Ad Space</p>
-      <p style="font-size: 0.75rem; color: #9ca3af;">{{ adData.width or 300 }}x{{ adData.height or 250 }}</p>
-    </div>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="{{ ads.adsensePublisherId }}" data-ad-slot="{{ adData.slot }}" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   {% endif %}
 </aside>
 {% endif %}

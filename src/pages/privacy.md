@@ -1,94 +1,47 @@
 ---
 title: Privacy Policy
-description: Privacy Policy for RCTV19.com - Learn how we collect, use, and protect your information.
+description: How RCTV19 handles contact information, hosting data, cookies, advertising and links to other services.
 layout: layouts/page.njk
 permalink: /privacy/
 ---
-_Last Updated: January 1, 2026_
+_Last updated: September 8, 2026_
 
-## Introduction
+RCTV19 operates rctv19.com. This notice explains information used when you visit the site or contact the station.
 
-RCTV19 ("we," "our," or "us") respects your privacy and is committed to protecting your personal data. This privacy policy explains how we collect, use, and safeguard your information when you visit our website rctv19.com.
+## Information you provide
 
-## Information We Collect
+When you email or call with a news tip, correction, advertising inquiry or other question, we receive the contact information and message you provide. We use it to respond and handle your request. Please avoid including sensitive personal information that is not needed for your inquiry.
 
-### Information You Provide
+## Hosting and technical information
 
-We may collect information you voluntarily provide, including:
+The site is hosted on Cloudflare Pages. Hosting and network services may process IP addresses, request details, browser information and security logs to deliver pages, maintain reliability and prevent abuse. See [Cloudflare's privacy policy](https://www.cloudflare.com/privacypolicy/).
 
-- Name and email address when you subscribe to our newsletter
-- Contact information when you submit news tips or inquiries
-- Comments or feedback you provide
+## Cookies, analytics and advertising
 
-### Automatically Collected Information
+The site displays local sponsor images and links. Clicking a sponsor link takes you to another website, which has its own privacy practices.
 
-When you visit our website, we may automatically collect:
+Google Analytics tracking and Google AdSense ad serving are currently disabled. Advertising is currently limited to local sponsorship placements.
 
-- IP address and browser type
-- Device information and operating system
-- Pages visited and time spent on site
-- Referring website information
+If Google advertising is enabled, Google and other third-party vendors may use cookies, web beacons, IP addresses or similar identifiers to collect information and serve ads based on visits to this site and other sites or apps. Google's advertising cookies allow Google and its partners to serve personalized ads based on those visits. Read [how Google uses information from sites and apps that use its services](https://policies.google.com/technologies/partner-sites) and [Google's privacy policy](https://policies.google.com/privacy).
 
-## How We Use Your Information
+You can manage Google ad personalization in [My Ad Center](https://myadcenter.google.com/) and learn about other participating vendors' choices at [AboutAds](https://www.aboutads.info/choices/). Browser settings can limit or delete cookies. These controls do not replace any consent choices required before advertising technologies are used. Where required, a consent message must be available before those technologies are activated, including options to refuse or change choices.
 
-We use the information we collect to:
+## Streaming, social media and external links
 
-- Provide and improve our website and services
-- Respond to your inquiries and requests
-- Send newsletters and updates (if you've subscribed)
-- Analyze website traffic and usage patterns
-- Comply with legal obligations
+The Watch Live links open FrontLayer's player. Social and sharing links open their respective services. These services may process technical information and use cookies when you visit them. Their own privacy notices apply.
 
-## Cookies and Tracking
+## Requests and retention
 
-Our website may use cookies and similar technologies to:
+Contact us to ask about information you have provided, request a correction or deletion, or raise a privacy concern. Depending on where you live, additional access, deletion, correction or opt-out rights may apply. Information may need to be retained to address an inquiry, keep business records or meet applicable obligations.
 
-- Remember your preferences
-- Analyze website traffic
-- Deliver relevant advertisements
+## Children's information
 
-You can control cookies through your browser settings. Note that disabling cookies may affect website functionality.
+We do not knowingly solicit personal information from children under 13 through this website. If you believe a child has supplied personal information to us, contact the station so we can review the request.
 
-## Third-Party Services
+## Contact and updates
 
-We may use third-party services that collect information, including:
+- Email: [rctv19@gmail.com](mailto:rctv19@gmail.com)
+- Phone: [(662) 837-9088](tel:+16628379088)
+- Address: RCTV19, 112 Jefferson St, Ripley, MS 38663
 
-- **Google Analytics** - For website analytics
-- **Google AdSense** - For advertising (if enabled)
-- **Social Media Widgets** - For content sharing
-
-These services have their own privacy policies governing data use.
-
-## Data Security
-
-We implement reasonable security measures to protect your information. However, no internet transmission is completely secure, and we cannot guarantee absolute security.
-
-## Children's Privacy
-
-Our website is not intended for children under 13. We do not knowingly collect information from children under 13. If you believe we have collected such information, please contact us.
-
-## Your Rights
-
-You may have rights regarding your personal information, including:
-
-- Accessing your data
-- Correcting inaccurate data
-- Requesting deletion of your data
-- Opting out of marketing communications
-
-To exercise these rights, contact us at privacy@rctv19.com.
-
-## Changes to This Policy
-
-We may update this privacy policy periodically. We will post any changes on this page and update the "Last Updated" date.
-
-## Contact Us
-
-For questions about this privacy policy:
-
-- **Email**: rctv19@gmail.com
-- **Mail**: RCTV19, 112 Jeffeson St, Ripley, MS 38663
-
----
-
-_By using our website, you agree to this privacy policy._
+We will update this notice when our practices change and revise the date above.

@@ -4,30 +4,15 @@ layout: layouts/base.njk
 <!-- NewsArticle Structured Data for SEO -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "NewsArticle",
-  "headline": "{{ title }}",
-  "description": "{{ excerpt or (content | excerpt) }}",
-  "image": "{{ site.url }}{{ featuredImage or '/assets/img/rctv19-logo.jpg' }}",
-  "datePublished": "{{ date | dateISO }}",
-  "dateModified": "{{ date | dateISO }}",
-  "author": {
-    "@type": "Organization",
-    "name": "{{ site.title }}",
-    "url": "{{ site.url }}"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "{{ site.title }}",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "{{ site.url }}/assets/img/rctv19-logo.jpg"
-    }
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{ site.url }}{{ page.url }}"
-  },
+  "@context": "https://schema.org", "@type": "NewsArticle",
+  "headline": {{ title | jsonLd | safe }},
+  "description": {{ (excerpt or (content | excerpt)) | jsonLd | safe }},
+  "image": {{ (site.url + (featuredImage or '/assets/img/rctv19-logo.jpg')) | jsonLd | safe }},
+  "datePublished": {{ (date | dateISO) | jsonLd | safe }},
+  "dateModified": {{ ((updated or date) | dateISO) | jsonLd | safe }},
+  "author": {"@type": "Organization", "name": {{ site.author | jsonLd | safe }}, "url": {{ (site.url + '/about/') | jsonLd | safe }}},
+  "publisher": {"@type": "Organization", "name": {{ site.title | jsonLd | safe }}, "logo": {"@type": "ImageObject", "url": {{ (site.url + '/assets/img/rctv19-logo.jpg') | jsonLd | safe }}}},
+  "mainEntityOfPage": {"@type": "WebPage", "@id": {{ (site.url + page.url) | jsonLd | safe }}},
   "isAccessibleForFree": true
 }
 </script>
@@ -44,15 +29,19 @@ layout: layouts/base.njk
     <div class="post-meta">
       <time datetime="{{ date | dateISO }}" itemprop="datePublished">{{ date | dateDisplay }}</time>
     </div>
+    <p>By <a href="/about/">{{ site.author }}</a></p>
     <h1 class="post-title" itemprop="headline">{{ title }}</h1>
   </header>
   
   {% if featuredImage %}
   <div class="post-featured-image">
     <img 
-      src="{{ featuredImage }}" 
+      src="{{ featuredImage | optimizedImage(960) }}"
+      srcset="{{ featuredImage | optimizedImage(480) }} 480w, {{ featuredImage | optimizedImage(960) }} 960w"
+      sizes="(max-width: 960px) 100vw, 900px"
       alt="{{ title }}"
-      loading="lazy"
+      loading="eager"
+      fetchpriority="high"
       width="900"
       height="506"
     >
@@ -60,9 +49,11 @@ layout: layouts/base.njk
   {% endif %}
   
   <div class="post-content">
-    {{ content | safe }}
+    {{ content | articleBody | safe }}
   </div>
   
+  {% if sourceUrl %}<p class="post-content">Source: <a href="{{ sourceUrl }}" rel="noopener">{{ sourceName or 'Original report' }}</a>{% if aiAssisted %}. Prepared with AI assistance.{% endif %}</p>{% endif %}
+  <p class="post-content"><a href="/editorial/">Our editorial standards</a> · <a href="mailto:rctv19@gmail.com?subject=Article%20correction">Report a correction</a></p>
   <!-- In-Feed Ad -->
   <div class="in-feed-ad-wrapper">
     {% set slotName = "inFeed" %}

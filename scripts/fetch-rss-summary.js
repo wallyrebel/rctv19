@@ -161,6 +161,10 @@ async function main() {
           continue;
         }
         
+        if (![rewritten.title, rewritten.excerpt, rewritten.article].every(value => typeof value === 'string' && value.trim())) {
+          throw new Error('Generated article is missing a title, excerpt, or body');
+        }
+        if (!item.link) throw new Error('Source article URL is required');
         // Image handling
         let localImgPath = null;
         const imgUrl = extractImageUrl(item);
@@ -172,7 +176,7 @@ async function main() {
 
         // Generate Markdown
         const output = postOutput(rewritten.title, pubDate, feedUrl, guid);
-        const markdown = generateMarkdown(rewritten, localImgPath, pubDate, output.permalink);
+        const markdown = generateMarkdown(rewritten, localImgPath, pubDate, output.permalink, { url: item.link, name: feed.title });
         
         // Save File
         const filePath = path.join(BLOG_DIR, output.fileName);

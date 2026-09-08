@@ -4,9 +4,9 @@
   "description": "RCTV19 - Ripley Community Television website",
   "scripts": {
     "test": "node --test",
-    "dev": "eleventy --serve",
-    "build": "eleventy",
-    "serve": "eleventy --serve",
+    "dev": "npm run build && eleventy --serve",
+    "build": "eleventy && node scripts/optimize-images.js && node scripts/validate-site.js",
+    "serve": "npm run dev",
     "debug": "DEBUG=Eleventy* eleventy"
   },
   "keywords": [
@@ -19,8 +19,9 @@
   "author": "RCTV19",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "@11ty/eleventy-plugin-rss": "^1.2.0"
+    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "sharp": "^0.35.4"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.95.2",

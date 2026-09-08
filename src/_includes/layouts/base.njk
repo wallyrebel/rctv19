@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q2R3SL5N1Z"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Q2R3SL5N1Z');
-</script>
-<!-- Google AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3245500092050206"
-     crossorigin="anonymous"></script>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
+  {# Verification is separate from ad serving; configure the CMP before enabling ads. #}
+  {% if ads.adsensePublisherId | validPublisher %}
+  <meta name="google-adsense-account" content="{{ ads.adsensePublisherId }}">
+  {% endif %}
+  {% if ads.adsenseEnabled and adsEligible and not noindex and (ads.adsensePublisherId | validPublisher) %}
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ ads.adsensePublisherId }}" crossorigin="anonymous"></script>
+  {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="google-site-verification" content="OtgNopRtAndg_iiDcxpnWoSaCMtW6rdO0U01BnAIYEw" />
   
-  <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ description or site.description }}">
+  <title>{% if title %}{{ title }}{% if pagination.pageNumber > 0 %} — Page {{ pagination.pageNumber + 1 }}{% endif %} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ description or excerpt or site.description }}">
   
+  {% if noindex %}<meta name="robots" content="noindex, follow">{% endif %}
   <!-- Canonical URL -->
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   
   <!-- Open Graph -->
-  <meta property="og:type" content="{% if layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:type" content="{% if isArticle %}article{% else %}website{% endif %}">
   <meta property="og:title" content="{{ title or site.title }}">
-  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:description" content="{{ description or excerpt or site.description }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:site_name" content="{{ site.title }}">
   {% if featuredImage %}
@@ -39,7 +35,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ title or site.title }}">
-  <meta name="twitter:description" content="{{ description or site.description }}">
+  <meta name="twitter:description" content="{{ description or excerpt or site.description }}">
   {% if featuredImage %}
   <meta name="twitter:image" content="{{ site.url }}{{ featuredImage }}">
   {% endif %}
@@ -58,19 +54,19 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "{{ site.title }}",
+    "name": {{ site.title | jsonLd | safe }},
     "alternateName": "RCTV19",
-    "url": "{{ site.url }}",
-    "logo": "{{ site.url }}/assets/img/rctv19-logo.jpg",
-    "description": "{{ site.description }}",
+    "url": {{ site.url | jsonLd | safe }},
+    "logo": {{ (site.url + "/assets/img/rctv19-logo.jpg") | jsonLd | safe }},
+    "description": {{ site.description | jsonLd | safe }},
     "sameAs": [
-      "{{ site.social.facebook }}",
-      "{{ site.social.twitter }}"
+      {{ site.social.facebook | jsonLd | safe }},
+      {{ site.social.twitter | jsonLd | safe }}
     ],
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "customer service",
-      "url": "{{ site.url }}/contact/"
+      "url": {{ (site.url + "/contact/") | jsonLd | safe }}
     }
   }
   </script>
@@ -80,14 +76,14 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "{{ site.title }}",
-    "url": "{{ site.url }}",
+    "name": {{ site.title | jsonLd | safe }},
+    "url": {{ site.url | jsonLd | safe }},
     "publisher": {
       "@type": "Organization",
-      "name": "{{ site.title }}",
+      "name": {{ site.title | jsonLd | safe }},
       "logo": {
         "@type": "ImageObject",
-        "url": "{{ site.url }}/assets/img/rctv19-logo.jpg"
+        "url": {{ (site.url + "/assets/img/rctv19-logo.jpg") | jsonLd | safe }}
       }
     }
   }
@@ -103,14 +99,14 @@
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "{{ site.url }}"
+        "item": {{ site.url | jsonLd | safe }}
       }
       {% if page.url != "/" %},
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "{{ title }}",
-        "item": "{{ site.url }}{{ page.url }}"
+        "name": {{ title | jsonLd | safe }},
+        "item": {{ (site.url + page.url) | jsonLd | safe }}
       }
       {% endif %}
     ]

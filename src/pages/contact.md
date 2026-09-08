@@ -12,13 +12,13 @@ We'd love to hear from you! Whether you have a news tip, advertising inquiry, or
   <div class="contact-card">
     <div class="contact-card-icon">📧</div>
     <div class="contact-card-title">Email</div>
-    <div class="contact-card-value">rctv19@gmail.com</div>
+    <div class="contact-card-value"><a href="mailto:rctv19@gmail.com">rctv19@gmail.com</a></div>
   </div>
 
   <div class="contact-card">
     <div class="contact-card-icon">📞</div>
     <div class="contact-card-title">Phone</div>
-    <div class="contact-card-value">(662) 837-9088</div>
+    <div class="contact-card-value"><a href="tel:+16628379088">(662) 837-9088</a></div>
   </div>
 
   <div class="contact-card">

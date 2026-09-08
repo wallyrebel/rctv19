@@ -1,4 +1,5 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const { optimizedImage } = require('./scripts/image-assets');
 
 module.exports = function (eleventyConfig) {
   // Plugins
@@ -9,6 +10,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "public/admin": "admin" });
   eleventyConfig.addPassthroughCopy({ "src/robots.txt": "robots.txt" });
 
+  eleventyConfig.addPassthroughCopy({ "src/_headers": "_headers" });
+  eleventyConfig.addFilter("jsonLd", value => JSON.stringify(value ?? "").replace(/</g, "\\u003c"));
+  eleventyConfig.addFilter("validPublisher", value => /^ca-pub-\d{16}$/.test(value || ""));
+  eleventyConfig.addFilter("validSlot", value => /^\d+$/.test(value || ""));
   // Collections
   eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/blog/*.md").sort((a, b) => {
@@ -23,13 +28,17 @@ module.exports = function (eleventyConfig) {
   });
 
   // Filters
+  eleventyConfig.addFilter("optimizedImage", optimizedImage);
+  eleventyConfig.addFilter("articleBody", content => String(content || "")
+    .replace(/^\s*<h1\b[^>]*>[\s\S]*?<\/h1>\s*/i, "")
+    .replace(/<(\/?)h1\b/gi, "<$1h2"));
   eleventyConfig.addFilter("dateDisplay", function (date) {
     if (!date) return "";
     const d = new Date(date);
     return d.toLocaleDateString("en-US", {
       year: "numeric",
       month: "long",
-      day: "numeric"
+      day: "numeric", timeZone: "UTC"
     });
   });
 

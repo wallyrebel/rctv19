@@ -14,6 +14,7 @@
         menuToggle.addEventListener('click', function () {
             const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
             menuToggle.setAttribute('aria-expanded', !isExpanded);
+            mobileNav.hidden = isExpanded;
             mobileNav.classList.toggle('is-open');
 
             // Prevent body scroll when menu is open
@@ -25,6 +26,7 @@
             link.addEventListener('click', function () {
                 menuToggle.setAttribute('aria-expanded', 'false');
                 mobileNav.classList.remove('is-open');
+                mobileNav.hidden = true;
                 document.body.style.overflow = '';
             });
         });
@@ -34,6 +36,7 @@
             if (e.key === 'Escape' && mobileNav.classList.contains('is-open')) {
                 menuToggle.setAttribute('aria-expanded', 'false');
                 mobileNav.classList.remove('is-open');
+                mobileNav.hidden = true;
                 document.body.style.overflow = '';
                 menuToggle.focus();
             }
