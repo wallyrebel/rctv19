@@ -19,6 +19,26 @@ collections:
       - { label: "Featured Image", name: "featuredImage", widget: "image", required: false }
       - { label: "Body", name: "body", widget: "markdown", required: true }
 
+  - name: obituaries
+    label: Obituaries
+    folder: src/obituaries
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    description: >-
+      Paste the obituary exactly as the funeral home wrote it. Do not reword it,
+      shorten it, or fix its punctuation: names, dates, survivors and service
+      times must match the funeral home's version exactly.
+    fields:
+      - { label: "Full name", name: "title", widget: "string", required: true, hint: "As the funeral home wrote it, e.g. Mrs. Mary Ellen McMillin" }
+      - { label: "Date published", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, required: true }
+      - { label: "Funeral home", name: "funeralHome", widget: "select", required: true, options: ["McBride Funeral Home", "Ripley Funeral and Cremation Services", "Foster & Son Funeral Home"] }
+      - { label: "Link to the funeral home's notice", name: "sourceUrl", widget: "string", required: false, hint: "Readers use this for current service times" }
+      - { label: "Date of birth", name: "birthDate", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, required: false }
+      - { label: "Date of death", name: "deathDate", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, required: false }
+      - { label: "Photograph", name: "featuredImage", widget: "image", required: false }
+      - { label: "Summary for listings", name: "excerpt", widget: "text", required: false }
+      - { label: "Obituary (verbatim)", name: "body", widget: "markdown", required: true }
+
   - name: pages
     label: Site Pages
     files:

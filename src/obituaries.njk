@@ -1,0 +1,28 @@
+---
+title: Obituaries
+description: Obituaries from funeral homes serving Ripley and Tippah County, Mississippi, published with permission.
+permalink: /obituaries/index.html
+eleventyExcludeFromCollections: true
+layout: layouts/page.njk
+---
+<p>Obituaries from the funeral homes serving Ripley and Tippah County, published with their permission and left exactly as the funeral home wrote them. Arrangements, visitation and service times are maintained by the funeral home; follow the link on each notice for the most current details.</p>
+
+{% if collections.obituaries and collections.obituaries.length %}
+<ul class="obituary-list">
+  {% for obit in collections.obituaries %}
+  <li>
+    <a href="{{ obit.url }}">{{ obit.data.title }}</a>
+    <span class="obituary-meta">{{ obit.data.funeralHome }} · {{ obit.date | dateDisplay }}</span>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No obituaries have been published yet. To submit one, email <a href="mailto:rctv19@gmail.com?subject=Obituary">rctv19@gmail.com</a> or call <a href="tel:+16628379088">(662) 837-9088</a>.</p>
+{% endif %}
+
+<h2>Funeral homes we publish</h2>
+<ul>
+  <li><a href="https://www.mcbridefuneralhome.com/obituaries/" rel="noopener">McBride Funeral Home</a>, Ripley</li>
+  <li><a href="https://www.ripleyfuneralhome.com/listings" rel="noopener">Ripley Funeral and Cremation Services</a>, Ripley</li>
+  <li><a href="https://www.fosterandsonfuneralhome.com/listings" rel="noopener">Foster &amp; Son Funeral Home</a>, Ripley</li>
+</ul>

@@ -23,6 +23,10 @@
             "highlight": true
         },
         {
+            "label": "Obituaries",
+            "url": "/obituaries/"
+        },
+        {
             "label": "About",
             "url": "/about/"
         },
