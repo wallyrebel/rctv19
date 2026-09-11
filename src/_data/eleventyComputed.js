@@ -20,6 +20,10 @@ module.exports = {
   adsEligible: data => {
     if (data.noAds || data.noindex) return false;
     if (AD_FREE_PATHS.has(data.page && data.page.url)) return false;
+    // An obituary is licensed service content rather than an aggregated brief,
+    // so it is not held to the article length bar. The obituary layout still
+    // keeps advertising out of the notice itself.
+    if (data.isObituary) return true;
     if (!data.isArticle) return true;
     return data.wordCount >= MIN_AD_WORDS;
   }

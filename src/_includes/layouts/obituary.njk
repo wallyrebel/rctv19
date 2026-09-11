@@ -1,0 +1,65 @@
+---
+layout: layouts/base.njk
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org", "@type": "NewsArticle",
+  "headline": {{ ("Obituary: " + title) | jsonLd | safe }},
+  "description": {{ (excerpt or (content | excerpt)) | jsonLd | safe }},
+  "datePublished": {{ (date | dateISO) | jsonLd | safe }},
+  "dateModified": {{ ((updated or date) | dateISO) | jsonLd | safe }},
+  "author": {"@type": "Organization", "name": {{ funeralHome | jsonLd | safe }}},
+  "publisher": {"@type": "Organization", "name": {{ site.title | jsonLd | safe }}, "logo": {"@type": "ImageObject", "url": {{ (site.url + '/assets/img/rctv19-logo.jpg') | jsonLd | safe }}}},
+  "mainEntityOfPage": {"@type": "WebPage", "@id": {{ (site.url + page.url) | jsonLd | safe }}},
+  "isAccessibleForFree": true
+}
+</script>
+
+<div class="container top-ad-wrapper">
+  {% set slotName = "topBanner" %}
+  {% set format = "banner" %}
+  {% include "components/ad-slot.njk" %}
+</div>
+
+<article class="container obituary">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="{{ date | dateISO }}">{{ date | dateDisplay }}</time>
+    </div>
+    <h1 class="post-title">{{ title }}</h1>
+    {% if birthDate or deathDate %}
+    <p class="obituary-dates">{% if birthDate %}{{ birthDate | dateDisplay }}{% endif %}{% if birthDate and deathDate %} – {% endif %}{% if deathDate %}{{ deathDate | dateDisplay }}{% endif %}</p>
+    {% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content | articleBody | safe }}
+  </div>
+
+  {# Published with the funeral home's permission and left exactly as they wrote it. #}
+  <p class="post-content post-provenance">
+    Obituary provided by {% if sourceUrl %}<a href="{{ sourceUrl }}" rel="noopener">{{ funeralHome }}</a>{% else %}{{ funeralHome }}{% endif %} and published with permission.
+    Arrangements, visitation and service times are maintained by the funeral home.
+    To report an error, see <a href="/editorial/">our corrections policy</a>.
+  </p>
+
+  {# No advertisement is placed inside an obituary. #}
+
+  {% include "components/share-links.njk" %}
+
+  {% set recent = collections.obituaries | limit(4) %}
+  {% if recent.length > 1 %}
+  <section class="related-posts">
+    <div class="section-header">
+      <h2 class="section-title">Recent Obituaries</h2>
+    </div>
+    <ul class="obituary-list">
+      {% for obit in recent %}
+        {% if obit.url != page.url %}
+        <li><a href="{{ obit.url }}">{{ obit.data.title }}</a> <span class="obituary-meta">{{ obit.data.funeralHome }} · {{ obit.date | dateDisplay }}</span></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+</article>

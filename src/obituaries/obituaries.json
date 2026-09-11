@@ -1,0 +1,6 @@
+{
+  "layout": "layouts/obituary.njk",
+  "tags": "obituaries",
+  "permalink": "obituaries/{{ page.fileSlug }}/index.html",
+  "isObituary": true
+}

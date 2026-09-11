@@ -1194,3 +1194,36 @@ select:focus-visible {
 .home-intro { padding: 1.5rem 0; }
 .home-intro h1 { font-size: clamp(1.5rem, 4vw, 2.25rem); line-height: 1.2; margin-bottom: .5rem; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+
+/* Obituaries */
+.obituary-dates {
+  color: var(--text-muted, #666);
+  font-size: 1.05rem;
+  margin: 0.25rem 0 0;
+}
+
+.obituary .post-content {
+  white-space: pre-line;
+}
+
+.obituary-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.obituary-list li {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border-color, #e5e5e5);
+}
+
+.obituary-list a {
+  font-weight: 600;
+}
+
+.obituary-meta {
+  display: block;
+  color: var(--text-muted, #666);
+  font-size: 0.9rem;
+  margin-top: 0.15rem;
+}

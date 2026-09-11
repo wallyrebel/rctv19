@@ -30,6 +30,10 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  eleventyConfig.addCollection("obituaries", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/obituaries/*.md").sort((a, b) => b.date - a.date);
+  });
+
   eleventyConfig.addCollection("recentPosts", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/blog/*.md")
       .sort((a, b) => b.date - a.date)
