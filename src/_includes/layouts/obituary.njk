@@ -32,6 +32,10 @@ layout: layouts/base.njk
     {% endif %}
   </header>
 
+  {% if featuredImage %}
+  <figure class="obituary-portrait"><img src="{{ featuredImage }}" alt="{{ featuredImageAlt or title }}" width="400" style="max-width:100%;height:auto;object-fit:contain"></figure>
+  {% endif %}
+
   <div class="post-content">
     {{ content | articleBody | safe }}
   </div>

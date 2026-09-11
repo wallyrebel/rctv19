@@ -77,6 +77,7 @@ async function collect(source) {
 }
 
 async function main() {
+  if (process.argv.includes("--apply")) throw new Error("Server publishing retired. Capture in Edge/Chrome and use scripts/import-browser-obituaries.js; see docs/obituaries.md.");
   const applying = process.argv.includes('--apply');
   const flag = process.argv.indexOf('--source');
   const only = flag === -1 ? '' : (process.argv[flag + 1] || '').toLowerCase();

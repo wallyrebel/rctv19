@@ -1,61 +1,32 @@
-# Obituaries
+# Daily obituary publishing
 
-RCTV19 publishes obituaries from the funeral homes serving Ripley and Tippah County, with their permission, at `/obituaries/`.
+The user confirmed permission to republish full text and photos from all three funeral homes on September 11, 2026. Publish wording, punctuation, spelling, names and paragraph breaks exactly as displayed. Do not summarize or correct the source. Exclude website navigation, flower-store advertising, condolences and tribute-wall comments.
 
-## The one rule
+## Schedule and destination
 
-**Obituaries are never rewritten.** Not by a person, not by a model. A name, a date, a survivor's relationship or a service time that has been paraphrased is an error printed under a family's worst week. The text is republished exactly as the funeral home wrote it, with attribution and a link back to their notice, which stays the authority on service times.
+A Codex daily task in the originating conversation checks sources at 7:00 a.m. America/Chicago using Edge (or Chrome if available). Keep this computer awake, Codex running, and the browser connection available. The GitHub server-side publishing schedule has been retired to prevent duplicate runs and unfiltered historical imports. Its workflow now only validates on manual dispatch.
 
-No model is involved anywhere in this pipeline. `scripts/obituary-sources.js` extracts; it does not summarize. A test asserts the published body is byte-for-byte identical to the source text.
+Local repository: `C:/Users/myers/OneDrive/Desktop/Clients/Projects/RCTV/rctv19 site`.
+Remote: `https://github.com/wallyrebel/rctv19.git`, branch `main`.
 
-## Current status: all three sources are blocked
+## Browser collection
 
-Every funeral home site sits behind Cloudflare bot protection, so a server-side request is refused:
+- McBride: https://www.mcbridefuneralhome.com/obituaries/
+- Ripley: https://www.ripleyfuneralhome.com/listings
+- Foster & Son: https://www.fosterandsonfuneralhome.com/listings
 
-| Funeral home | Platform | Listing page | Obituary sitemap |
-| --- | --- | --- | --- |
-| McBride Funeral Home | funeralOne | HTTP 403 | HTTP 403 |
-| Ripley Funeral and Cremation Services | CFS / Tribute | HTTP 403 | HTTP 403 |
-| Foster & Son Funeral Home | CFS / Tribute | HTTP 403 | HTTP 403 |
+Check listing pages and open their actual obituary links in the browser. Read all JSON-LD blocks for publication timestamps; McBride places Person and NewsArticle in separate blocks. Do not assume death-sorted listings are sorted by publication date. On the initial run inspect the first listing page per source; subsequent runs compare listing URLs with prior observations, paginate as necessary to cover new entries, and never claim complete coverage if pages fail to load.
 
-McBride occasionally lets a request through — one individual obituary page returned 200 while the listing returned 403 in the same minute — but that is inconsistent and not something to schedule a daily job against.
+Use source publication time first; death date is an authorized fallback. Eligibility is strictly within the rolling 24 hours ending at import time, including the lower bound and excluding future times. A date without a time qualifies only when it is today's Central date; yesterday alone is ambiguous and is skipped. Never substitute service dates, update timestamps or the time the page was discovered. Missing or ambiguous dates are reported, not guessed. Do not backfill older notices after an outage.
 
-`robots.txt` on all three **allows** crawling the obituary pages. The block is the platform's bot protection, not the funeral home's stated wishes, and RCTV19 already has permission to republish. So this is a settings problem, and it is fixed by asking rather than by engineering.
+For McBride open the Obituary & Service tab and read `.obituary-text` after it loads. Preserve its displayed paragraphs. For Ripley/CFS inspect `#obtext .obit-text-container`, keeping every original obituary paragraph and excluding the separate flower-store promotion. Check Foster's current structure before extracting: its layout may differ. CFS JSON-LD articleBody may be only a short search description; never publish it instead of the full visible body. Expand any Read More control first. Select the person's actual portrait, not a generic background or logo.
 
-**What this repository will not do:** rotate user agents or IPs, solve or bypass the Cloudflare interstitial, or drive a headless browser to look like a person. The fetcher identifies itself honestly as `RCTV19-ObitBot/1.0`, waits three seconds between requests, and stops when it is refused.
+## Import and verify
 
-## What to ask each funeral home for
+Save a JSON array to an ignored/scratch location. Each record contains `sourceId` (`mcbride`, `ripley`, `foster`), `url`, `name`, `published` (full timestamp when available), `birthDate`, `deathDate`, `paragraphs` (exact visible strings), optional `imageUrl`, and `complete: true` only after verifying the full body. Never rewrite or retype from memory. Compare the saved strings or a text fingerprint with the browser extraction before publication.
 
-Any one of these turns the daily job on. The first is the least work for them.
+Run `node scripts/import-browser-obituaries.js <capture.json>` to preview eligibility, then add `--apply` to save. It preserves text in escaped HTML paragraphs, disables Nunjucks evaluation in the obituary body, downloads and validates original portraits when available, uses source-URL-based identifiers, and records duplicate prevention and text fingerprints in `scripts/published_obituaries.json`. An unavailable image does not prevent the exact text from publishing; report the missing portrait.
 
-**1. Allow our crawler (easiest).** Ask their website contact to allow the user agent `RCTV19-ObitBot` on the obituary pages. For CFS/Tribute sites, that is a support ticket to Tribute Technology. For funeralOne, a ticket to funeralOne support. Wording that usually works:
+Before each run verify the expected remote, main branch, clean working tree and no merge in progress. Fetch and fast-forward main. Never discard, stash, commit or publish unrelated user changes; if they prevent a safe update, report the blocker. Run `npm test` and `npm run build`, then compare built obituary text to the captured paragraphs and confirm local portraits render. Stage only the new obituary files, their portraits and the publication log. Commit and `git push origin main`; verify the remote commit. Never force push. If push fails after a local commit, report it and retry that pending obituary commit before collecting more; do not duplicate the notices. A source/browser failure is not evidence that no new notices exist.
 
-> We have given RCTV19 (rctv19.com), our local television station, permission to republish our obituaries. Their crawler identifies itself as "RCTV19-ObitBot" and reads only our public obituary pages, twice a day. Please allow it through the site's bot protection.
-
-**2. An obituary feed.** Both platforms can syndicate obituaries to media partners — this is a product they sell, not a favor. Ask for "an obituary RSS feed or syndication feed for our media partner." If you get a feed URL, add it to `SOURCES` in `scripts/obituary-sources.js`.
-
-**3. Email (works regardless of platform).** Funeral homes already email obituaries to newspapers and radio. Ask to be added to that distribution list at a dedicated address such as `obits@rctv19.com`. This is the most durable option because it survives any platform change, and it is how most local stations actually receive obituaries.
-
-**4. Manual entry (works today).** The CMS at `/admin/` has an **Obituaries** collection. Paste the obituary, pick the funeral home, add the link, publish. Three minutes each, a handful a week, and it needs nothing from anybody else.
-
-## Running the fetcher
-
-```
-node scripts/fetch-obituaries.js                  # report what it can reach, write nothing
-node scripts/fetch-obituaries.js --apply          # publish anything new
-node scripts/fetch-obituaries.js --source mcbride # one source only
-```
-
-`.github/workflows/obituaries.yml` runs it twice daily at 7am and 4pm Central. A blocked source is reported and skipped, so the workflow stays green while the access questions are being sorted out; it starts publishing the day a source opens up. Published URLs are recorded in `scripts/published_obituaries.json` so nothing is posted twice.
-
-An extraction that is missing a name, or whose body is under 40 words, is reported rather than published — "services pending" is not an obituary.
-
-## Advertising on obituary pages
-
-Obituary pages carry the top banner only. No advertisement is placed inside a notice, and a test enforces that. Obituaries are exempt from the 250-word ad-eligibility bar that applies to articles, because they are licensed service content rather than aggregated briefs.
-
-## What obituaries do and do not do for AdSense
-
-Obituaries are usually the most-read pages on a small-town news site, and they bring back readers daily. That traffic is real and worth having.
-
-They do **not** strengthen an AdSense application. Republished verbatim with permission, they are by definition duplicate content — the funeral home's page is the original, and Google knows it. They are not evidence of original reporting, which is the thing the application actually turns on. Publish them because readers want them, and keep building original local coverage separately.
+Notify on published notices, failures or required user action. Stay quiet when a successful check finds nothing eligible.

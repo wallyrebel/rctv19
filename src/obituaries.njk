@@ -11,6 +11,7 @@ layout: layouts/page.njk
 <ul class="obituary-list">
   {% for obit in collections.obituaries %}
   <li>
+    {% if obit.data.featuredImage %}<a href="{{ obit.url }}" aria-label="{{ obit.data.title }}"><img src="{{ obit.data.featuredImage }}" alt="{{ obit.data.title }}" width="90" loading="lazy" style="height:auto;max-height:120px;object-fit:contain"></a>{% endif %}
     <a href="{{ obit.url }}">{{ obit.data.title }}</a>
     <span class="obituary-meta">{{ obit.data.funeralHome }} · {{ obit.date | dateDisplay }}</span>
   </li>
