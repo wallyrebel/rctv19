@@ -81,3 +81,24 @@ They stop the thin-content pile from growing and keep ads off pages that should 
 3. **Prune or consolidate.** Roughly 18 near-duplicate daily "Tippah County sports happening today" schedule posts and similar one-line event notices go stale within a day. Merge them into weekly roundups or remove them; each is a separate thin indexed page today.
 4. **Confirm image rights.** The pipeline downloads and rehosts images from the source feeds, including Facebook posts. Same-parent-company material from Tippah Sports is fine; third-party photographs are not automatically licensed. Spot-check what is being rehosted.
 5. Only after the above: flip `adsenseEnabled`, add real slot IDs, and request review.
+
+## Archive consolidation — September 11, 2026
+
+157 short aggregated posts were merged into 24 weekly roundups. Source wording is preserved verbatim inside each roundup section, so consolidation cannot introduce a factual error; only the packaging changed. Each merged URL 301-redirects to the roundup that absorbed it (`src/_redirects`, served by Cloudflare Pages).
+
+| | Before | After |
+| --- | --- | --- |
+| Article pages | 184 | 51 |
+| Median length | 209 words | 329 words |
+| Mean length | 203 words | 785 words |
+| Ad-eligible articles | 14 | 37 |
+
+Three roundup families, grouped by ISO week: `Tippah County Sports Roundup`, `This Week in Ripley`, and `Burnside Music Fest`. Posts of 250+ words, the ten hand-written CMS articles, and any group with fewer than two posts stay standalone — 27 in total, plus 14 that remain under 250 words and are therefore not ad-eligible.
+
+Re-run the plan at any time with `node scripts/consolidate.js` (prints what would change and writes nothing) or `--apply`.
+
+### Follow-ups this surfaced
+
+- A few merged items were never news — "Ripley Main Street Updates Cover Photo with Fresh New Image" is a Facebook cover-photo change. Harmless as one bullet inside a weekly roundup, but the pipeline should not treat every page post as a story.
+- The ten newest bot articles run 33–67 words — essentially a restatement of their own excerpt. The 150-word minimum now blocks these outright.
+- Roughly 30 MB of source images are still referenced only from roundup sections; nothing is orphaned, but the image set is worth pruning if build time becomes an issue.
