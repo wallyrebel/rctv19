@@ -3,6 +3,7 @@ title: "Burnside Drops Exclusive Merchandise Collection Tomorrow—Limited Stock
 date: 2026-06-06
 excerpt: "Burnside is releasing a new merchandise collection tomorrow featuring apparel and accessories in limited quantities. Fans are urged to act quickly as stock is expected to be scarce."
 featuredImage: /assets/img/posts/burnside-drops-exclusive-merchandise-collection-to-1780752564796.jpg
+aiAssisted: true
 ---
 
 # Burnside Launches Highly Anticipated Merchandise Drop

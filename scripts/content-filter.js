@@ -15,5 +15,20 @@ function unavailableContent(item) {
     (!title && !body);
 }
 
-module.exports = { unavailableContent };
+// A feed item has to carry enough reported detail to support an article of our
+// own. Expanding a one-line social post into several paragraphs produces padding
+// or invented detail, which is exactly what Google's scaled-content and
+// low-value-content policies exclude from ad serving.
+const MIN_SOURCE_WORDS = 60;
+
+function sourceWordCount(item = {}) {
+  const body = plainText(item['content:encoded'] || item.content || item.description || '');
+  return body.split(/\s+/).filter(word => /[a-z0-9]/i.test(word)).length;
+}
+
+function insufficientSource(item, minWords = MIN_SOURCE_WORDS) {
+  return sourceWordCount(item) < minWords;
+}
+
+module.exports = { unavailableContent, insufficientSource, sourceWordCount, MIN_SOURCE_WORDS };
 

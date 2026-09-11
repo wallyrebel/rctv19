@@ -3,6 +3,7 @@ title: "Burnside Music Fest Lineup Announced: A Full Day of Blues, Food, and Com
 date: 2026-05-21
 excerpt: "The Burnside Music Fest returns to Historic Downtown Ripley on Saturday, June 6, featuring an impressive lineup of blues musicians celebrating the legacy of R.L. Burnside. The all-day event kicks off at noon with vendors and food trucks, with live music beginning at 2 PM."
 featuredImage: /assets/img/posts/burnside-music-fest-lineup-announced-a-full-day-of-1779413823482.jpg
+aiAssisted: true
 ---
 
 # Burnside Music Fest Lineup Officially Set for June 6 Celebration

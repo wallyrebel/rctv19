@@ -3,6 +3,7 @@ title: "Modern South Takes Over: Spotlight on Hidden Gem North Mississippi Town 
 date: 2026-06-02
 excerpt: "The Modern South social media account is featuring a charming North Mississippi town throughout June, promising to showcase why this community deserves recognition and attention."
 featuredImage: /assets/img/posts/modern-south-takes-over-spotlight-on-hidden-gem-no-1780451423302.jpg
+aiAssisted: true
 ---
 
 # Modern South Puts North Mississippi Town in the Spotlight for June

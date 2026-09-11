@@ -3,6 +3,7 @@ title: "A1 Family Foods to Serve Up Crowd-Pleasing Fare at Burnside Music Festiv
 date: 2026-06-01
 excerpt: "A1 Family Foods, a festival favorite known for their signature corn dogs, will be among the vendors at the Burnside Music Festival this Saturday in Historic Downtown Ripley, Mississippi."
 featuredImage: /assets/img/posts/a1-family-foods-to-serve-up-crowd-pleasing-fare-at-1780364748514.jpg
+aiAssisted: true
 ---
 
 # A1 Family Foods to Serve Up Crowd-Pleasing Fare at Burnside Music Festival

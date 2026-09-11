@@ -3,6 +3,7 @@ title: "West Glass Co. Steps Up as VIP Sponsor for Burnside Music Festival Celeb
 date: 2026-06-03
 excerpt: "West Glass Co. has been recognized as a VIP Tent Sponsor for the Burnside Music Festival, supporting the celebration of a century of the Burnside legacy in Historic Downtown Ripley, Mississippi. The company's sponsorship helps bring music, community engagement, and entertainment to the upcoming festival."
 featuredImage: /assets/img/posts/west-glass-co-steps-up-as-vip-sponsor-for-burnside-1780537823273.jpg
+aiAssisted: true
 ---
 
 # West Glass Co. Recognized as VIP Sponsor of Burnside Music Festival

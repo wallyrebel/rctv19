@@ -3,6 +3,7 @@ title: "Tippah County Gears Up for Packed Friday of High School Sports Action"
 date: 2026-09-04
 excerpt: "Friday, September 4, 2026 promises to be a busy day across Tippah County with key football matchups and additional sporting events scheduled throughout the day."
 featuredImage: /assets/img/posts/tippah-county-gears-up-for-packed-friday-of-high-s-1788526879149.jpg
+aiAssisted: true
 ---
 
 # Tippah County Sports Schedule Highlights Exciting Friday Lineup

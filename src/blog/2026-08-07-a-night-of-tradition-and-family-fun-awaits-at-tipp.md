@@ -3,6 +3,7 @@ title: "A Night of Tradition and Family Fun Awaits at Tippah County Fair"
 date: 2026-08-07
 excerpt: "The Tippah County Fair invites families and friends to create lasting memories through classic fair experiences, from rodeo thrills to midway rides. The event celebrates community spirit and hometown pride with entertainment, food, and festivities for all ages."
 featuredImage: /assets/img/posts/a-night-of-tradition-and-family-fun-awaits-at-tipp-1786152538792.jpg
+aiAssisted: true
 ---
 
 # A Night of Tradition and Family Fun Awaits at Tippah County Fair

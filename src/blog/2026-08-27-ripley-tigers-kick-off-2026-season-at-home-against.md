@@ -3,6 +3,7 @@ title: "Ripley Tigers Kick Off 2026 Season at Home Against Mooreville in Defensi
 date: 2026-08-27
 excerpt: "Ripley will open its 2026 football season Friday night at Tiger Stadium against Mooreville in a rematch of last year's defensive battle, marking the beginning of Year 2 under head coach."
 featuredImage: /assets/img/posts/ripley-tigers-kick-off-2026-season-at-home-against-1787848869158.jpg
+aiAssisted: true
 ---
 
 # Ripley Tigers Ready for Season Opener Against Mooreville

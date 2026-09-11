@@ -3,6 +3,7 @@ title: "Cedric Burnside Brings Authentic Blues Tradition to Burnside Music Fest 
 date: 2026-05-14
 excerpt: "Blues legend Cedric Burnside is set to perform at the Burnside Music Fest, bringing his deeply rooted traditional sound to his hometown of Ripley. The festival promises to be a special celebration of blues heritage and community."
 featuredImage: /assets/img/posts/cedric-burnside-brings-authentic-blues-tradition-t-1778808840324.jpg
+aiAssisted: true
 ---
 
 # Cedric Burnside Brings Authentic Blues Tradition to Burnside Music Fest in Ripley

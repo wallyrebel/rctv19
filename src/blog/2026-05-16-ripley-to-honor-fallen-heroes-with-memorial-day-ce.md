@@ -3,6 +3,7 @@ title: "Ripley to Honor Fallen Heroes with Memorial Day Ceremony on May 25, 2026
 date: 2026-05-16
 excerpt: "The city of Ripley, Mississippi will host a comprehensive Memorial Day program featuring the American Legion, a D.A.R. historical marker unveiling, and refreshments to honor those who made the ultimate sacrifice for our country."
 featuredImage: /assets/img/posts/ripley-to-honor-fallen-heroes-with-memorial-day-ce-1778981562636.jpg
+aiAssisted: true
 ---
 
 # Ripley Invites Community to Honor Fallen Heroes at Memorial Day Ceremony

@@ -3,6 +3,7 @@ title: "Ripley's Public Art Movement: How Mississippi's Murals Tell Community St
 date: 2026-08-11
 excerpt: "Ripley, Mississippi has developed a distinctive public art movement where murals serve as more than decoration—they're deeply connected narratives reflecting the community's identity and heritage. The Magnolia Tribune recently highlighted how this small Mississippi town is using street art to preserve and celebrate its local stories."
 featuredImage: /assets/img/posts/ripleys-public-art-movement-how-mississippis-mural-1786541259423.png
+aiAssisted: true
 ---
 
 # Ripley's Public Art Movement: How Mississippi's Murals Tell Community Stories

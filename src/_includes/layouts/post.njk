@@ -54,7 +54,16 @@ layout: layouts/base.njk
     {{ content | articleBody | safe }}
   </div>
   
-  {% if sourceUrl %}<p class="post-content">Source: <a href="{{ sourceUrl }}" rel="noopener">{{ sourceName or 'Original report' }}</a>{% if aiAssisted %}. Prepared with AI assistance.{% endif %}</p>{% endif %}
+  {% if sourceUrl or sourceName or aiAssisted %}
+  <p class="post-content post-provenance">
+    {% if sourceUrl %}Source: <a href="{{ sourceUrl }}" rel="noopener">{{ sourceName or 'Original report' }}</a>.
+    {% elif sourceName %}Source: {{ sourceName }}.{% endif %}
+    {% if aiAssisted %}
+      {% if sourceUrl or sourceName %}Summarized with AI assistance and reviewed by RCTV19 editors.
+      {% else %}Summarized with AI assistance from community and partner announcements, and reviewed by RCTV19 editors.{% endif %}
+    {% endif %}
+  </p>
+  {% endif %}
   <p class="post-content"><a href="/editorial/">Our editorial standards</a> · <a href="mailto:rctv19@gmail.com?subject=Article%20correction">Report a correction</a></p>
   <!-- In-Feed Ad -->
   <div class="in-feed-ad-wrapper">

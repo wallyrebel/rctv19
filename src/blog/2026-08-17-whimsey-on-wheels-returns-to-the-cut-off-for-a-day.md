@@ -3,6 +3,7 @@ title: "Whimsey On Wheels Returns to The Cut-Off for a Day of Food and Fun"
 date: 2026-08-17
 excerpt: "The popular food truck Whimsey On Wheels is making a comeback at The Cut-Off on Tuesday, August 18th, offering hungry customers lunch and dinner options from 11 AM to 6 PM."
 featuredImage: /assets/img/posts/whimsey-on-wheels-returns-to-the-cut-off-for-a-day-1787058951229.jpg
+aiAssisted: true
 ---
 
 # Whimsey On Wheels Returns to The Cut-Off

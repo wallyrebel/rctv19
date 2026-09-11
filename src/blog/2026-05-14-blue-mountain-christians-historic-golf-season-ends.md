@@ -3,6 +3,7 @@ title: "Blue Mountain Christian's Historic Golf Season Ends at NAIA Championship
 date: 2026-05-14
 excerpt: "No. 12 ranked Blue Mountain Christian's men's golf team concluded its record-breaking season at the NAIA National Championship, falling just short of team advancement while sophomore standout Cobey Riddle qualified to continue competing individually."
 featuredImage: /assets/img/posts/blue-mountain-christians-historic-golf-season-ends-1778765519820.webp
+aiAssisted: true
 ---
 
 # Blue Mountain Christian Golf Season Concludes at NAIA Championship

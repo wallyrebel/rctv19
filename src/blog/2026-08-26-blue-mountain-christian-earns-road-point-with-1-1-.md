@@ -3,6 +3,7 @@ title: "Blue Mountain Christian Earns Road Point with 1-1 Draw Against Freed-Har
 date: 2026-08-26
 excerpt: "The Blue Mountain Christian men's soccer team battled to a 1-1 draw against Freed-Hardeman University in Henderson, Tennessee, with both teams finding the back of the net in an evenly contested second half."
 featuredImage: /assets/img/posts/blue-mountain-christian-earns-road-point-with-1-1--1787750372413.webp
+aiAssisted: true
 ---
 
 # Blue Mountain Christian Earns Road Point with 1-1 Draw Against Freed-Hardeman

@@ -3,6 +3,7 @@ title: "Downtown Ripley Hosts Elvis Bingo Night with Extended Shopping Hours"
 date: 2026-06-09
 excerpt: "Downtown Ripley invites residents to enjoy extended shopping hours and a festive Elvis Bingo Night this Friday, featuring live music, prizes, and family-friendly entertainment at The Cut-Off."
 featuredImage: /assets/img/posts/downtown-ripley-hosts-elvis-bingo-night-with-exten-1781055580966.jpg
+aiAssisted: true
 ---
 
 # Downtown Ripley Gears Up for Lively Friday Night of Shopping and Entertainment

@@ -3,6 +3,7 @@ title: "Talent Takes Center Stage at The Cut-Off's Open Mic Night This Friday"
 date: 2026-06-17
 excerpt: "The Cut-Off in downtown Ripley is hosting a family-friendly Open Mic Night on Friday, June 19, inviting singers, musicians, poets, comedians, and other performers to showcase their talents from 7-9 PM."
 featuredImage: /assets/img/posts/talent-takes-center-stage-at-the-cut-offs-open-mic-1781747200637.jpg
+aiAssisted: true
 ---
 
 # Open Mic Night Comes to Downtown Ripley This Friday

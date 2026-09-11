@@ -3,6 +3,7 @@ title: "Ripley's Blues Alley: A Hidden Musical Gem Celebrating Hill Country Blue
 date: 2026-07-01
 excerpt: "Ripley's Blues Alley has emerged as a vibrant cultural destination, featuring stunning murals dedicated to hill country blues legends alongside an interactive activation that allows visitors to experience the music firsthand."
 featuredImage: /assets/img/posts/ripleys-blues-alley-a-hidden-musical-gem-celebrati-1782956242721.jpg
+aiAssisted: true
 ---
 
 # Ripley's Blues Alley: A Hidden Musical Gem Celebrating Hill Country Blues Legends

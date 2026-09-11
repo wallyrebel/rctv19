@@ -3,6 +3,7 @@ title: "Ripley Community Rallies to Find Home for Stray Mother Cat and Kittens"
 date: 2026-06-30
 excerpt: "A mother cat and her two kittens spotted near downtown Ripley are in need of a loving home. Local residents are being urged to share the post and contact authorities if they can help the struggling feline family."
 featuredImage: /assets/img/posts/ripley-community-rallies-to-find-home-for-stray-mo-1782870140719.jpg
+aiAssisted: true
 ---
 
 # Ripley Community Seeks Adoptive Home for Stray Cat Family

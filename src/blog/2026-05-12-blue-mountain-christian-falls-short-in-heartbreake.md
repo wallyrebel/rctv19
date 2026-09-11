@@ -3,6 +3,7 @@ title: "Blue Mountain Christian Falls Short in Heartbreaker Against No. 2 Seed G
 date: 2026-05-12
 excerpt: "The Blue Mountain Christian University softball team suffered a narrow 2-1 defeat to second-seeded Grand View in a tightly contested opening-round matchup of the NAIA tournament held in Oklahoma City."
 featuredImage: /assets/img/posts/blue-mountain-christian-falls-short-in-heartbreake-1778613516744.webp
+aiAssisted: true
 ---
 
 # Blue Mountain Christian Falls Short in Heartbreaker Against No. 2 Seed Grand View in NAIA Tournament Opener

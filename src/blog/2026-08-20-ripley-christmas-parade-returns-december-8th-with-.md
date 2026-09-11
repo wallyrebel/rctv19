@@ -3,6 +3,7 @@ title: "Ripley Christmas Parade Returns December 8th with 'Christmas Through the
 date: 2026-08-20
 excerpt: "The Ripley Christmas Parade will light up the streets on December 8th at 7:00 PM, inviting participants to celebrate the holiday season across any decade from the 1920s to present day. Organizers are encouraging creative floats and displays that capture the festive spirit of different eras."
 featuredImage: /assets/img/posts/ripley-christmas-parade-returns-december-8th-with--1787275698024.jpg
+aiAssisted: true
 ---
 
 # Ripley Christmas Parade Set for December 8th with Nostalgic 'Christmas Through the Decades' Theme

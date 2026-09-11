@@ -3,6 +3,7 @@ title: "Heat & Wellness Recovery Spa Joins Ripley's Main Street Moolah Program"
 date: 2026-06-02
 excerpt: "Ripley's Main Street Moolah program has expanded to include Heat & Wellness Recovery Spa, allowing residents to use the local currency toward wellness and recovery services. The initiative continues to support community businesses and encourage local shopping."
 featuredImage: /assets/img/posts/heat-and-wellness-recovery-spa-joins-ripleys-main--1780451427791.jpg
+aiAssisted: true
 ---
 
 # Heat & Wellness Recovery Spa Joins Ripley's Main Street Moolah Program

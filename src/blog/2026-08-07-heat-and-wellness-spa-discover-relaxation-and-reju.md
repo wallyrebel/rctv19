@@ -3,6 +3,7 @@ title: "Heat & Wellness Spa: Discover Relaxation and Rejuvenation with Expert Th
 date: 2026-08-07
 excerpt: "Heat & Wellness Spa in Ripley is inviting customers to experience their full range of wellness services with therapist LaShawn McKenzie. The spa offers comprehensive treatments designed to promote relaxation and overall well-being."
 featuredImage: /assets/img/posts/heat-and-wellness-spa-discover-relaxation-and-reju-1786152543706.jpg
+aiAssisted: true
 ---
 
 ## Elevate Your Wellness Journey at Heat & Wellness Spa

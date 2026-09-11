@@ -3,6 +3,7 @@ title: "Walnut's Explosive Freshman Talent Faces Off Against Belmont's Veteran C
 date: 2026-09-04
 excerpt: "The Wildcats bring a dynamic freshman sensation and record-setting coaching to challenge Belmont's experienced lineup in what promises to be a compelling rivalry matchup."
 featuredImage: /assets/img/posts/walnuts-explosive-freshman-talent-faces-off-agains-1788570686597.jpg
+aiAssisted: true
 ---
 
 # Walnut's New Spark Meets Belmont's Rivalry Grip

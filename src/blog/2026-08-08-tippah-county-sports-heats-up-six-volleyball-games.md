@@ -3,6 +3,7 @@ title: "Tippah County Sports Heats Up: Six Volleyball Games Scheduled for Saturd
 date: 2026-08-08
 excerpt: "Tippah County is gearing up for an action-packed Saturday with six volleyball games bringing community competition and excitement to the region. Local sports fans have plenty to cheer about as teams take to the courts."
 featuredImage: /assets/img/posts/tippah-county-sports-heats-up-six-volleyball-games-1786195051089.jpg
+aiAssisted: true
 ---
 
 # Tippah County Sports Heats Up with Volleyball Action

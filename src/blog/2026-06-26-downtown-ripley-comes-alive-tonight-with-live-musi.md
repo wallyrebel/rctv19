@@ -3,6 +3,7 @@ title: "Downtown Ripley Comes Alive Tonight With Live Music, Food, and Fireworks
 date: 2026-06-26
 excerpt: "Ripley residents are invited to enjoy an evening of shopping, dining, and entertainment downtown, culminating in a spectacular fireworks display at 9:30 PM near Ripley High School."
 featuredImage: /assets/img/posts/downtown-ripley-comes-alive-tonight-with-live-musi-1782566978614.jpg
+aiAssisted: true
 ---
 
 # Downtown Ripley Comes Alive Tonight With Live Music, Food, and Fireworks

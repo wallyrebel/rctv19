@@ -3,6 +3,7 @@ title: "Elvis Bingo Comes to Downtown Ripley: A Rock 'n' Roll Twist on a Classic
 date: 2026-06-11
 excerpt: "Ripley Main Street is hosting Elvis Bingo at The Cut-Off on Friday, June 12, where participants mark off Elvis song titles instead of numbers on their bingo cards. Attendees are encouraged to dress as their favorite version of Elvis for a chance to win prizes while enjoying classic hits throughout the evening."
 featuredImage: /assets/img/posts/elvis-bingo-comes-to-downtown-ripley-a-rock-n-roll-1781228713332.jpg
+aiAssisted: true
 ---
 
 # Elvis Bingo Comes to Downtown Ripley: A Rock 'n' Roll Twist on a Classic Game

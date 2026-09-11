@@ -3,6 +3,7 @@ title: "USSU Stuns Blue Mountain Christian with Dramatic Late-Game Winner"
 date: 2026-09-04
 excerpt: "United States Sports University secured a narrow 1-0 victory over Blue Mountain Christian University Thursday evening, with a decisive late goal proving to be the difference in a tightly contested defensive matchup at The Summit."
 featuredImage: /assets/img/posts/ussu-stuns-blue-mountain-christian-with-dramatic-l-1788526884172.webp
+aiAssisted: true
 ---
 
 # USSU Edges Blue Mountain Christian in Thrilling Late-Goal Finish

@@ -3,6 +3,7 @@ title: "Burnside Music Festival Kicks Off Today in Historic Downtown Ripley with
 date: 2026-06-06
 excerpt: "The Burnside Music Festival launches today at noon in Historic Downtown Ripley, featuring live music, food trucks, arts and crafts vendors, and an all-day rib and wing cookoff—all with free admission and parking."
 featuredImage: /assets/img/posts/burnside-music-festival-kicks-off-today-in-histori-1780796483786.jpg
+aiAssisted: true
 ---
 
 # Burnside Music Festival Launches Today in Historic Downtown Ripley

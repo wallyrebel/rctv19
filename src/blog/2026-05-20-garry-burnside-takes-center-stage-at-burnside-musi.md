@@ -3,6 +3,7 @@ title: "Garry Burnside Takes Center Stage at Burnside Music Fest: A Celebration 
 date: 2026-05-20
 excerpt: "Blues enthusiast Garry Burnside is set to perform live at the Burnside Music Fest, promising an evening of authentic blues music and good company. The event celebrates the intersection of quality music, passionate performers, and engaged audiences."
 featuredImage: /assets/img/posts/garry-burnside-takes-center-stage-at-burnside-musi-1779327396924.jpg
+aiAssisted: true
 ---
 
 # Garry Burnside Brings the Blues to Burnside Music Fest

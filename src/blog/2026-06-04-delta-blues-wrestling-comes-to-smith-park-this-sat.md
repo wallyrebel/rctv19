@@ -3,6 +3,7 @@ title: "Delta Blues Wrestling Comes to Smith Park This Saturday Night"
 date: 2026-06-04
 excerpt: "Delta Blues Wrestling will bring live entertainment to Smith Park on Saturday evening. The community event promises an exciting night of wrestling action for fans of all ages."
 featuredImage: /assets/img/posts/delta-blues-wrestling-comes-to-smith-park-this-sat-1780581563226.jpg
+aiAssisted: true
 ---
 
 # Delta Blues Wrestling Event Comes to Smith Park This Saturday

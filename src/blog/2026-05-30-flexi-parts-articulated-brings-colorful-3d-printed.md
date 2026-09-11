@@ -3,6 +3,7 @@ title: "Flexi Parts Articulated Brings Colorful 3D-Printed Creations to Burnside
 date: 2026-05-30
 excerpt: "Innovative vendor Flexi Parts Articulated will showcase their unique collection of flexible, articulated 3D-printed designs at the 2026 Burnside Music Fest in downtown Ripley. Featuring everything from bendable animals and dragons to collectible figures, the vendor promises a hit with music fans of all ages."
 featuredImage: /assets/img/posts/flexi-parts-articulated-brings-colorful-3d-printed-1780234182268.jpg
+aiAssisted: true
 ---
 
 # Flexi Parts Articulated Joins 2026 Burnside Music Fest Vendor Lineup

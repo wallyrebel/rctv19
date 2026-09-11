@@ -3,6 +3,7 @@ title: "Zootopia 2 Under the Stars: The Cut-Off Hosts Family Movie Night with Fo
 date: 2026-08-12
 excerpt: "The Cut-Off in Ripley is hosting an outdoor movie night on Friday, August 14, featuring Zootopia 2 at dusk with food trucks and local vendors on site. Attendees are invited to bring chairs and blankets for an evening of family entertainment sponsored by Rebel Services LLC."
 featuredImage: /assets/img/posts/zootopia-2-under-the-stars-the-cut-off-hosts-famil-1786627648244.jpg
+aiAssisted: true
 ---
 
 # Movie Night Magic Comes to Ripley This Friday

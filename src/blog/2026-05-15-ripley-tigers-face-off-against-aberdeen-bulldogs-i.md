@@ -3,6 +3,7 @@ title: "Ripley Tigers Face Off Against Aberdeen Bulldogs in Must-Watch Matchup T
 date: 2026-05-15
 excerpt: "Tippah County sports fans are in for a treat as the Ripley Tigers host the Aberdeen Bulldogs in a highly anticipated home football game this evening, May 15, 2026."
 featuredImage: /assets/img/posts/ripley-tigers-face-off-against-aberdeen-bulldogs-i-1778851884114.jpg
+aiAssisted: true
 ---
 
 # Ripley Tigers Set to Battle Aberdeen Bulldogs in Tonight's Showdown

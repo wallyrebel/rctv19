@@ -3,6 +3,7 @@ title: "Tippah County Gears Up for Action-Packed Friday Sports Slate"
 date: 2026-08-07
 excerpt: "Tippah County sports fans have plenty to celebrate this Friday, August 7, 2026, with volleyball matchups and softball games scheduled throughout the county."
 featuredImage: /assets/img/posts/tippah-county-gears-up-for-action-packed-friday-sp-1786109122147.jpg
+aiAssisted: true
 ---
 
 # Tippah County Prepares for Exciting Friday Night of Local Sports

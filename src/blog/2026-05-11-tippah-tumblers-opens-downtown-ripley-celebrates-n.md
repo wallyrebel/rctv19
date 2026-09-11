@@ -3,6 +3,7 @@ title: "Tippah Tumblers Opens Downtown: Ripley Celebrates New Business with Ribb
 date: 2026-05-11
 excerpt: "The Ripley community is invited to welcome Tippah Tumblers, a new downtown business, at a ribbon cutting ceremony this morning at 10:00 a.m. located at 204 N. Commerce Street."
 featuredImage: /assets/img/posts/tippah-tumblers-opens-downtown-ripley-celebrates-n-1778613521317.jpg
+aiAssisted: true
 ---
 
 # Ripley Welcomes Tippah Tumblers to Downtown Business District

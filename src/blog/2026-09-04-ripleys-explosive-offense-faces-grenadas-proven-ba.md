@@ -3,6 +3,7 @@ title: "Ripley's Explosive Offense Faces Grenada's Proven Backfield in Highly An
 date: 2026-09-04
 excerpt: "Ripley enters their first meeting with Grenada undefeated and riding high after an explosive opening weekend performance, while Grenada counters with a proven and experienced backfield."
 featuredImage: /assets/img/posts/ripleys-explosive-offense-faces-grenadas-proven-ba-1788570692699.jpg
+aiAssisted: true
 ---
 
 # Ripley's Explosive Offense Faces Grenada's Proven Backfield in Highly Anticipated Matchup

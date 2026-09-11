@@ -3,6 +3,7 @@ title: "Heat & Wellness Spa Pop-Up Brings Relaxation to The Cut Off Tonight"
 date: 2026-08-03
 excerpt: "Heat & Wellness Spa is setting up at The Cut Off this evening, offering visitors a chance to unwind with massage chair services while exploring downtown attractions. The wellness pop-up invites the community to stop by and experience their offerings."
 featuredImage: /assets/img/posts/heat-and-wellness-spa-pop-up-brings-relaxation-to--1785807078228.jpg
+aiAssisted: true
 ---
 
 # Heat & Wellness Spa Pop-Up Brings Relaxation to The Cut Off Tonight

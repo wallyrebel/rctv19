@@ -3,6 +3,7 @@ title: "Burnside Music Fest Returns in Two Weeks with Live Blues, Food, and Art 
 date: 2026-05-23
 excerpt: "The highly anticipated Burnside Music Fest is just two weeks away, bringing live music, food vendors, and art to downtown Ripley. The event will feature authentic Hill Country blues performances and is generating significant excitement in the community."
 featuredImage: /assets/img/posts/burnside-music-fest-returns-in-two-weeks-with-live-1779629339678.jpg
+aiAssisted: true
 ---
 
 # Burnside Music Fest Countdown Begins: Two Weeks Until Downtown Ripley Celebration

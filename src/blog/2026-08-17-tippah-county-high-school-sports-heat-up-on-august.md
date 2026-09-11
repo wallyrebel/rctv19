@@ -3,6 +3,7 @@ title: "Tippah County High School Sports Heat Up on August 17: Volleyball Action
 date: 2026-08-17
 excerpt: "Tippah County is gearing up for an exciting evening of high school sports, with volleyball matchups and community highlights taking center stage. Local fans are encouraged to come out and support their teams in what promises to be an action-packed night."
 featuredImage: /assets/img/posts/tippah-county-high-school-sports-heat-up-on-august-1786972482513.jpg
+aiAssisted: true
 ---
 
 # Tippah County Sports Excitement Builds for August 17 Showcase

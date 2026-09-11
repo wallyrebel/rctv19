@@ -3,6 +3,7 @@ title: "Louisiana Christian Edges Blue Mountain Christian in Women's Soccer Seas
 date: 2026-08-23
 excerpt: "Blue Mountain Christian Women's Soccer began its 2026 campaign with a tough loss, falling 3-1 to Louisiana Christian University in Saturday's season opener. The Wildcats' early scoring proved decisive in securing the victory."
 featuredImage: /assets/img/posts/louisiana-christian-edges-blue-mountain-christian--1787448512025.webp
+aiAssisted: true
 ---
 
 # Louisiana Christian Defeats Blue Mountain Christian in Women's Soccer Opener

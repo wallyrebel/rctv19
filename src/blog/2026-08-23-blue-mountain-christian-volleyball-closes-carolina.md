@@ -3,6 +3,7 @@ title: "Blue Mountain Christian Volleyball Closes Carolina Classic with Commandi
 date: 2026-08-23
 excerpt: "The Blue Mountain Christian volleyball team concluded the Carolina Classic tournament with a 2-1 record after competing in two matches Saturday in Winston-Salem, North Carolina."
 featuredImage: /assets/img/posts/blue-mountain-christian-volleyball-closes-carolina-1787490721489.webp
+aiAssisted: true
 ---
 
 ## Blue Mountain Christian Volleyball Closes Carolina Classic with Commanding Performance

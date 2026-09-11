@@ -3,6 +3,7 @@ title: "Family Movie Night Under the Stars: Robin Williams' 'RV' Coming to The C
 date: 2026-07-01
 excerpt: "The Cut-Off in Ripley, Mississippi is hosting an outdoor screening of the comedy film 'RV' starring Robin Williams this Friday at dusk, inviting families to bring lawn chairs and blankets for a fun evening of entertainment."
 featuredImage: /assets/img/posts/family-movie-night-under-the-stars-robin-williams--1782956231810.png
+aiAssisted: true
 ---
 
 ## Community Gathering Brings Classic Comedy to Ripley's Outdoor Screen

@@ -3,6 +3,7 @@ title: "Ripley Main Street Updates Cover Photo with Fresh New Image"
 date: 2026-08-20
 excerpt: "Ripley Main Street has updated its official cover photo, showcasing a new visual representation of the community's downtown area. The change reflects the organization's commitment to presenting current and engaging imagery of the main business district."
 featuredImage: /assets/img/posts/ripley-main-street-updates-cover-photo-with-fresh--1787275703104.jpg
+aiAssisted: true
 ---
 
 # Ripley Main Street Refreshes Visual Identity with New Cover Photo

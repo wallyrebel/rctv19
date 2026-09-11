@@ -3,6 +3,7 @@ title: "Tippah County Gears Up for Action-Packed Sports Night with Volleyball Sh
 date: 2026-09-03
 excerpt: "Tippah County high schools are set for an exciting evening of volleyball competition on September 3, 2026, with multiple matchups drawing fans across the region."
 featuredImage: /assets/img/posts/tippah-county-gears-up-for-action-packed-sports-ni-1788440508480.jpg
+aiAssisted: true
 ---
 
 # Tippah County Sports Heat Up with Volleyball Action

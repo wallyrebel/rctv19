@@ -3,6 +3,7 @@ title: "Cam Cares Foundation Hosts 3rd Annual Back 2 School Giveaway This Saturd
 date: 2026-07-23
 excerpt: "The Cam Cares Foundation is hosting its third annual Back 2 School Giveaway on Saturday, offering free school supplies, hygiene products, clothing, and more to students preparing for the new school year."
 featuredImage: /assets/img/posts/cam-cares-foundation-hosts-3rd-annual-back-2-schoo-1784856668883.jpg
+aiAssisted: true
 ---
 
 # Cam Cares Foundation Brings Back 3rd Annual Back 2 School Giveaway

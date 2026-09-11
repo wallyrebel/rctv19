@@ -3,6 +3,7 @@ title: "Ripley Main Street Shares Community Video Update"
 date: 2026-06-11
 excerpt: "Ripley Main Street has posted a new video to their Facebook page, engaging with the community through social media content."
 featuredImage: /assets/img/posts/ripley-main-street-shares-community-video-update-1781228701774.jpg
+aiAssisted: true
 ---
 
 # Ripley Main Street Shares Community Video Update

@@ -3,6 +3,7 @@ title: "MaxxSouth Broadband Steps Up as Major Sponsor for Burnside Music Fest"
 date: 2026-05-22
 excerpt: "MaxxSouth Broadband has become a key supporter of the Burnside Music Fest, helping to bring live music and cultural energy to historic downtown Ripley. The sponsorship underscores the company's commitment to supporting local arts and community events."
 featuredImage: /assets/img/posts/maxxsouth-broadband-steps-up-as-major-sponsor-for--1779499966700.jpg
+aiAssisted: true
 ---
 
 # MaxxSouth Broadband Supports Burnside Music Fest with Major Sponsorship

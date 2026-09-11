@@ -3,6 +3,7 @@ title: "Big Tae Eats Brings Smash Burgers to Ripley Main Street Tonight"
 date: 2026-08-03
 excerpt: "Popular food vendor Big Tae Eats will be serving up delicious smash burgers at The Cut-Off on Ripley Main Street starting at 5 PM today. The limited-time service runs until sold out, so hungry customers are encouraged to arrive early."
 featuredImage: /assets/img/posts/big-tae-eats-brings-smash-burgers-to-ripley-main-s-1785807087482.jpg
+aiAssisted: true
 ---
 
 # Big Tae Eats Brings Smash Burgers to Ripley Main Street Tonight

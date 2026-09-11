@@ -3,6 +3,7 @@ title: "Walnut Eyes Championship Glory in Final Season with Veteran Roster"
 date: 2026-08-26
 excerpt: "The Walnut football program enters its final season with a veteran core determined to make one last playoff push, despite finishing last year with a 3-8 record and struggling in region play."
 featuredImage: /assets/img/posts/walnut-eyes-championship-glory-in-final-season-wit-1787797815595.jpg
+aiAssisted: true
 ---
 
 # Walnut Eyes Championship Glory in Final Season with Veteran Roster

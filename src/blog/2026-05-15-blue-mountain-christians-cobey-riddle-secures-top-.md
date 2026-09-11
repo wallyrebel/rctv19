@@ -3,6 +3,7 @@ title: "Blue Mountain Christian's Cobey Riddle Secures Top-15 Finish at NAIA Nat
 date: 2026-05-15
 excerpt: "Sophomore golfer Cobey Riddle of Blue Mountain Christian University finished tied for 15th place at the NAIA Men's Golf National Championship, contributing to his team's competitive showing at the prestigious national tournament."
 featuredImage: /assets/img/posts/blue-mountain-christians-cobey-riddle-secures-top--1778895134024.webp
+aiAssisted: true
 ---
 
 # Blue Mountain Christian's Riddle Secures Top-15 Finish at NAIA National Golf Championship

@@ -3,6 +3,7 @@ title: "The Cut-Off Back to School Bash Brings Family Fun to Downtown Ripley"
 date: 2026-08-10
 excerpt: "The Cut-Off is hosting a Back to School Bash on Saturday, August 15 from noon to 4 p.m. in downtown Ripley, featuring face painting, games, food trucks, and a school supply giveaway for the whole family."
 featuredImage: /assets/img/posts/the-cut-off-back-to-school-bash-brings-family-fun--1786454794793.jpg
+aiAssisted: true
 ---
 
 # The Cut-Off Back to School Bash Brings Family Fun to Downtown Ripley

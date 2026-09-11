@@ -3,6 +3,7 @@ title: "Tippah County Sports Heat Up on Monday with Volleyball and Regional Matc
 date: 2026-08-31
 excerpt: "Tippah County is gearing up for a busy Monday of athletic competition with volleyball action at home and exciting regional matchups across multiple sports. Local teams are ready to take the field and court in what promises to be an action-packed day for community sports."
 featuredImage: /assets/img/posts/tippah-county-sports-heat-up-on-monday-with-volley-1788181288548.jpg
+aiAssisted: true
 ---
 
 # Tippah County Sports Heat Up on Monday with Volleyball and Regional Matchups

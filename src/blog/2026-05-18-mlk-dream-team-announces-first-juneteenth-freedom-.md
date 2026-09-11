@@ -3,6 +3,7 @@ title: "MLK Dream Team Announces First Juneteenth Freedom Day Celebration in Rip
 date: 2026-05-18
 excerpt: "The MLK Dream Team is hosting its inaugural Juneteenth Freedom Day celebration on Ripley Main Street, featuring live entertainment, food vendors, and family-friendly activities. The community event aims to honor history, celebrate culture, and bring people together."
 featuredImage: /assets/img/posts/mlk-dream-team-announces-first-juneteenth-freedom--1779154595009.jpg
+aiAssisted: true
 ---
 
 # MLK Dream Team Launches First Juneteenth Freedom Day Celebration

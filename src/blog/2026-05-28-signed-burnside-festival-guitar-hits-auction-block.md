@@ -3,6 +3,7 @@ title: "Signed Burnside Festival Guitar Hits Auction Block to Support Historic R
 date: 2026-05-28
 excerpt: "A guitar autographed by performers from the 2025 Burnside Music Festival is being auctioned online to raise funds for downtown Ripley revitalization projects. The auction runs through Saturday, June 6 at 10 PM, with bidding starting at $100."
 featuredImage: /assets/img/posts/signed-burnside-festival-guitar-hits-auction-block-1780018560226.jpg
+aiAssisted: true
 ---
 
 ## Burnside Festival Guitar Auction Launches to Support Community Revitalization

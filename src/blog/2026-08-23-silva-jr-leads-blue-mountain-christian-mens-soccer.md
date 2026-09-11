@@ -3,6 +3,7 @@ title: "Silva Jr. Leads Blue Mountain Christian Men's Soccer to Dominant 2-0 Sea
 date: 2026-08-23
 excerpt: "Blue Mountain Christian men's soccer kicked off their 2026 campaign with an impressive 2-0 win over LSU Alexandria, with standout forward Dipanda Silva Jr. scoring both goals in the dominant performance."
 featuredImage: /assets/img/posts/silva-jr-leads-blue-mountain-christian-mens-soccer-1787490725246.webp
+aiAssisted: true
 ---
 
 # Blue Mountain Christian Opens 2026 Season with Commanding 2-0 Victory

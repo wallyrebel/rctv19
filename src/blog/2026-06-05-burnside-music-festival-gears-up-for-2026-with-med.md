@@ -3,6 +3,7 @@ title: "Burnside Music Festival Gears Up for 2026 with Media Spotlight"
 date: 2026-06-05
 excerpt: "The organizers of the upcoming 2026 Burnside Music Festival recently appeared on WJTV's The Daily Sip to discuss plans for the highly anticipated event. The festival continues to generate buzz as organizers share details about what attendees can expect."
 featuredImage: /assets/img/posts/burnside-music-festival-gears-up-for-2026-with-med-1780752569473.jpg
+aiAssisted: true
 ---
 
 # Burnside Music Festival 2026 Draws Media Attention

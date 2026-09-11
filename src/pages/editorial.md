@@ -14,7 +14,9 @@ Our coverage includes material from related publications and community feeds, in
 
 ## AI assistance and editorial review
 
-Some feed-based articles are prepared with AI assistance. RCTV19's editors review automated articles and remain responsible for what is published. Automated processing must not invent facts, quotes or details missing from the source. An unavailable source or an unsuccessful generation is not a news story and should not be published.
+Some feed-based articles are prepared with AI assistance. Every one of those articles is labeled at the foot of the page, so readers can tell how a story was produced. RCTV19's editors review automated articles and remain responsible for what is published.
+
+Automated processing must not invent facts, quotes or details missing from the source, and must not pad a short announcement into a longer article. An unavailable source or an unsuccessful generation is not a news story and is not published. When a source carries too little detail to support a substantive report, we do not publish a page for it; brief announcements are better served by our social channels and on-air listings than by a thin article.
 
 ## Corrections
 
@@ -23,3 +25,5 @@ To report an error, email [rctv19@gmail.com](mailto:rctv19@gmail.com?subject=Art
 ## Advertising
 
 Advertisements and local sponsorship placements are labeled separately from news coverage. Advertising inquiries can be sent through our [Contact page](/contact/). Readers should never be asked to click advertisements to support the station.
+
+Advertising never influences what we cover. Brief announcement pages and our policy pages do not carry advertising. Our [Terms of Use](/terms/) and [Privacy Policy](/privacy/) explain the rest.

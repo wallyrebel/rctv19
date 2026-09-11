@@ -3,6 +3,7 @@ title: "First Baptist Church of Ripley Hosts Patriotic 250 Years of Freedom Cele
 date: 2026-06-12
 excerpt: "First Baptist Church of Ripley is inviting the community to a festive evening celebrating 250 Years of Freedom featuring live bluegrass music, food, games, and a fireworks display."
 featuredImage: /assets/img/posts/first-baptist-church-of-ripley-hosts-patriotic-250-1781314834012.jpg
+aiAssisted: true
 ---
 
 # First Baptist Church of Ripley Celebrates 250 Years of Freedom with Community Festival

@@ -3,6 +3,7 @@ title: "Tippah County Volleyball Teams Take Center Stage in Busy Monday Night of
 date: 2026-08-10
 excerpt: "Tippah County sports fans are in for an exciting evening as multiple volleyball matchups headline Monday's athletic schedule. Local teams will compete tonight in what promises to be an action-packed night of community athletics."
 featuredImage: /assets/img/posts/tippah-county-volleyball-teams-take-center-stage-i-1786368444372.jpg
+aiAssisted: true
 ---
 
 # Tippah County Sports: Volleyball Takes the Spotlight on Monday Night

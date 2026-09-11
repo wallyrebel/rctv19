@@ -3,6 +3,7 @@ title: "The Cut-Off Hosts Family Movie Night Featuring Zootopia 2 This Friday"
 date: 2026-08-10
 excerpt: "The Cut-Off in Ripley, Mississippi is hosting a community movie night on Friday, August 14 at dusk, featuring the animated film Zootopia 2. The family-friendly event, sponsored by Rebel Services, LLC, invites residents to bring their families and friends for an evening of entertainment under the lights."
 featuredImage: /assets/img/posts/the-cut-off-hosts-family-movie-night-featuring-zoo-1786454789270.jpg
+aiAssisted: true
 ---
 
 # The Cut-Off Brings Community Together for Movie Night Under the Stars

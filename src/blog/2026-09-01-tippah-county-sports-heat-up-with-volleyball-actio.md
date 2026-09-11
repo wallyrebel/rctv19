@@ -3,6 +3,7 @@ title: "Tippah County Sports Heat Up With Volleyball Action on September 1st"
 date: 2026-09-01
 excerpt: "Tippah County sports fans have plenty to celebrate as exciting volleyball matchups take center stage today. Local student-athletes are ready to showcase their skills in what promises to be an action-packed day of competition."
 featuredImage: /assets/img/posts/tippah-county-sports-heat-up-with-volleyball-actio-1788267701938.jpg
+aiAssisted: true
 ---
 
 # Tippah County Sports Heat Up With Volleyball Action on September 1st

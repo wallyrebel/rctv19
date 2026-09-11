@@ -3,6 +3,7 @@ title: "The Clay Cat Co. Brings Handmade Artisan Jewelry to Burnside Music Fest"
 date: 2026-05-22
 excerpt: "Local polymer clay jewelry maker The Clay Cat Co. will showcase their handmade earrings and accessories at the Burnside Music Fest on June 6 in downtown Ripley, offering festival-goers a chance to support talented local artisans while enjoying live Hill Country blues."
 featuredImage: /assets/img/posts/the-clay-cat-co-brings-handmade-artisan-jewelry-to-1779499962089.jpg
+aiAssisted: true
 ---
 
 # The Clay Cat Co. Joins Burnside Music Fest Vendor Lineup

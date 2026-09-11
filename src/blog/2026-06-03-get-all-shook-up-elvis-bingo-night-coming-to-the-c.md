@@ -3,6 +3,7 @@ title: "Get All Shook Up: Elvis Bingo Night Coming to The Cut-Off"
 date: 2026-06-03
 excerpt: "The Cut-Off in downtown Ripley is hosting a free Elvis-themed bingo night on Thursday, June 12 at 7:00 PM, featuring music, prizes, and fun for all ages."
 featuredImage: /assets/img/posts/get-all-shook-up-elvis-bingo-night-coming-to-the-c-1780451417586.jpg
+aiAssisted: true
 ---
 
 # Elvis Bingo Night Returns to Downtown Ripley

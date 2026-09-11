@@ -27,7 +27,8 @@ test('repeated and truncated headlines build to distinct pages', async t => {
   for (const [headline, day, feed, guid] of cases) {
     const date = new Date(day);
     const output = postOutput(headline, date, feed, guid);
-    const article = { title: headline, excerpt: 'Quotes " and backslashes \\ and\na new line', article: 'Article body.' };
+    const body = `Article body. ${Array.from({ length: 160 }, (_, i) => `word${i}`).join(' ')}`;
+    const article = { title: headline, excerpt: 'Quotes " and backslashes \\ and\na new line', article: body };
     await writeNewPost(path.join(input, output.fileName), generateMarkdown(article, null, date, output.permalink));
     outputs.push(output);
   }

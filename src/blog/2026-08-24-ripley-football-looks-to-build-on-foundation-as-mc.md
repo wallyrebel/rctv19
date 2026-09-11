@@ -3,6 +3,7 @@ title: "Ripley Football Looks to Build on Foundation as McDonald Enters Second S
 date: 2026-08-24
 excerpt: "Head coach Rico McDonald enters his second season at Ripley with a young roster that gained valuable varsity experience in 2025, while retaining key playmakers to lead the program forward."
 featuredImage: /assets/img/posts/ripley-football-looks-to-build-on-foundation-as-mc-1787621296214.jpg
+aiAssisted: true
 ---
 
 # Ripley Football Poised for Growth in McDonald's Second Season

@@ -3,6 +3,7 @@ title: "Southern Squeeze Brings Refreshing Drinks to Burnside Music Fest in Hist
 date: 2026-05-30
 excerpt: "Southern Squeeze will be serving up specialty beverages including fresh lemonades and dirty sodas at the Burnside Music Fest on Saturday, June 6, 2026, offering festival-goers the perfect refreshment while enjoying live Hill Country blues music."
 featuredImage: /assets/img/posts/southern-squeeze-brings-refreshing-drinks-to-burns-1780191555342.jpg
+aiAssisted: true
 ---
 
 # Southern Squeeze to Quench Your Thirst at Burnside Music Fest

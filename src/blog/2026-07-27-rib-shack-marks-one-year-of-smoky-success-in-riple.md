@@ -3,6 +3,7 @@ title: "Rib Shack Marks One Year of Smoky Success in Ripley"
 date: 2026-07-27
 excerpt: "The popular barbecue restaurant celebrates its first anniversary in Ripley, reflecting on a year of serving the community. The milestone marks a significant achievement for the local dining destination."
 featuredImage: /assets/img/posts/rib-shack-marks-one-year-of-smoky-success-in-riple-1785245482797.jpg
+aiAssisted: true
 ---
 
 # Rib Shack Celebrates One Year Anniversary in Ripley

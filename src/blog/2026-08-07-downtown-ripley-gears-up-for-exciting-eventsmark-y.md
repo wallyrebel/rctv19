@@ -3,6 +3,7 @@ title: "Downtown Ripley Gears Up for Exciting Events—Mark Your Calendars Now!"
 date: 2026-08-07
 excerpt: "Downtown Ripley is preparing to host a series of upcoming events that promise entertainment and community engagement for residents and visitors alike. The Ripley Main Street organization is encouraging locals to save the dates and plan their attendance."
 featuredImage: /assets/img/posts/downtown-ripley-gears-up-for-exciting-eventsmark-y-1786152533851.jpg
+aiAssisted: true
 ---
 
 # Downtown Ripley Announces Upcoming Events

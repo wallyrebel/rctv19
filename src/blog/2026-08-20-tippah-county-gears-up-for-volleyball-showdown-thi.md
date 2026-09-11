@@ -3,6 +3,7 @@ title: "Tippah County Gears Up for Volleyball Showdown This Thursday Evening"
 date: 2026-08-20
 excerpt: "Tippah County schools are set to compete in multiple volleyball matchups on Thursday, August 20, 2026, promising an evening of athletic competition and community engagement."
 featuredImage: /assets/img/posts/tippah-county-gears-up-for-volleyball-showdown-thi-1787231845573.jpg
+aiAssisted: true
 ---
 
 # Tippah County Sports Heat Up with Volleyball Action

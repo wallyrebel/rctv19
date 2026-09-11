@@ -3,6 +3,7 @@ title: "Millie & Co Opens Tonight for Shopping and Dining at The Cut-Off Downtow
 date: 2026-08-03
 excerpt: "Millie & Co invites customers to enjoy an evening of retail therapy paired with Big Tae's Eats at The Cut-Off, opening at 5:00 PM tonight at 204 South Commerce Street."
 featuredImage: /assets/img/posts/millie-and-co-opens-tonight-for-shopping-and-dinin-1785807082522.jpg
+aiAssisted: true
 ---
 
 ## Local Boutique and Eatery Team Up for Evening of Shopping and Dining

@@ -3,6 +3,7 @@ title: "Anthony Morgan Earns Prestigious Franklin Financial Tippah County Sports
 date: 2026-05-14
 excerpt: "Anthony Morgan has been named the 2025-2026 1st Franklin Financial Tippah County Sports Male Athlete of the Year, recognizing his outstanding athletic achievements and contributions to local sports."
 featuredImage: /assets/img/posts/anthony-morgan-earns-prestigious-franklin-financia-1778808831665.jpg
+aiAssisted: true
 ---
 
 # Anthony Morgan Named 1st Franklin Financial Tippah County Sports Male Athlete of the Year

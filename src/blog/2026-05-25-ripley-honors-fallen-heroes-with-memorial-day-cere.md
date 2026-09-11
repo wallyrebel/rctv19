@@ -3,6 +3,7 @@ title: "Ripley Honors Fallen Heroes with Memorial Day Ceremony and Historical Ma
 date: 2026-05-25
 excerpt: "The city of Ripley invites the community to attend a Memorial Day program this morning at the Ripley Sportsplex, featuring a historical marker unveiling by the Daughters of the American Revolution and remarks from the American Legion."
 featuredImage: /assets/img/posts/ripley-honors-fallen-heroes-with-memorial-day-cere-1779759277818.jpg
+aiAssisted: true
 ---
 
 # Ripley Honors Fallen Heroes with Memorial Day Ceremony and Historical Marker Unveiling

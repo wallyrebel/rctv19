@@ -3,6 +3,7 @@ title: "BMCU Softball Team Honored with SSAC Champions of Character Award"
 date: 2026-06-01
 excerpt: "Blue Mountain Christian University's softball team has been recognized with the prestigious SSAC Mayor Todd Strange Female Champions of Character Team Award, celebrating their commitment to integrity and service during a historic season."
 featuredImage: /assets/img/posts/bmcu-softball-team-honored-with-ssac-champions-of--1780326260894.webp
+aiAssisted: true
 ---
 
 # BMCU Softball Team Honored with SSAC Champions of Character Award

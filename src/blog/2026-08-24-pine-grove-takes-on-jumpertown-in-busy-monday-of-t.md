@@ -3,6 +3,7 @@ title: "Pine Grove Takes On Jumpertown in Busy Monday of Tippah County Volleybal
 date: 2026-08-24
 excerpt: "Tippah County sports fans have plenty to cheer about this Monday evening as Pine Grove prepares to face off against Jumpertown in what promises to be an exciting volleyball matchup. The game is part of a full slate of local athletic competitions scheduled throughout the day."
 featuredImage: /assets/img/posts/pine-grove-takes-on-jumpertown-in-busy-monday-of-t-1787577497820.jpg
+aiAssisted: true
 ---
 
 # Pine Grove Takes On Jumpertown in Busy Monday of Tippah County Volleyball

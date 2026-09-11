@@ -3,6 +3,7 @@ title: "Community Gathers for Movie Night at The Cut-Off as Ripley Main Street C
 date: 2026-08-17
 excerpt: "Ripley Main Street hosted a successful Movie Night at The Cut-Off on Friday, with Rebel Services sponsoring the event to bring entertainment and community spirit to the downtown area."
 featuredImage: /assets/img/posts/community-gathers-for-movie-night-at-the-cut-off-a-1787016476605.jpg
+aiAssisted: true
 ---
 
 # Community Enjoys Movie Night at The Cut-Off with Local Business Support

@@ -31,7 +31,7 @@ test('published article files cannot contain a generation failure', () => {
 });
 
 test('new feed articles retain source attribution and reject unsafe source protocols', () => {
-  const article = {title:'Local news',excerpt:'Summary',article:'Story body'};
+  const article = {title:'Local news',excerpt:'Summary',article:`Story body. ${Array.from({length:160},(_,i)=>`word${i}`).join(' ')}`};
   const date = new Date('2026-09-08');
   assert.match(generateMarkdown(article,null,date,'/blog/test/',{url:'https://example.com/story',name:'Source'}), /sourceUrl: "https:\/\/example.com\/story"/);
   assert.throws(()=>generateMarkdown(article,null,date,'/blog/test/',{url:'javascript:alert(1)'}), /HTTP or HTTPS/);

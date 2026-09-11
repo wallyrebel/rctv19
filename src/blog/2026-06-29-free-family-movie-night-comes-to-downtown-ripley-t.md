@@ -3,6 +3,7 @@ title: "Free Family Movie Night Comes to Downtown Ripley This Friday with Robin 
 date: 2026-06-29
 excerpt: "The Cut-Off in downtown Ripley is hosting a free family movie night this Friday, July 3rd, featuring the comedy film RV starring Robin Williams. The event, sponsored by West Glass Company, begins at dusk and invites families to bring lawn chairs and blankets for an evening of entertainment under string lights."
 featuredImage: /assets/img/posts/free-family-movie-night-comes-to-downtown-ripley-t-1782783440757.jpg
+aiAssisted: true
 ---
 
 # Free Family Movie Night Comes to Downtown Ripley This Friday

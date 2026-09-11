@@ -3,6 +3,7 @@ title: "Burnside Music Festival VIP Wristbands Still Available—Secure Your Pre
 date: 2026-06-04
 excerpt: "VIP passes for the Burnside Music Festival are still available, offering an exclusive package that includes a festival shirt, signed poster, meet-and-greet opportunities with performing bands, food, and drink tickets. Interested attendees are urged to reserve their wristbands quickly before inventory runs out."
 featuredImage: /assets/img/posts/burnside-music-festival-vip-wristbands-still-avail-1780667761694.jpg
+aiAssisted: true
 ---
 
 # Burnside Music Festival VIP Wristbands Still Available—Don't Miss Out

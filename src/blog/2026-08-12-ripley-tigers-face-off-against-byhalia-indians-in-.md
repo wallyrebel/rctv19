@@ -3,6 +3,7 @@ title: "Ripley Tigers Face Off Against Byhalia Indians in High-Stakes Volleyball
 date: 2026-08-12
 excerpt: "Tippah County sports fans are in for an exciting evening as the Ripley Tigers girls volleyball team takes on the Byhalia Indians in a standout matchup scheduled for tonight, August 12, 2026."
 featuredImage: /assets/img/posts/ripley-tigers-face-off-against-byhalia-indians-in--1786541252278.jpg
+aiAssisted: true
 ---
 
 ## Tippah County Sports Heating Up with Volleyball Showdown

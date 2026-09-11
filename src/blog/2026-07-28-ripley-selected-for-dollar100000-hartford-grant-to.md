@@ -3,6 +3,7 @@ title: "Ripley Selected for $100,000 Hartford Grant to Launch Brown & Covington 
 date: 2026-07-28
 excerpt: "Ripley Main Street has been awarded a $100,000 New & Expanding Accelerator Grant through The Hartford Small Business Accelerator Grant Program, one of only six communities nationwide selected for funding. The grant will support the creation of Brown & Covington, a downtown space dedicated to fostering local artisans, entrepreneurs, and workforce development."
 featuredImage: /assets/img/posts/ripley-selected-for-dollar100000-hartford-grant-to-1785331924056.jpg
+aiAssisted: true
 ---
 
 # Ripley Receives $100,000 Grant to Launch Downtown Maker Space

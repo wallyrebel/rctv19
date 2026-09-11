@@ -3,6 +3,7 @@ title: "North Mississippi Primary Health Care Sponsors Burnside Music Fest, Supp
 date: 2026-05-25
 excerpt: "North Mississippi Primary Health Care has partnered with Burnside Music Fest to support the celebration of Hill Country blues and community culture in downtown Ripley. The festival takes place Saturday, June 6, bringing live music and tourism to the historic district."
 featuredImage: /assets/img/posts/north-mississippi-primary-health-care-sponsors-bur-1779759272660.jpg
+aiAssisted: true
 ---
 
 # Local Healthcare Provider Backs Burnside Music Fest

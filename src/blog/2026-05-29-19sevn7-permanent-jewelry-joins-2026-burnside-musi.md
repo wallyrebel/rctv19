@@ -3,6 +3,7 @@ title: "19Sevn7 Permanent Jewelry Joins 2026 Burnside Music Fest Vendor Lineup"
 date: 2026-05-29
 excerpt: "Custom permanent jewelry maker 19Sevn7 will debut at the upcoming Burnside Music Fest on June 6, 2026, offering festival-goers the chance to create personalized keepsakes while enjoying Hill Country blues and local shopping in historic downtown Ripley."
 featuredImage: /assets/img/posts/19sevn7-permanent-jewelry-joins-2026-burnside-musi-1780104853734.jpg
+aiAssisted: true
 ---
 
 # 19Sevn7 Permanent Jewelry Brings Custom Craftsmanship to Burnside Music Fest

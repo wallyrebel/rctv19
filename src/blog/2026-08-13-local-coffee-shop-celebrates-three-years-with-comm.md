@@ -3,6 +3,7 @@ title: "Local Coffee Shop Celebrates Three Years with Community Fun Day on Augus
 date: 2026-08-13
 excerpt: "A beloved local coffee establishment is marking three years in business with a special celebration event scheduled for August 21st, inviting the community to join in the festivities."
 featuredImage: /assets/img/posts/local-coffee-shop-celebrates-three-years-with-comm-1786713966623.jpg
+aiAssisted: true
 ---
 
 ## Community Celebrates Local Coffee Shop's Third Anniversary

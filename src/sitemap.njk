@@ -45,6 +45,12 @@ eleventyExcludeFromCollections: true
     <priority>0.3</priority>
   </url>
   
+  <url>
+    <loc>{{ site.url }}/terms/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
   <url><loc>{{ site.url }}/editorial/</loc></url>
   {% for archive in collections.all %}{% if archive.data.pagination and archive.data.pagination.hrefs %}{% for href in archive.data.pagination.hrefs %}{% if href != "/blog/" %}<url><loc>{{ site.url }}{{ href }}</loc></url>{% endif %}{% endfor %}{% endif %}{% endfor %}
   {# Blog posts #}

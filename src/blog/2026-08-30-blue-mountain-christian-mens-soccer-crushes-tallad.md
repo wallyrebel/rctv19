@@ -3,6 +3,7 @@ title: "Blue Mountain Christian Men's Soccer Crushes Talladega with Dominant 8-0
 date: 2026-08-30
 excerpt: "Blue Mountain Christian's men's soccer team delivered a dominant performance against Talladega College, scoring four goals in each half to secure an impressive 8-0 victory at The Summit on Saturday night."
 featuredImage: /assets/img/posts/blue-mountain-christian-mens-soccer-crushes-tallad-1788052539129.webp
+aiAssisted: true
 ---
 
 # Blue Mountain Christian Dominates Talladega in Lopsided 8-0 Soccer Victory

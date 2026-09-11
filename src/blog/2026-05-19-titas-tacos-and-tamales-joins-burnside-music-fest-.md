@@ -3,6 +3,7 @@ title: "Tita's Tacos & Tamales Joins Burnside Music Fest Lineup in Historic Down
 date: 2026-05-19
 excerpt: "Local favorite Tita's Tacos & Tamales will be serving authentic street tacos, tamales, and fresh-made specialties at the Burnside Music Fest on Saturday, June 6, 2026. The food vendor spotlight highlights an opportunity for festival-goers to support local businesses while enjoying great music and cuisine in Historic Downtown Ripley."
 featuredImage: /assets/img/posts/titas-tacos-and-tamales-joins-burnside-music-fest--1779285041719.jpg
+aiAssisted: true
 ---
 
 # Tita's Tacos & Tamales Brings Authentic Flavors to Burnside Music Fest

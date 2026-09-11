@@ -3,6 +3,7 @@ title: "Blue Mountain Christian Volleyball Dominates Season Opener with Sweep at
 date: 2026-08-21
 excerpt: "Blue Mountain Christian volleyball kicked off their 2026 season in impressive fashion, defeating Spartanburg Methodist in a straight-set victory at the Carolina Classic tournament in Winston-Salem."
 featuredImage: /assets/img/posts/blue-mountain-christian-volleyball-dominates-seaso-1787362082352.webp
+aiAssisted: true
 ---
 
 # Blue Mountain Christian Volleyball Dominates Season Opener with Sweep at Carolina Classic

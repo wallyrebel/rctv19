@@ -3,6 +3,7 @@ title: "Three High School Football Teams Take the Field in Tippah County Tonight
 date: 2026-08-28
 excerpt: "Tippah County is gearing up for an action-packed evening of high school football featuring three local teams competing in simultaneous matchups. Fans are encouraged to come out and support their Tigers, Eagles, and Wildcats."
 featuredImage: /assets/img/posts/three-high-school-football-teams-take-the-field-in-1787936400384.jpg
+aiAssisted: true
 ---
 
 # Three High School Football Teams Take the Field in Tippah County Tonight

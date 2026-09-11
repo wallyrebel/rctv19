@@ -3,6 +3,7 @@ title: "Your Complete Guide to the Burnside Music Festival: Parking, Stages, and
 date: 2026-06-05
 excerpt: "The Burnside Music Festival in Historic Downtown Ripley is this Saturday, celebrating 100 years of the Burnside Legacy. Festival organizers have released a detailed map showing parking locations, stage placement, VIP areas, food vendors, and BBQ cookoff spots."
 featuredImage: /assets/img/posts/your-complete-guide-to-the-burnside-music-festival-1780752575248.jpg
+aiAssisted: true
 ---
 
 # Your Complete Guide to the Burnside Music Festival: Parking, Stages, and More

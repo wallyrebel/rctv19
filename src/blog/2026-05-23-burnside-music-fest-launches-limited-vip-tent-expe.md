@@ -3,6 +3,7 @@ title: "Burnside Music Fest Launches Limited VIP Tent Experience for June 6 Down
 date: 2026-05-23
 excerpt: "The Burnside Music Fest is offering exclusive VIP wristbands for $75 pre-order, featuring festival merchandise, meet-and-greet opportunities with bands, food, and drink tickets. The event takes place June 6 in downtown Ripley with limited VIP packages available."
 featuredImage: /assets/img/posts/burnside-music-fest-launches-limited-vip-tent-expe-1779586618348.jpg
+aiAssisted: true
 ---
 
 # Burnside Music Fest Unveils Premium VIP Experience Ahead of June 6 Event

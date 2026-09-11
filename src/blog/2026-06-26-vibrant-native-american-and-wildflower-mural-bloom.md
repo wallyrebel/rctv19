@@ -3,6 +3,7 @@ title: "Vibrant Native American and Wildflower Mural Blooms in Downtown Ripley"
 date: 2026-06-26
 excerpt: "Local artist Annie Simpson Rivers is creating a stunning mural celebrating Native American culture and native wildflowers on the future Brown & Covington Building in downtown Ripley, made possible through a Mississippi Hills National Heritage Area grant."
 featuredImage: /assets/img/posts/vibrant-native-american-and-wildflower-mural-bloom-1782566989359.jpg
+aiAssisted: true
 ---
 
 # Vibrant Native American and Wildflower Mural Blooms in Downtown Ripley

@@ -3,6 +3,7 @@ title: "Ripley's Small-Town Lunch Culture: A Culinary Gem Worth Celebrating"
 date: 2026-06-22
 excerpt: "Ripley showcases the charm and quality of small-town dining, offering locals and visitors an abundance of lunch options that exemplify genuine community food culture."
 featuredImage: /assets/img/posts/ripleys-small-town-lunch-culture-a-culinary-gem-wo-1782178570259.jpg
+aiAssisted: true
 ---
 
 # Ripley's Small-Town Lunch Culture: A Culinary Gem Worth Celebrating

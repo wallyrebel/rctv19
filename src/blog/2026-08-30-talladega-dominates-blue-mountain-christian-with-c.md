@@ -3,6 +3,7 @@ title: "Talladega Dominates Blue Mountain Christian with Commanding 4-0 Victory"
 date: 2026-08-30
 excerpt: "Talladega College cruised to a decisive 4-0 victory over Blue Mountain Christian in a non-conference women's soccer matchup Saturday, with the Toppers pulling away decisively in the second half."
 featuredImage: /assets/img/posts/talladega-dominates-blue-mountain-christian-with-c-1788052535548.webp
+aiAssisted: true
 ---
 
 # Talladega Defeats Blue Mountain Christian 4-0 in Non-Conference Clash

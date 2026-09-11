@@ -3,6 +3,7 @@ title: "Downtown Ripley Extends Shopping Hours Tonight with Elvis Bingo Night Fi
 date: 2026-06-12
 excerpt: "Most downtown Ripley shops will stay open until 7:00 PM tonight as part of the Downtown After Hours series, followed by Elvis Bingo Night at The Cut-Off. The summer shopping event encourages locals and visitors to support small businesses while enjoying an evening on the square."
 featuredImage: /assets/img/posts/downtown-ripley-extends-shopping-hours-tonight-wit-1781314839541.jpg
+aiAssisted: true
 ---
 
 # Downtown Ripley Extends Hours for After Hours Shopping and Entertainment

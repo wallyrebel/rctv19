@@ -3,6 +3,7 @@ title: "Burnside Music Fest Vendor Spots Filling Up Fast—Apply Now for Downtow
 date: 2026-05-18
 excerpt: "With the Burnside Music Fest just weeks away, organizers are opening final vendor spots for local artists, makers, and small businesses. Those interested in joining the celebration of music, food, and community are urged to apply immediately as spaces are limited."
 featuredImage: /assets/img/posts/burnside-music-fest-vendor-spots-filling-up-fastap-1779154600599.jpg
+aiAssisted: true
 ---
 
 # Burnside Music Fest Vendor Opportunities Available—Don't Miss Out

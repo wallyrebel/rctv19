@@ -2,6 +2,7 @@
 title: "Elaine Online Boutique Pop-Up Shop Coming Saturday at The Cut-Off"
 date: 2026-05-13
 excerpt: "Elaine Online Boutique is hosting a shopping event this Saturday from 10 AM to 3 PM at The Cut-Off location, offering customers an opportunity to browse and shop in person."
+aiAssisted: true
 ---
 
 # Elaine Online Boutique Pop-Up Shop This Saturday

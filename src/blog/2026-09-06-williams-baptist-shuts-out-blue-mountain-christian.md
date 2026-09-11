@@ -3,6 +3,7 @@ title: "Williams Baptist Shuts Out Blue Mountain Christian in Dominant Road Vict
 date: 2026-09-06
 excerpt: "Williams Baptist University delivered a commanding 5-0 victory over Blue Mountain Christian University in women's soccer action Saturday at The Summit. Despite a competitive first half, the Toppers were unable to contain the Eagles' offensive onslaught in the second half."
 featuredImage: /assets/img/posts/williams-baptist-shuts-out-blue-mountain-christian-1788657451391.webp
+aiAssisted: true
 ---
 
 # Williams Baptist Dominates Blue Mountain Christian in Women's Soccer Matchup

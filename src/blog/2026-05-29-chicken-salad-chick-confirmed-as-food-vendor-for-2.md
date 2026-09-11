@@ -3,6 +3,7 @@ title: "Chicken Salad Chick Confirmed as Food Vendor for 2026 Burnside Music Fes
 date: 2026-05-29
 excerpt: "Chicken Salad Chick has joined the vendor lineup for the 2026 Burnside Music Fest, offering festival-goers a chance to enjoy their signature chicken salad and sandwiches while experiencing live Hill Country Blues performances in downtown Ripley, Mississippi."
 featuredImage: /assets/img/posts/chicken-salad-chick-confirmed-as-food-vendor-for-2-1780104859007.jpg
+aiAssisted: true
 ---
 
 # Chicken Salad Chick Brings Culinary Flavor to 2026 Burnside Music Fest

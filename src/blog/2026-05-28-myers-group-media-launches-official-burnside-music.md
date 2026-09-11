@@ -3,6 +3,7 @@ title: "Myers Group Media Launches Official Burnside Music Fest Website to Suppo
 date: 2026-05-28
 excerpt: "Myers Group Media has created the official BurnsideMusicFest.com website, providing festival-goers with updates, schedules, and announcements for the upcoming Burnside Music Fest in downtown Ripley, Mississippi."
 featuredImage: /assets/img/posts/myers-group-media-launches-official-burnside-music-1780018555369.jpg
+aiAssisted: true
 ---
 
 # Myers Group Media Brings Burnside Music Fest Online

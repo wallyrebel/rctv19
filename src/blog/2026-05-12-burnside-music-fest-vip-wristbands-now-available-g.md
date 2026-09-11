@@ -3,6 +3,7 @@ title: "Burnside Music Fest VIP Wristbands Now Available: Get Exclusive Access t
 date: 2026-05-12
 excerpt: "The Burnside Music Fest is offering limited VIP wristbands for $75 pre-order, featuring festival merchandise, meet-and-greets with bands, food, and drink tickets. The event takes place June 6th, 2026, in downtown Ripley, Mississippi."
 featuredImage: /assets/img/posts/burnside-music-fest-vip-wristbands-now-available-g-1778636016830.jpg
+aiAssisted: true
 ---
 
 # Burnside Music Fest Launches VIP Wristband Pre-Orders for 2026 Event

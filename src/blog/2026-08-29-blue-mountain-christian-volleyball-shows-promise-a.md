@@ -3,6 +3,7 @@ title: "Blue Mountain Christian Volleyball Shows Promise at Vette City Classic D
 date: 2026-08-29
 excerpt: "The Blue Mountain Christian University volleyball team opened the Vette City Classic tournament with a decisive victory over Kentucky Christian, but stumbled in a five-set thriller against Campbellsville in their second match."
 featuredImage: /assets/img/posts/blue-mountain-christian-volleyball-shows-promise-a-1787965513976.webp
+aiAssisted: true
 ---
 
 # Blue Mountain Christian Volleyball Splits Matches at Vette City Classic

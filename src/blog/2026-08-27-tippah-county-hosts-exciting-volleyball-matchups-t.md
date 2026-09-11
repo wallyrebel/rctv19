@@ -3,6 +3,7 @@ title: "Tippah County Hosts Exciting Volleyball Matchups This Evening"
 date: 2026-08-27
 excerpt: "High school volleyball teams across Tippah County are set to compete in multiple home matches on August 27, 2026, offering fans an exciting evening of local sports action."
 featuredImage: /assets/img/posts/tippah-county-hosts-exciting-volleyball-matchups-t-1787848864071.jpg
+aiAssisted: true
 ---
 
 # Tippah County Sports Heat Up with Volleyball Action

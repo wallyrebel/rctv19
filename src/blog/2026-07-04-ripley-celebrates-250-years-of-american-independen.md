@@ -3,6 +3,7 @@ title: "Ripley Celebrates 250 Years of American Independence on Fourth of July"
 date: 2026-07-04
 excerpt: "The community of Ripley joins the nation in commemorating the 250th anniversary of American freedom on Independence Day, reflecting on two and a half centuries of the nation's history."
 featuredImage: /assets/img/posts/ripley-celebrates-250-years-of-american-independen-1783215115636.jpg
+aiAssisted: true
 ---
 
 # Ripley Celebrates 250 Years of American Independence

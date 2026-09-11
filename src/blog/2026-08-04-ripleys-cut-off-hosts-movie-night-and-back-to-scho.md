@@ -3,6 +3,7 @@ title: "Ripley's Cut-Off Hosts Movie Night and Back-to-School Bash This Weekend"
 date: 2026-08-04
 excerpt: "Ripley Main Street is bringing community entertainment to The Cut-Off with a free family movie screening of Zootopia 2 on Friday, August 14, followed by a festive Back-to-School Bash on Saturday, August 15 featuring games, face painting, food trucks, and school supply giveaways."
 featuredImage: /assets/img/posts/ripleys-cut-off-hosts-movie-night-and-back-to-scho-1785893484941.jpg
+aiAssisted: true
 ---
 
 # Ripley's Cut-Off Hosts Movie Night and Back-to-School Bash This Weekend
