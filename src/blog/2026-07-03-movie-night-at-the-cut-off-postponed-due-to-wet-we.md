@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/movie-night-at-the-cut-off-postponed-due-to-wet-weather/index.html"
 title: "Movie Night at The Cut-off Postponed Due to Wet Weather"
 date: 2026-07-03
 excerpt: "An outdoor movie screening scheduled for tonight at The Cut-off has been postponed due to rainy conditions and soggy ground. Organizers promise to announce a new date soon and joked that they may need to consult with local farmers about their apparent ability to summon rain."

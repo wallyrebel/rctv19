@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/the-cut-off-hosts-lively-open-mic-night-tonightmusic-food/index.html"
 title: "The Cut-Off Hosts Lively Open Mic Night Tonight—Music, Food, and Community Await"
 date: 2026-06-19
 excerpt: "Local venue The Cut-Off is hosting an open mic night from 7:00–9:00 PM tonight, featuring live performances from community musicians, food trucks, and refreshments in a casual, welcoming atmosphere."

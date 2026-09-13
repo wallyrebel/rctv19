@@ -1,18 +1,32 @@
 ---
 layout: layouts/base.njk
 ---
+{% set articleImage = featuredImage or '/assets/img/rctv19-logo.jpg' %}
+{% set articleImageSize = articleImage | imageSize(0) %}
 <!-- NewsArticle Structured Data for SEO -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org", "@type": "NewsArticle",
   "headline": {{ title | jsonLd | safe }},
-  "description": {{ (excerpt or (content | excerpt)) | jsonLd | safe }},
-  "image": {{ (site.url + (featuredImage or '/assets/img/rctv19-logo.jpg')) | jsonLd | safe }},
+  "description": {{ ((excerpt or (content | excerpt)) | metaDescription) | jsonLd | safe }},
+  "image": {
+    "@type": "ImageObject",
+    "url": {{ (site.url + articleImage) | jsonLd | safe }}
+    {%- if articleImageSize %},
+    "width": {{ articleImageSize.width }},
+    "height": {{ articleImageSize.height }}
+    {%- endif %}
+  },
   "datePublished": {{ (date | dateISO) | jsonLd | safe }},
   "dateModified": {{ ((updated or date) | dateISO) | jsonLd | safe }},
   "author": {"@type": "Organization", "name": {{ site.author | jsonLd | safe }}, "url": {{ (site.url + '/about/') | jsonLd | safe }}},
-  "publisher": {"@type": "Organization", "name": {{ site.title | jsonLd | safe }}, "logo": {"@type": "ImageObject", "url": {{ (site.url + '/assets/img/rctv19-logo.jpg') | jsonLd | safe }}}},
+  "publisher": {"@id": {{ (site.url + "/#organization") | jsonLd | safe }}},
   "mainEntityOfPage": {"@type": "WebPage", "@id": {{ (site.url + page.url) | jsonLd | safe }}},
+  "inLanguage": "en-US",
+  "wordCount": {{ content | wordCount }},
+  {%- if topics.length %}
+  "articleSection": [{% for slug in topics %}{% if not loop.first %}, {% endif %}{{ (slug | topicName) | jsonLd | safe }}{% endfor %}],
+  {%- endif %}
   "isAccessibleForFree": true
 }
 </script>
@@ -24,36 +38,52 @@ layout: layouts/base.njk
   {% include "components/ad-slot.njk" %}
 </div>
 
-<article class="container" itemscope itemtype="https://schema.org/NewsArticle">
+<article class="container">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a> <span aria-hidden="true">›</span>
+    <a href="/blog/">News</a>
+    {%- if topics.length %} <span aria-hidden="true">›</span>
+    <a href="/topics/{{ topics[0] }}/">{{ topics[0] | topicName }}</a>
+    {%- endif %}
+  </nav>
+
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="{{ date | dateISO }}" itemprop="datePublished">{{ date | dateDisplay }}</time>
+      <time datetime="{{ date | dateISO }}">{{ date | dateDisplay }}</time>
     </div>
     <p>By <a href="/about/">{{ site.author }}</a></p>
-    <h1 class="post-title" itemprop="headline">{{ title }}</h1>
+    <h1 class="post-title">{{ title }}</h1>
   </header>
-  
+
   {% if featuredImage %}
+  {% set heroSize = featuredImage | imageSize(960) %}
   <div class="post-featured-image">
-    <img 
+    <img
       src="{{ featuredImage | optimizedImage(960) }}"
       {% if (featuredImage | optimizedImage(480)) != featuredImage %}
       srcset="{{ featuredImage | optimizedImage(480) }} 480w, {{ featuredImage | optimizedImage(960) }} 960w"
       sizes="(max-width: 960px) 100vw, 900px"
       {% endif %}
-      alt="{{ title }}"
+      alt="{{ featuredImageAlt or title }}"
       loading="eager"
       fetchpriority="high"
-      width="900"
-      height="506"
+      {# Real dimensions so the browser reserves the right space and the page does not jump. #}
+      width="{{ heroSize.width if heroSize else 900 }}"
+      height="{{ heroSize.height if heroSize else 506 }}"
     >
   </div>
   {% endif %}
-  
+
   <div class="post-content">
     {{ content | articleBody | safe }}
   </div>
-  
+
+  {% if topics.length %}
+  <p class="post-topics">Filed under:
+    {%- for slug in topics %} <a class="topic-tag" href="/topics/{{ slug }}/">{{ slug | topicName }}</a>{% if not loop.last %} {% endif %}{% endfor %}
+  </p>
+  {% endif %}
+
   {% if sourceUrl %}<p class="post-content">Source: <a href="{{ sourceUrl }}" rel="noopener">{{ sourceName or 'Original report' }}</a>{% if aiAssisted %}. Prepared with AI assistance.{% endif %}</p>{% endif %}
   <p class="post-content"><a href="/editorial/">Our editorial standards</a> · <a href="mailto:rctv19@gmail.com?subject=Article%20correction">Report a correction</a></p>
   <!-- In-Feed Ad -->
@@ -62,11 +92,12 @@ layout: layouts/base.njk
     {% set format = "rectangle" %}
     {% include "components/ad-slot.njk" %}
   </div>
-  
+
   {% include "components/share-links.njk" %}
-  
+
   <!-- Related Posts -->
-  {% set relatedPosts = collections.posts | shuffle | limit(3) %}
+  {# Ranked by shared topic, then recency, so the links point somewhere a reader actually wants. #}
+  {% set relatedPosts = collections.posts | relatedPosts({ url: page.url, topics: topics }, 3) %}
   {% if relatedPosts.length > 0 %}
   <section class="related-posts">
     <div class="section-header">
@@ -74,9 +105,7 @@ layout: layouts/base.njk
     </div>
     <div class="related-posts-grid">
       {% for post in relatedPosts %}
-        {% if post.url != page.url %}
-          {% include "components/post-card.njk" %}
-        {% endif %}
+        {% include "components/post-card.njk" %}
       {% endfor %}
     </div>
   </section>

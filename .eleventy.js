@@ -1,9 +1,16 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const { optimizedImage } = require('./scripts/image-assets');
 const { optimizeImages } = require('./scripts/optimize-images');
+const { loadDimensions, imageSize, assetBytes } = require('./scripts/image-dimensions');
 const { validateSite } = require('./scripts/validate-site');
+const { TOPICS, MIN_POSTS_PER_TOPIC, topic } = require('./scripts/topics');
+const { metaDescription, relatedPosts, imageMimeType, encodePath, wordCount } = require('./scripts/seo');
 
 module.exports = function (eleventyConfig) {
+  // Intrinsic image sizes are read up front so templates can reserve the right
+  // space for each image without an async filter.
+  eleventyConfig.on('eleventy.before', async () => { await loadDimensions(); });
+
   // Run for direct Eleventy builds too, including Cloudflare's existing command.
   eleventyConfig.on('eleventy.after', async ({ directories, outputMode }) => {
     if (outputMode !== 'fs') return;
@@ -39,8 +46,29 @@ module.exports = function (eleventyConfig) {
       .slice(0, 6);
   });
 
+  // One entry per topic hub that has enough stories to be worth a page of its own.
+  eleventyConfig.addCollection("topicPages", function (collectionApi) {
+    const posts = collectionApi.getFilteredByGlob("src/blog/*.md").sort((a, b) => b.date - a.date);
+    return TOPICS
+      .map(definition => ({
+        ...definition,
+        url: `/topics/${definition.slug}/`,
+        posts: posts.filter(post => (post.data.topics || []).includes(definition.slug))
+      }))
+      .filter(entry => entry.posts.length >= MIN_POSTS_PER_TOPIC);
+  });
+
   // Filters
   eleventyConfig.addFilter("optimizedImage", optimizedImage);
+  eleventyConfig.addFilter("imageSize", imageSize);
+  eleventyConfig.addFilter("metaDescription", metaDescription);
+  eleventyConfig.addFilter("imageMimeType", imageMimeType);
+  eleventyConfig.addFilter("topicName", slug => (topic(slug) || {}).name || slug);
+  eleventyConfig.addFilter("topicHeading", slug => (topic(slug) || {}).heading || slug);
+  eleventyConfig.addFilter("relatedPosts", relatedPosts);
+  eleventyConfig.addFilter("wordCount", wordCount);
+  eleventyConfig.addFilter("encodePath", encodePath);
+  eleventyConfig.addFilter("assetBytes", assetBytes);
   eleventyConfig.addFilter("articleBody", content => String(content || "")
     .replace(/^\s*<h1\b[^>]*>[\s\S]*?<\/h1>\s*/i, "")
     .replace(/<(\/?)h1\b/gi, "<$1h2"));
@@ -69,15 +97,6 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("limit", function (arr, limit) {
     return arr.slice(0, limit);
-  });
-
-  eleventyConfig.addFilter("shuffle", function (arr) {
-    const shuffled = [...arr];
-    for (let i = shuffled.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-    return shuffled;
   });
 
   // Shortcodes

@@ -2,7 +2,7 @@
 title: "Bolen's pick-six secures Northeast's first win of the season"
 date: 2026-09-09
 excerpt: "Northeast Mississippi Community College secured its first win of the season with a defensive play by Jeb Bolen, who recorded a pick-six in the game."
-permalink: "/blog/2026-09-09-bolens-pick-six-secures-northeasts-first-win-of-th-45c381afdca219d8c6e6bd473a699a845399abd40477cc6c167e94cd03cc673b/index.html"
+permalink: "/blog/bolens-pick-six-secures-northeasts-first-win-of-the-season/index.html"
 sourceUrl: "https://tippahsports.com/uncategorized/bolens-pick-six-secures-northeasts-first-win-of-the-season/"
 sourceName: "Tippah County Sports"
 aiAssisted: true

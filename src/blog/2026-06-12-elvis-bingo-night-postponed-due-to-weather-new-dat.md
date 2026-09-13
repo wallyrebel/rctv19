@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/elvis-bingo-night-postponed-due-to-weather-new-date-coming/index.html"
 title: "Elvis Bingo Night Postponed Due to Weather; New Date Coming Soon"
 date: 2026-06-12
 excerpt: "The highly anticipated Elvis Bingo Night at The Cut-Off has been postponed due to inclement weather. Organizers are currently working to reschedule the event and promise to announce a new date shortly."

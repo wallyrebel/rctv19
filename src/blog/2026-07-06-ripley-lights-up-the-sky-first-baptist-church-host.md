@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/ripley-lights-up-the-sky-first-baptist-church-hosts/index.html"
 title: "Ripley Lights Up the Sky: First Baptist Church Hosts Spectacular Fourth of July Fireworks Display"
 date: 2026-07-06
 excerpt: "First Baptist Church Ripley hosted an incredible Independence Day fireworks show that lit up the night sky, with stunning photographs capturing the vibrant celebration for the community to enjoy."

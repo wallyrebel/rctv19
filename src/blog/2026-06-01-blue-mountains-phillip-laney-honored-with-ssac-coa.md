@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/blue-mountains-phillip-laney-honored-with-ssac-coach-of/index.html"
 title: "Blue Mountain's Phillip Laney Honored with SSAC Coach of Character Award"
 date: 2026-06-01
 excerpt: "Blue Mountain Christian University's Phillip Laney has been recognized with the prestigious SSAC Coach of Character Award for his exemplary demonstration of integrity, respect, and servant leadership. The honor was announced at the conference's annual banquet."

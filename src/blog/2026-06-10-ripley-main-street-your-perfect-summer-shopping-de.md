@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/ripley-main-street-your-perfect-summer-shopping-destination/index.html"
 title: "Ripley Main Street: Your Perfect Summer Shopping Destination"
 date: 2026-06-10
 excerpt: "Ripley's charming Main Street is inviting locals, visitors, and travelers to experience small-town shopping at its finest this summer. The picturesque downtown offers a unique retail experience that makes it an ideal pitstop for any shopping adventure."

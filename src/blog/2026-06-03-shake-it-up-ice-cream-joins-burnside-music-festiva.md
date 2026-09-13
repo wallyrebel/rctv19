@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/shake-it-up-ice-cream-joins-burnside-music-festival/index.html"
 title: "Shake It Up Ice Cream Joins Burnside Music Festival Celebration in Historic Ripley"
 date: 2026-06-03
 excerpt: "Local ice cream vendor Shake It Up Ice Cream will be serving up frozen treats at the Burnside Music Festival on June 6, offering attendees a cool refreshment while enjoying live music and celebrating 100 years of the Burnside Legacy in downtown Ripley, Mississippi."

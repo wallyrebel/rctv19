@@ -1227,3 +1227,107 @@ select:focus-visible {
   font-size: 0.9rem;
   margin-top: 0.15rem;
 }
+
+/* ========================================
+   BREADCRUMBS, TOPIC HUBS AND FOOTER NAP
+   ======================================== */
+
+.breadcrumbs {
+  font-size: 0.8125rem;
+  color: var(--gray-500);
+  margin: var(--space-md) 0 var(--space-sm);
+}
+
+.breadcrumbs a {
+  color: var(--gray-600);
+}
+
+.breadcrumbs a:hover {
+  color: var(--rctv-blue);
+}
+
+.breadcrumbs span[aria-hidden] {
+  margin: 0 var(--space-xs);
+  color: var(--gray-400);
+}
+
+.topic-chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+  margin: 0 0 var(--space-xl);
+}
+
+.topic-chips-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.topic-tag {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-md);
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-full);
+  background: var(--white);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--gray-700);
+  text-decoration: none;
+}
+
+.topic-tag:hover,
+.topic-tag:focus-visible {
+  border-color: var(--rctv-blue);
+  background: var(--rctv-blue);
+  color: var(--white);
+}
+
+.post-topics {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+  margin: var(--space-xl) 0 var(--space-lg);
+  font-size: 0.8125rem;
+  color: var(--gray-500);
+}
+
+.topic-intro {
+  max-width: 70ch;
+  margin-bottom: var(--space-xl);
+  color: var(--gray-700);
+}
+
+.topic-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-xl);
+}
+
+.topic-links li {
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.topic-links li > a {
+  font-family: var(--font-headline);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.topic-links p {
+  margin: var(--space-xs) 0 0;
+  color: var(--gray-600);
+  font-size: 0.9375rem;
+}
+
+.footer-address {
+  margin-top: var(--space-md);
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.7;
+}

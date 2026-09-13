@@ -1,12 +1,32 @@
 {
     "title": "RCTV19 - Ripley Community Television",
-    "description": "Your source for local news, events, and community coverage in Ripley and Tippah County.",
+    "shortName": "RCTV19",
+    "description": "Local news, sports, obituaries and community coverage for Ripley and Tippah County, Mississippi, from RCTV19 - Ripley Community Television.",
     "url": "https://rctv19.com",
     "author": "RCTV19",
+    "foundingDate": "1999",
+    "email": "rctv19@gmail.com",
+    "telephone": "+1-662-837-9088",
+    "address": {
+        "street": "112 Jefferson Street",
+        "locality": "Ripley",
+        "region": "MS",
+        "postalCode": "38663",
+        "country": "US"
+    },
+    "areaServed": [
+        "Ripley, Mississippi",
+        "Tippah County, Mississippi",
+        "Walnut, Mississippi",
+        "Blue Mountain, Mississippi",
+        "Falkner, Mississippi",
+        "Dumas, Mississippi"
+    ],
     "watchLiveUrl": "https://player.frontlayer.com/live/fl238965",
     "social": {
         "facebook": "https://facebook.com/rctv19",
-        "twitter": "https://twitter.com/rctv19"
+        "twitter": "https://twitter.com/rctv19",
+        "twitterHandle": "@rctv19"
     },
     "navigation": [
         {
@@ -14,8 +34,12 @@
             "url": "/"
         },
         {
-            "label": "Blog",
+            "label": "News",
             "url": "/blog/"
+        },
+        {
+            "label": "Topics",
+            "url": "/topics/"
         },
         {
             "label": "Watch Live",
@@ -33,6 +57,12 @@
         {
             "label": "Contact",
             "url": "/contact/"
+        }
+    ],
+    "secondaryNavigation": [
+        {
+            "label": "Editorial Standards & Corrections",
+            "url": "/editorial/"
         },
         {
             "label": "Privacy Policy",

@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/cbands-bank-steps-up-as-major-sponsor-for-2026-burnside/index.html"
 title: "CB&S Bank Steps Up as Major Sponsor for 2026 Burnside Music Fest"
 date: 2026-05-29
 excerpt: "CB&S Bank has announced its support for the upcoming 2026 Burnside Music Fest, reinforcing its commitment to live music and community development in historic downtown Ripley, Mississippi."

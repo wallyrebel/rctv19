@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/ripley-main-street-opens-applications-for-brown-and/index.html"
 title: "Ripley Main Street Opens Applications for Brown & Covington Retail Space This Fall"
 date: 2026-08-05
 excerpt: "Ripley Main Street is now accepting applications from local artisans, makers, and artists for dedicated retail space at the upcoming Brown & Covington venue launching this fall. Selected participants will gain access to retail space, marketing support, business coaching, and opportunities to showcase their work at workshops and pop-up events."

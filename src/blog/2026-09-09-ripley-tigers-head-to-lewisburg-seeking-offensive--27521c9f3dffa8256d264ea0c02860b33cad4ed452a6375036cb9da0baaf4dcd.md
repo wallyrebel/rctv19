@@ -2,7 +2,7 @@
 title: "Ripley Tigers Head to Lewisburg Seeking Offensive Consistency"
 date: 2026-09-09
 excerpt: "Ripley football travels to Lewisburg for their first road game after posting mixed results in their home opener, looking to establish more balanced offensive performance."
-permalink: "/blog/2026-09-09-ripley-tigers-head-to-lewisburg-seeking-offensive--27521c9f3dffa8256d264ea0c02860b33cad4ed452a6375036cb9da0baaf4dcd/index.html"
+permalink: "/blog/ripley-tigers-head-to-lewisburg-seeking-offensive/index.html"
 sourceUrl: "https://tippahsports.com/ripley/ripley-at-lewisburg-tigers-look-to-regain-offensive-balance/"
 sourceName: "Tippah County Sports"
 aiAssisted: true

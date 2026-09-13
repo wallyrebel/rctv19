@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/ripley-main-street-shares-community-update-on-social-media/index.html"
 title: "Ripley Main Street Shares Community Update on Social Media"
 date: 2026-08-16
 excerpt: "Ripley Main Street has posted a video update to their Facebook page, though the specific content of the message remains unclear from the embedded media player."

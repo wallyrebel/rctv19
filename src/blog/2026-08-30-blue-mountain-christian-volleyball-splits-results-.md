@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/blue-mountain-christian-volleyball-splits-results-at-vette/index.html"
 title: "Blue Mountain Christian Volleyball Splits Results at Vette City Classic in Kentucky"
 date: 2026-08-30
 excerpt: "The Blue Mountain Christian volleyball team competed in the Vette City Classic tournament in Bowling Green, Kentucky, posting a 1-2 record over two days of competition."

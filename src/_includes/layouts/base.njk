@@ -12,53 +12,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="google-site-verification" content="OtgNopRtAndg_iiDcxpnWoSaCMtW6rdO0U01BnAIYEw" />
-  
-  <title>{% if title %}{{ title }}{% if pagination.pageNumber > 0 %} — Page {{ pagination.pageNumber + 1 }}{% endif %} | {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ description or excerpt or site.description }}">
-  
-  {% if noindex %}<meta name="robots" content="noindex, follow">{% endif %}
+
+  {#
+    A search result elides a title past roughly 65 characters. Headlines are
+    editorial and are never cut, so the site name is appended only when it fits
+    — a truncated "| RCTV19" helps nobody, and Google adds the site name itself.
+  #}
+  <title>{% if metaTitle %}{{ metaTitle }}{% elif title %}{{ title }}{% if pagination.pageNumber > 0 %} — Page {{ pagination.pageNumber + 1 }}{% endif %}{% if title | length <= 54 %} | {{ site.shortName }}{% endif %}{% else %}{{ site.title }}{% endif %}</title>
+  {% set pageDescription = (description or excerpt or site.description) | metaDescription %}
+  <meta name="description" content="{{ pageDescription }}">
+
+  {# Large image previews are what put a local story into Google Discover and the news carousel. #}
+  <meta name="robots" content="{% if noindex %}noindex, follow{% else %}index, follow{% endif %}, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <!-- Canonical URL -->
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-  
+
+  {% set socialImage = featuredImage or "/assets/img/rctv19-logo.jpg" %}
+  {% set socialImageSize = socialImage | imageSize(0) %}
+
   <!-- Open Graph -->
   <meta property="og:type" content="{% if isArticle %}article{% else %}website{% endif %}">
   <meta property="og:title" content="{{ title or site.title }}">
-  <meta property="og:description" content="{{ description or excerpt or site.description }}">
+  <meta property="og:description" content="{{ pageDescription }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:site_name" content="{{ site.title }}">
-  {% if featuredImage %}
-  <meta property="og:image" content="{{ site.url }}{{ featuredImage }}">
-  {% else %}
-  <meta property="og:image" content="{{ site.url }}/assets/img/rctv19-logo.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="{{ site.url }}{{ socialImage }}">
+  <meta property="og:image:alt" content="{{ featuredImageAlt or title or site.title }}">
+  {% if socialImageSize %}
+  <meta property="og:image:width" content="{{ socialImageSize.width }}">
+  <meta property="og:image:height" content="{{ socialImageSize.height }}">
   {% endif %}
-  
+  {% if isArticle or isObituary %}
+  <meta property="article:published_time" content="{{ date | dateISO }}">
+  <meta property="article:modified_time" content="{{ (updated or date) | dateISO }}">
+  <meta property="article:publisher" content="{{ site.social.facebook }}">
+  {% for slug in topics %}
+  <meta property="article:section" content="{{ slug | topicName }}">
+  {% endfor %}
+  {% endif %}
+
+  {# A wide card stretches a small image into a blurry banner, so fall back to the compact one. #}
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ title or site.title }}">
-  <meta name="twitter:description" content="{{ description or excerpt or site.description }}">
-  {% if featuredImage %}
-  <meta name="twitter:image" content="{{ site.url }}{{ featuredImage }}">
+  <meta name="twitter:card" content="{% if socialImageSize and socialImageSize.width < 600 %}summary{% else %}summary_large_image{% endif %}">
+  {% if site.social.twitterHandle %}
+  <meta name="twitter:site" content="{{ site.social.twitterHandle }}">
   {% endif %}
-  
+  <meta name="twitter:title" content="{{ title or site.title }}">
+  <meta name="twitter:description" content="{{ pageDescription }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ socialImage }}">
+  <meta name="twitter:image:alt" content="{{ featuredImageAlt or title or site.title }}">
+
   <!-- RSS Feed -->
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS Feed" href="{{ site.url }}/feed.xml">
-  
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/assets/img/watch-live-icon.png">
-  
+  <link rel="apple-touch-icon" href="/assets/img/watch-live-icon.png">
+  <meta name="theme-color" content="#203090">
+
   <!-- Styles -->
-  <link rel="stylesheet" href="/assets/css/main.css?v=7">
-  
-  <!-- Structured Data: Organization -->
+  <link rel="stylesheet" href="/assets/css/main.css?v=8">
+
+  <!-- Structured Data: Publisher -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "NewsMediaOrganization",
+    "@id": {{ (site.url + "/#organization") | jsonLd | safe }},
     "name": {{ site.title | jsonLd | safe }},
-    "alternateName": "RCTV19",
-    "url": {{ site.url | jsonLd | safe }},
-    "logo": {{ (site.url + "/assets/img/rctv19-logo.jpg") | jsonLd | safe }},
+    "alternateName": {{ site.shortName | jsonLd | safe }},
+    "url": {{ (site.url + "/") | jsonLd | safe }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ (site.url + "/assets/img/rctv19-logo.jpg") | jsonLd | safe }},
+      "width": 1024,
+      "height": 389
+    },
+    "image": {{ (site.url + "/assets/img/rctv19-logo.jpg") | jsonLd | safe }},
     "description": {{ site.description | jsonLd | safe }},
+    "foundingDate": {{ site.foundingDate | jsonLd | safe }},
+    "email": {{ site.email | jsonLd | safe }},
+    "telephone": {{ site.telephone | jsonLd | safe }},
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": {{ site.address.street | jsonLd | safe }},
+      "addressLocality": {{ site.address.locality | jsonLd | safe }},
+      "addressRegion": {{ site.address.region | jsonLd | safe }},
+      "postalCode": {{ site.address.postalCode | jsonLd | safe }},
+      "addressCountry": {{ site.address.country | jsonLd | safe }}
+    },
+    "areaServed": [
+      {%- for area in site.areaServed %}{% if not loop.first %},{% endif %}
+      {"@type": "Place", "name": {{ area | jsonLd | safe }}}
+      {%- endfor %}
+    ],
+    "ethicsPolicy": {{ (site.url + "/editorial/") | jsonLd | safe }},
+    "correctionsPolicy": {{ (site.url + "/editorial/") | jsonLd | safe }},
     "sameAs": [
       {{ site.social.facebook | jsonLd | safe }},
       {{ site.social.twitter | jsonLd | safe }}
@@ -66,29 +116,32 @@
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "customer service",
+      "email": {{ site.email | jsonLd | safe }},
+      "telephone": {{ site.telephone | jsonLd | safe }},
       "url": {{ (site.url + "/contact/") | jsonLd | safe }}
     }
   }
   </script>
-  
-  <!-- Structured Data: WebSite with SearchAction -->
+
+  <!-- Structured Data: WebSite -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": {{ (site.url + "/#website") | jsonLd | safe }},
     "name": {{ site.title | jsonLd | safe }},
-    "url": {{ site.url | jsonLd | safe }},
-    "publisher": {
-      "@type": "Organization",
-      "name": {{ site.title | jsonLd | safe }},
-      "logo": {
-        "@type": "ImageObject",
-        "url": {{ (site.url + "/assets/img/rctv19-logo.jpg") | jsonLd | safe }}
-      }
-    }
+    "url": {{ (site.url + "/") | jsonLd | safe }},
+    "inLanguage": "en-US",
+    "publisher": {"@id": {{ (site.url + "/#organization") | jsonLd | safe }}}
   }
   </script>
-  
+
+  {# Home > section > page, so a result can show where the story sits on the site. #}
+  {% set crumbSection = false %}
+  {% if isArticle %}{% set crumbSection = {"name": "News", "url": "/blog/"} %}
+  {% elif isObituary %}{% set crumbSection = {"name": "Obituaries", "url": "/obituaries/"} %}
+  {% elif isTopic %}{% set crumbSection = {"name": "Topics", "url": "/topics/"} %}
+  {% endif %}
   <!-- Structured Data: BreadcrumbList -->
   <script type="application/ld+json">
   {
@@ -99,31 +152,39 @@
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": {{ site.url | jsonLd | safe }}
+        "item": {{ (site.url + "/") | jsonLd | safe }}
       }
-      {% if page.url != "/" %},
+      {%- if crumbSection %},
       {
         "@type": "ListItem",
         "position": 2,
+        "name": {{ crumbSection.name | jsonLd | safe }},
+        "item": {{ (site.url + crumbSection.url) | jsonLd | safe }}
+      }
+      {%- endif %}
+      {%- if page.url != "/" %},
+      {
+        "@type": "ListItem",
+        "position": {% if crumbSection %}3{% else %}2{% endif %},
         "name": {{ title | jsonLd | safe }},
         "item": {{ (site.url + page.url) | jsonLd | safe }}
       }
-      {% endif %}
+      {%- endif %}
     ]
   }
   </script>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
-  
+
   {% include "components/header.njk" %}
-  
+
   <main id="main-content" class="site-main">
     {{ content | safe }}
   </main>
-  
+
   {% include "components/footer.njk" %}
-  
+
   <script src="/assets/js/main.js" defer></script>
 </body>
 </html>

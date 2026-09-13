@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/ethan-adams-powers-eagles-statement-win-as-alcorn-central/index.html"
 title: "Ethan Adams Powers Eagles' Statement Win as Alcorn Central Prepares for High-Stakes Rivalry Clash"
 date: 2026-09-04
 excerpt: "Ethan Adams led a dominant opening-night performance as the Eagles establish themselves as a force to be reckoned with, setting the stage for an intense rivalry matchup against Alcorn Central's senior-led squad."

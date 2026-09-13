@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/gathering-porch-joins-burnside-music-fest-2026-with-fresh/index.html"
 title: "Gathering Porch Joins Burnside Music Fest 2026 with Fresh Refreshments"
 date: 2026-05-12
 excerpt: "Local vendor Gathering Porch will serve fresh lemonade and dirty sodas at the Burnside Music Fest on Saturday, June 6th in Historic Downtown Ripley, Mississippi. The festival promises a full day of live music, food trucks, and vendor booths for the community to enjoy."

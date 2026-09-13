@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/burnside-music-fest-2026-opens-sponsorship-opportunities-to/index.html"
 title: "Burnside Music Fest 2026 Opens Sponsorship Opportunities to Support Historic Ripley Event"
 date: 2026-05-13
 excerpt: "The Burnside Music Fest is now accepting sponsors for its 2026 celebration of Mississippi music heritage in downtown Ripley. Two sponsorship levels—ranging from $250 to $500—offer businesses and organizations prominent recognition and exclusive perks."

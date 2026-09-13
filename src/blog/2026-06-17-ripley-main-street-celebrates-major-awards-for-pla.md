@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/ripley-main-street-celebrates-major-awards-for-placemaking/index.html"
 title: "Ripley Main Street Celebrates Major Awards for Placemaking Excellence and Community Leadership"
 date: 2026-06-17
 excerpt: "Ripley Main Street has been honored with the Outstanding Placemaking Project Award for The Cut-Off, while volunteer leader Melinda Marsalis received the prestigious Paul Coggin Trailblazer Award for her years of dedicated service to downtown revitalization."

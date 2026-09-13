@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/burnside-music-fest-rib-and-chicken-wing-cook-off-challenges/index.html"
 title: "Burnside Music Fest Rib & Chicken Wing Cook Off Challenges Pitmasters on June 6"
 date: 2026-05-22
 excerpt: "The Burnside Music Fest is hosting a competitive rib and chicken wing cook off on June 6 in historic downtown Ripley, featuring live music, great food, and prizes for the best wood-smoked entries."

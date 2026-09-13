@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/ripley-mississippi-takes-proactive-approach-to-attract/index.html"
 title: "Ripley, Mississippi Takes Proactive Approach to Attract Retail and Restaurant Development Ahead of Highway 15 Bypass"
 date: 2026-08-20
 excerpt: "The City of Ripley, Mississippi is partnering with economic development efforts to recruit new retail and restaurant options to the community in anticipation of the Highway 15 bypass project. Mayor Jon Grisham is taking a forward-thinking approach to ensure residents have more shopping and dining options locally."

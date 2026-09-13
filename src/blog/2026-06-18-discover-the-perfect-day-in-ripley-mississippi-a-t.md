@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/discover-the-perfect-day-in-ripley-mississippi-a-travel/index.html"
 title: "Discover the Perfect Day in Ripley, Mississippi: A Travel Guide"
 date: 2026-06-18
 excerpt: "Tourism officials in Ripley, Mississippi have curated an ideal itinerary showcasing the best attractions and experiences this charming North Mississippi destination has to offer. Learn how to make the most of a single day exploring this hidden gem."

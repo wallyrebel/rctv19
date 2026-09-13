@@ -1,11 +1,20 @@
 ---
 layout: layouts/base.njk
 title: Home
-description: Your source for local news, events, and community coverage in Ripley and Tippah County. Watch RCTV19 live streaming.
+metaTitle: "Ripley, MS News and Live TV | RCTV19, Tippah County"
+description: Local news, high school sports, obituaries and events for Ripley and Tippah County, Mississippi. Watch RCTV19 — Ripley Community Television — live.
 ---
 
 <div class="container">
-  <header class="home-intro"><h1>Ripley &amp; Tippah County News</h1><p>Local news, sports and community television from RCTV19 in Ripley, Mississippi.</p></header>
+  <header class="home-intro">
+    <h1>Ripley &amp; Tippah County News</h1>
+    <p>RCTV19 — Ripley Community Television — has covered Ripley, Walnut, Falkner, Blue Mountain and the rest of Tippah County, Mississippi since 1999. Local news, high school sports, obituaries and community events, plus our channel 19 broadcast <a href="/watch-live/">streaming live</a>.</p>
+  </header>
+
+  <nav class="topic-chips" aria-label="Browse by topic">
+    <span class="topic-chips-label">Browse by topic:</span>
+    {% for topic in collections.topicPages %}<a class="topic-tag" href="{{ topic.url }}">{{ topic.name }}</a>{% endfor %}
+  </nav>
   <!-- Top Banner Ad -->
   {% set slotName = "topBanner" %}
   {% set format = "banner" %}

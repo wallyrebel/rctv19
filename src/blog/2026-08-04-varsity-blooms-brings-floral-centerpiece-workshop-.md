@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/varsity-blooms-brings-floral-centerpiece-workshop-to-the-cut/index.html"
 title: "Varsity Blooms Brings Floral Centerpiece Workshop to the Cut-Off"
 date: 2026-08-04
 excerpt: "A local floral design company is hosting an exclusive centerpiece class at the Cut-Off venue. Community members can now register for the hands-on workshop."

@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/bloom-and-sip-create-your-own-floral-centerpiece-at-the-cut/index.html"
 title: "Bloom and Sip: Create Your Own Floral Centerpiece at The Cut-Off Workshop"
 date: 2026-08-11
 excerpt: "Lola's Garden Bloom Bar is hosting a hands-on floral centerpiece workshop at The Cut-Off on Saturday, August 22nd, where participants can craft beautiful arrangements with all materials included for just $35."

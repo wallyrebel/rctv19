@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/ripley-girl-scouts-transform-downtown-with-community/index.html"
 title: "Ripley Girl Scouts Transform Downtown with Community Beautification Project"
 date: 2026-05-31
 excerpt: "Local Girl Scouts earned praise for their efforts to beautify Ripley's Main Street during a recent community service initiative. The young volunteers' work has drawn appreciation from downtown stakeholders and community members."

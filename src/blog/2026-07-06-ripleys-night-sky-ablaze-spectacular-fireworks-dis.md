@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/ripleys-night-sky-ablaze-spectacular-fireworks-display/index.html"
 title: "Ripley's Night Sky Ablaze: Spectacular Fireworks Display Lights Up Community"
 date: 2026-07-06
 excerpt: "Residents of Ripley gathered last night to witness a dazzling fireworks display that illuminated the evening sky. The vibrant celebration was captured by local photographer Lolly Lins, who documented the stunning pyrotechnic show."

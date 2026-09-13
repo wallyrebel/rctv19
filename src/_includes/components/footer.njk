@@ -9,6 +9,13 @@
         <a href="/" class="footer-large-logo">
           <img src="/assets/img/rctv19-logo.jpg" alt="{{ site.title }}" width="250" >
         </a>
+        {# Address and phone in the page itself, matching the publisher structured data. #}
+        <address class="footer-address">
+          {{ site.address.street }}<br>
+          {{ site.address.locality }}, {{ site.address.region }} {{ site.address.postalCode }}<br>
+          <a href="tel:+16628379088">(662) 837-9088</a> ·
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </address>
       </div>
       
       <div class="footer-nav">
@@ -16,6 +23,18 @@
         <ul class="footer-links">
           {% for item in site.navigation %}
           <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+          {% endfor %}
+          {% for item in site.secondaryNavigation %}
+          <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="footer-nav">
+        <h3 class="footer-heading">Topics</h3>
+        <ul class="footer-links">
+          {% for topic in collections.topicPages %}
+          <li><a href="{{ topic.url }}">{{ topic.name }}</a></li>
           {% endfor %}
         </ul>
       </div>
@@ -29,8 +48,8 @@
           {% if site.social.twitter %}
           <li><a href="{{ site.social.twitter }}" target="_blank" rel="noopener">Twitter/X</a></li>
           {% endif %}
-          <li><a href="/editorial/">Editorial Standards &amp; Corrections</a></li>
           <li><a href="/feed.xml">RSS Feed</a></li>
+          <li><a href="tel:+16628379088">(662) 837-9088</a></li>
         </ul>
       </div>
     </div>

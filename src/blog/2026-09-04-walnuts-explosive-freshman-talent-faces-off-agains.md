@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/walnuts-explosive-freshman-talent-faces-off-against-belmonts/index.html"
 title: "Walnut's Explosive Freshman Talent Faces Off Against Belmont's Veteran Cardinal Defense"
 date: 2026-09-04
 excerpt: "The Wildcats bring a dynamic freshman sensation and record-setting coaching to challenge Belmont's experienced lineup in what promises to be a compelling rivalry matchup."

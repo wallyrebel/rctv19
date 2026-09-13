@@ -1,0 +1,22 @@
+---
+layout: layouts/page.njk
+title: Topics
+metaTitle: "Ripley & Tippah County News Topics | RCTV19"
+description: Browse RCTV19 coverage of Ripley and Tippah County by topic — high school sports, Burnside Music Fest, downtown Ripley, local business, schools and community events.
+subtitle: Browse RCTV19 coverage by subject
+permalink: /topics/index.html
+eleventyExcludeFromCollections: true
+---
+<p>RCTV19 has published hundreds of stories about Ripley and Tippah County, Mississippi. These pages collect that coverage by subject so you can follow one thread — a festival, a team, a stretch of Main Street — from the first announcement to the last recap.</p>
+
+<ul class="topic-links">
+  {% for topic in collections.topicPages %}
+  <li>
+    <a href="{{ topic.url }}">{{ topic.heading }}</a>
+    <span class="obituary-meta">{{ topic.posts.length }} stories</span>
+    <p>{{ topic.description }}</p>
+  </li>
+  {% endfor %}
+</ul>
+
+<p>Looking for something else? Every story appears in the <a href="/blog/">full archive</a>, and recent notices are on the <a href="/obituaries/">obituaries page</a>.</p>

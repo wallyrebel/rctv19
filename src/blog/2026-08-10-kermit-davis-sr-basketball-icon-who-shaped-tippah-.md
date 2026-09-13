@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/kermit-davis-sr-basketball-icon-who-shaped-tippah-county/index.html"
 title: "Kermit Davis Sr., Basketball Icon Who Shaped Tippah County Sports, Passes Away"
 date: 2026-08-10
 excerpt: "Kermit Davis Sr., a legendary basketball player from Walnut and one of Tippah County's most accomplished athletes, has died, leaving behind a profound legacy in Mississippi sports history."

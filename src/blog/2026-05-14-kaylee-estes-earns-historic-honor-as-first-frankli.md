@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/kaylee-estes-earns-historic-honor-as-first-franklin/index.html"
 title: "Kaylee Estes Earns Historic Honor as First Franklin Financial Tippah County Sports Female Athlete of the Year"
 date: 2026-05-14
 excerpt: "Kaylee Estes has been named the inaugural 2025-2026 Franklin Financial Tippah County Sports Female Athlete of the Year, marking a significant recognition for her athletic achievements and contributions to local sports."

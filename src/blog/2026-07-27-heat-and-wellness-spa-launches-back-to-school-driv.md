@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/heat-and-wellness-spa-launches-back-to-school-drive-to/index.html"
 title: "Heat & Wellness Spa Launches Back-to-School Drive to Support Local Students and Teachers"
 date: 2026-07-27
 excerpt: "Heat & Wellness Spa in Ripley, Mississippi is hosting a community-focused Back-to-School Drive on August 1st, featuring snow cone sales, free hot dogs, and donations of school supplies to help local students and teachers prepare for the new academic year."
