@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/limited-time-guitar-auction-own-a-piece-of-burnside-festival/index.html"
 title: "Limited-Time Guitar Auction: Own a Piece of Burnside Festival History Signed by 2025 Performers"
 date: 2026-06-06
 excerpt: "The Burnside Festival is offering collectors and music enthusiasts a rare opportunity to bid on guitars autographed by this year's performers, with online bidding closing tonight at 10 PM and a second signed guitar set for live auction at the festival."

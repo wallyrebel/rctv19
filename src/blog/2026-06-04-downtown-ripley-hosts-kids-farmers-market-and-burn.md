@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/downtown-ripley-hosts-kids-farmers-market-and-burnside-music/index.html"
 title: "Downtown Ripley Hosts Kids Farmers Market and Burnside Music Festival This Saturday"
 date: 2026-06-04
 excerpt: "Ripley residents are invited to support young entrepreneurs at the Kids Farmers Market on the Square Saturday morning, followed by an afternoon of live Hill Country blues at the Burnside Music Festival."

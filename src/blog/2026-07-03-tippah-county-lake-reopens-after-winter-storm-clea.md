@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/tippah-county-lake-reopens-after-winter-storm-cleanup-ready/index.html"
 title: "Tippah County Lake Reopens After Winter Storm Cleanup, Ready for Summer Recreation"
 date: 2026-07-03
 excerpt: "Tippah County Lake in Ripley, Mississippi has completed post-winter storm cleanup and is now open to the public for summer activities. The lake welcomes boaters, anglers, hunters, and picnickers looking to enjoy outdoor recreation."

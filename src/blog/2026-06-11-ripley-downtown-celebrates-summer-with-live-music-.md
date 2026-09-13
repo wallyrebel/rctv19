@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/ripley-downtown-celebrates-summer-with-live-music-late-night/index.html"
 title: "Ripley Downtown Celebrates Summer with Live Music, Late-Night Shopping, and Fireworks on June 26"
 date: 2026-06-11
 excerpt: "Downtown Ripley is inviting residents to a special evening of community celebration on Friday, June 26, featuring extended shopping hours, live music from Trevor Wilson, and a fireworks display to cap off the festivities."

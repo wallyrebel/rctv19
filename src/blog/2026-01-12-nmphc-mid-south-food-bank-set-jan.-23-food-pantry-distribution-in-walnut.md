@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/nmphc-mid-south-food-bank-set-jan-23-food-pantry/index.html"
 title: NMPHC, Mid-South Food Bank set Jan. 23 food pantry distribution in Walnut
 date: 2026-01-12
 excerpt: North Mississippi Primary Health Care will hold a food pantry distribution Friday, Jan. 23, at the Walnut Fire Department in partnership with the Mid-South Food Bank.

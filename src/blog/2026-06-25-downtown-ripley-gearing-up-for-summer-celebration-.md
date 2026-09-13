@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/downtown-ripley-gearing-up-for-summer-celebration-with-live/index.html"
 title: "Downtown Ripley Gearing Up for Summer Celebration with Live Music, Food, and Fireworks"
 date: 2026-06-25
 excerpt: "Downtown Ripley is hosting a full evening of entertainment tomorrow night, featuring live music from Trevor Wilson, food trucks, shopping, and a fireworks display at 9:30 PM near Ripley High School."

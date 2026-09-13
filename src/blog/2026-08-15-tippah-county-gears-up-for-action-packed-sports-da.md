@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/tippah-county-gears-up-for-action-packed-sports-day-with-15/index.html"
 title: "Tippah County Gears Up for Action-Packed Sports Day with 15 Games Scheduled"
 date: 2026-08-15
 excerpt: "High school sports fans across Tippah County are in for a treat on August 15, 2026, with a packed schedule featuring 15 games throughout the day. Local athletes will showcase their skills across multiple sports in what promises to be an exciting day of competition."

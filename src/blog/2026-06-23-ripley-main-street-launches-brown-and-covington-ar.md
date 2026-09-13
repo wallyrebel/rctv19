@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/ripley-main-street-launches-brown-and-covington-artisan/index.html"
 title: "Ripley Main Street Launches Brown & Covington Artisan Accelerator, Seeking Four Creative Entrepreneurs"
 date: 2026-06-23
 excerpt: "Ripley Main Street is now accepting applications for its inaugural Brown & Covington Artisan Accelerator program, offering four selected makers and creative entrepreneurs dedicated retail space, marketing support, business mentorship, and community collaboration opportunities. Applications close August 31, 2026."

@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/burnside-fest-guide-free-admission-free-parking-and/index.html"
 title: "Burnside Fest Guide: Free Admission, Free Parking, and Everything You Need to Know"
 date: 2026-06-06
 excerpt: "Burnside Fest offers free admission and free parking for attendees, with plenty of spaces available around the square and nearby streets. Organizers ask visitors to leave coolers at home and bring lawn chairs for comfortable seating."

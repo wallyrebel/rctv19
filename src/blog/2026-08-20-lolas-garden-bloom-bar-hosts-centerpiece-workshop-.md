@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/lolas-garden-bloom-bar-hosts-centerpiece-workshop-this/index.html"
 title: "Lola's Garden Bloom Bar Hosts Centerpiece Workshop This Saturday at The Cut-Off"
 date: 2026-08-20
 excerpt: "Lola's Garden Bloom Bar is offering a floral centerpiece workshop this Saturday at 10:00 AM at The Cut-Off venue. The hands-on class costs $35 per person with all materials included, though spots are filling up quickly."

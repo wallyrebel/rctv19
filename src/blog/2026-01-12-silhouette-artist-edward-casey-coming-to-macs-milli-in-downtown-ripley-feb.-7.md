@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/silhouette-artist-edward-casey-coming-to-macs-and-milli-in/index.html"
 title: Silhouette artist Edward Casey coming to Macs & Milli in Downtown Ripley Feb. 7
 date: 2026-01-12
 excerpt: Downtown Ripley’s Macs & Milli will host silhouette artist Edward Casey on Saturday, Feb. 7, from 1–4 p.m., offering hand-cut keepsake portraits. Reservations are encouraged because spots are limited.

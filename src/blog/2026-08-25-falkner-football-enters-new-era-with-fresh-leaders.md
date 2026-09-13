@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/falkner-football-enters-new-era-with-fresh-leadership-and/index.html"
 title: "Falkner Football Enters New Era with Fresh Leadership and Signal Caller"
 date: 2026-08-25
 excerpt: "The Falkner football program is preparing for significant changes heading into the 2026 season, with a new head coach taking the helm and a new quarterback leading the offense."

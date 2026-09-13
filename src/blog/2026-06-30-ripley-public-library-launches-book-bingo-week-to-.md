@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/ripley-public-library-launches-book-bingo-week-to-inspire/index.html"
 title: "Ripley Public Library Launches Book Bingo Week to Inspire Young Readers"
 date: 2026-06-30
 excerpt: "The Ripley Public Library is hosting Book Bingo throughout the week, offering children an engaging way to discover new stories while competing for book prizes. The daily program runs from 11 a.m. to noon at the library's North Commerce Street location."

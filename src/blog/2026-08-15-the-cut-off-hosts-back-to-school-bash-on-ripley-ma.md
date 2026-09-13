@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/the-cut-off-hosts-back-to-school-bash-on-ripley-main-street/index.html"
 title: "The Cut-Off Hosts Back to School Bash on Ripley Main Street"
 date: 2026-08-15
 excerpt: "The Cut-Off is celebrating the start of the school year with a Back to School Bash happening Saturday from 12-4 PM at their location on South Commerce Street. The event promises family-friendly fun and activities for students preparing for the new academic year."

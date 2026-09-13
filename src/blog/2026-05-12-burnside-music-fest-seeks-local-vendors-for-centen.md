@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/burnside-music-fest-seeks-local-vendors-for-centennial/index.html"
 title: "Burnside Music Fest Seeks Local Vendors for Centennial Celebration in Historic Ripley"
 date: 2026-05-12
 excerpt: "Downtown Ripley, Mississippi is calling all local artisans and small business owners to participate in the Burnside Music Fest on June 6th, 2026, a one-day celebration honoring the 100th birthday of legendary blues musician R.L. Burnside. Vendor spaces are available for just $30 with limited spots remaining."

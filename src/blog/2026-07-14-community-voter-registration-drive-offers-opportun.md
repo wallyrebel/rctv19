@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/community-voter-registration-drive-offers-opportunity-to/index.html"
 title: "Community Voter Registration Drive Offers Opportunity to Register or Update Your Voting Status"
 date: 2026-07-14
 excerpt: "A local community event is providing residents with the chance to register to vote or update their existing voter registration. The initiative aims to ensure all eligible community members have the opportunity to participate in the democratic process."

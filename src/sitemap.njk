@@ -2,51 +2,77 @@
 permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
 ---
+{%- set newestPost = collections.posts[0].date | dateISO -%}
+{%- set newestObit = collections.obituaries[0].date | dateISO -%}
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   {# Home page #}
   <url>
     <loc>{{ site.url }}/</loc>
-    <lastmod>{{ collections.posts[0].date | dateISO }}</lastmod>
+    <lastmod>{{ newestPost }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  {# Blog index #}
+
+  {# News archive #}
   <url>
     <loc>{{ site.url }}/blog/</loc>
-    <lastmod>{{ collections.posts[0].date | dateISO }}</lastmod>
+    <lastmod>{{ newestPost }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
-  
+
+  {# Topic hubs #}
+  <url>
+    <loc>{{ site.url }}/topics/</loc>
+    <lastmod>{{ newestPost }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  {%- for topic in collections.topicPages %}
+  <url>
+    <loc>{{ site.url }}{{ topic.url }}</loc>
+    <lastmod>{{ topic.posts[0].date | dateISO }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  {%- endfor %}
+
   {# Static pages #}
   <url>
     <loc>{{ site.url }}/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  
+
   <url>
     <loc>{{ site.url }}/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  
+
   <url>
     <loc>{{ site.url }}/watch-live/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  
+
+  <url>
+    <loc>{{ site.url }}/editorial/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
   <url>
     <loc>{{ site.url }}/privacy/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-  
+
   <url>
     <loc>{{ site.url }}/obituaries/</loc>
+    <lastmod>{{ newestObit }}</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -59,15 +85,29 @@ eleventyExcludeFromCollections: true
   </url>
   {%- endfor %}
 
-<url><loc>{{ site.url }}/editorial/</loc></url>
-  {% for archive in collections.all %}{% if archive.data.pagination and archive.data.pagination.hrefs %}{% for href in archive.data.pagination.hrefs %}{% if href != "/blog/" %}<url><loc>{{ site.url }}{{ href }}</loc></url>{% endif %}{% endfor %}{% endif %}{% endfor %}
-  {# Blog posts #}
+  {# Paginated archive pages #}
+  {%- for archive in collections.all %}{% if archive.data.pagination and archive.data.pagination.hrefs %}{% for href in archive.data.pagination.hrefs %}{% if href != "/blog/" and "/topics/" not in href %}
+  <url>
+    <loc>{{ site.url }}{{ href }}</loc>
+    <lastmod>{{ newestPost }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  {%- endif %}{% endfor %}{% endif %}{% endfor %}
+
+  {# News stories, each with its lead image so it can surface in image search #}
   {%- for post in collections.posts %}
   <url>
     <loc>{{ site.url }}{{ post.url }}</loc>
-    <lastmod>{{ post.date | dateISO }}</lastmod>
+    <lastmod>{{ (post.data.updated or post.date) | dateISO }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    {%- if post.data.featuredImage %}
+    <image:image>
+      <image:loc>{{ site.url }}{{ post.data.featuredImage | encodePath }}</image:loc>
+      <image:title>{{ post.data.title | escape }}</image:title>
+    </image:image>
+    {%- endif %}
   </url>
   {%- endfor %}
 </urlset>

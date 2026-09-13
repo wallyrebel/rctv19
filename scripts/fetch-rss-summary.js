@@ -4,7 +4,7 @@ const slugify = require('slugify');
 const fs = require('fs').promises;
 const path = require('path');
 const crypto = require('crypto');
-const { postOutput, generateMarkdown, writeNewPost } = require('./post-output');
+const { postOutput, generateMarkdown, writeNewPost, existingSlugs } = require('./post-output');
 const { unavailableContent } = require('./content-filter');
 require('dotenv').config();
 
@@ -120,6 +120,8 @@ Original Content: ${item['content:encoded'] || item.content || item.description 
 
 async function main() {
   const processedItems = await getProcessedItems();
+  // Published URLs, so a new headline that matches an old one gets its own page.
+  const takenSlugs = existingSlugs(BLOG_DIR);
   let hasNewItems = false;
   let hadErrors = false;
 
@@ -175,7 +177,8 @@ async function main() {
         }
 
         // Generate Markdown
-        const output = postOutput(rewritten.title, pubDate, feedUrl, guid);
+        const output = postOutput(rewritten.title, pubDate, feedUrl, guid, takenSlugs);
+        takenSlugs.add(output.slug);
         const markdown = generateMarkdown(rewritten, localImgPath, pubDate, output.permalink, { url: item.link, name: feed.title });
         
         // Save File

@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/blue-mountain-christians-abbi-williams-earns-ssac-defender/index.html"
 title: "Blue Mountain Christian's Abbi Williams Earns SSAC Defender of the Week"
 date: 2026-08-24
 excerpt: "Blue Mountain Christian volleyball junior libero Abbi Williams has been named SSAC Defender of the Week following an impressive performance at the Carolina Classic, where she recorded 67 digs across three matches."

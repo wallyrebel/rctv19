@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/ripley-business-garbage-pickup-moved-to-thursday-jan-9/index.html"
 title: Ripley business garbage pickup moved to Thursday, Jan. 9
 date: 2026-01-07
 excerpt: RES garbage pickup change

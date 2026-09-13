@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/blue-mountain-christian-softball-concludes-record-breaking/index.html"
 title: "Blue Mountain Christian Softball Concludes Record-Breaking Season with NAIA Tournament Run"
 date: 2026-05-13
 excerpt: "Blue Mountain Christian University's softball team completed a historic season by winning in the NAIA National Opening Round before falling to top-seeded Oklahoma City University in Oklahoma City."

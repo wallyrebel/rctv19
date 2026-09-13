@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/tippah-county-braces-for-action-packed-sports-day-with/index.html"
 title: "Tippah County Braces for Action-Packed Sports Day with Volleyball and Home Games on August 18"
 date: 2026-08-18
 excerpt: "Tippah County high schools are gearing up for a busy day of athletic competition on August 18, 2026, featuring multiple volleyball matchups and home games that promise to draw community support."

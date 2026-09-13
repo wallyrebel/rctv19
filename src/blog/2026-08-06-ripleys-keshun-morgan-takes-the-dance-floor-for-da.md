@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/ripleys-keshun-morgan-takes-the-dance-floor-for-dancing-like/index.html"
 title: "Ripley's Keshun Morgan Takes the Dance Floor for 'Dancing Like the Stars' Fundraiser"
 date: 2026-08-06
 excerpt: "Ripley Main Street is throwing its support behind local dancer Keshun Morgan as he participates in this weekend's 'Dancing Like the Stars' event, which benefits the Boys & Girls Clubs of North Mississippi."

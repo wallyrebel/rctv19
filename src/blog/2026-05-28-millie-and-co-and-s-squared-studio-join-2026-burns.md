@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/millie-and-co-and-s-squared-studio-join-2026-burnside-music/index.html"
 title: "Millie & Co. and S Squared Studio Join 2026 Burnside Music Fest Lineup"
 date: 2026-05-28
 excerpt: "Two boutique vendors are set to debut at the upcoming 2026 Burnside Music Fest in Ripley, Mississippi, offering shoppers stylish finds alongside live Hill Country Blues performances."

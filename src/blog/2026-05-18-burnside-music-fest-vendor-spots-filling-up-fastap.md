@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/burnside-music-fest-vendor-spots-filling-up-fastapply-now/index.html"
 title: "Burnside Music Fest Vendor Spots Filling Up Fast—Apply Now for Downtown Ripley's Biggest Community Event"
 date: 2026-05-18
 excerpt: "With the Burnside Music Fest just weeks away, organizers are opening final vendor spots for local artists, makers, and small businesses. Those interested in joining the celebration of music, food, and community are urged to apply immediately as spaces are limited."

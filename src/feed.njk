@@ -17,9 +17,13 @@ eleventyExcludeFromCollections: true
       <link>{{ site.url }}{{ post.url }}</link>
       <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
       <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
+      {%- for slug in post.data.topics %}
+      <category>{{ slug | topicName }}</category>
+      {%- endfor %}
       <description>{{ post.data.excerpt or post.templateContent | excerpt }}</description>
       {%- if post.data.featuredImage %}
-      <enclosure url="{{ site.url }}{{ post.data.featuredImage }}" type="image/jpeg"/>
+      {# The declared type has to match the file; these are a mix of jpg, png and webp. #}
+      <enclosure url="{{ site.url }}{{ post.data.featuredImage | encodePath }}" type="{{ post.data.featuredImage | imageMimeType }}" length="{{ post.data.featuredImage | assetBytes }}"/>
       {%- endif %}
     </item>
     {%- endfor %}

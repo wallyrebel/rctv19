@@ -200,7 +200,8 @@ rctv19-website/
 ├── src/
 │   ├── _data/           # Site data (JSON files)
 │   │   ├── site.json    # Site configuration
-│   │   └── ads.json     # Advertising configuration
+│   │   ├── ads.json     # Advertising configuration
+│   │   └── redirects.json # Old URL -> new URL, emitted as _redirects
 │   ├── _includes/
 │   │   ├── layouts/     # Page layouts
 │   │   └── components/  # Reusable components
@@ -211,8 +212,11 @@ rctv19-website/
 │   ├── blog/            # Blog posts (Markdown)
 │   ├── pages/           # Static pages
 │   ├── index.njk        # Home page
-│   ├── blog.njk         # Blog listing
+│   ├── blog.njk         # News archive listing
+│   ├── topics.njk       # Topic hub pages (/topics/<slug>/)
+│   ├── topic-index.njk  # Topic directory (/topics/)
 │   ├── feed.njk         # RSS feed
+│   ├── redirects.njk    # Cloudflare Pages _redirects
 │   └── sitemap.njk      # XML sitemap
 ├── public/
 │   └── admin/           # Pages CMS
@@ -344,3 +348,46 @@ MIT License - See LICENSE file for details.
 The current setup supersedes the original advertising instructions above. Follow [the audit and activation guide](docs/adsense-readiness.md). AdSense account verification and ads.txt are configured; Google ad serving is disabled until consent, approval, and page eligibility are ready. The original global Analytics tag has also been removed pending consent-aware setup. Local sponsor ads continue to display.
 
 Use Node 22 or 24. `npm run build` builds Eleventy, generates optimized images, and validates the output. Image generation and validation run inside Eleventy's awaited after-build hook, so direct `eleventy` commands and `npm run dev` also include the required images. Existing article permalinks remain unchanged.
+
+---
+
+## 🔎 Search visibility
+
+A few pieces of the build exist specifically to keep the site findable. They are
+easy to break by accident, so `npm run build` fails if any of them regress.
+
+### Topic hubs
+
+`scripts/topics.js` defines the subject hubs (Burnside Music Fest, Tippah County
+sports, downtown Ripley, and so on) and the patterns that sort articles into
+them. Every post is matched against its title and excerpt at build time and
+keeps up to three topics; a hub needs at least five stories before it gets a
+page. Topics drive `/topics/<slug>/`, the "Filed under" links on an article, the
+related-story block and `articleSection` in the article schema.
+
+To add a hub, add an entry to `TOPICS` with a `pattern`, a `description` and an
+`intro` — the intro is the unique copy that gives the page a reason to rank. A
+single post can override its topics with a `topics:` list in its front matter.
+
+### Article URLs
+
+New articles get a readable slug cut on a word boundary (`scripts/post-output.js`).
+Never rename a published article by hand: run
+
+```bash
+node scripts/migrate-urls.js
+```
+
+to see what would move, then re-run it with `--all` to apply. It rewrites the
+`permalink` front matter and records a permanent redirect in
+`src/_data/redirects.json`, which becomes the `_redirects` file Cloudflare Pages
+serves. The build checks that every redirect lands on a real page, in one hop,
+and that no redirected URL is still listed in the sitemap.
+
+### Titles and descriptions
+
+Descriptions are trimmed to 155 characters automatically. Headlines are left
+alone — they are editorial — but the build reports how many run past the ~65
+characters a search result shows. Add a shorter `metaTitle:` to the front matter
+of any article worth tightening; it replaces the whole `<title>` without
+touching the headline on the page.

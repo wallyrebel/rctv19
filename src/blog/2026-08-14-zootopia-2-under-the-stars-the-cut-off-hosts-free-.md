@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/zootopia-2-under-the-stars-the-cut-off-hosts-free-movie/index.html"
 title: "Zootopia 2 Under the Stars: The Cut-Off Hosts Free Movie Night Tonight in Downtown Ripley"
 date: 2026-08-14
 excerpt: "The Cut-Off is hosting a family-friendly outdoor movie screening of Zootopia 2 tonight at dusk, featuring food trucks and entertainment at 204 South Commerce Street in Ripley."

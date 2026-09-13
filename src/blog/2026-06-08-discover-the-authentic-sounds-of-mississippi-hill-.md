@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/discover-the-authentic-sounds-of-mississippi-hill-country/index.html"
 title: "Discover the Authentic Sounds of Mississippi Hill Country Blues in Ripley"
 date: 2026-06-08
 excerpt: "Ripley, Mississippi, stands as the perfect destination to experience the unique and authentic Mississippi Hill Country blues genre. The region offers visitors an opportunity to immerse themselves in a distinctive musical tradition with deep cultural roots."

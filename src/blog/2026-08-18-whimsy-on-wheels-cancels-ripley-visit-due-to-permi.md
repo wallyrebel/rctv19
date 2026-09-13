@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/whimsy-on-wheels-cancels-ripley-visit-due-to-permitting/index.html"
 title: "Whimsy On Wheels Cancels Ripley Visit Due to Permitting Complications"
 date: 2026-08-18
 excerpt: "The popular food truck Whimsy On Wheels was forced to cancel its scheduled appearance in Ripley today after encountering unexpected permitting issues. The venue has expressed hopes to reschedule the vendor for a future date."

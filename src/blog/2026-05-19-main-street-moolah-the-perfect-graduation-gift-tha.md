@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/main-street-moolah-the-perfect-graduation-gift-that-supports/index.html"
 title: "Main Street Moolah: The Perfect Graduation Gift That Supports Local Businesses"
 date: 2026-05-19
 excerpt: "A new local gift card program called Main Street Moolah offers graduates and gift-givers a way to celebrate while supporting downtown businesses. The redeemable currency can be used at participating shops throughout the community."

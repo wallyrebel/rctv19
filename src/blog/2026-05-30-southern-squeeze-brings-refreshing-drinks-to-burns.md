@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/southern-squeeze-brings-refreshing-drinks-to-burnside-music/index.html"
 title: "Southern Squeeze Brings Refreshing Drinks to Burnside Music Fest in Historic Downtown Ripley"
 date: 2026-05-30
 excerpt: "Southern Squeeze will be serving up specialty beverages including fresh lemonades and dirty sodas at the Burnside Music Fest on Saturday, June 6, 2026, offering festival-goers the perfect refreshment while enjoying live Hill Country blues music."

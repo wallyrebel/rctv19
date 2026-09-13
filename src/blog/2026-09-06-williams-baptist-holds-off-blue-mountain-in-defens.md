@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/williams-baptist-holds-off-blue-mountain-in-defensive/index.html"
 title: "Williams Baptist Holds Off Blue Mountain in Defensive Struggle, Wins 2-0"
 date: 2026-09-06
 excerpt: "Williams Baptist University defeated Blue Mountain Christian University 2-0 in a tightly contested men's soccer match at The Summit, with a second-half penalty kick and late goal proving decisive in the defensive battle."

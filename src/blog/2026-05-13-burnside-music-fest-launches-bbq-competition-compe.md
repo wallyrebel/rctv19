@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/burnside-music-fest-launches-bbq-competition-compete-for/index.html"
 title: "Burnside Music Fest Launches BBQ Competition: Compete for Prizes in Ribs and Wings Cook-Off"
 date: 2026-05-13
 excerpt: "The Burnside Music Fest in Historic Downtown Ripley is hosting a competitive barbecue cook-off on June 6th, featuring separate categories for ribs and chicken wings with cash prizes. Wood-fired smoker enthusiasts can register to compete while enjoying live music, food vendors, and community celebration."

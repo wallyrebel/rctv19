@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/the-cut-off-hosts-family-friendly-open-mic-night-this/index.html"
 title: "The Cut-Off Hosts Family-Friendly Open Mic Night This Thursday in Downtown Ripley"
 date: 2026-06-08
 excerpt: "Local performers of all talents are invited to take the stage at The Cut-Off on June 19 for an evening of live music, comedy, and poetry as part of the Downtown After Hours series. Downtown shops will remain open late to extend the community celebration."

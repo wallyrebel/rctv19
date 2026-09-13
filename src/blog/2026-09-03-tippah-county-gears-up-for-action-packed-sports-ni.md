@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/tippah-county-gears-up-for-action-packed-sports-night-with/index.html"
 title: "Tippah County Gears Up for Action-Packed Sports Night with Volleyball Showdowns"
 date: 2026-09-03
 excerpt: "Tippah County high schools are set for an exciting evening of volleyball competition on September 3, 2026, with multiple matchups drawing fans across the region."

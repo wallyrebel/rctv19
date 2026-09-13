@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/tippah-county-sports-heat-up-on-tuesday-with-volleyball/index.html"
 title: "Tippah County Sports Heat Up on Tuesday with Volleyball Matchups and High School Action"
 date: 2026-08-25
 excerpt: "Tippah County schools are gearing up for a busy Tuesday of athletic competition featuring volleyball matchups and other high school sports events across the county."

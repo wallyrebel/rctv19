@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/mlk-dream-team-hosts-first-juneteenth-celebration-at-ripley/index.html"
 title: "MLK Dream Team Hosts First Juneteenth Celebration at Ripley Main Street"
 date: 2026-06-20
 excerpt: "The MLK Dream Team is hosting its inaugural Juneteenth celebration at Ripley Main Street, featuring commemorative t-shirts available for pre-order until early June."

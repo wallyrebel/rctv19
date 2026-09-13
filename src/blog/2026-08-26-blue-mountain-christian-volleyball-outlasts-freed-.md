@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/blue-mountain-christian-volleyball-outlasts-freed-hardeman/index.html"
 title: "Blue Mountain Christian Volleyball Outlasts Freed-Hardeman in Thrilling Five-Set Road Victory"
 date: 2026-08-26
 excerpt: "The Blue Mountain Christian University volleyball team claimed a hard-fought five-set victory over Freed-Hardeman on Tuesday, improving their season record to 3-1 with the road win."

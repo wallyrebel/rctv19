@@ -2,7 +2,7 @@
 title: "Blue Mountain Christian Women's Cross Country Finishes Second at Harding Invitational"
 date: 2026-09-12
 excerpt: "Blue Mountain Christian University's women's cross country team placed second at the Harding Invitational in Searcy, Arkansas. The team was led by runners Ella Shepherd and Kaedyn Wilson."
-permalink: "/blog/2026-09-12-blue-mountain-christian-womens-cross-country-finis-ce56dea577ba0643524d4b99f959b40fd9de7ea062f0c218e9e3570034adb33a/index.html"
+permalink: "/blog/blue-mountain-christian-womens-cross-country-finishes-second/index.html"
 sourceUrl: "https://tippahsports.com/sports/blue-mountain-christian-womens-cross-country-finishes-second-at-harding-invitational/"
 sourceName: "Tippah County Sports"
 aiAssisted: true

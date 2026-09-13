@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/blue-mountain-christian-golf-stars-riddle-and-nordstrom-earn/index.html"
 title: "Blue Mountain Christian Golf Stars Riddle and Nordstrom Earn NAIA Second-Team All-American Recognition"
 date: 2026-05-28
 excerpt: "Blue Mountain Christian University men's golf players Cobey Riddle and Alex Nordstrom have been named NAIA Second-Team All-Americans following impressive sophomore seasons that helped propel their team into the national top 15."

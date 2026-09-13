@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/ripley-celebrates-blues-legend-rl-burnside-with-centennial/index.html"
 title: "Ripley Celebrates Blues Legend R.L. Burnside with Centennial Music Festival This Weekend"
 date: 2026-06-05
 excerpt: "The Burnside Music Festival returns to Ripley's Main Street this weekend with a special celebration of R.L. Burnside's 100th birthday, featuring live Hill Country Blues performances, BBQ, and more."

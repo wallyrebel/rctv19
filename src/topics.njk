@@ -1,0 +1,54 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.topicPages
+  size: 1
+  alias: topic
+eleventyComputed:
+  title: "{{ topic.title }}"
+  description: "{{ topic.description }}"
+permalink: "/topics/{{ topic.slug }}/index.html"
+isTopic: true
+---
+<div class="container">
+  <div class="top-ad-wrapper">
+    {% set slotName = "topBanner" %}
+    {% set format = "banner" %}
+    {% include "components/ad-slot.njk" %}
+  </div>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a> <span aria-hidden="true">›</span>
+    <a href="/topics/">Topics</a> <span aria-hidden="true">›</span>
+    <span aria-current="page">{{ topic.name }}</span>
+  </nav>
+
+  <header class="page-header">
+    <h1 class="page-title">{{ topic.heading }}</h1>
+    <p class="page-subtitle">{{ topic.posts.length }} {% if topic.posts.length == 1 %}story{% else %}stories{% endif %} from RCTV19</p>
+  </header>
+
+  <div class="page-content topic-intro">
+    <p>{{ topic.intro }}</p>
+  </div>
+
+  <div class="latest-updates">
+    {% for post in topic.posts %}
+      {% set listStyle = true %}
+      {% include "components/post-card.njk" %}
+    {% endfor %}
+  </div>
+
+  <section class="related-posts">
+    <div class="section-header">
+      <h2 class="section-title">More topics</h2>
+    </div>
+    <ul class="topic-links">
+      {% for other in collections.topicPages %}
+        {% if other.slug != topic.slug %}
+        <li><a href="{{ other.url }}">{{ other.heading }}</a> <span class="obituary-meta">{{ other.posts.length }} stories</span></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+</div>

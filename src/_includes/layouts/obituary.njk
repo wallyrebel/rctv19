@@ -5,12 +5,31 @@ layout: layouts/base.njk
 {
   "@context": "https://schema.org", "@type": "NewsArticle",
   "headline": {{ ("Obituary: " + title) | jsonLd | safe }},
-  "description": {{ (excerpt or (content | excerpt)) | jsonLd | safe }},
+  "description": {{ ((excerpt or (content | excerpt)) | metaDescription) | jsonLd | safe }},
+  {%- if featuredImage %}
+  "image": {{ (site.url + featuredImage) | jsonLd | safe }},
+  {%- endif %}
   "datePublished": {{ (date | dateISO) | jsonLd | safe }},
   "dateModified": {{ ((updated or date) | dateISO) | jsonLd | safe }},
   "author": {"@type": "Organization", "name": {{ funeralHome | jsonLd | safe }}},
-  "publisher": {"@type": "Organization", "name": {{ site.title | jsonLd | safe }}, "logo": {"@type": "ImageObject", "url": {{ (site.url + '/assets/img/rctv19-logo.jpg') | jsonLd | safe }}}},
+  "publisher": {"@id": {{ (site.url + "/#organization") | jsonLd | safe }}},
   "mainEntityOfPage": {"@type": "WebPage", "@id": {{ (site.url + page.url) | jsonLd | safe }}},
+  "inLanguage": "en-US",
+  "articleSection": "Obituaries",
+  {# The notice is about a person, which is how readers search for it. #}
+  "about": {
+    "@type": "Person",
+    "name": {{ title | jsonLd | safe }}
+    {%- if birthDate %},
+    "birthDate": {{ (birthDate | dateISO) | jsonLd | safe }}
+    {%- endif %}
+    {%- if deathDate %},
+    "deathDate": {{ (deathDate | dateISO) | jsonLd | safe }}
+    {%- endif %}
+    {%- if featuredImage %},
+    "image": {{ (site.url + featuredImage) | jsonLd | safe }}
+    {%- endif %}
+  },
   "isAccessibleForFree": true
 }
 </script>
@@ -22,6 +41,11 @@ layout: layouts/base.njk
 </div>
 
 <article class="container obituary">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a> <span aria-hidden="true">›</span>
+    <a href="/obituaries/">Obituaries</a>
+  </nav>
+
   <header class="post-header">
     <div class="post-meta">
       <time datetime="{{ date | dateISO }}">{{ date | dateDisplay }}</time>
@@ -33,7 +57,8 @@ layout: layouts/base.njk
   </header>
 
   {% if featuredImage %}
-  <figure class="obituary-portrait"><img src="{{ featuredImage }}" alt="{{ featuredImageAlt or title }}" width="400" style="max-width:100%;height:auto;object-fit:contain"></figure>
+  {% set portraitSize = featuredImage | imageSize(0) %}
+  <figure class="obituary-portrait"><img src="{{ featuredImage }}" alt="Portrait of {{ featuredImageAlt or title }}" width="{{ portraitSize.width if portraitSize else 400 }}" height="{{ portraitSize.height if portraitSize else 500 }}" style="max-width:100%;height:auto;object-fit:contain"></figure>
   {% endif %}
 
   <div class="post-content">

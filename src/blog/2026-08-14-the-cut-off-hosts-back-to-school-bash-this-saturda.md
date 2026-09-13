@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/the-cut-off-hosts-back-to-school-bash-this-saturday-with/index.html"
 title: "The Cut-Off Hosts Back-to-School Bash This Saturday with Free Supplies and Family Fun"
 date: 2026-08-14
 excerpt: "The Cut-Off in downtown Ripley is hosting a Back-to-School Bash on Saturday from 12-4 PM, featuring bouncy houses, face painting, games, food trucks, and free school supplies for students."

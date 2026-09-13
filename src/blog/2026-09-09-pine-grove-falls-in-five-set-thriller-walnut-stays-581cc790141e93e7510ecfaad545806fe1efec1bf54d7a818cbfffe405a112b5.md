@@ -2,7 +2,7 @@
 title: "Pine Grove falls in five-set thriller; Walnut stays unbeaten at home"
 date: 2026-09-09
 excerpt: "Pine Grove lost a five-set volleyball match after holding a lead and having two chances to finish, with Wheeler winning the final two sets. Walnut maintained its unbeaten home record."
-permalink: "/blog/2026-09-09-pine-grove-falls-in-five-set-thriller-walnut-stays-581cc790141e93e7510ecfaad545806fe1efec1bf54d7a818cbfffe405a112b5/index.html"
+permalink: "/blog/pine-grove-falls-in-five-set-thriller-walnut-stays-unbeaten/index.html"
 sourceUrl: "https://tippahsports.com/ripley/pine-grove-falls-in-five-set-thriller-walnut-stays-unbeaten-at-home/"
 sourceName: "Tippah County Sports"
 aiAssisted: true

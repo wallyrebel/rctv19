@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/ripley-main-street-hosts-community-movie-night-at-the-cut/index.html"
 title: "Ripley Main Street Hosts Community Movie Night at The Cut-Off Tonight"
 date: 2026-08-14
 excerpt: "Ripley Main Street is hosting a movie night this evening at The Cut-Off, featuring food from local vendors Chula's, A6 Seafood, and Funky Cones, with the film beginning at dusk."

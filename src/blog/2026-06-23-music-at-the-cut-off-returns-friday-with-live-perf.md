@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/music-at-the-cut-off-returns-friday-with-live-performance/index.html"
 title: "Music at The Cut-Off Returns Friday with Live Performance and Fireworks"
 date: 2026-06-23
 excerpt: "Downtown Ripley is hosting Music at The Cut-Off on Friday, June 26, featuring live music from Trevor Wilson, shopping, dining, and capped off with the City of Ripley Fireworks Show at 9:30 PM."

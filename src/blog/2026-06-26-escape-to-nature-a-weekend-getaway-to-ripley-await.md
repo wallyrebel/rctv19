@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/escape-to-nature-a-weekend-getaway-to-ripley-awaits/index.html"
 title: "Escape to Nature: A Weekend Getaway to Ripley Awaits"
 date: 2026-06-26
 excerpt: "A picturesque weekend retreat in Ripley promises visitors a chance to reconnect with nature and unwind from the hustle of daily life. This charming destination offers the perfect setting for a rejuvenating countryside escape."

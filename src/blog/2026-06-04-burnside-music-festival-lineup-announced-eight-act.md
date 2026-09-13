@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/burnside-music-festival-lineup-announced-eight-acts-set-to/index.html"
 title: "Burnside Music Festival Lineup Announced: Eight Acts Set to Perform in Historic Downtown Ripley"
 date: 2026-06-04
 excerpt: "The Burnside Music Festival is returning to Historic Downtown Ripley on Saturday with a diverse lineup of eight musical acts, kicking off at noon with live performances beginning at 2:00 PM."

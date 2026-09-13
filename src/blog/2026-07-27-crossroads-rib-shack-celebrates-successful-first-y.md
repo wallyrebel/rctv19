@@ -1,4 +1,5 @@
 ---
+permalink: "/blog/crossroads-rib-shack-celebrates-successful-first-year-in/index.html"
 title: "Crossroads Rib Shack Celebrates Successful First Year in Ripley with Anniversary Specials"
 date: 2026-07-27
 excerpt: "The beloved BBQ restaurant is marking its one-year milestone in Ripley with special promotions including $3 BBQ sandwiches and limited-edition merchandise, cementing its status as a community favorite."

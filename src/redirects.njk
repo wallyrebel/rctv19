@@ -1,0 +1,11 @@
+---
+permalink: /_redirects
+eleventyExcludeFromCollections: true
+---
+{#
+  Cloudflare Pages reads this file at the output root and answers matching
+  requests with a permanent redirect, which is what carries a page's search
+  ranking over when its URL changes. Entries live in src/_data/redirects.json.
+#}
+{% for entry in redirects %}{{ entry.from }} {{ entry.to }} 301
+{% endfor %}
