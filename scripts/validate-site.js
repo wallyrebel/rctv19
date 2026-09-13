@@ -65,8 +65,9 @@ assert.ok(!fs.existsSync(path.join(root,'blog/unable-to-generate-article-insuffi
 
 // A redirect only carries a page's ranking if it lands somewhere real, in one hop,
 // and is not shadowed by a page still published at the old address.
-const redirects = fs.readFileSync(path.join(root,'_redirects'),'utf8').split('\n').filter(Boolean)
-  .map(line => { const [from, to] = line.trim().split(/\s+/); return { from, to }; });
+const redirects = fs.readFileSync(path.join(root,'_redirects'),'utf8').split(/\r?\n/)
+  .map(line => line.trim()).filter(Boolean)
+  .map(line => { const [from, to] = line.split(/\s+/); return { from, to }; });
 const sources = new Set(redirects.map(entry => entry.from));
 for (const { from, to } of redirects) {
   if (!pages.has(to)) errors.push(`_redirects: ${from} points at ${to}, which is not published`);
