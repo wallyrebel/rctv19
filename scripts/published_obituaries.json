@@ -17,5 +17,23 @@
     "importedAt": "2026-09-15T12:49:19.538Z",
     "sourceTextSha256": "a4942b1306e0c4392afa177a1b907089ed268dab5c701ed4da77861820d613b5",
     "backfillAuthorizedOn": "2026-09-15"
+  },
+  "https://www.ripleyfuneralhome.com/obituary/RiversLodge-Powell": {
+    "name": "Rivers Lodge Powell",
+    "file": "src/obituaries/rivers-lodge-powell-f136ba7271.md",
+    "importedAt": "2026-09-17T12:05:38.552Z",
+    "sourceTextSha256": "e4deaef0cd61aa9d9a1d35e6b6369914ba2d71d43f1b950c4e21a4b65369e1da"
+  },
+  "https://www.mcbridefuneralhome.com/obituaries/shirley-lawson-11/": {
+    "name": "Mrs. Shirley Allene Lawson",
+    "file": "src/obituaries/mrs-shirley-allene-lawson-63157a6391.md",
+    "importedAt": "2026-09-17T12:05:38.552Z",
+    "sourceTextSha256": "05dfeadbf583aa991922ac3a9004dc8af1ebc3dc47597ee75bf16f6f18553377"
+  },
+  "https://www.mcbridefuneralhome.com/obituaries/margarett-burns/": {
+    "name": "Mrs. Margarett Irene Burns",
+    "file": "src/obituaries/mrs-margarett-irene-burns-88dccec6ea.md",
+    "importedAt": "2026-09-17T12:05:38.552Z",
+    "sourceTextSha256": "9904183330e3c0ed5e84fe556cf6aedc734a0c5f6ca08047a79ebae9cfe31229"
   }
 }
