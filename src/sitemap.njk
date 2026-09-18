@@ -39,6 +39,26 @@ eleventyExcludeFromCollections: true
   </url>
   {%- endfor %}
 
+  {# Evergreen reference pages: the county guide and the community profiles #}
+  <url>
+    <loc>{{ site.url }}/tippah-county/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>{{ site.url }}/communities/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  {%- for community in collections.communities %}
+  <url>
+    <loc>{{ site.url }}{{ community.url }}</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  {%- endfor %}
+
   {# Static pages #}
   <url>
     <loc>{{ site.url }}/about/</loc>

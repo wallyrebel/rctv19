@@ -1331,3 +1331,58 @@ select:focus-visible {
   font-size: 0.875rem;
   line-height: 1.7;
 }
+
+/* ========================================
+   CONTENT TABLES
+   Reference pages (the county guide, the community profiles) lean on tables
+   for facts and phone numbers, so they need to stay readable on a phone.
+   ======================================== */
+
+.page-content table,
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-lg) 0;
+  font-size: 0.9375rem;
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.page-content th,
+.post-content th {
+  background: var(--rctv-blue);
+  color: var(--white);
+  text-align: left;
+  font-weight: 600;
+  padding: var(--space-sm) var(--space-md);
+}
+
+.page-content td,
+.post-content td {
+  padding: var(--space-sm) var(--space-md);
+  border-top: 1px solid var(--gray-200);
+  vertical-align: top;
+}
+
+.page-content tbody tr:nth-child(even),
+.post-content tbody tr:nth-child(even) {
+  background: var(--gray-50);
+}
+
+/* A two-column facts table reads better with the label carrying the weight. */
+.page-content td:first-child strong,
+.post-content td:first-child strong {
+  color: var(--gray-900);
+}
+
+/* Narrow screens: let a wide table scroll rather than squeeze the page. */
+@media (max-width: 640px) {
+  .page-content table,
+  .post-content table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

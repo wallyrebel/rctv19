@@ -1,0 +1,42 @@
+---
+title: "Tippah County Communities: Towns, Villages and CDPs"
+description: "Profiles of every Tippah County, Mississippi community — Ripley, Walnut, Blue Mountain, Falkner, Dumas, Chalybeate, Tiplersville and Pine Grove."
+subtitle: "Every town and community in Tippah County, Mississippi"
+layout: layouts/page.njk
+permalink: /communities/index.html
+---
+
+<p>Tippah County has five incorporated municipalities — Ripley, Walnut, Blue Mountain, Falkner and Dumas — along with a census-designated place at Chalybeate and a scattering of unincorporated communities that still anchor a school, a church or a crossroads. RCTV19 covers all of them.</p>
+
+<p>Each profile below collects the numbers worth knowing, the history behind the name, the schools and the phone numbers residents actually need. For county-wide information, see the <a href="/tippah-county/">Tippah County guide</a>.</p>
+
+<div class="related-posts-grid">
+  {%- for community in collections.communities %}
+  <article class="post-card">
+    <div class="post-card-content">
+      <h2 class="post-card-title"><a href="{{ community.url }}">{{ community.data.title | replace(": Town Guide, Facts and Local News", "") | replace(": Community Guide and Facts", "") | replace(": Town and University Guide", "") | replace(": Community and School Guide", "") }}</a></h2>
+      <p class="post-card-excerpt">{{ community.data.subtitle }}</p>
+    </div>
+  </article>
+  {%- endfor %}
+</div>
+
+<h2>Other communities in Tippah County</h2>
+
+<p>Several smaller unincorporated communities appear on Tippah County maps and in local usage without having their own municipal government or census count. They include <strong>Cotton Plant</strong>, <strong>Brownfield</strong>, <strong>Dry Creek</strong>, <strong>Lake Mohawk</strong> and <strong>Camp Hill</strong>. Residents of these communities are served by Tippah County offices in Ripley and by either the North Tippah or South Tippah school district, depending on location.</p>
+
+<h2>How the county is organized</h2>
+
+<p>Tippah County's two school districts split the county roughly north and south. The <strong>North Tippah School District</strong> serves Walnut, Falkner, Chalybeate and Tiplersville from a central office at 20821 Highway 15 in Falkner. The <strong>South Tippah School District</strong> serves Ripley, Blue Mountain, Dumas and Pine Grove from 402 Greenlee Street in Ripley.</p>
+
+<p>Law enforcement outside the Ripley city limits is handled by the Tippah County Sheriff's Department at 205 West Spring Street in Ripley, 662-837-9336. In an emergency, call 911.</p>
+
+<h2>More from RCTV19</h2>
+
+<ul>
+  <li><a href="/tippah-county/">Tippah County guide</a> — government offices, schools, history and annual events</li>
+  <li><a href="/blog/">Latest news</a> — everything RCTV19 has published, newest first</li>
+  <li><a href="/obituaries/">Obituaries</a> — funeral and memorial notices for Tippah County families</li>
+  <li><a href="/topics/">Topics</a> — sports, downtown Ripley, schools, business and community events</li>
+  <li><a href="/watch-live/">Watch RCTV19 live</a></li>
+</ul>

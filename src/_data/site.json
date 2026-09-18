@@ -42,6 +42,10 @@
             "url": "/topics/"
         },
         {
+            "label": "Tippah County",
+            "url": "/tippah-county/"
+        },
+        {
             "label": "Watch Live",
             "url": "/watch-live/",
             "highlight": true
@@ -60,6 +64,10 @@
         }
     ],
     "secondaryNavigation": [
+        {
+            "label": "Communities",
+            "url": "/communities/"
+        },
         {
             "label": "Stat Keepers",
             "url": "https://stats.rctv19.com"

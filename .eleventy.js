@@ -40,6 +40,13 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/obituaries/*.md").sort((a, b) => b.date - a.date);
   });
 
+  // Evergreen town and community profiles, ordered largest first so the index
+  // page and the sitemap both read the way a reader would expect.
+  eleventyConfig.addCollection("communities", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/communities/*.md")
+      .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+  });
+
   eleventyConfig.addCollection("recentPosts", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/blog/*.md")
       .sort((a, b) => b.date - a.date)
