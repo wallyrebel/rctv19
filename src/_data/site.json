@@ -61,6 +61,10 @@
     ],
     "secondaryNavigation": [
         {
+            "label": "Stat Keepers",
+            "url": "https://stats.rctv19.com"
+        },
+        {
             "label": "Editorial Standards & Corrections",
             "url": "/editorial/"
         },
