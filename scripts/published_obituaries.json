@@ -35,5 +35,17 @@
     "file": "src/obituaries/mrs-margarett-irene-burns-88dccec6ea.md",
     "importedAt": "2026-09-17T12:05:38.552Z",
     "sourceTextSha256": "9904183330e3c0ed5e84fe556cf6aedc734a0c5f6ca08047a79ebae9cfe31229"
+  },
+  "https://www.ripleyfuneralhome.com/obituary/PatriciaLynnPatDevore-Bell": {
+    "name": "Patricia Lynn \"Pat\" Devore Bell",
+    "file": "src/obituaries/patricia-lynn-pat-devore-bell-e2cf14f8f1.md",
+    "importedAt": "2026-09-19T12:04:30.034Z",
+    "sourceTextSha256": "2051db1aa20f1a9389394f9e7282cdc93e979b826cc68e230f24571c2ed8f93c"
+  },
+  "https://www.ripleyfuneralhome.com/obituary/JennieMaeHaynes-Braddock": {
+    "name": "Jennie Mae Haynes Braddock",
+    "file": "src/obituaries/jennie-mae-haynes-braddock-7650f27d11.md",
+    "importedAt": "2026-09-19T12:04:30.034Z",
+    "sourceTextSha256": "c9231161dca1087808af1bb11075f9b81f8c7d605fc8e17511faf67db367baa2"
   }
 }
