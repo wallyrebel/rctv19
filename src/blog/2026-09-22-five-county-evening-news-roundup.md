@@ -4,6 +4,8 @@ metaTitle: "North Mississippi evening roundup, Sept. 22, 2026"
 date: 2026-09-22
 excerpt: "A Union County arts workshop, a Northeast volleyball honor, Corinth property cleanup and Tippah County match results lead the Tuesday evening update."
 permalink: "/blog/north-mississippi-evening-roundup-september-22-2026/index.html"
+featuredImage: "/assets/img/posts/tippah-county-sports-happening-today-september-22--1790082084993.jpg"
+featuredImageAlt: "Tippah County Sports logo on a yellow background"
 aiAssisted: true
 sources:
   - name: "Union County News"
@@ -37,3 +39,5 @@ Ripley swept Senatobia 3-0 Monday and remained unbeaten in district play. Falkne
 ## Benton County
 
 No fresh, verified Benton County item was available for this evening update. We will check again in the next roundup.
+
+*Featured graphic: [Tippah County Sports](https://tippahsports.com/tippah-county-sports/tippah-county-sports-happening-today-september-22-2026/), representing the Tippah volleyball coverage in this roundup.*
