@@ -1,0 +1,51 @@
+name: rctv19-ingest
+services:
+  tls:
+    image: traefik:v3.7.13
+    restart: unless-stopped
+    command:
+      - --providers.file.filename=/etc/traefik/dynamic.json
+      - --entrypoints.web.address=:80
+      - --entrypoints.rtmps.address=:19366
+      - --certificatesresolvers.le.acme.email=${ACME_EMAIL:?Set ACME_EMAIL}
+      - --certificatesresolvers.le.acme.storage=/acme/acme.json
+      - --certificatesresolvers.le.acme.httpchallenge.entrypoint=web
+      - --api.dashboard=false
+    ports: ['80:80', '19366:19366']
+    volumes:
+      - ${RCTV_BROADCAST_DIRECTORY:?Set the private RCTV 19 runtime}/server/traefik.json:/etc/traefik/dynamic.json:ro
+      - certificates:/acme
+    depends_on: [ingest]
+  ingest:
+    image: bluenviron/mediamtx:1.21.0
+    restart: unless-stopped
+    command: ['/config/mediamtx.json']
+    volumes:
+      - ${RCTV_BROADCAST_DIRECTORY:?Set the private RCTV 19 runtime}/server/mediamtx.json:/config/mediamtx.json:ro
+      - hls:/hls
+    # No host RTMP, HLS or administrative API ports are exposed.
+  publisher:
+    build:
+      context: ../..
+      dockerfile: deploy/live/Publisher.Dockerfile
+    restart: unless-stopped
+    env_file: ${RCTV_BROADCAST_DIRECTORY:?Set the private RCTV 19 runtime}/r2.env
+    environment:
+      HLS_DIRECTORY: /hls/rctv19
+      HLS_ENTRY: index.m3u8
+      R2_BUCKET: rctv19-live
+      R2_PREFIX: rctv19
+      HEALTH_FILE: /tmp/live-health.json
+    volumes: ['hls:/hls:ro']
+    depends_on: [ingest]
+    read_only: true
+    tmpfs: ['/tmp']
+    healthcheck:
+      test: ['CMD', 'node', '-e', "const fs=require('fs');const s=JSON.parse(fs.readFileSync('/tmp/live-health.json'));process.exit(Date.now()-Date.parse(s.lastPublishedAt)<30000?0:1)"]
+      interval: 15s
+      timeout: 5s
+      start_period: 60s
+      retries: 3
+volumes:
+  certificates:
+  hls:

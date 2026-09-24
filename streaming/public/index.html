@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1722">
+  <title>Watch RCTV 19</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script defer src="/vendor/hls.min.js"></script>
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <header class="site-header"><a class="wordmark" href="/watch/rctv19"><img class="brand-logo" src="/assets/logo.png" alt="Ripley Community Television"><span>RIPLEY COMMUNITY<br><strong>TELEVISION</strong></span></a><a class="news-link" href="https://rctv19.com/" target="_blank" rel="noopener">Visit our newsroom <span aria-hidden="true">↗</span></a></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">YOUR COMMUNITY. YOUR CHANNEL.</p><h1>RCTV 19</h1><p>Local stories, familiar faces, and the moments that bring us together.</p></div><span class="channel-badge">LIVE &amp; ON DEMAND</span></section>
+    <section class="watch-layout" aria-label="Watch programming">
+      <div class="player-shell">
+        <video id="video" controls playsinline preload="none" aria-label="RCTV 19 video player" hidden></video>
+        <div id="cover" class="player-cover"><div class="court" aria-hidden="true"></div><span class="cover-kicker">RCTV 19</span><h2 id="cover-title">Right here at home.</h2><p id="cover-description">Watch local news, community programming, sports and shows.</p><button id="play" class="primary" disabled><span aria-hidden="true">▶</span> Watch live</button><p id="status" role="status" aria-live="polite">Loading programming…</p></div>
+        <div id="playback-error" class="playback-error" role="alert" hidden><p id="error-text"></p><button id="retry">Try again</button><button id="close-error">Back to channel</button></div>
+      </div>
+      <aside class="now"><p class="eyebrow">ON THE CHANNEL</p><span id="live-status" class="status-badge">CHECKING SCHEDULE</span><h2 id="selected-title">RCTV 19</h2><p id="selected-description">Serving Ripley and Tippah County since 1999.</p><button id="return-live" class="secondary" hidden>Back to live</button><div class="now-footer"><span aria-hidden="true">◉</span> Your community, wherever you watch.</div></aside>
+    </section>
+    <section class="library"><div class="section-heading"><div><p class="eyebrow">CATCH UP</p><h2>On demand</h2></div><label class="search-label"><span class="sr-only">Search shows and episodes</span><input id="search" type="search" placeholder="Search shows & episodes" autocomplete="off"></label></div><div id="categories" class="categories" aria-label="Filter programming"></div><div id="videos" class="video-grid"></div><p id="empty" class="empty">Replays and shows will appear here when they’re available.</p></section>
+    <details class="embed-tools"><summary>Put this player on your website</summary><p>Copy the code below into an HTML block on your website.</p><textarea id="embed-code" readonly aria-label="Website embed code"></textarea><button id="copy-embed" class="secondary">Copy embed code</button><p id="copy-status" role="status"></p></details>
+  </main>
+  <footer><span>RCTV 19</span><p>Ripley Community Television.</p><a href="/support/">Support</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="https://rctv19.com/" target="_blank" rel="noopener">rctv19.com</a></footer>
+</body>
+</html>

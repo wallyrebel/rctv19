@@ -1,0 +1,9 @@
+{
+  "rootDir": ".",
+  "files": ["manifest", "source/**/*", "components/**/*", "images/**/*", "config.json"],
+  "stagingDir": "../../dist/roku/staging",
+  "outFile": "../../dist/rctv19-roku-dev.zip",
+  "createPackage": true,
+  "copyToStaging": true,
+  "sourceMap": false
+}

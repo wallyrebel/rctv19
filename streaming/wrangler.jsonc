@@ -1,0 +1,18 @@
+{
+  "assets": {
+    "html_handling": "auto-trailing-slash",
+    "directory": "./dist/web",
+    "not_found_handling": "404-page"
+  },
+  "account_id": "666cebcc1f6b2539b5790176abedf752",
+  "compatibility_date": "2026-09-23",
+  "routes": [
+    {
+      "pattern": "watch.rctv19.com",
+      "custom_domain": true
+    }
+  ],
+  "name": "rctv19-streaming",
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "workers_dev": true
+}

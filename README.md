@@ -2,6 +2,8 @@
 
 A modern, fast, and accessible website for RCTV19 built with [Eleventy](https://www.11ty.dev/) static site generator.
 
+The separate live/on-demand player and TV app project is documented in [streaming/README.md](streaming/README.md), with release progress in [streaming/STORE-STATUS.md](streaming/STORE-STATUS.md).
+
 ## 🚀 Quick Start
 
 ### Prerequisites

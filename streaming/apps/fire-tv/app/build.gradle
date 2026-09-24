@@ -1,0 +1,28 @@
+plugins { id 'com.android.application' }
+def catalogUrl = providers.gradleProperty('catalogUrl').getOrElse('https://watch.rctv19.com/api/catalog.json')
+android {
+    namespace 'com.rctv19.tv'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'com.rctv19.tv'
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName '1.0.0'
+        manifestPlaceholders = [tvRequired: 'false']
+        buildConfigField 'String', 'CATALOG_URL', '"' + catalogUrl.replace('\\','\\\\').replace('"','\\"') + '"'
+    }
+    buildFeatures { buildConfig true }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    buildTypes { release { minifyEnabled false } }
+}
+dependencies {
+    implementation 'androidx.media3:media3-exoplayer:1.8.0'
+    implementation 'androidx.media3:media3-exoplayer-hls:1.8.0'
+    implementation 'androidx.media3:media3-ui:1.8.0'
+    implementation 'androidx.media3:media3-session:1.8.0'
+}
+tasks.register('verifyReleaseEndpoint') {
+    doLast { if (!catalogUrl.startsWith('https://')) throw new GradleException('Set -PcatalogUrl=https://YOUR-HOST/api/catalog.json before a release build.') }
+}
+tasks.configureEach { if (name == 'preReleaseBuild') dependsOn 'verifyReleaseEndpoint' }

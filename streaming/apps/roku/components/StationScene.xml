@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="StationScene" extends="Scene">
+  <interface>
+    <field id="deepLinkContentId" type="string" alwaysNotify="true" onChange="onDeepLink"/>
+    <field id="memoryWarning" type="boolean" alwaysNotify="true" onChange="releaseUnusedMemory"/>
+  </interface>
+  <script type="text/brightscript" uri="pkg:/components/StationScene.brs"/>
+  <children>
+    <Rectangle width="1280" height="720" color="0x0b1722ff"/>
+    <Rectangle width="1280" height="8" color="0xffe100ff"/>
+    <Poster translation="[74,38]" width="118" height="96" uri="pkg:/images/icon-hd.png" loadDisplayMode="scaleToFit"/>
+    <Label translation="[218,50]" width="980" height="58" text="RCTV 19" color="0xffe100ff" font="font:LargeBoldSystemFont"/>
+    <Label translation="[220,110]" width="930" height="36" text="Ripley Community Television  |  Live and on demand" color="0xa9bac6ff"/>
+    <Rectangle translation="[74,166]" width="1132" height="2" color="0x345064ff"/>
+    <Label id="pageTitle" translation="[76,190]" width="1100" height="50" text="WATCH NOW" color="0xf2f5f6ff" font="font:MediumBoldSystemFont"/>
+    <Label id="status" translation="[82,275]" width="1070" height="115" wrap="true" text="Loading programming..."/>
+    <PosterGrid id="homeGrid" translation="[78,255]" basePosterSize="[344,194]" itemSpacing="[32,24]" numColumns="3" numRows="1" useAtlas="false" posterDisplayMode="scaleToZoom" caption1NumLines="2" caption2NumLines="1" caption1Color="0xf2f5f6ff" caption2Color="0xa9bac6ff" focusBitmapBlendColor="0xffe100ff" failedBitmapUri="pkg:/images/show-placeholder.png" visible="false"/>
+    <PosterGrid id="episodeGrid" translation="[78,255]" basePosterSize="[344,194]" itemSpacing="[32,24]" numColumns="3" numRows="1" useAtlas="false" posterDisplayMode="scaleToZoom" caption1NumLines="2" caption2NumLines="1" caption1Color="0xf2f5f6ff" caption2Color="0xa9bac6ff" focusBitmapBlendColor="0xffe100ff" failedBitmapUri="pkg:/images/show-placeholder.png" visible="false"/>
+    <Label id="description" translation="[80,561]" width="1110" height="78" wrap="true" color="0xc5d4dcff"/>
+    <Label id="hint" translation="[80,656]" width="1110" height="34" text="OK: select    *: refresh" color="0xa9bac6ff" font="font:SmallSystemFont"/>
+    <Video id="video" width="1280" height="720" visible="false"/>
+    <Timer id="bookmarkTimer" duration="30" repeat="true"/>
+  </children>
+</component>
