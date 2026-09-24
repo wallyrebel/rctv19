@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component name="StationScene" extends="Scene">
   <interface>
-    <field id="deepLinkContentId" type="string" alwaysNotify="true" onChange="onDeepLink"/>
+    <field id="deepLinkRequest" type="assocarray" alwaysNotify="true" onChange="onDeepLink"/>
     <field id="memoryWarning" type="boolean" alwaysNotify="true" onChange="releaseUnusedMemory"/>
   </interface>
+  <script type="text/brightscript" uri="pkg:/components/DeepLink.brs"/>
   <script type="text/brightscript" uri="pkg:/components/StationScene.brs"/>
   <children>
     <Rectangle width="1280" height="720" color="0x0b1722ff"/>

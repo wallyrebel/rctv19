@@ -38,17 +38,21 @@ Status: **draft; not submitted or approved**.
 - Developer draft app ID: `883607`
 - Intended version: `1.0.0`
 - Development source: `apps/roku/`
-- RCTV development app 1.0.0 is installed successfully on the owner's Roku TV at `192.168.68.50`; the installer reported 619,937 bytes received, matching the built package.
-- The owner confirmed live picture/sound, Mt Zion replay picture/sound, and Back twice from playback through episodes to home all work.
+- The corrected RCTV development app 1.0.0 is installed successfully on the owner's Roku TV at `192.168.68.50`; the current development ZIP is **620,671 bytes**.
+- The owner confirmed live picture/sound, Mt Zion replay picture/sound, Back twice, Resume, fast-forward preview pictures and the normal idle screensaver all work.
 - An actual 1280×720 Roku home screenshot is saved at `output/roku-test/home-actual-tv.jpg`. It shows the distinct live and show artwork.
 - Store listing, app profile and monetization drafts are saved in Roku: United States, Live TV, not made for kids, Content not rated, internet required, no sign-in, and free with no in-app purchases or inserted video ads. Sponsor logos/mentions do not imply an advertising SDK.
 - The English title/descriptions, official 540×405 poster and actual TV home screenshot are uploaded and saved. `output/roku-test/home-store-1920x1080.png` is the exact capture resized to Roku's required 1920×1080 dimensions, with no content changes.
 - Support, privacy, terms and station URLs are saved, with the authorized business email and private reviewer contact. Roku's overview marks Listing setup, Store assets, App profile and Monetization setup complete.
-- Version 1.0.0 was successfully signed on the TV as `Pfc96151bdcc055d77b1d6422aaea162b.pkg` using the existing developer identity `4002a0fc204acb05852a69a6bf7eb2ce6f404a4c`. The approved existing credential was used privately; no key reset or replacement occurred.
-- Edge blocked the package download. The Codex terminal did not appear for the owner, so `output/Download RCTV Roku Package.cmd` is prepared for manual launch and private device-password entry. The signed PKG has not yet been downloaded locally or uploaded to the store portal.
-- Resume, trick-play previews, deep links, screensaver checks and automated validation remain pending; device playback success is not store approval.
+- The original signed **622,944-byte** package was uploaded with minimum Roku OS **15.1**. Static analysis returned **zero errors and one conditional AppDialog warning**; the app has no pre-home dialog. The original package is backed up at `output/roku-test/rctv19-1.0.0-before-deep-link-fix.pkg`.
+- Portal deep-link samples are saved with indefinite availability: `rctv19-live` / `live` and `mt-zion-sermon-2026-09-20` / `episode`.
+- The corrected source adds an existing FHD icon manifest entry and validates atomic content-ID/media-type requests. Its real BrightScript resolver passed **28 checks** with development-only `brs@0.45.0`; the fixture is excluded from the shipping ZIP.
+- Corrected-build actual TV tests: cold replay returned HTTP 200 with `VODStartComplete` at 545 ms; warm `live` and `liveFeed` starts were 945 ms and 703 ms. A valid ID with an invalid media type returned HTTP 200 and an actual TV screenshot verified the home screen.
+- Corrected version 1.0.0 was signed on the TV as `P98335841fe86604b42176d807c2e9039.pkg` using existing developer identity `4002a0fc204acb05852a69a6bf7eb2ce6f404a4c`. The approved credential was used privately; no key reset or replacement occurred.
+- The owner downloaded the corrected signed package; its size is **623,680 bytes**, SHA-256 `6BBC19243D9EB709E2D07DFF5560CCE8BF9B24F17B5B56CAE5CEBE7FE9252CE8`. It replaced the earlier portal package, retaining minimum OS 15.1.
+- Fresh corrected-package static analysis returned **zero errors and one conditional AppDialog warning**, which is inapplicable because there is no pre-home dialog. App Behavior Analysis is queued; final submission remains pending.
 
-The signed package currently exists on the TV only. Complete its download, remaining physical Roku tests, store package upload and automated validation before submission. Schedule publishing remains disabled while Package & testing is incomplete. This draft does not automatically transfer FrontLayer's existing RCTV installations. Working review copy is in [ROKU-REVIEW-NOTES.md](ROKU-REVIEW-NOTES.md).
+The corrected signed package is saved locally and uploaded to the portal. Complete App Behavior Analysis before final submission. This draft does not automatically transfer FrontLayer's existing RCTV installations. Working review copy is in [ROKU-REVIEW-NOTES.md](ROKU-REVIEW-NOTES.md).
 
 ## Apple TV
 
@@ -59,7 +63,7 @@ The user reports an existing RCTV 19 Apple app. Confirm its App Store Connect re
 ## Remaining release gates
 
 - A later live-feed check at 2026-09-24 02:23 UTC still passed: sequence 327 advanced to 329, video segments returned cache HIT, HTTPS and CORS were valid. Reconnect/failover testing remains pending.
-- Complete Roku-specific Resume, trick-play preview, deep-link and screensaver checks, download/upload the signed package and run automated validation. Live/replay picture, sound and Back navigation are already owner-confirmed.
+- Finish the queued App Behavior Analysis on the corrected Roku package. Upload and fresh static analysis are complete; device playback/navigation, Resume, BIF, screensaver and corrected deep-link checks are confirmed as described above.
 - Physical Fire TV testing remains unperformed; keep that limitation explicit in reviewer instructions. The official TV emulator checks and actual app screenshots are complete.
 - Await Amazon's review outcome for the submitted version and address any findings.
 - Submit the Roku draft when its remaining requirements are complete and record the stores' actual review outcomes here.

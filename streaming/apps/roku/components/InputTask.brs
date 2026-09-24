@@ -11,8 +11,8 @@ sub listenForInput()
         if type(event) = "roInputEvent"
             if event.IsInput()
                 info = event.GetInfo()
-                if info <> invalid
-                    if info.DoesExist("contentID") and info.DoesExist("mediaType")
+                if type(info) = "roAssociativeArray"
+                    if info.DoesExist("contentId") or info.DoesExist("mediaType")
                         m.top.inputData = info
                     end if
                 end if

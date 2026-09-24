@@ -33,8 +33,8 @@ end sub
 
 sub onInputData()
     info = m.inputTask.inputData
-    if info <> invalid and info.contentId <> invalid
-        m.top.deepLinkContentId = info.contentId
+    if info <> invalid
+        m.top.deepLinkRequest = info
     end if
 end sub
 
@@ -272,28 +272,37 @@ sub saveBookmark()
 end sub
 
 sub onDeepLink()
-    if m.items = invalid or m.top.deepLinkContentId = "" then return
-    for i = 0 to m.items.Count() - 1
-        if m.items[i].id = m.top.deepLinkContentId
-            m.top.deepLinkContentId = ""
-            if not m.items[i].isLive
-                for j = 0 to m.groups.Count() - 1
-                    for each groupIndex in m.groups[j].indices
-                        if groupIndex = i then showEpisodes(j)
-                    end for
-                end for
-            end if
-            playItem(i)
-            return
-        end if
-    end for
-    requestedId = m.top.deepLinkContentId
-    if m.refreshedDeepLinkId <> requestedId
-        m.refreshedDeepLinkId = requestedId
+    if m.items = invalid or m.top.deepLinkRequest = invalid then return
+    if m.loadingCatalog then return
+    result = resolveDeepLink(m.top.deepLinkRequest, m.items, m.refreshedDeepLinkId)
+    if result.action = "refresh"
+        m.refreshedDeepLinkId = result.contentId
         if m.video.visible then closePlayer()
         loadCatalog()
+        return
+    end if
+    ' Clear the complete request before playback; fields cannot arrive out of order.
+    m.top.deepLinkRequest = invalid
+    m.refreshedDeepLinkId = invalid
+    if result.action = "play"
+        index = result.index
+        if m.video.visible then closePlayer()
+        if m.items[index].isLive
+            showHome()
+        else
+            for j = 0 to m.groups.Count() - 1
+                for each groupIndex in m.groups[j].indices
+                    if groupIndex = index then showEpisodes(j)
+                end for
+            end for
+        end if
+        playItem(index)
     else
-        m.top.deepLinkContentId = ""
+        if m.video.visible then closePlayer()
+        if m.items.Count() > 0
+            m.status.visible = false
+            showHome()
+        end if
         m.description.text = "That program is not currently available. Choose another program."
     end if
 end sub

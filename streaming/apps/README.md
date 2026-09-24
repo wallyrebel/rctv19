@@ -6,11 +6,21 @@ Both apps load `https://watch.rctv19.com/api/catalog.json`. The home screen cont
 
 ## Roku
 
-From the streaming directory, run `npm run build:roku`. The unsigned sideload package is `dist/rctv19-roku-dev.zip`. The initial manifest version is 1.0.0. Distribution packaging requires the intended signing identity on a Roku device. The first RCTV package was signed using the owner's existing verified developer identity; it was not reset or regenerated.
+From the streaming directory, run `npm run build:roku`. The unsigned sideload package is `dist/rctv19-roku-dev.zip`. The current unpublished manifest version is 1.0.0; its corrected development ZIP is 620,671 bytes. Use minimum Roku OS 15.1 in the portal, matching the existing baseline. Distribution packaging requires the intended signing identity on a Roku device. Both RCTV packages were signed using the owner's existing verified developer identity; it was not reset or regenerated. The corrected signed package is currently awaiting download/upload; see `../STORE-STATUS.md` for the exact release state.
 
 `scripts/roku-signing-handoff.mjs` requires an explicit device IP and private `RCTV_BROADCAST_DIRECTORY`. For an existing shared developer identity, set `RCTV_ROKU_SIGNING_KEY_FILE` to its absolute private file path outside Git/OneDrive rather than copying the credential. The handoff binds only to loopback, expires after five minutes, and does not log the password. Never commit signing files or change a device identity without checking which apps rely on it.
 
-Retained behavior includes remote navigation, grouped show/episode artwork, live and replay playback, local replay bookmarks and Resume, content-ID deep links, and catalog refresh with the star button. Supply HD and SD BIF files for long replays. Verify these behaviors with RCTV media on a Roku before submission.
+Retained behavior includes remote navigation, grouped show/episode artwork, live and replay playback, local replay bookmarks and Resume, content-ID deep links, and catalog refresh with the star button. Supply HD and SD BIF files for long replays. The owner confirmed live/replay picture and sound, Back, Resume, BIF previews and the idle screensaver with RCTV media. The corrected build also passed actual-TV cold replay, warm live/liveFeed and invalid-media-type home fallback checks. Fresh portal static and App Behavior Analysis are still required on that corrected package.
+
+Deep-link requests carry content ID and media type together. Replays accept `episode`; the live channel accepts the portal's `live` value and documented `liveFeed` alias. Invalid/missing/mismatched types return home. An unknown ID refreshes once, then returns home if it is still absent. The minimal fix does not add a series deep-link type or change normal menu playback.
+
+The actual resolver has 28 behavioral checks. Run from the streaming directory with the pinned development-only interpreter; this command does not add a project dependency or contact the Roku:
+
+```text
+npm exec --yes --package=brs@0.45.0 -- brs apps/roku/components/DeepLink.brs tests/roku-deep-link.brs
+```
+
+The fixture is outside `bsconfig.files` and excluded from the shipping ZIP. The manifest's FHD icon points to the existing 540×405 `images/icon.png`.
 
 ## Amazon Fire TV / Fire OS
 

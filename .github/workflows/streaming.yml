@@ -39,3 +39,5 @@ jobs:
         run: npm run build:web
       - name: Compile Roku app
         run: npm run build:roku
+      - name: Test Roku deep-link routing
+        run: npm exec --yes --package=brs@0.45.0 -- brs apps/roku/components/DeepLink.brs tests/roku-deep-link.brs

@@ -3,8 +3,10 @@ sub Main(args as Dynamic)
     port = CreateObject("roMessagePort")
     screen.SetMessagePort(port)
     scene = screen.CreateScene("StationScene")
-    if args <> invalid and args.contentId <> invalid
-        scene.deepLinkContentId = args.contentId
+    if type(args) = "roAssociativeArray"
+        if args.DoesExist("contentId") or args.DoesExist("mediaType")
+            scene.deepLinkRequest = args
+        end if
     end if
     memoryMonitor = CreateObject("roAppMemoryMonitor")
     if memoryMonitor <> invalid
