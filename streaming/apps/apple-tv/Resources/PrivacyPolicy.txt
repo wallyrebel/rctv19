@@ -1,0 +1,37 @@
+Privacy policy
+
+Effective September 23, 2026
+
+
+This policy covers the RCTV 19 streaming player and TV apps operated by Mississippi News Group. It does not cover separate news websites or the services provided by your TV platform.
+
+
+Watching programming
+
+You can watch without creating an account or providing a name, email address, payment information, or precise location. The player and TV apps do not include analytics or advertising SDKs, request an advertising identifier, or use tracking cookies. A broadcast may include commercials or sponsorships as part of the video.
+
+
+Information used to deliver the service
+
+Loading the app catalog and streaming video sends technical connection information to our hosting and video delivery provider, Cloudflare. This can include your IP address, requested files, request time, and browser or device information included in network requests. This information is used to deliver content, maintain security, and diagnose service problems. Provider handling and retention are subject to its operational policies. See Cloudflare's privacy policy (https://www.cloudflare.com/privacypolicy/).
+
+
+The TV apps may keep playback position and screen state on your device so that playback can continue when you return. The app does not send that saved state to a viewer profile or analytics service.
+
+
+Support
+
+If you email us, we receive the address and information you include and use them to respond to your request. Please avoid sending passwords, payment details, or other sensitive information.
+
+
+Sharing and choices
+
+We do not sell viewer information or use the streaming apps to share it for targeted advertising. Technical information is processed by providers needed to operate the service. Your app store, device manufacturer, internet provider, and any website embedding the player may process information under their own policies.
+
+
+There is no streaming-app account to delete. For questions about information you sent to support, or to request its deletion, email myersgrouponline@gmail.com (mailto:myersgrouponline@gmail.com).
+
+
+Children and changes
+
+The service provides local news, sports, religious and community programming. It does not ask children to create accounts or submit personal information. Changes to this policy will appear on this page with an updated effective date.

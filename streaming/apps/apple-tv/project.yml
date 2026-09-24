@@ -1,0 +1,59 @@
+name: RCTV19TV
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    tvOS: "17.0"
+targets:
+  RCTV19TV:
+    type: application
+    platform: tvOS
+    sources: [Sources, Resources]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.rctv19App
+        DEVELOPMENT_TEAM: CLHYNTLNBG
+        CODE_SIGN_STYLE: Automatic
+        SWIFT_VERSION: "5.0"
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: Configuration/Info.plist
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: 1
+        TARGETED_DEVICE_FAMILY: "3"
+        ASSETCATALOG_COMPILER_APPICON_NAME: "App Icon & Top Shelf Image"
+  RCTV19TVTests:
+    type: bundle.unit-test
+    platform: tvOS
+    sources: [Tests]
+    dependencies:
+      - target: RCTV19TV
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.rctv19App.tvtests
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_VERSION: "5.0"
+  RCTV19TVUITests:
+    type: bundle.ui-testing
+    platform: tvOS
+    sources: [UITests]
+    dependencies:
+      - target: RCTV19TV
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.rctv19App.tvuitests
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_VERSION: "5.0"
+schemes:
+  RCTV19TV:
+    build:
+      targets:
+        RCTV19TV: all
+        RCTV19TVTests: [test]
+    test:
+      targets: [RCTV19TVTests]
+  RCTV19TVPlayback:
+    build:
+      targets:
+        RCTV19TV: all
+        RCTV19TVUITests: [test]
+    test:
+      targets: [RCTV19TVUITests]

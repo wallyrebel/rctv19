@@ -6,11 +6,11 @@ Both apps load `https://watch.rctv19.com/api/catalog.json`. The home screen cont
 
 ## Roku
 
-From the streaming directory, run `npm run build:roku`. The unsigned sideload package is `dist/rctv19-roku-dev.zip`. The current unpublished manifest version is 1.0.0; its corrected development ZIP is 620,671 bytes. Use minimum Roku OS 15.1 in the portal, matching the existing baseline. Distribution packaging requires the intended signing identity on a Roku device. Both RCTV packages were signed using the owner's existing verified developer identity; it was not reset or regenerated. The corrected signed package is currently awaiting download/upload; see `../STORE-STATUS.md` for the exact release state.
+From the streaming directory, run `npm run build:roku`. The unsigned sideload package is `dist/rctv19-roku-dev.zip`. The submitted manifest version is 1.0.0; its corrected development ZIP is 620,671 bytes and signed package is 623,680 bytes. Use minimum Roku OS 15.1 in the portal, matching the existing baseline. Distribution packaging requires the intended signing identity on a Roku device. Both RCTV packages were signed using the owner's existing verified developer identity; it was not reset or regenerated. The corrected signed package is submitted and under review; see `../STORE-STATUS.md` for the exact release state.
 
 `scripts/roku-signing-handoff.mjs` requires an explicit device IP and private `RCTV_BROADCAST_DIRECTORY`. For an existing shared developer identity, set `RCTV_ROKU_SIGNING_KEY_FILE` to its absolute private file path outside Git/OneDrive rather than copying the credential. The handoff binds only to loopback, expires after five minutes, and does not log the password. Never commit signing files or change a device identity without checking which apps rely on it.
 
-Retained behavior includes remote navigation, grouped show/episode artwork, live and replay playback, local replay bookmarks and Resume, content-ID deep links, and catalog refresh with the star button. Supply HD and SD BIF files for long replays. The owner confirmed live/replay picture and sound, Back, Resume, BIF previews and the idle screensaver with RCTV media. The corrected build also passed actual-TV cold replay, warm live/liveFeed and invalid-media-type home fallback checks. Fresh portal static and App Behavior Analysis are still required on that corrected package.
+Retained behavior includes remote navigation, grouped show/episode artwork, live and replay playback, local replay bookmarks and Resume, content-ID deep links, and catalog refresh with the star button. Supply HD and SD BIF files for long replays. The owner confirmed live/replay picture and sound, Back, Resume, BIF previews and the idle screensaver with RCTV media. The corrected build also passed actual-TV cold replay, warm live/liveFeed and invalid-media-type home fallback checks. Fresh portal static analysis has zero errors and App Behavior Analysis passed all four checks on that corrected package.
 
 Deep-link requests carry content ID and media type together. Replays accept `episode`; the live channel accepts the portal's `live` value and documented `liveFeed` alias. Invalid/missing/mismatched types return home. An unknown ID refreshes once, then returns home if it is still absent. The minimal fix does not add a series deep-link type or change normal menu playback.
 
@@ -35,6 +35,10 @@ gradle :app:assembleRelease :app:lintRelease
 The release APK is unsigned at `app/build/outputs/apk/release/app-release-unsigned.apk`. There is no release signing configuration or key in the source. A development build can be made with `:app:assembleDebug` for emulator/device checks; Android signs that build with its development identity.
 
 The minimum Android API is 23; Fire OS models below that level are excluded. This Android build does not target Amazon's separate Vega operating system. Catalog access and artwork require HTTPS, and the app has no account, advertising SDK or analytics SDK. Playback uses native Media3, audio focus, remote media keys and a MediaSession.
+
+## Apple TV
+
+The native tvOS source is in `apple-tv/`, using the existing RCTV bundle `com.example.rctv19App`, team `CLHYNTLNBG`. Version 1.0 (1) is submitted and Waiting for Review on the existing Apple record; the iOS binary is unchanged. The app uses SwiftUI and AVKit with grouped show/episode artwork and the shared RCTV catalog. Seven unit tests and the complete remote-driven playback test passed in the Apple TV simulator. Build, artwork and signing/export details are in [apple-tv/README.md](apple-tv/README.md).
 
 ## Release prerequisites
 

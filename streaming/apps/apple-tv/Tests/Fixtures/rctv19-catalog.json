@@ -1,0 +1,59 @@
+{
+  "live": {
+    "id": "rctv19-live",
+    "title": "RCTV 19 Live",
+    "description": "Watch Ripley Community Television live: local programming for Ripley and Tippah County, Mississippi.",
+    "type": "hls",
+    "url": "https://live.rctv19.com/rctv19/index.m3u8",
+    "thumbnail": "https://watch.rctv19.com/assets/live-cover.png"
+  },
+  "videos": [
+    {
+      "id": "mt-zion-children-2026-09-20",
+      "title": "Mt Zion Children — September 20, 2026",
+      "description": "Mt Zion Children — September 20, 2026 from RCTV 19.",
+      "category": "Mt Zion Church Sermons",
+      "durationSeconds": 212,
+      "type": "hls",
+      "url": "https://vod.rctv19.com/programs/mt-zion-children-2026-09-20/v1/index.m3u8",
+      "thumbnail": "https://vod.rctv19.com/programs/mt-zion-children-2026-09-20/v1/thumbnail.jpg",
+      "hdBifUrl": "https://vod.rctv19.com/programs/mt-zion-children-2026-09-20/v1/trickplay-hd.bif",
+      "sdBifUrl": "https://vod.rctv19.com/programs/mt-zion-children-2026-09-20/v1/trickplay-sd.bif",
+      "seriesThumbnail": "https://vod.rctv19.com/programs/mt-zion-sermon-2026-09-20/v1/thumbnail.jpg"
+    },
+    {
+      "id": "mt-zion-sermon-2026-08-23",
+      "title": "Mt Zion Sermon — August 23, 2026",
+      "description": "Mt Zion Sermon — August 23, 2026 from RCTV 19.",
+      "category": "Mt Zion Church Sermons",
+      "durationSeconds": 1355,
+      "type": "hls",
+      "url": "https://vod.rctv19.com/programs/mt-zion-sermon-2026-08-23/v1/index.m3u8",
+      "thumbnail": "https://vod.rctv19.com/programs/mt-zion-sermon-2026-08-23/v1/thumbnail.jpg",
+      "hdBifUrl": "https://vod.rctv19.com/programs/mt-zion-sermon-2026-08-23/v1/trickplay-hd.bif",
+      "sdBifUrl": "https://vod.rctv19.com/programs/mt-zion-sermon-2026-08-23/v1/trickplay-sd.bif",
+      "seriesThumbnail": "https://vod.rctv19.com/programs/mt-zion-sermon-2026-09-20/v1/thumbnail.jpg"
+    },
+    {
+      "id": "mt-zion-sermon-2026-09-20",
+      "title": "Mt Zion Sermon — September 20, 2026",
+      "description": "Mt Zion Sermon — September 20, 2026 from RCTV 19.",
+      "category": "Mt Zion Church Sermons",
+      "durationSeconds": 1384,
+      "type": "hls",
+      "url": "https://vod.rctv19.com/programs/mt-zion-sermon-2026-09-20/v1/index.m3u8",
+      "thumbnail": "https://vod.rctv19.com/programs/mt-zion-sermon-2026-09-20/v1/thumbnail.jpg",
+      "hdBifUrl": "https://vod.rctv19.com/programs/mt-zion-sermon-2026-09-20/v1/trickplay-hd.bif",
+      "sdBifUrl": "https://vod.rctv19.com/programs/mt-zion-sermon-2026-09-20/v1/trickplay-sd.bif",
+      "seriesThumbnail": "https://vod.rctv19.com/programs/mt-zion-sermon-2026-09-20/v1/thumbnail.jpg"
+    }
+  ],
+  "version": 1,
+  "channel": {
+    "description": "Ripley Community Television: local news, sports, shows and community coverage for Ripley and Tippah County, Mississippi.",
+    "name": "RCTV 19",
+    "id": "rctv19",
+    "logo": "https://watch.rctv19.com/assets/logo.png",
+    "website": "https://rctv19.com"
+  }
+}

@@ -5,7 +5,7 @@ Development snapshot: September 23, 2026. This file records RCTV 19 only.
 ## Website, storage and content
 
 - `https://watch.rctv19.com/` is deployed through Cloudflare; the main station site remains `https://rctv19.com/`.
-- Verified deployment: `a4e6a478-d9c7-4a62-a59c-f70bec426bdc`. The catalog includes the verified live URL `https://live.rctv19.com/rctv19/index.m3u8`.
+- Latest verified deployment: `b753cbc1-39be-496f-9c9f-38bd83a6491d`. This changed only the terms page's copied Sports wording to local programming and sponsor logos/mentions. The catalog is unchanged and includes `https://live.rctv19.com/rctv19/index.m3u8`.
 - The shared catalog publishes three Mt Zion programs, with permission confirmed: Mt Zion Children — September 20, 2026; Mt Zion Sermon — August 23, 2026; Mt Zion Sermon — September 20, 2026.
 - Public replays use `vod.rctv19.com` and the separate `rctv19-vod` bucket, including episode images and Roku BIF previews.
 - `rctv19-live` is separate. The approved one-day lifecycle rule applies only to its `rctv19/` live-buffer prefix. No automatic deletion rule is applied to the replay library.
@@ -58,11 +58,21 @@ The corrected signed package is saved locally, uploaded and submitted. This new 
 
 ## Apple TV
 
-Status: **existing record verified; Apple TV preparation in progress**.
+Status: **Submitted — Waiting for Review; not yet approved**.
 
-Existing RCTV 19 app ID `6759344672`, bundle ID `com.example.rctv19App`, SKU `02182026`, team `CLHYNTLNBG` (Jon Myers). Its iOS version 1.0 is Ready for Distribution; no tvOS platform was present at initial inspection. The signed-in account has Account Holder/Admin access. Add tvOS to this same record while preserving the existing iOS release. No Apple TV build or submission has been completed for RCTV 19 yet.
+Existing RCTV 19 app ID `6759344672`, bundle ID `com.example.rctv19App`, SKU `02182026`, team `CLHYNTLNBG` (Jon Myers). Its iOS version 1.0 remains Ready for Distribution. A tvOS 1.0 draft was added to this same record; the iOS binary was not changed. The signed-in account has Account Holder/Admin access.
 
-The owner authorized using the same network Mac as the Mississippi Sports build (`jonmyers@192.168.68.51`). The Mac is reachable with its previously pinned host identity, but the existing temporary build key is not currently authorized. A PC-restricted renewal command, expiring September 25, was provided for the owner to run locally. Do not put private SSH or signing keys in this repository.
+The owner restored temporary build access on the same network Mac as the Mississippi Sports build (`jonmyers@192.168.68.51`), restricted to this PC and expiring September 25. The existing pinned host identity and private key were reused. Source and evidence are isolated at `/Users/jonmyers/RCTV19Build/2026-09-23-source/apple-tv`. No private SSH/signing keys are in Git.
+
+- Native SwiftUI/AVKit app with RCTV branding, shared catalog, grouped show/episode artwork, local Resume, seeking, background pause and in-app privacy. Source: `apps/apple-tv/`.
+- Xcode **26.3 (17C529)**, tvOS SDK/simulator **26.2**. Simulator and release archive builds passed; seven unit tests passed in `build/CatalogRegression.xcresult`.
+- The remote-driven Apple TV 4K 1080p UI test passed in **116.310 seconds**, covering live/replay playback, show/episode navigation, Back, actual Resume time, forward seeking, background pause/return and privacy. Evidence: `build/PlaybackFlow.xcresult`. No physical Apple TV or human listening test was performed.
+- Three actual 1920×1080 XCTest screenshots were exported, visually checked, and copied byte-for-byte to `assets/store/apple-tv-{home,episodes,replay}-1920x1080.png`. Their SHA-256 checks matched the original attachments. They are uploaded in that order.
+- Release archive `build/RCTV19TV.xcarchive` was exported with cloud-managed Apple Distribution signing and the existing team. Local IPA: `build/export/RCTV19TV.ipa` on the Mac.
+- Upload succeeded **September 23, 2026, 10:17 PM Central**. App Store Connect processed and accepted **1.0 (1)**, build ID `d1b18a7d-0c7f-43bc-a319-39dcb6e07c89`; it is selected in the tvOS draft.
+- Description, keywords, support, marketing, private review contacts and accurate test/content-rights review notes are saved. Copyright is `2026 Mississippi News Group`. No sign-in or purchase is required. Automatic release after approval is selected.
+- With explicit owner approval, the shared Apple privacy label was updated and published: **Other Diagnostic Data; App Functionality; linked to identity; no tracking**, covering Cloudflare connection data that can include IP addresses. The existing iOS privacy URL was preserved; full RCTV streaming privacy text was added for tvOS. The app's privacy manifest matches.
+- The owner explicitly approved Add for Review, Submit for Review and automatic release after approval. Submission succeeded on **September 23, 2026 at 10:22 PM Central**; Apple displayed **1 Item Submitted** and **Waiting for Review**. Submission ID: `75020b41-54e6-4530-87d5-5876d8f0f201`. Review: https://appstoreconnect.apple.com/apps/6759344672/distribution/reviewsubmissions/details/75020b41-54e6-4530-87d5-5876d8f0f201 . Approval and public tvOS availability remain pending.
 
 ## Remaining release gates
 
@@ -71,4 +81,5 @@ The owner authorized using the same network Mac as the Mississippi Sports build 
 - Physical Fire TV testing remains unperformed; keep that limitation explicit in reviewer instructions. The official TV emulator checks and actual app screenshots are complete.
 - Await Amazon's review outcome for the submitted version and address any findings.
 - Await Roku's review outcome for the submitted September 28 release; record actual store approval/publication separately.
+- Await Apple's review outcome for tvOS 1.0 (1). Accurate simulator-only/audio-testing limits and content-permission notes are included in its submitted review information.
 - Keep the existing FrontLayer service available until the replacement is ready for viewers.

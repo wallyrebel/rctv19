@@ -10,7 +10,7 @@ This `streaming/` project is separate from the parent website's build and from t
 - Three Mt Zion programs are publicly available, with the owner's permission confirmed. They have HLS video, episode pictures and Roku fast-forward previews.
 - A separate RCTV 19 live receiver/helper is running manually on the development PC for testing. No startup or recovery task has been installed for RCTV 19 yet. Production broadcasting is intended for another local computer, with a shared rented VM possible later; no VM has been rented.
 - Amazon's new RCTV 19 app is submitted for review. Roku passed all four automated behavior checks and is submitted, under review and scheduled for September 28, 2026 at noon Central. Neither new app is approved yet. See [STORE-STATUS.md](STORE-STATUS.md).
-- Apple TV preparation uses the verified existing Apple RCTV 19 record (`6759344672`, bundle `com.example.rctv19App`). Its current iOS release will be preserved while a tvOS version is prepared.
+- Apple TV 1.0 (1) is submitted and Waiting for Review on the existing RCTV 19 record (`6759344672`, bundle `com.example.rctv19App`). Simulator playback/navigation tests passed; no physical Apple TV or human listening test was performed. The current iOS binary remains unchanged.
 
 ## Project layout
 
@@ -20,6 +20,7 @@ This `streaming/` project is separate from the parent website's build and from t
 | `public/` | Watch page, embedded player, support/privacy pages and web artwork |
 | `apps/roku/` | BrightScript/SceneGraph app |
 | `apps/fire-tv/` | Native Fire OS app |
+| `apps/apple-tv/` | Native SwiftUI/AVKit tvOS app, build scripts and simulator tests |
 | `assets/` | Original RCTV 19 logo and store artwork |
 | `lib/`, `scripts/` | HLS publishing, replay preparation, validation and build tools |
 | `deploy/local/` | Isolated Windows broadcaster and desktop show-publishing workflow |
