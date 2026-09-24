@@ -1,6 +1,6 @@
 # RCTV 19 local broadcaster
 
-Prepared for the separate Windows computer that will ultimately run the RCTV 19 vMix/OBS feed. A manually started, isolated live helper is also available on the development PC for authorized testing. No RCTV 19 startup/recovery task has been installed yet; see ../../STORE-STATUS.md for the current snapshot.
+Prepared for the separate Windows computer that will ultimately run the RCTV 19 vMix/OBS feed. The isolated live helper also runs on the development PC for testing. On September 24, 2026, the current-user recovery task was installed there after the helper stopped and left the stream offline. The task checks at sign-in and every minute while the user is signed in; see ../../STORE-STATUS.md for the current snapshot.
 
 ## Isolated paths and ports
 

@@ -1,6 +1,6 @@
 # RCTV 19 store and deployment status
 
-Development snapshot: September 23, 2026. This file records RCTV 19 only.
+Development snapshot: September 24, 2026. This file records RCTV 19 only.
 
 ## Website, storage and content
 
@@ -10,7 +10,7 @@ Development snapshot: September 23, 2026. This file records RCTV 19 only.
 - Public replays use `vod.rctv19.com` and the separate `rctv19-vod` bucket, including episode images and Roku BIF previews.
 - `rctv19-live` is separate. The approved one-day lifecycle rule applies only to its `rctv19/` live-buffer prefix. No automatic deletion rule is applied to the replay library.
 - Upload keys are saved privately outside Git/OneDrive, separately scoped to the live and replay buckets.
-- The isolated live test helper is running manually on this PC: RTMP `19360`, HLS `18898`, status `19361`, private runtime `~/.rctv19-streaming`. No RCTV 19 startup/recovery task has been installed. No rented VM exists.
+- The isolated live test helper runs on this PC: RTMP `19360`, HLS `18898`, status `19361`, private runtime `~/.rctv19-streaming`. On September 24, 2026, it was restarted after an outage and the `RCTV 19 Broadcast Recovery` current-user task was installed. The task checks at sign-in and every minute while signed in; its first run returned success. The public media playlist resumed advancing. The original process termination was not identified from the available logs. No rented VM exists.
 
 ## Amazon Fire TV
 
