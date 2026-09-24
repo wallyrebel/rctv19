@@ -33,7 +33,7 @@ This is a new RCTV 19 Fire OS record. It does not automatically update or transf
 
 ## Roku
 
-Status: **draft; not submitted or approved**.
+Status: **Submitted and under review; scheduled for publishing, not yet approved**.
 
 - Developer draft app ID: `883607`
 - Intended version: `1.0.0`
@@ -50,21 +50,25 @@ Status: **draft; not submitted or approved**.
 - Corrected-build actual TV tests: cold replay returned HTTP 200 with `VODStartComplete` at 545 ms; warm `live` and `liveFeed` starts were 945 ms and 703 ms. A valid ID with an invalid media type returned HTTP 200 and an actual TV screenshot verified the home screen.
 - Corrected version 1.0.0 was signed on the TV as `P98335841fe86604b42176d807c2e9039.pkg` using existing developer identity `4002a0fc204acb05852a69a6bf7eb2ce6f404a4c`. The approved credential was used privately; no key reset or replacement occurred.
 - The owner downloaded the corrected signed package; its size is **623,680 bytes**, SHA-256 `6BBC19243D9EB709E2D07DFF5560CCE8BF9B24F17B5B56CAE5CEBE7FE9252CE8`. It replaced the earlier portal package, retaining minimum OS 15.1.
-- Fresh corrected-package static analysis returned **zero errors and one conditional AppDialog warning**, which is inapplicable because there is no pre-home dialog. App Behavior Analysis is queued; final submission remains pending.
+- Fresh corrected-package static analysis returned **zero errors and one conditional AppDialog warning**, which is inapplicable because there is no pre-home dialog. App Behavior Analysis is **Done: all four tests passed** on Roku Ultra 4640X, firmware 15.3.4.02402: LaunchPerformance, Deep Linking Basic, Screensaver Policy and ContentPlayPerformance.
+- The owner approved scheduling the first release for **September 28, 2026, 10:00 AM Pacific / noon Central**, then explicitly approved both final testing/agreement and authority/rights certifications. Release notes and certifications were completed and Submit succeeded. Roku displayed **App scheduled for publishing**, **under review** and dashboard status **PUBLISHING**. The scheduled date is subject to review; it is not proof that the app is already public.
+- GitHub Actions passed for commit `cee70c7de736502cb4c9ec3ae487220b4474a6c1`, including Node tests, catalog validation, web/Roku builds and 28 actual BrightScript resolver checks. Run: https://github.com/wallyrebel/rctv19/actions/runs/35949455899 . The CI runner fix does not change the signed app package.
 
-The corrected signed package is saved locally and uploaded to the portal. Complete App Behavior Analysis before final submission. This draft does not automatically transfer FrontLayer's existing RCTV installations. Working review copy is in [ROKU-REVIEW-NOTES.md](ROKU-REVIEW-NOTES.md).
+The corrected signed package is saved locally, uploaded and submitted. This new app does not automatically transfer FrontLayer's existing RCTV installations. Submitted review copy and evidence are in [ROKU-REVIEW-NOTES.md](ROKU-REVIEW-NOTES.md).
 
 ## Apple TV
 
-Status: **deferred until Amazon and Roku are ready**.
+Status: **existing record verified; Apple TV preparation in progress**.
 
-The user reports an existing RCTV 19 Apple app. Confirm its App Store Connect record, ownership, bundle ID and signing/update path before changing it. No Apple TV submission or approval is recorded for this new streaming implementation.
+Existing RCTV 19 app ID `6759344672`, bundle ID `com.example.rctv19App`, SKU `02182026`, team `CLHYNTLNBG` (Jon Myers). Its iOS version 1.0 is Ready for Distribution; no tvOS platform was present at initial inspection. The signed-in account has Account Holder/Admin access. Add tvOS to this same record while preserving the existing iOS release. No Apple TV build or submission has been completed for RCTV 19 yet.
+
+The owner authorized using the same network Mac as the Mississippi Sports build (`jonmyers@192.168.68.51`). The Mac is reachable with its previously pinned host identity, but the existing temporary build key is not currently authorized. A PC-restricted renewal command, expiring September 25, was provided for the owner to run locally. Do not put private SSH or signing keys in this repository.
 
 ## Remaining release gates
 
 - A later live-feed check at 2026-09-24 02:23 UTC still passed: sequence 327 advanced to 329, video segments returned cache HIT, HTTPS and CORS were valid. Reconnect/failover testing remains pending.
-- Finish the queued App Behavior Analysis on the corrected Roku package. Upload and fresh static analysis are complete; device playback/navigation, Resume, BIF, screensaver and corrected deep-link checks are confirmed as described above.
+- Roku App Behavior Analysis and fresh static analysis are complete; device playback/navigation, Resume, BIF, screensaver and corrected deep-link checks are confirmed as described above.
 - Physical Fire TV testing remains unperformed; keep that limitation explicit in reviewer instructions. The official TV emulator checks and actual app screenshots are complete.
 - Await Amazon's review outcome for the submitted version and address any findings.
-- Submit the Roku draft when its remaining requirements are complete and record the stores' actual review outcomes here.
+- Await Roku's review outcome for the submitted September 28 release; record actual store approval/publication separately.
 - Keep the existing FrontLayer service available until the replacement is ready for viewers.

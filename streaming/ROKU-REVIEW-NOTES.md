@@ -1,6 +1,6 @@
-# RCTV 19 Roku review draft
+# RCTV 19 Roku review submission
 
-Status: **draft; not submitted or approved**. The corrected development version 1.0.0 is installed on the owner's Roku TV at 192.168.68.50 and signed using the existing developer identity. Live/replay playback, Back, Resume, BIF previews and idle screensaver have owner confirmation; corrected deep-link paths have actual-device evidence below. The corrected signed package is uploaded and fresh static analysis is complete. App Behavior Analysis is queued and final submission remains pending. This is a separate RCTV app project, not an update to Mississippi Sports or an automatic replacement of the FrontLayer-published RCTV listing.
+Status: **submitted, under review and scheduled for September 28, 2026 at 10:00 AM Pacific / noon Central; not yet approved**. The corrected development version 1.0.0 is installed on the owner's Roku TV at 192.168.68.50 and signed using the existing developer identity. Live/replay playback, Back, Resume, BIF previews and idle screensaver have owner confirmation; corrected deep-link paths have actual-device evidence below. All four App Behavior Analysis tests passed, and fresh static analysis has zero errors. The owner explicitly approved the schedule and final certifications; Submit succeeded and Roku displayed PUBLISHING. This is a separate RCTV app project, not an update to Mississippi Sports or an automatic replacement of the FrontLayer-published RCTV listing.
 
 ## Listing copy
 
@@ -8,7 +8,7 @@ Title: **RCTV 19**
 
 Description: **Watch Ripley Community Television live and on demand. Browse local news, sports, religious programs and community shows from Ripley and Tippah County, Mississippi. Choose a show, select an episode and watch with your Roku remote. No viewer account or subscription is required. An internet connection is required, and programming availability may change.**
 
-## Reviewer instructions — complete testing before using
+## Reviewer instructions
 
 The app opens a home screen with a live tile when a live source is available, plus picture tiles for on-demand shows. Select a show with OK to browse its episodes, then select an episode to play. Back returns to the episode gallery; Back again returns to the home tiles. Press the star button on the menu to refresh programming.
 
@@ -55,12 +55,12 @@ Terms: `https://watch.rctv19.com/terms/`
 
 App ID `883607` now has completed Listing setup, Store assets, App profile and Monetization setup according to its overview. Saved values: United States; Live TV category; not made for kids; Content not rated; video/internet required; no viewer sign-in; free/no purchase or inserted video ads. The support, privacy, terms and station URLs above are saved. The authorized business email and private reviewer contact are entered.
 
-The official 540×405 RCTV poster and English descriptions are saved. `output/roku-test/home-store-1920x1080.png` is uploaded as the store screenshot; it is a dimensions-only resize of the actual TV capture, with no app-content changes. No final submission has occurred. The approved existing signing credential was used privately without changing the signing identity.
+The official 540×405 RCTV poster and English descriptions are saved. `output/roku-test/home-store-1920x1080.png` is uploaded as the store screenshot; it is a dimensions-only resize of the actual TV capture, with no app-content changes. Final submission succeeded with owner-approved certifications and release notes summarizing the tested behavior. The approved existing signing credential was used privately without changing the signing identity.
 
-The corrected 623,680-byte package is uploaded with minimum OS 15.1. Its fresh static analysis returned **zero errors and one conditional AppDialog warning**. There is no pre-home login or selection dialog; Resume appears only after a viewer selects an unfinished replay. Indefinite deep-link samples are saved for `rctv19-live` / `live` and `mt-zion-sermon-2026-09-20` / `episode`. App Behavior Analysis for this corrected package is queued.
+The corrected 623,680-byte package is uploaded with minimum OS 15.1. Its fresh static analysis returned **zero errors and one conditional AppDialog warning**. There is no pre-home login or selection dialog; Resume appears only after a viewer selects an unfinished replay. Indefinite deep-link samples are saved for `rctv19-live` / `live` and `mt-zion-sermon-2026-09-20` / `episode`. App Behavior Analysis for this corrected package is **Done, 4/4 passed**: launch performance, deep linking, screensaver policy and playback performance, using Roku Ultra 4640X on firmware 15.3.4.02402.
 
 ## Pending release work
 
-The RCTV live channel and three on-demand programs are published. Physical Roku playback/navigation, Resume, BIF and screensaver checks are owner-confirmed; corrected replay/live/invalid deep-link device checks are recorded above. Fresh static analysis is complete; finish all queued App Behavior Analysis checks on the corrected package. Keep the live source running during review.
+The RCTV live channel and three on-demand programs are published. Physical Roku playback/navigation, Resume, BIF and screensaver checks are owner-confirmed; corrected replay/live/invalid deep-link device checks are recorded above. Static analysis and all App Behavior Analysis checks are complete. Await review and keep the live source running.
 
-Retain the existing signing identity for updates. Confirm ownership/transfer separately if keeping the existing FrontLayer app's installations. Store artwork, core listing/profile/monetization declarations and deep-link samples are saved. Finish automated validation and final submission requirements; do not claim unperformed tests.
+Retain the existing signing identity for updates. Confirm ownership/transfer separately if keeping the existing FrontLayer app's installations. Store artwork, core listing/profile/monetization declarations and deep-link samples are submitted. Record approval or any requested corrections when the store provides them.
