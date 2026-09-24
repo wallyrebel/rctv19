@@ -40,4 +40,7 @@ jobs:
       - name: Compile Roku app
         run: npm run build:roku
       - name: Test Roku deep-link routing
-        run: npm exec --yes --package=brs@0.45.0 -- brs apps/roku/components/DeepLink.brs tests/roku-deep-link.brs
+        shell: bash
+        # Limit brs XML discovery to tests; the repository also contains Android XML.
+        # brs can report assertion/runtime failures with exit 0; verify its result too.
+        run: npm exec --yes --package=brs@0.45.0 -- brs --root tests apps/roku/components/DeepLink.brs tests/roku-deep-link.brs 2>&1 | node tests/check-roku-test-output.mjs

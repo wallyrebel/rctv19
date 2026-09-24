@@ -17,10 +17,10 @@ Deep-link requests carry content ID and media type together. Replays accept `epi
 The actual resolver has 28 behavioral checks. Run from the streaming directory with the pinned development-only interpreter; this command does not add a project dependency or contact the Roku:
 
 ```text
-npm exec --yes --package=brs@0.45.0 -- brs apps/roku/components/DeepLink.brs tests/roku-deep-link.brs
+npm exec --yes --package=brs@0.45.0 -- brs --root tests apps/roku/components/DeepLink.brs tests/roku-deep-link.brs 2>&1 | node tests/check-roku-test-output.mjs
 ```
 
-The fixture is outside `bsconfig.files` and excluded from the shipping ZIP. The manifest's FHD icon points to the existing 540×405 `images/icon.png`.
+The `--root tests` option limits the interpreter's XML autodiscovery so unrelated Android XML is not parsed as Roku components on Linux. The output validator requires all 28 checks to complete, since this interpreter can return exit code zero after a runtime error. The same command runs in CI with Bash pipeline failure handling. Both test files are outside `bsconfig.files` and excluded from the shipping ZIP. The manifest's FHD icon points to the existing 540×405 `images/icon.png`.
 
 ## Amazon Fire TV / Fire OS
 

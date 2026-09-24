@@ -1,5 +1,6 @@
 ' Run the real app resolver with a pinned, development-only interpreter:
-' npm exec --yes --package=brs@0.45.0 -- brs apps/roku/components/DeepLink.brs tests/roku-deep-link.brs
+' npm exec --yes --package=brs@0.45.0 -- brs --root tests apps/roku/components/DeepLink.brs tests/roku-deep-link.brs 2>&1 | node tests/check-roku-test-output.mjs
+' Restrict XML autodiscovery to tests, excluding unrelated Android XML on Linux.
 ' This file is outside bsconfig.files and must not ship in the Roku package.
 sub Main()
     m.failures = 0
@@ -38,9 +39,8 @@ sub Main()
 
     if m.failures > 0
         print "FAIL: "; m.failures; " of "; m.checks; " deep-link checks"
-        ' Force a failing interpreter exit instead of silently reporting success.
-        failure = invalid
-        failure.deepLinkTestsFailed()
+        ' brs may exit zero after an error; the output validator rejects this result.
+        return
     end if
     print "PASS: "; m.checks; " deep-link checks"
 end sub
