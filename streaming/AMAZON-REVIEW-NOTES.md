@@ -1,6 +1,12 @@
-# RCTV 19 Amazon Fire TV review draft
+# RCTV 19 Amazon Fire TV review record
 
-Status: prepared for a new RCTV 19 Fire OS app; not submitted. The proposed application ID is `com.rctv19.tv`, version 1.0.0 (1). This build does not update the existing FrontLayer-published RCTV app. Confirm the intended new store record before uploading.
+Status: **Submitted; not yet approved**. Amazon confirmed a successful submission on **September 23, 2026, at 7:21 PM PDT**, for `com.rctv19.tv`, version 1.0.0 (1). The listing, artwork, three actual app screenshots, audience, rating, privacy and reviewer instructions were included. The owner explicitly approved the final export declaration and submission. This build does not update the existing FrontLayer-published RCTV app.
+
+Amazon displayed an estimated Appstore date of **September 28, 2026, at 7:30 PM PDT**. This is an estimate, not approval or a guaranteed publication date. Its status page showed **SUBMITTED** and **App Submission Successful**, with no new action required at that time.
+
+Developer app ID: `amzn1.devportal.mobileapp.55c3e4fdbb51453aa7b582dd2a5a5640`
+
+Submitted release ID: `3b30ff5ef8ed4b4f81e2c5a9647db0ea`
 
 ## Listing copy
 
@@ -23,15 +29,15 @@ Features:
 - TV remote navigation and native video controls.
 - Help, privacy information and catalog refresh in the app.
 
-## Reviewer instructions — finish store declarations before using
+## Submitted reviewer instructions
 
-No sign-in, activation code, payment or test account is required. The app loads its program catalog from `https://watch.rctv19.com/api/catalog.json`. Choose a show tile, then an episode. Back returns to that show's episodes; Back again returns to the home screen. Refresh programming reloads the catalog. Help and privacy is available from the home menu. When configured, the live tile opens the station's live HLS feed.
+No sign-in, activation code, payment or reviewer account is required. The app loads its catalog from https://watch.rctv19.com/api/catalog.json. Select RCTV 19 Live to watch the live channel. Select Mt Zion Church Sermons to browse three published programs, then select an episode to play. Back returns to episodes; Back again returns to home. Refresh programming reloads the catalog. Help and privacy is available from the home menu.
 
-The app uses native Media3 playback, remote media keys, Android audio focus and a MediaSession. It has no analytics SDK, advertising SDK or advertising-identifier permission. Playback state can remain on the device for activity/lifecycle restoration. Cloudflare processes connection information required to deliver video; the app does not create viewer accounts or maintain a viewer-profile database.
+The app uses native Media3 playback and TV remote controls. It has no analytics SDK, advertising SDK or advertising-identifier permission. Cloudflare processes technical connection information as a service provider for video delivery and security, as described at https://watch.rctv19.com/privacy/. Viewers do not create accounts, and the app does not maintain a tracking database. Sponsor content consists of logos and mentions.
 
-Support: `myersgrouponline@gmail.com` and `https://watch.rctv19.com/support/`
+Testing used a fresh official Android TV API 33 emulator with the production catalog. Live and replay video, remote navigation, pause/seek, Back navigation and activity lifecycle behavior were checked. Physical Fire TV testing and audible sound verification have not been performed; emulator audio was disabled. The catalog includes the live channel and three Mt Zion programs with permission confirmed.
 
-Privacy: `https://watch.rctv19.com/privacy/`
+Support: myersgrouponline@gmail.com and https://watch.rctv19.com/support/.
 
 ## Verified build facts
 
@@ -57,14 +63,18 @@ The development APK was tested on a fresh official Android TV API 33 x86 emulato
 
 Actual 1920×1080 emulator captures are in `output/fire-tv-test/home-final.png` (live and shows), `episodes.png`, `playback.png`, `sermon-playback.png` and `live-playback-later.png`; UI snapshots are beside them. The earlier `home.png` predates live activation and should not be used for the final store listing. Audio output was deliberately disabled to avoid interfering with the broadcaster. These results do not establish audible sound or compatibility on a physical Fire TV.
 
+## Saved store setup
+
+The complete listing, required store artwork and three actual app screenshots were submitted. Distribution is the United States, targeting 91 Fire TV models, with no tablets or automotive devices. The intended audience is ages 13 and older. The rating form reflects the owner's confirmation of ordinary local/church programming and sponsor logos/mentions only. The privacy form classifies technical IP/device-identifier processing solely under functionality and security, with no viewer accounts or tracking database and Cloudflare acting as a service provider rather than third-party data sharing.
+
+The selected Mt Zion programs have permission confirmed. These declarations describe the current catalog; future programming must remain within the declared content and rights scope or the declarations must be revised.
+
 ## Pending release work
 
-Live and the three on-demand programs are published, and the RCTV emulator checks above passed. Physical Fire TV testing remains unperformed. Keep the live source running during review. The current production catalog and media must remain available to reviewers.
+Live and the three on-demand programs are published, and the RCTV emulator checks above passed. Physical Fire TV testing remains unperformed and was disclosed in the submitted reviewer instructions. Await Amazon's review outcome and address any findings; submission is not approval. Keep the live source running during review, and keep the production catalog and media available to reviewers.
 
-The owner confirmed RCTV's intended audience is general audiences ages 13 and older, with sponsor logos/mentions and ordinary local/church programming. Complete the questionnaire using that confirmation and the actual RCTV content; religious or children's programming must still be classified accurately in the questions presented. Confirm distribution rights for every live and on-demand program and any included music or outside footage. Final data disclosures must match the implementation and published privacy policy. Do not submit an empty/nonworking catalog.
+## Isolated emulator execution
 
-## Isolated emulator plan
-
-The installed SDK has the official Android TV API 33 x86 image and API 36 TV tools. Test in a newly created RCTV-only virtual device using the installed API 33 TV image. Do not copy or wipe existing virtual-device data. Build a development APK with the same unique `com.rctv19.tv` package and the production catalog URL; its Android development signature is only for testing.
+Testing used a newly created RCTV-only virtual device with the official Android TV API 33 x86 image. Existing virtual-device data was not copied or wiped. The development APK used the unique `com.rctv19.tv` package and the production catalog URL; its Android development signature was used only for testing.
 
 The test emulator used audio-disabled operation without saving snapshots, keeping it separate from vMix and the existing Sports broadcast. Every ADB command used its explicit serial, `emulator-5580`; physical devices were not targeted. Live and on-demand checks are complete as recorded above. With audio output disabled, these tests cannot verify audible sound on a physical Fire TV.

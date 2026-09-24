@@ -9,7 +9,7 @@ This `streaming/` project is separate from the parent website's build and from t
 - The watch website and shared catalog are deployed through Cloudflare.
 - Three Mt Zion programs are publicly available, with the owner's permission confirmed. They have HLS video, episode pictures and Roku fast-forward previews.
 - A separate RCTV 19 live receiver/helper is running manually on the development PC for testing. No startup or recovery task has been installed for RCTV 19 yet. Production broadcasting is intended for another local computer, with a shared rented VM possible later; no VM has been rented.
-- Amazon and Roku have new draft store records. Neither RCTV 19 draft has been submitted or approved. See [STORE-STATUS.md](STORE-STATUS.md).
+- Amazon's new RCTV 19 app is submitted for review. Roku has a saved draft and a signed package; its remaining checks and submission are pending. Neither app is approved yet. See [STORE-STATUS.md](STORE-STATUS.md).
 - Apple TV follows Amazon and Roku. The user reports an existing Apple RCTV 19 app; its ownership and update path must be checked before creating or submitting an Apple build.
 
 ## Project layout

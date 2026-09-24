@@ -14,17 +14,22 @@ Development snapshot: September 23, 2026. This file records RCTV 19 only.
 
 ## Amazon Fire TV
 
-Status: **draft; not submitted or approved**.
+Status: **Submitted; not yet approved**.
 
 - Developer app ID: `amzn1.devportal.mobileapp.55c3e4fdbb51453aa7b582dd2a5a5640`
-- Draft release ID: `3b30ff5ef8ed4b4f81e2c5a9647db0ea`
+- Submitted release ID: `3b30ff5ef8ed4b4f81e2c5a9647db0ea`
 - Android package: `com.rctv19.tv`
 - Uploaded and accepted APK: version `1.0.0` (1)
-- Device targeting: 91 Fire TV models; 0 tablets and 0 automotive devices.
+- Distribution: United States. Device targeting: 91 Fire TV models; 0 tablets and 0 automotive devices.
 - User-confirmed programming declarations: sponsor logos/mentions only, ordinary local/church content, general intended audience ages 13 and older.
-- Required store artwork includes the 1280×720 Fire TV icon and the opaque 1920×1080 background in `assets/store/`.
+- Full listing, required store artwork and three actual app screenshots are saved, including the 1280×720 Fire TV icon and opaque 1920×1080 background in `assets/store/`.
+- The 13+ intended audience, rating and privacy forms are saved. Privacy covers technical IP/device identifiers solely for functionality and security; there are no viewer accounts or tracking database. Cloudflare is disclosed as a service provider, not third-party data sharing.
+- Official Android TV emulator checks passed for live/replay video, remote navigation, playback controls and lifecycle behavior. Physical Fire TV testing and audible sound verification remain unperformed.
+- Reviewer instructions were saved, including the physical Fire TV/audio testing limitation. The owner explicitly approved the final export declaration and submission.
+- Amazon confirmed **SUBMITTED / App Submission Successful** on **September 23, 2026, at 7:21 PM PDT**. No new action was required on the status page at that time.
+- Amazon's estimated Appstore date was **September 28, 2026, at 7:30 PM PDT**. This is an estimate, not approval or a guaranteed publication date.
 
-This is a new RCTV 19 Fire OS record. It does not automatically update or transfer the existing FrontLayer app. The draft remains incomplete: finish the rating form, actual app screenshots, review information and final submission steps. APK acceptance is not store approval. [AMAZON-REVIEW-NOTES.md](AMAZON-REVIEW-NOTES.md) contains working listing/review copy; any initial-build limitations there must be reconciled with actual later test results before use.
+This is a new RCTV 19 Fire OS record. It does not automatically update or transfer the existing FrontLayer app. Await Amazon's review outcome and address any findings; submission is not store approval. [AMAZON-REVIEW-NOTES.md](AMAZON-REVIEW-NOTES.md) records the submitted reviewer instructions and completed emulator checks with their limits.
 
 ## Roku
 
@@ -36,9 +41,14 @@ Status: **draft; not submitted or approved**.
 - RCTV development app 1.0.0 is installed successfully on the owner's Roku TV at `192.168.68.50`; the installer reported 619,937 bytes received, matching the built package.
 - The owner confirmed live picture/sound, Mt Zion replay picture/sound, and Back twice from playback through episodes to home all work.
 - An actual 1280×720 Roku home screenshot is saved at `output/roku-test/home-actual-tv.jpg`. It shows the distinct live and show artwork.
-- Resume, trick-play previews, deep links, screensaver checks, signing and automated validation remain pending; device playback success is not store approval.
+- Store listing, app profile and monetization drafts are saved in Roku: United States, Live TV, not made for kids, Content not rated, internet required, no sign-in, and free with no in-app purchases or inserted video ads. Sponsor logos/mentions do not imply an advertising SDK.
+- The English title/descriptions, official 540×405 poster and actual TV home screenshot are uploaded and saved. `output/roku-test/home-store-1920x1080.png` is the exact capture resized to Roku's required 1920×1080 dimensions, with no content changes.
+- Support, privacy, terms and station URLs are saved, with the authorized business email and private reviewer contact. Roku's overview marks Listing setup, Store assets, App profile and Monetization setup complete.
+- Version 1.0.0 was successfully signed on the TV as `Pfc96151bdcc055d77b1d6422aaea162b.pkg` using the existing developer identity `4002a0fc204acb05852a69a6bf7eb2ce6f404a4c`. The approved existing credential was used privately; no key reset or replacement occurred.
+- Edge blocked the package download. The Codex terminal did not appear for the owner, so `output/Download RCTV Roku Package.cmd` is prepared for manual launch and private device-password entry. The signed PKG has not yet been downloaded locally or uploaded to the store portal.
+- Resume, trick-play previews, deep links, screensaver checks and automated validation remain pending; device playback success is not store approval.
 
-A development ZIP is not a signed store package or an approved app. Finish physical Roku testing, screenshots, signing with the intended RCTV identity, upload and automated validation before submission. This draft does not automatically transfer FrontLayer's existing RCTV installations. Working review copy is in [ROKU-REVIEW-NOTES.md](ROKU-REVIEW-NOTES.md).
+The signed package currently exists on the TV only. Complete its download, remaining physical Roku tests, store package upload and automated validation before submission. Schedule publishing remains disabled while Package & testing is incomplete. This draft does not automatically transfer FrontLayer's existing RCTV installations. Working review copy is in [ROKU-REVIEW-NOTES.md](ROKU-REVIEW-NOTES.md).
 
 ## Apple TV
 
@@ -48,9 +58,9 @@ The user reports an existing RCTV 19 Apple app. Confirm its App Store Connect re
 
 ## Remaining release gates
 
-- Complete sustained playback/reconnect checks for the now-verified RCTV live feed.
-- Verify RCTV replay picture and sound, seeking, remote navigation and lifecycle behavior on the intended platforms.
-- Capture screenshots from the actual RCTV app builds.
-- Finish accurate content, audience, privacy, advertising and rights declarations for RCTV programming.
-- Submit the new Amazon/Roku drafts and record the stores' actual review outcomes here.
+- A later live-feed check at 2026-09-24 02:23 UTC still passed: sequence 327 advanced to 329, video segments returned cache HIT, HTTPS and CORS were valid. Reconnect/failover testing remains pending.
+- Complete Roku-specific Resume, trick-play preview, deep-link and screensaver checks, download/upload the signed package and run automated validation. Live/replay picture, sound and Back navigation are already owner-confirmed.
+- Physical Fire TV testing remains unperformed; keep that limitation explicit in reviewer instructions. The official TV emulator checks and actual app screenshots are complete.
+- Await Amazon's review outcome for the submitted version and address any findings.
+- Submit the Roku draft when its remaining requirements are complete and record the stores' actual review outcomes here.
 - Keep the existing FrontLayer service available until the replacement is ready for viewers.

@@ -6,13 +6,15 @@ Both apps load `https://watch.rctv19.com/api/catalog.json`. The home screen cont
 
 ## Roku
 
-From the streaming directory, run `npm run build:roku`. The unsigned sideload package is `dist/rctv19-roku-dev.zip`. The initial manifest version is 1.0.0. Roku packaging for distribution requires the intended RCTV signing identity and a device; this source setup does not generate, replace, or use a signing key.
+From the streaming directory, run `npm run build:roku`. The unsigned sideload package is `dist/rctv19-roku-dev.zip`. The initial manifest version is 1.0.0. Distribution packaging requires the intended signing identity on a Roku device. The first RCTV package was signed using the owner's existing verified developer identity; it was not reset or regenerated.
+
+`scripts/roku-signing-handoff.mjs` requires an explicit device IP and private `RCTV_BROADCAST_DIRECTORY`. For an existing shared developer identity, set `RCTV_ROKU_SIGNING_KEY_FILE` to its absolute private file path outside Git/OneDrive rather than copying the credential. The handoff binds only to loopback, expires after five minutes, and does not log the password. Never commit signing files or change a device identity without checking which apps rely on it.
 
 Retained behavior includes remote navigation, grouped show/episode artwork, live and replay playback, local replay bookmarks and Resume, content-ID deep links, and catalog refresh with the star button. Supply HD and SD BIF files for long replays. Verify these behaviors with RCTV media on a Roku before submission.
 
 ## Amazon Fire TV / Fire OS
 
-The Android application ID is `com.rctv19.tv`; the initial version is 1.0.0 (1). This is a proposed new RCTV app identity, not an assertion that an existing store listing is owned by this developer. Confirm the appropriate listing before uploading.
+The Android application ID is `com.rctv19.tv`; the initial version is 1.0.0 (1). This is the new RCTV app identity submitted under the owner's Amazon account. It does not update the FrontLayer listing. See the exact store record and review status in `../STORE-STATUS.md`.
 
 Use JDK 17, Gradle 8.13 and Android SDK 35. Set `ANDROID_HOME` to the SDK directory, or create an ignored `local.properties` containing its `sdk.dir`. From `apps/fire-tv`, run:
 

@@ -1,6 +1,6 @@
 # RCTV 19 Roku review draft
 
-Status: development version 1.0.0 installed successfully on the owner's Roku TV at 192.168.68.50. The owner confirmed live picture/sound, Mt Zion replay picture/sound and Back twice all work. The actual TV home screen was captured and verified. Signing, remaining device checks, automated validation and store submission remain pending. This is a separate RCTV app project, not an update to Mississippi Sports or an automatic replacement of the FrontLayer-published RCTV listing.
+Status: **draft; not submitted or approved**. Development version 1.0.0 is installed on the owner's Roku TV at 192.168.68.50 and was successfully signed there using the existing developer identity. The owner confirmed live picture/sound, Mt Zion replay picture/sound and Back twice all work. The actual TV home screen was captured and verified. Signed-package download, remaining device checks, store package upload, automated validation and submission remain pending. This is a separate RCTV app project, not an update to Mississippi Sports or an automatic replacement of the FrontLayer-published RCTV listing.
 
 ## Listing copy
 
@@ -39,14 +39,22 @@ Terms: `https://watch.rctv19.com/terms/`
 - BrightScript/SceneGraph compilation completed successfully.
 - `dist/rctv19-roku-dev.zip` contains the RCTV manifest, catalog configuration, StationScene and all five RCTV image assets.
 - Initial development ZIP size: 619,937 bytes (0.59 MiB).
-- No signing keys were generated, replaced or accessed.
+- The existing signing credential was verified and used privately with approval. No signing key was generated, reset or replaced.
+- The TV successfully packaged version 1.0.0 as `Pfc96151bdcc055d77b1d6422aaea162b.pkg`, using existing developer ID `4002a0fc204acb05852a69a6bf7eb2ce6f404a4c`. The installed application was 619,937 bytes.
+- Edge blocked the package download. The Codex terminal did not appear for the owner, so `output/Download RCTV Roku Package.cmd` is prepared for manual launch and private device-password entry. The signed PKG is not yet downloaded locally or uploaded to Roku's store portal.
 - The developer installer reported **Install Success** and **619937 bytes stored**, matching the RCTV package.
 - `output/roku-test/home-actual-tv.jpg` is an unmodified 1280×720 capture downloaded from the Roku developer utilities. It visibly shows RCTV branding, the distinct Watch Live cover and the Mt Zion Church Sermons cover with three episodes.
 - Only the development sideload slot was replaced. The regular installed Mississippi Sports store app was not changed.
 - The owner answered **All work** when asked to verify live picture/sound, Mt Zion replay picture/sound, and Back twice from playback through the episode gallery to home.
 
+## Saved Roku store draft
+
+App ID `883607` now has completed Listing setup, Store assets, App profile and Monetization setup according to its overview. Saved values: United States; Live TV category; not made for kids; Content not rated; video/internet required; no viewer sign-in; free/no purchase or inserted video ads. The support, privacy, terms and station URLs above are saved. The authorized business email and private reviewer contact are entered.
+
+The official 540×405 RCTV poster and English descriptions are saved. `output/roku-test/home-store-1920x1080.png` is uploaded as the store screenshot; it is a dimensions-only resize of the actual TV capture, with no app-content changes. No binding terms were accepted and no final submission occurred during draft preparation. The approved existing signing credential was subsequently used privately to create the package, without changing the signing identity. Store package upload, deep-link testing, static analysis and App Behavior Analysis remain incomplete.
+
 ## Pending release work
 
 The RCTV live channel and three on-demand programs are published. Physical Roku live/replay picture, sound and Back navigation are confirmed. Resume, fast-forward previews, deep linking and idle screensaver behavior still require RCTV-specific verification. Run Roku's current automated validation for this RCTV package; the Sports package's results do not transfer. Keep the live source running during review.
 
-Use the intended RCTV developer listing and retain its signing identity for updates. Confirm ownership/transfer separately if keeping the existing FrontLayer app's installations. Create screenshots from the actual RCTV app, enter real RCTV deep-link IDs, and complete RCTV-specific content, monetization, privacy and rights declarations. Do not submit an empty catalog or claim unperformed tests.
+Complete the signed-package download, upload it to the intended RCTV developer listing and retain the existing signing identity for updates. Confirm ownership/transfer separately if keeping the existing FrontLayer app's installations. Store artwork and core listing/profile/monetization declarations are already saved; enter and verify the real RCTV deep-link IDs, finish automated validation and complete final submission requirements. Do not submit an empty catalog or claim unperformed tests.

@@ -7,7 +7,13 @@ import { explicitRokuTarget } from '../lib/roku-target.mjs';
 // Short-lived, loopback-only handoff into the already authenticated Roku
 // packager. The signing password is never printed or placed in a URL.
 const {host, runtime} = explicitRokuTarget(process.argv[2]);
-const raw = await readFile(path.join(runtime, 'roku-signing-key.txt'), 'utf8');
+// A developer identity can sign more than one app. Allow an explicitly chosen
+// existing private key file without copying it into another runtime directory.
+const signingFile = process.env.RCTV_ROKU_SIGNING_KEY_FILE || path.join(runtime, 'roku-signing-key.txt');
+if (!path.isAbsolute(signingFile) || signingFile.split(/[\\/]/).some(part => /^onedrive(?:\s|-|$)/i.test(part))) {
+  throw new Error('Use an absolute signing-key path outside OneDrive.');
+}
+const raw = await readFile(signingFile, 'utf8');
 const password = raw.match(/password\s*:\s*(\S+)/i)?.[1];
 if (!password) throw new Error('Signing password not found in private firmware response');
 const route = `/signing/${randomBytes(24).toString('hex')}`;
