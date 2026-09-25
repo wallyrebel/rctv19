@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Crossroads Marching Classic event information</title>
+  <desc id="desc">Graphic listing Saturday, September 26, 2026, at 3 p.m. at Warrior Stadium, Corinth High School.</desc>
+  <rect width="1200" height="630" fill="#132047"/>
+  <path d="M0 495h1200v135H0z" fill="#203090"/>
+  <path d="M0 512h1200M0 563h1200" stroke="#f0d000" stroke-width="4" opacity=".45"/>
+  <circle cx="1010" cy="170" r="100" fill="none" stroke="#f0d000" stroke-width="10"/>
+  <path d="M980 95v128c-7-7-20-10-32-7-18 4-29 18-25 30 5 13 22 18 39 13 16-5 25-17 25-30V125l78-18v93c-7-7-20-10-32-7-18 4-29 18-25 30 5 13 22 18 39 13 17-5 25-18 25-31V77z" fill="#f0d000"/>
+  <text x="85" y="95" fill="#f0d000" font-family="Arial, sans-serif" font-size="32" font-weight="700" letter-spacing="5">CORINTH, MISSISSIPPI</text>
+  <text x="85" y="202" fill="#ffffff" font-family="Arial, sans-serif" font-size="70" font-weight="800">CROSSROADS</text>
+  <text x="85" y="285" fill="#ffffff" font-family="Arial, sans-serif" font-size="70" font-weight="800">MARCHING CLASSIC</text>
+  <rect x="85" y="335" width="835" height="4" fill="#f0d000"/>
+  <text x="85" y="405" fill="#ffffff" font-family="Arial, sans-serif" font-size="38" font-weight="700">SATURDAY, SEPT. 26  ·  3 P.M.</text>
+  <text x="85" y="465" fill="#ffffff" font-family="Arial, sans-serif" font-size="33">Warrior Stadium  ·  Corinth High School</text>
+  <text x="85" y="587" fill="#ffffff" font-family="Arial, sans-serif" font-size="23">RCTV19 INFORMATION GRAPHIC  ·  EVENT DETAILS: ALCORN COUNTY NEWS</text>
+</svg>
