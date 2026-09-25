@@ -53,5 +53,23 @@
     "file": "src/obituaries/janice-jan-kay-presley-richardson-1880eebbfc.md",
     "importedAt": "2026-09-20T12:04:25.050Z",
     "sourceTextSha256": "f37b35cb64153b56507822251c99ebb1b243956038bb50f424b725ff125d33b7"
+  },
+  "https://www.ripleyfuneralhome.com/obituary/BruceLynn-Schipper": {
+    "name": "Bruce Lynn Schipper",
+    "file": "src/obituaries/bruce-lynn-schipper-6d7c14a831.md",
+    "importedAt": "2026-09-25T12:09:15.192Z",
+    "sourceTextSha256": "8819f084e45103f09bdebcda9e897c438bac3e3b1bb90387c1443295ebb397c8"
+  },
+  "https://www.ripleyfuneralhome.com/obituary/TerryJoe-Elton": {
+    "name": "Terry Joe Elton",
+    "file": "src/obituaries/terry-joe-elton-d785ad3267.md",
+    "importedAt": "2026-09-25T12:09:15.192Z",
+    "sourceTextSha256": "d75e4ae73b85a6799e1dda95be814aa9db1107bad6f784665da42a66bf3a74d0"
+  },
+  "https://www.mcbridefuneralhome.com/obituaries/timothy-cunningham-3/": {
+    "name": "Timothy Louis Cunningham",
+    "file": "src/obituaries/timothy-louis-cunningham-27e1cdca9d.md",
+    "importedAt": "2026-09-25T12:09:15.192Z",
+    "sourceTextSha256": "2520639b079896165f398dcdee342eb7c0d0d647f5bd9b76ef80d7565fc79a27"
   }
 }
