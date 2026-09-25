@@ -43,4 +43,4 @@ The full directory of county offices is in the [Tippah County guide](/tippah-cou
 
 ## Dumas news from RCTV19
 
-RCTV19 covers all of Tippah County, Dumas included. See the [latest news](/blog/), the [obituaries](/obituaries/) and the [communities index](/communities/), or [watch RCTV19 live](/watch-live/). If something is happening in Dumas that neighbors should know about, [send it to RCTV19](/contact/).
+RCTV19 covers all of Tippah County, Dumas included. See the [latest news](/blog/), the [obituaries](/obituaries/) and the [communities index](/communities/), or [watch RCTV19 live](https://watch.rctv19.com/). If something is happening in Dumas that neighbors should know about, [send it to RCTV19](/contact/).

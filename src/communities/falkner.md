@@ -44,4 +44,4 @@ More offices are listed in the [Tippah County guide](/tippah-county/).
 
 ## Falkner news from RCTV19
 
-See the [latest news](/blog/), the [obituaries](/obituaries/) and the [communities index](/communities/), or [watch RCTV19 live](/watch-live/). Send news tips through the [contact page](/contact/).
+See the [latest news](/blog/), the [obituaries](/obituaries/) and the [communities index](/communities/), or [watch RCTV19 live](https://watch.rctv19.com/). Send news tips through the [contact page](/contact/).

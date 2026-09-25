@@ -26,7 +26,7 @@ Our programming includes:
 You can watch RCTV19 in several ways:
 
 - **Cable Channel 19** - Available to local cable subscribers
-- **Live Stream** - Watch anytime on Roku, Amazon Fire or at [our streaming page](/watch-live/)
+- **Live Stream** - Watch anytime on Roku, Amazon Fire or at [our streaming page](https://watch.rctv19.com/)
 - **On Demand** - Catch up on stories you missed on our website
 
 ## Contact Us

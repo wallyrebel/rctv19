@@ -44,4 +44,4 @@ The full directory is in the [Tippah County guide](/tippah-county/).
 
 ## Tiplersville news from RCTV19
 
-See the [latest news](/blog/), the [obituaries](/obituaries/) and the [communities index](/communities/), or [watch RCTV19 live](/watch-live/). News from Tiplersville is always welcome — [contact RCTV19](/contact/).
+See the [latest news](/blog/), the [obituaries](/obituaries/) and the [communities index](/communities/), or [watch RCTV19 live](https://watch.rctv19.com/). News from Tiplersville is always welcome — [contact RCTV19](/contact/).

@@ -78,6 +78,6 @@ A fuller directory of county offices is on the [Tippah County guide](/tippah-cou
 
 ## Ripley news from RCTV19
 
-RCTV19 publishes Ripley news, sports and community coverage every day. Start with the [latest news](/blog/), the [obituaries](/obituaries/) for funeral and memorial notices, or [watch RCTV19 live](/watch-live/).
+RCTV19 publishes Ripley news, sports and community coverage every day. Start with the [latest news](/blog/), the [obituaries](/obituaries/) for funeral and memorial notices, or [watch RCTV19 live](https://watch.rctv19.com/).
 
 Other communities in the county are profiled on the [communities index](/communities/). Have something to report? [Contact RCTV19](/contact/).

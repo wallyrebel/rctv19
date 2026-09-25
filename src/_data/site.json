@@ -22,7 +22,7 @@
         "Falkner, Mississippi",
         "Dumas, Mississippi"
     ],
-    "watchLiveUrl": "https://player.frontlayer.com/live/fl238965",
+    "watchLiveUrl": "https://watch.rctv19.com/",
     "social": {
         "facebook": "https://facebook.com/rctv19",
         "twitter": "https://twitter.com/rctv19",
@@ -47,7 +47,7 @@
         },
         {
             "label": "Watch Live",
-            "url": "/watch-live/",
+            "url": "https://watch.rctv19.com/",
             "highlight": true
         },
         {

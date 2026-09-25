@@ -28,7 +28,7 @@ You can manage Google ad personalization in [My Ad Center](https://myadcenter.go
 
 ## Streaming, social media and external links
 
-The Watch Live links open FrontLayer's player. Social and sharing links open their respective services. These services may process technical information and use cookies when you visit them. Their own privacy notices apply.
+The Watch Live links open our live stream at watch.rctv19.com. Social and sharing links open their respective services. These services may process technical information and use cookies when you visit them. Their own privacy notices apply.
 
 ## Requests and retention
 

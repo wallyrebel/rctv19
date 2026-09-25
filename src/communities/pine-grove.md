@@ -43,4 +43,4 @@ The full county directory is in the [Tippah County guide](/tippah-county/).
 
 ## Pine Grove news from RCTV19
 
-See the [latest news](/blog/), the [obituaries](/obituaries/) and the [communities index](/communities/), or [watch RCTV19 live](/watch-live/). Scores, school news and community events can be sent through the [contact page](/contact/).
+See the [latest news](/blog/), the [obituaries](/obituaries/) and the [communities index](/communities/), or [watch RCTV19 live](https://watch.rctv19.com/). Scores, school news and community events can be sent through the [contact page](/contact/).

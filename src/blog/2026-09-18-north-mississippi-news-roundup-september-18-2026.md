@@ -93,7 +93,7 @@ Looking further ahead on the [community events calendar](/topics/community-event
 ## Also on RCTV19
 
 - [Obituaries](/obituaries/) — funeral and memorial notices for Ripley and Tippah County families.
-- [Watch RCTV19 live](/watch-live/) — the live stream runs around the clock.
+- [Watch RCTV19 live](https://watch.rctv19.com/) — the live stream runs around the clock.
 - [All news](/blog/) — everything RCTV19 has published, newest first.
 - [Tippah County guide](/tippah-county/) — the numbers, offices, schools and facts worth keeping handy.
 - [Our communities](/communities/) — Ripley, Walnut, Blue Mountain, Falkner, Dumas, Chalybeate, Tiplersville and more.

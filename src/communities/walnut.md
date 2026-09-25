@@ -53,4 +53,4 @@ More county offices are listed in the [Tippah County guide](/tippah-county/).
 
 ## Walnut news from RCTV19
 
-Find the [latest news](/blog/), [obituaries](/obituaries/) and the [full communities index](/communities/), or [watch RCTV19 live](/watch-live/). Got a score or a story? [Contact RCTV19](/contact/).
+Find the [latest news](/blog/), [obituaries](/obituaries/) and the [full communities index](/communities/), or [watch RCTV19 live](https://watch.rctv19.com/). Got a score or a story? [Contact RCTV19](/contact/).

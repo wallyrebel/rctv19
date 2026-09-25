@@ -149,7 +149,7 @@ RCTV19 — Ripley Community Television — has served Tippah County since 1999 f
 
 - **[Latest news](/blog/)** — county news, sports and community coverage, newest first
 - **[Obituaries](/obituaries/)** — funeral and memorial notices for Tippah County families
-- **[Watch live](/watch-live/)** — the RCTV19 stream, around the clock
+- **[Watch live](https://watch.rctv19.com/)** — the RCTV19 stream, around the clock
 - **[Topics](/topics/)** — sports, schools, downtown Ripley, business and events
 - **[Communities](/communities/)** — profiles of every town and community in the county
 

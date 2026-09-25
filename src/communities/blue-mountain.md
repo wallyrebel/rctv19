@@ -49,4 +49,4 @@ The full county directory is in the [Tippah County guide](/tippah-county/).
 
 ## Blue Mountain news from RCTV19
 
-RCTV19 covers the town, the school and the university year round. See the [latest news](/blog/), the [obituaries](/obituaries/), the [communities index](/communities/), or [watch RCTV19 live](/watch-live/).
+RCTV19 covers the town, the school and the university year round. See the [latest news](/blog/), the [obituaries](/obituaries/), the [communities index](/communities/), or [watch RCTV19 live](https://watch.rctv19.com/).

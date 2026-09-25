@@ -46,4 +46,4 @@ More offices are listed in the [Tippah County guide](/tippah-county/).
 
 ## Chalybeate news from RCTV19
 
-See the [latest news](/blog/), the [obituaries](/obituaries/) and the [communities index](/communities/), or [watch RCTV19 live](/watch-live/).
+See the [latest news](/blog/), the [obituaries](/obituaries/) and the [communities index](/communities/), or [watch RCTV19 live](https://watch.rctv19.com/).

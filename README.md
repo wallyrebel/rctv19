@@ -77,7 +77,7 @@ The Watch Live URL is configured in `src/_data/site.json`:
 
 ```json
 {
-  "watchLiveUrl": "https://player.frontlayer.com/live/fl238965"
+  "watchLiveUrl": "https://watch.rctv19.com/"
 }
 ```
 
@@ -298,7 +298,7 @@ Edit navigation items in `src/_data/site.json`:
   "navigation": [
     { "label": "Home", "url": "/" },
     { "label": "Blog", "url": "/blog/" },
-    { "label": "Watch Live", "url": "/watch-live/", "highlight": true }
+    { "label": "Watch Live", "url": "https://watch.rctv19.com/", "highlight": true }
   ]
 }
 ```
