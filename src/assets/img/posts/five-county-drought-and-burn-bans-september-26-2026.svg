@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Alcorn County severe drought and Benton and Tippah burn ban status</title>
+  <desc id="desc">RCTV19 information graphic. The September 22 U.S. Drought Monitor shows 85.7 percent of Alcorn County in severe drought. As reported September 26, Benton and Tippah county burn bans remain in effect.</desc>
+  <rect width="1200" height="630" fill="#152a32"/>
+  <rect x="0" y="0" width="24" height="630" fill="#f2ad45"/>
+  <text x="72" y="92" fill="#f2ad45" font-family="Arial, sans-serif" font-size="31" font-weight="700" letter-spacing="4">NORTH MISSISSIPPI · SEPT. 26 UPDATE</text>
+  <text x="72" y="183" fill="#ffffff" font-family="Arial, sans-serif" font-size="67" font-weight="700">DROUGHT &amp; BURN BANS</text>
+  <line x1="72" y1="212" x2="1128" y2="212" stroke="#f2ad45" stroke-width="4"/>
+  <text x="72" y="291" fill="#ffffff" font-family="Arial, sans-serif" font-size="36" font-weight="700">ALCORN COUNTY</text>
+  <text x="72" y="353" fill="#f2ad45" font-family="Arial, sans-serif" font-size="57" font-weight="700">85.7% severe drought</text>
+  <text x="72" y="399" fill="#d9e3e4" font-family="Arial, sans-serif" font-size="25">U.S. Drought Monitor conditions as of Sept. 22</text>
+  <rect x="72" y="445" width="1056" height="116" rx="16" fill="#294650"/>
+  <text x="104" y="495" fill="#ffffff" font-family="Arial, sans-serif" font-size="32" font-weight="700">BENTON &amp; TIPPAH COUNTIES</text>
+  <text x="104" y="538" fill="#f2ad45" font-family="Arial, sans-serif" font-size="30">Existing burn bans remain in effect</text>
+  <text x="72" y="603" fill="#d9e3e4" font-family="Arial, sans-serif" font-size="20">RCTV19 ORIGINAL GRAPHIC · SOURCES: U.S. DROUGHT MONITOR, ALCORN COUNTY NEWS, TIPPAH NEWS</text>
+</svg>
