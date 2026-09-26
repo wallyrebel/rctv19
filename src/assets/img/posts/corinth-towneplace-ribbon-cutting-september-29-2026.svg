@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Corinth hotel ribbon cutting information</title>
+  <desc id="desc">RCTV19 event graphic listing Tuesday, September 29, 2026, at 10 a.m. at 1901 South Parkway Street in Corinth.</desc>
+  <rect width="1200" height="630" fill="#15263c"/>
+  <rect x="0" y="494" width="1200" height="136" fill="#234d60"/>
+  <path d="M955 430V155h135v275M927 430h190M985 205h28m25 0h28m-81 48h28m25 0h28m-81 48h28m25 0h28m-81 48h28m25 0h28" fill="none" stroke="#61c7cb" stroke-width="10" stroke-linecap="round"/>
+  <path d="M1019 430v-50h37v50" fill="none" stroke="#61c7cb" stroke-width="10"/>
+  <text x="80" y="93" fill="#61c7cb" font-family="Arial, sans-serif" font-size="31" font-weight="700" letter-spacing="5">CORINTH, MISSISSIPPI</text>
+  <text x="80" y="196" fill="#ffffff" font-family="Arial, sans-serif" font-size="67" font-weight="800">TOWNEPLACE SUITES</text>
+  <text x="80" y="278" fill="#ffffff" font-family="Arial, sans-serif" font-size="67" font-weight="800">RIBBON CUTTING</text>
+  <rect x="80" y="320" width="780" height="4" fill="#61c7cb"/>
+  <text x="80" y="391" fill="#ffffff" font-family="Arial, sans-serif" font-size="38" font-weight="700">TUESDAY, SEPT. 29  ·  10 A.M.</text>
+  <text x="80" y="451" fill="#ffffff" font-family="Arial, sans-serif" font-size="34">1901 South Parkway Street</text>
+  <text x="80" y="577" fill="#ffffff" font-family="Arial, sans-serif" font-size="23">RCTV19 INFORMATION GRAPHIC  ·  DETAILS: ALCORN COUNTY NEWS</text>
+</svg>
