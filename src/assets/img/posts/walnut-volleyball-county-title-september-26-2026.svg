@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Walnut wins Tippah County volleyball tournament</title>
+  <desc id="desc">RCTV19 results graphic for Walnut's September 26, 2026 county volleyball title at Pine Grove School.</desc>
+  <rect width="1200" height="630" fill="#182750"/>
+  <path d="M0 0h1200v34H0z" fill="#f0d000"/>
+  <circle cx="1020" cy="304" r="186" fill="#263a72"/>
+  <circle cx="1020" cy="304" r="142" fill="none" stroke="#f0d000" stroke-width="10"/>
+  <path d="M885 305h270M1020 162c-42 82-42 202 0 284M1020 162c42 82 42 202 0 284M906 223c73 44 155 44 228 0M906 386c73-44 155-44 228 0" fill="none" stroke="#f0d000" stroke-width="8" opacity=".9"/>
+  <text x="72" y="106" fill="#f0d000" font-family="Arial, sans-serif" font-size="32" font-weight="700" letter-spacing="3">RCTV19  •  LOCAL RESULTS</text>
+  <text x="72" y="221" fill="#ffffff" font-family="Arial, sans-serif" font-size="88" font-weight="800">WALNUT</text>
+  <text x="72" y="311" fill="#ffffff" font-family="Arial, sans-serif" font-size="64" font-weight="700">COUNTY CHAMPIONS</text>
+  <rect x="72" y="360" width="690" height="4" fill="#f0d000"/>
+  <text x="72" y="420" fill="#e7ecf8" font-family="Arial, sans-serif" font-size="36">2026 Tippah County volleyball tournament</text>
+  <text x="72" y="474" fill="#e7ecf8" font-family="Arial, sans-serif" font-size="32">September 26  •  Pine Grove School</text>
+  <text x="72" y="572" fill="#abb9db" font-family="Arial, sans-serif" font-size="22">Information graphic • Source: Tippah News</text>
+</svg>
