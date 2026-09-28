@@ -4,7 +4,7 @@ description: How RCTV19 handles contact information, hosting data, cookies, adve
 layout: layouts/page.njk
 permalink: /privacy/
 ---
-_Last updated: September 8, 2026_
+_Last updated: September 28, 2026_
 
 RCTV19 operates rctv19.com. This notice explains information used when you visit the site or contact the station.
 
@@ -20,9 +20,9 @@ The site is hosted on Cloudflare Pages. Hosting and network services may process
 
 The site displays local sponsor images and links. Clicking a sponsor link takes you to another website, which has its own privacy practices.
 
-Google Analytics tracking and Google AdSense ad serving are currently disabled. Advertising is currently limited to local sponsorship placements.
+The site uses Google AdSense Auto ads alongside local sponsorship placements. Google Analytics tracking remains disabled.
 
-If Google advertising is enabled, Google and other third-party vendors may use cookies, web beacons, IP addresses or similar identifiers to collect information and serve ads based on visits to this site and other sites or apps. Google's advertising cookies allow Google and its partners to serve personalized ads based on those visits. Read [how Google uses information from sites and apps that use its services](https://policies.google.com/technologies/partner-sites) and [Google's privacy policy](https://policies.google.com/privacy).
+Google and other third-party vendors may use cookies, web beacons, IP addresses or similar identifiers to collect information and serve ads based on visits to this site and other sites or apps. Google's advertising cookies allow Google and its partners to serve personalized ads based on those visits, subject to applicable consent choices. A Google consent message is configured for visitors in the European Economic Area, United Kingdom and Switzerland. Read [how Google uses information from sites and apps that use its services](https://policies.google.com/technologies/partner-sites) and [Google's privacy policy](https://policies.google.com/privacy).
 
 You can manage Google ad personalization in [My Ad Center](https://myadcenter.google.com/) and learn about other participating vendors' choices at [AboutAds](https://www.aboutads.info/choices/). Browser settings can limit or delete cookies. These controls do not replace any consent choices required before advertising technologies are used. Where required, a consent message must be available before those technologies are activated, including options to refuse or change choices.
 

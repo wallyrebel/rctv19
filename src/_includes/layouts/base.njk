@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  {# Verification is separate from ad serving; configure the CMP before enabling ads. #}
+  {# Auto ads and the published Google consent message use this shared loader.
+     New pages inherit adsEligible; explicit opt-outs and noindex pages stay ad-free. #}
   {% if ads.adsensePublisherId | validPublisher %}
   <meta name="google-adsense-account" content="{{ ads.adsensePublisherId }}">
   {% endif %}

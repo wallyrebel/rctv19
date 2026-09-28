@@ -1,5 +1,13 @@
 # RCTV19 SEO and AdSense audit — September 8, 2026
 
+## Activation update — September 28, 2026
+
+The owner confirmed AdSense approval. In Edge, the saved AdSense site list showed Auto ads ON, Auto optimize ON and zero page exclusions for rctv19.com. Privacy & messaging showed the European regulations message for rctv19.com as Published.
+
+Ad serving is now enabled in `src/_data/ads.json`. Global `src/_data/adsEligible.json` makes public pages eligible by default, and the old article-level false default was removed. Existing and future articles, obituaries, archives and other public pages use the shared loader automatically. No manual slot IDs are needed for Auto ads. Explicit `adsEligible: false` and `noindex` still suppress Google ads; admin and non-HTML outputs do not use the loader. Existing local sponsorships remain active. The CMS exposes the global serving switch and the privacy notice reflects activation.
+
+The September 8 findings and pre-approval checklist below are historical. The disabled-serving and default-ineligible statements no longer describe the active configuration. Actual impressions depend on Google's placement and serving decisions, consent and browser settings; installing the loader does not guarantee an ad on every visit.
+
 ## Assessment
 
 The site needed technical and content-quality fixes before an AdSense application. These changes improve readiness; they do not promise approval. Google evaluates original value, navigation, policy compliance and the account itself. No fixed article count or traffic threshold guarantees approval. See [Google's eligibility requirements](https://support.google.com/adsense/answer/9724?hl=en).

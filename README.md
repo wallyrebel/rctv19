@@ -99,23 +99,11 @@ The badge image is located at `src/assets/img/watch-live-badge.png`. To update:
 
 ### Google AdSense Integration
 
-1. **Get your Publisher ID** from [Google AdSense](https://www.google.com/adsense/)
+Google AdSense Auto ads are enabled for `ca-pub-3245500092050206`. The shared base layout loads Google's script once on each eligible public page. Global `src/_data/adsEligible.json` defaults to `true`, so existing and future news articles, obituaries, archives, community profiles and other public pages inherit ads automatically. No per-article code or manual ad slot IDs are required for Auto ads.
 
-2. **Update `src/_data/ads.json`**:
-   ```json
-   {
-     "adsensePublisherId": "ca-pub-YOUR_PUBLISHER_ID",
-     "sidebar1": {
-       "type": "adsense",
-       "enabled": true,
-       "slot": "YOUR_AD_SLOT_ID"
-     }
-   }
-   ```
+Manage placement and formats in AdSense → Ads → By site → rctv19.com. Auto ads must remain ON there as well as `adsenseEnabled: true` in `src/_data/ads.json` (also available in the Advertising CMS settings). Local sponsor placements remain independent.
 
-3. **Uncomment AdSense code** in `src/_includes/components/ad-slot.njk`:
-   - Find the commented AdSense script section
-   - Uncomment to activate ads
+Set `adsEligible: false` in a page's front matter to opt it out. Pages marked `noindex`, including the 404 page, and the separate admin interface do not load ads. Manual AdSense placements still require real numeric slot IDs. Keep the published consent message and privacy policy current. See [the activation record](docs/adsense-readiness.md).
 
 ### Local Sponsor Ads
 
@@ -345,7 +333,7 @@ MIT License - See LICENSE file for details.
 
 ## September 2026 SEO and AdSense readiness
 
-The current setup supersedes the original advertising instructions above. Follow [the audit and activation guide](docs/adsense-readiness.md). AdSense account verification and ads.txt are configured; Google ad serving is disabled until consent, approval, and page eligibility are ready. The original global Analytics tag has also been removed pending consent-aware setup. Local sponsor ads continue to display.
+Follow [the audit and activation guide](docs/adsense-readiness.md). Following the owner's approval confirmation, Google Auto ads were activated on September 28, 2026, with automatic eligibility for new public pages and articles. Account verification and ads.txt are configured. The original global Analytics tag remains removed. Local sponsor ads continue to display.
 
 Use Node 22 or 24. `npm run build` builds Eleventy, generates optimized images, and validates the output. Image generation and validation run inside Eleventy's awaited after-build hook, so direct `eleventy` commands and `npm run dev` also include the required images. Existing article permalinks remain unchanged.
 

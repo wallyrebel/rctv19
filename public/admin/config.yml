@@ -79,6 +79,7 @@ collections:
         file: src/_data/ads.json
         fields:
           - { label: "AdSense Publisher ID", name: "adsensePublisherId", widget: "string", hint: "Your Google AdSense ID (ca-pub-XXXX)" }
+          - { label: "Enable Google AdSense", name: "adsenseEnabled", widget: "boolean", default: true, hint: "Loads Auto ads on public pages, including all new articles. Auto ads must also be enabled in AdSense." }
           - label: "Top Banner Ad"
             name: "topBanner"
             widget: "object"

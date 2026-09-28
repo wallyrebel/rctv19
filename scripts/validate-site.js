@@ -57,10 +57,15 @@ for (const file of files) {
       }
     }
     if (!ads.adsenseEnabled) assert.doesNotMatch(html, /<script[^>]+pagead2\.googlesyndication/,'Ad serving is disabled');
+    const adLoaders = html.match(/<script[^>]+pagead2\.googlesyndication[^>]*><\/script>/g) || [];
+    assert.ok(adLoaders.length <= 1, 'AdSense loader must not be duplicated');
+    if (/<meta name="robots" content="noindex/.test(html)) assert.equal(adLoaders.length, 0, 'No ads on noindex pages');
+    if (adLoaders.length) assert.ok(adLoaders[0].includes(`adsbygoogle.js?client=${ads.adsensePublisherId}`), 'Correct AdSense publisher');
   } catch(e) { errors.push(`${file}: ${e.message}`); }
 }
 assert.equal(fs.readFileSync(path.join(root,'ads.txt'),'utf8').trim(),`google.com, ${ads.adsensePublisherId.replace('ca-pub-','pub-')}, DIRECT, f08c47fec0942fa0`);
 assert.match(fs.readFileSync(path.join(root,'404.html'),'utf8'),/noindex, follow/);
+if (ads.adsenseEnabled) assert.match(fs.readFileSync(path.join(root,'index.html'),'utf8'), /<script[^>]+pagead2\.googlesyndication/, 'Homepage must load Auto ads');
 assert.ok(!fs.existsSync(path.join(root,'blog/unable-to-generate-article-insufficient-content-da/index.html')));
 
 // A redirect only carries a page's ranking if it lands somewhere real, in one hop,
