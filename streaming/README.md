@@ -63,3 +63,11 @@ The desktop replay workflow prepares a video, lets the operator review it, uploa
 ## Before public app release
 
 Finish RCTV-specific live and replay testing, capture actual app screenshots, preserve each app's signing identity, complete accurate content/privacy/rights declarations and submit each draft for review. Store approval is an external review outcome, not a result of building or uploading files. Existing Mississippi Sports test results do not establish RCTV 19 compatibility or approval.
+
+## Website advertising
+
+The production Worker adds AdSense Auto ads for `ca-pub-3245500092050206` to `/` and `/watch/rctv19/`, including replay selections on those pages. AdSense controls placement and consent messaging. The embed player, native TV apps and utility pages remain without added ads. `/ads.txt` uses the same publisher account.
+
+`worker.mjs` applies a fresh cryptographic nonce to the player and ad scripts on each response. Do not deploy the static directory without this Worker: its original restrictive policy intentionally blocks third-party scripts. HTML with nonces is not cached. Other assets, the catalog and video delivery keep their existing behavior. The CSP uses strict-dynamic without unsafe-eval or inline script permission; frame permissions are limited to Google ad and consent origins. If Google changes its resource requirements, review browser CSP errors before adding any origin. See [Google CSP guidance](https://support.google.com/adsense/answer/16283098).
+
+Build with `npm run build:web`, validate with `npm test` and `npx wrangler deploy --dry-run`, then publish with `npx wrangler deploy`. Verify the publisher tag and matching script/header nonces on both watch URLs after deployment.

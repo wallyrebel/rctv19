@@ -1,13 +1,16 @@
 import http from 'node:http';
+import { createNonce, adPolicy, adMarkup, watchPaths } from './lib/web-ads.mjs';
 import { readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { validateCatalog } from './lib/catalog.mjs';
 
 const root = path.dirname(fileURLToPath(import.meta.url));
-const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png' };
+const types = { '.txt': 'text/plain; charset=utf-8', '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png' };
 const routes = new Map([
   ['/', 'public/index.html'], ['/watch/rctv19', 'public/index.html'],
+  ['/watch/rctv19/', 'public/index.html'], ['/index.html', 'public/index.html'], ['/watch/rctv19/index.html', 'public/index.html'],
+  ['/ads.txt', 'public/ads.txt'], ['/privacy/', 'public/privacy.html'],
   ['/embed/rctv19', 'public/index.html'], ['/embed/rctv19/', 'public/index.html'],
   ['/styles.css', 'public/styles.css'], ['/app.js', 'public/app.js'],
   ['/assets/logo.png', 'public/assets/logo.png'],
@@ -40,8 +43,13 @@ export function createServer({ catalogPath = process.env.CATALOG_PATH || path.jo
     const file = routes.get(url.pathname);
     if (!file) { res.writeHead(404); return res.end('Not found'); }
     try {
-      const body = await readFile(path.join(root, file));
-      res.writeHead(200, { 'Content-Type': types[path.extname(file)] || 'application/octet-stream', 'Cache-Control': 'no-cache' });
+      let body = await readFile(path.join(root, file));
+      if (watchPaths.includes(url.pathname)) {
+        const nonce = createNonce();
+        body = body.toString().replace(/<script\b/g, '<script nonce="' + nonce + '"').replace('</head>', adMarkup(nonce) + '</head>');
+        res.setHeader('Content-Security-Policy', adPolicy(nonce));
+      }
+      res.writeHead(200, { 'Content-Type': types[path.extname(file)] || 'application/octet-stream', 'Cache-Control': watchPaths.includes(url.pathname) ? 'private, no-store' : 'no-cache' });
       res.end(req.method === 'HEAD' ? undefined : body);
     } catch { res.writeHead(503); res.end('Player is temporarily unavailable.'); }
   });

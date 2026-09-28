@@ -10,6 +10,7 @@ const errors = validateCatalog(catalog);
 if (errors.length) throw new Error(errors.join('\n'));
 // An explicit allowlist keeps credentials, source and recordings out of the upload.
 for (const [source, target] of [
+  ['public/ads.txt','ads.txt'],
   ['public/index.html','index.html'],
   ['public/index.html','watch/rctv19/index.html'],
   ['public/index.html','embed/rctv19/index.html'],
