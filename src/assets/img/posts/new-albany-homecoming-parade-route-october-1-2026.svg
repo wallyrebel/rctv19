@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">New Albany High School homecoming parade announcement</title>
+  <desc id="desc">Thursday, October 1 at 6 p.m. The announced route starts at the Union County Library, travels on Main and Bankhead streets, and ends at the Union County Courthouse, followed by a community pep rally.</desc>
+  <rect width="1200" height="630" fill="#14243a"/>
+  <rect x="0" y="0" width="1200" height="18" fill="#f0bd58"/>
+  <text x="80" y="87" fill="#f0bd58" font-family="Arial, sans-serif" font-size="27" font-weight="700" letter-spacing="3">RCTV 19 · UNION COUNTY</text>
+  <text x="80" y="165" fill="#ffffff" font-family="Arial, sans-serif" font-size="54" font-weight="700">New Albany homecoming parade</text>
+  <text x="80" y="225" fill="#ffffff" font-family="Arial, sans-serif" font-size="35">Thursday, Oct. 1 · 6 p.m.</text>
+  <line x1="112" y1="330" x2="1080" y2="330" stroke="#f0bd58" stroke-width="8"/>
+  <circle cx="124" cy="330" r="19" fill="#f0bd58"/>
+  <circle cx="600" cy="330" r="19" fill="#f0bd58"/>
+  <circle cx="1068" cy="330" r="19" fill="#f0bd58"/>
+  <text x="80" y="397" fill="#ffffff" font-family="Arial, sans-serif" font-size="29" font-weight="700">Union County</text>
+  <text x="80" y="434" fill="#ffffff" font-family="Arial, sans-serif" font-size="29">Library</text>
+  <text x="475" y="397" fill="#ffffff" font-family="Arial, sans-serif" font-size="29" font-weight="700">Main &amp; Bankhead</text>
+  <text x="525" y="434" fill="#ffffff" font-family="Arial, sans-serif" font-size="29">streets</text>
+  <text x="900" y="397" fill="#ffffff" font-family="Arial, sans-serif" font-size="29" font-weight="700">County</text>
+  <text x="900" y="434" fill="#ffffff" font-family="Arial, sans-serif" font-size="29">Courthouse</text>
+  <text x="80" y="533" fill="#f0bd58" font-family="Arial, sans-serif" font-size="31" font-weight="700">Community pep rally follows at the courthouse</text>
+  <text x="80" y="584" fill="#b8c5d7" font-family="Arial, sans-serif" font-size="20">Information graphic · announced route, not a street map</text>
+</svg>
