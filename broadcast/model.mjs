@@ -10,15 +10,19 @@ export function canonical(value) {
 }
 const words = s => String(s).toLowerCase().normalize('NFKD').replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim();
 export function uniqueStories(input, now=new Date()) {
-  const found=[];
+  const found=[],byLink=new Map(),byTitle=new Map();
   const candidates=input.filter(s=>s.title&&safeUrl(s.url)&&Date.parse(s.publishedAt)<=+now&&Date.parse(s.publishedAt)>+now-14*86400000)
     .sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt));
   for (const story of candidates) {
     const links=[canonical(story.url),canonical(story.originalUrl)].filter(Boolean);
     const title=words(story.title);
-    const duplicate=found.find(s=>links.some(u=>[canonical(s.url),canonical(s.originalUrl)].includes(u)) || words(s.title)===title);
-    if (duplicate) { if (!duplicate.image && story.image) duplicate.image=story.image; continue; }
-    found.push({...story, image:safeUrl(story.image)});
+    const duplicate=links.map(link=>byLink.get(link)).find(Boolean)||byTitle.get(title);
+    if (duplicate) {
+      if (!duplicate.image && story.image) duplicate.image=safeUrl(story.image);
+      for(const link of links)byLink.set(link,duplicate);byTitle.set(title,duplicate);continue;
+    }
+    const item={...story,image:safeUrl(story.image)};found.push(item);
+    for(const link of links)byLink.set(link,item);byTitle.set(title,item);
   }
   // Give every publisher with recent unique stories a turn before taking its next story.
   const groups=new Map();for(const s of found){const key=s.source||'';const list=groups.get(key)||[];list.push(s);groups.set(key,list);}
