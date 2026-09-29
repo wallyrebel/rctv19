@@ -7,7 +7,7 @@
   "account_id": "666cebcc1f6b2539b5790176abedf752",
   "observability": {"enabled": true, "head_sampling_rate": 0.05},
   "triggers": {"crons": ["* * * * *"]},
-  "vars": {"CONTENT_URL": "https://codex-rctv19-broadcast.rctv19.pages.dev/broadcast/content.json"},
+  "vars": {"CONTENT_URL": "https://rctv19.com/broadcast/content.json"},
   "services": [{"binding":"SPORTS","service":"mississippi-sports-broadcast"}],
   "d1_databases": [{"binding":"BROADCAST_DB","database_name":"rctv19-broadcast","database_id":"5f9b922d-395e-412c-af65-c801d99e9026","migrations_dir":"migrations"}]
 }

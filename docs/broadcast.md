@@ -2,7 +2,7 @@
 
 ## Addresses and operation
 
-The channel is `/broadcast/`; the read-only operating dashboard is `/broadcast/status/`.
+The live channel is https://rctv19.com/broadcast/; the read-only operating dashboard is https://rctv19.com/broadcast/status/.
 Use the channel URL as a 1920 × 1080 Web Browser input in vMix 28, with browser audio enabled.
 Your custom RTMP output stays in vMix. Cloudflare serves the page and refreshed data, not an encoded RTMP video stream.
 
@@ -52,6 +52,6 @@ Worker: `rctv19-broadcast`, D1: `rctv19-broadcast`, one-minute Cron Trigger.
 Worker config: `workers/broadcast/wrangler.jsonc`; migrations: `workers/broadcast/migrations/`.
 Deploy worker with `wrangler deploy -c workers/broadcast/wrangler.jsonc`.
 RCTV19 Pages builds Eleventy from Git. A preview uses `codex/rctv19-broadcast`; promotion to main publishes `/broadcast` on the main domain.
-**At production promotion, set Worker CONTENT_URL to https://rctv19.com/broadcast/content.json and redeploy** so news and obituaries follow ongoing main-branch imports. The preview content URL is intentionally separate until then.
+Worker `CONTENT_URL` is https://rctv19.com/broadcast/content.json so news and obituaries follow ongoing main-branch imports. Publish the Pages content endpoint before deploying a Worker that starts using it.
 
 No new AI calls, video encoding service or paid media API is required by this channel. Cloudflare usage remains subject to the account's existing plan and limits.
