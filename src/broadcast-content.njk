@@ -1,5 +1,7 @@
 ---
 permalink: /broadcast/content.json
 eleventyExcludeFromCollections: true
+eleventyImport:
+  collections: [posts, obituaries]
 ---
 {{ collections | broadcastContent | jsonLd | safe }}

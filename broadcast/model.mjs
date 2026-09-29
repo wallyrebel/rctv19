@@ -20,7 +20,14 @@ export function uniqueStories(input, now=new Date()) {
     if (duplicate) { if (!duplicate.image && story.image) duplicate.image=story.image; continue; }
     found.push({...story, image:safeUrl(story.image)});
   }
-  return found.slice(0,20);
+  // Give every publisher with recent unique stories a turn before taking its next story.
+  const groups=new Map();for(const s of found){const key=s.source||'';const list=groups.get(key)||[];list.push(s);groups.set(key,list);}
+  const output=[];
+  for(let i=0;output.length<20;i++){
+    const round=[...groups.values()].flatMap(list=>list[i]?[list[i]]:[]);if(!round.length)break;
+    output.push(...round.slice(0,20-output.length));
+  }
+  return output;
 }
 export function recentObituaries(input, now=new Date()) {
   return [...new Map(input.filter(o=>o.name&&safeUrl(o.url)&&Date.parse(o.publishedAt)<=+now&&Date.parse(o.publishedAt)>=+now-7*86400000).map(o=>[canonical(o.url),o])).values()]
@@ -71,10 +78,12 @@ export function assemble(sources, snapshots, gaps, now=new Date()) {
   const live=sources.flatMap(s=>usable(s.id)?[usable(s.id)]:[]);
   const merged=mergeGames(live.flatMap(s=>s.games||[]),now);
   const forecast=usable('nws-forecast')?.forecast;
+  const observation=usable('nws-current')?.observation;
   return {generatedAt:now.toISOString(),stories:uniqueStories(live.flatMap(s=>s.stories||[]),now),
     obituaries:recentObituaries(usable('rctv')?.obituaries||[],now),...merged,
     // A failed alert refresh must not clear a still-active warning; successful empty response does.
     alerts:activeAlerts(byId.get('nws-alerts')?.data?.alerts||[],now),
     forecast:forecast&&Date.parse(forecast.updatedAt)>+now-24*3600000?{...forecast,freshUntil:new Date(Date.parse(byId.get('nws-forecast').lastSuccess)+120*60000).toISOString()}:null,
+    observation:observation&&Date.parse(observation.observedAt)>+now-2*3600000&&Date.parse(observation.observedAt)<=+now?observation:null,
     sources:health,gaps,upstream:usable('local-scores')?.upstream||[]};
 }

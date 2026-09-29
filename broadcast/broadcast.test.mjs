@@ -1,10 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {uniqueStories,recentObituaries,mergeGames,assemble,activeAlerts} from './model.mjs';
-import {wordpress,schedule,alerts,composite} from './parsers.mjs';
+import {wordpress,schedule,alerts,composite,observation} from './parsers.mjs';
 import {collect} from './collect.mjs';
 import {SOURCES} from './sources.mjs';
-import {adSlot,BREAK_MS,AD_MS,currentWarnings} from '../src/assets/broadcast/playout.mjs';
+import {adSlot,BREAK_MS,AD_MS,currentWarnings,forecastDays} from '../src/assets/broadcast/playout.mjs';
 import {broadcastContent} from './content.cjs';
 const now=new Date('2026-09-29T17:00:00Z');
 const story={title:'County meeting scheduled',url:'https://tippahnews.com/local/meeting/',publishedAt:now.toISOString()};
@@ -61,4 +61,20 @@ test('every fifteen minutes all four sponsors plus house ad get fifteen seconds'
  assert.equal(adSlot(BREAK_MS-1,5),-1);
  for(let i=0;i<5;i++)assert.equal(adSlot(BREAK_MS+i*AD_MS,5),i);
  assert.equal(adSlot(BREAK_MS+5*AD_MS,5),-1);
+});
+test('regional news does not crowd out a publisher with only one recent story',()=>{
+ const input=Array.from({length:30},(_,i)=>({...story,title:'Regional news '+i,url:'https://regional.example/'+i,source:'Regional'}));
+ const list=uniqueStories([...input,{...story,source:'Tippah',publishedAt:'2026-09-28T12:00:00Z'}],now);
+ assert.equal(list.length,20);assert.ok(list.some(s=>s.source==='Tippah'));
+});
+test('seven-day forecast names real weekdays and keeps daily high/overnight low',()=>{
+ const periods=Array.from({length:14},(_,i)=>({start:`2026-${i<4?'09':'10'}-${String(i<4?29+Math.floor(i/2):Math.floor(i/2)-1).padStart(2,'0')}T${i%2?'18':'06'}:00:00-05:00`,temperature:i%2?60:85,isDaytime:!(i%2),short:'Sunny',rain:20}));
+ const days=forecastDays(periods,+now);assert.equal(days.length,7);assert.equal(days[0].name,'Tuesday');assert.equal(days[1].name,'Wednesday');assert.equal(days[6].name,'Monday');assert.equal(days[0].high,85);assert.equal(days[0].low,60);
+});
+test('current conditions convert NWS units and do not turn null readings into zero',()=>{
+ const props={timestamp:now.toISOString(),temperature:{value:28,unitCode:'wmoUnit:degC'},heatIndex:{value:27,unitCode:'wmoUnit:degC'},windSpeed:{value:9.36,unitCode:'wmoUnit:km_h-1'},relativeHumidity:{value:32}};
+ const o=observation(JSON.stringify({properties:props})).observation;
+ assert.equal(o.temperature,82);assert.equal(o.feelsLike,81);assert.equal(o.wind,6);
+ const missing=observation(JSON.stringify({properties:{...props,heatIndex:{value:null},windSpeed:{value:null},relativeHumidity:{value:null}}})).observation;
+ assert.equal(missing.feelsLike,null);assert.equal(missing.wind,null);assert.equal(missing.humidity,null);
 });

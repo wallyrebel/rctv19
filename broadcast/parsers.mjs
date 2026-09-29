@@ -68,9 +68,22 @@ export function alerts(raw) {
 export function forecast(raw) {
   const data=JSON.parse(raw),p=data.properties;
   if(!p?.updateTime||!Array.isArray(p.periods)||!p.periods.length)throw Error('NWS forecast periods missing');
-  return {forecast:{updatedAt:p.updateTime,periods:p.periods.slice(0,10).map(x=>({name:plain(x.name),start:x.startTime,end:x.endTime,
+  return {forecast:{updatedAt:p.updateTime,periods:p.periods.slice(0,16).map(x=>({name:plain(x.name),start:x.startTime,end:x.endTime,
     temperature:x.temperature,unit:x.temperatureUnit,wind:plain(`${x.windSpeed} ${x.windDirection}`),
     short:plain(x.shortForecast),detail:plain(x.detailedForecast),rain:x.probabilityOfPrecipitation?.value??null,isDaytime:x.isDaytime}))}};
+}
+export function observation(raw) {
+  const p=JSON.parse(raw).properties;
+  if(!p?.timestamp||!Number.isFinite(p.temperature?.value))throw Error('Current station temperature unavailable');
+  const value=p.temperature.value,unit=p.temperature.unitCode;
+  if(!['wmoUnit:degC','wmoUnit:degF'].includes(unit))throw Error('Observation temperature unit unsupported');
+  const c=p.windSpeed;const mph=c?.unitCode==='wmoUnit:km_h-1'?c.value*0.621371:c?.unitCode==='wmoUnit:m_s-1'?c.value*2.23694:null;
+  const apparent=Number.isFinite(p.windChill?.value)?p.windChill:Number.isFinite(p.heatIndex?.value)?p.heatIndex:null;
+  const feelsLike=apparent?.unitCode==='wmoUnit:degC'?Math.round(apparent.value*9/5+32):apparent?.unitCode==='wmoUnit:degF'?Math.round(apparent.value):null;
+  return {observation:{observedAt:p.timestamp,station:plain(p.stationName||'Corinth'),temperature:Math.round(unit==='wmoUnit:degC'?value*9/5+32:value),
+    feelsLike,feelsLabel:Number.isFinite(p.windChill?.value)?'Wind chill':'Heat index',
+    condition:plain(p.textDescription),humidity:Number.isFinite(p.relativeHumidity?.value)?Math.round(p.relativeHumidity.value):null,
+    wind:Number.isFinite(c?.value)&&mph!==null?Math.round(mph):null}};
 }
 export function rctv(raw) {
   const data=JSON.parse(raw);if(!Array.isArray(data.stories)||!Array.isArray(data.obituaries))throw Error('RCTV19 broadcast content feed missing');

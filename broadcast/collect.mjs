@@ -22,7 +22,7 @@ export async function collect(source, previous, now=new Date(), request=fetch, c
       }
       data={games};
     }else data=parse[source.kind](await get(url),source,stamp);
-    const count=(data.stories?.length||0)+(data.obituaries?.length||0)+(data.games?.length||0)+(data.alerts?.length||0)+(data.forecast?.periods?.length||0);
+    const count=(data.stories?.length||0)+(data.obituaries?.length||0)+(data.games?.length||0)+(data.alerts?.length||0)+(data.forecast?.periods?.length||0)+(data.observation?1:0);
     return {id:source.id,lastAttempt:stamp,lastSuccess:stamp,error:null,failures:0,count,data};
   } catch(e) {
     return {id:source.id,lastAttempt:stamp,lastSuccess:previous?.lastSuccess||null,error:e.message,failures:(previous?.failures||0)+1,count:previous?.count||0,data:previous?.data||{}};

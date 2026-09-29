@@ -1,4 +1,4 @@
-import {SLIDE_MS,BREAK_MS,AD_MS,rundown,adSlot,currentWarnings} from './playout.mjs';
+import {SLIDE_MS,BREAK_MS,AD_MS,rundown,adSlot,currentWarnings,forecastDays} from './playout.mjs';
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const url=s=>{try{const u=new URL(s,location.origin);return u.protocol==='https:'||u.origin===location.origin?u.href:'';}catch{return '';}};
@@ -21,7 +21,7 @@ function audio(){
   if(src!==musicSrc){musicSrc=src;player.src=src;player.load();}
   void playMusic();
 }
-function app(){return `<div class="panel app-promo"><p class="eyebrow">TAKE YOUR COMMUNITY WITH YOU</p><h2>Download the <em>RCTV 19 app</em> on Roku, Amazon Fire or Apple TV</h2><div class="platforms"><span>Roku</span><span>Amazon Fire</span><span>Apple TV</span></div><div class="url">Your community. Your channel. &nbsp; RCTV19.com</div></div>`;}
+function app(){return `<div class="panel app-promo"><p class="eyebrow">TAKE YOUR COMMUNITY WITH YOU</p><h2>Download the <em>RCTV 19 app</em> on Roku, Amazon Fire or <span class="nowrap">Apple TV</span></h2><div class="platforms"><span>Roku</span><span>Amazon Fire</span><span>Apple TV</span></div><div class="url">Your community. Your channel. &nbsp; RCTV19.com</div></div>`;}
 function house(){return `<div class="panel house-ad"><p class="eyebrow">CONNECT WITH YOUR COMMUNITY</p><h2>Your ad here</h2><p class="sub">Put your business on RCTV19.</p><div class="phone">${esc(config.advertisingPhone)}</div><p class="sub">Call to advertise</p></div>`;}
 function ad(s){return s?.image?`<div class="sponsor-main"><img src="${esc(url(s.image))}" alt="${esc(s.name)}"></div>`:house();}
 function story(s){
@@ -29,8 +29,9 @@ function story(s){
   return `<article class="story ${s.image?'':'no-image'}">${s.image?`<img class="story-photo" src="${esc(url(s.image))}" alt="">`:''}<div class="story-shade"></div><div class="story-copy"><p class="eyebrow">COMMUNITY NEWS</p><h2>${esc(s.title)}</h2>${s.excerpt?`<p class="summary">${esc(s.excerpt.slice(0,260))}${s.excerpt.length>260?'…':''}</p>`:''}<div class="byline"><span>${esc(s.source)} · ${date(s.publishedAt)}</span><span>Read more at ${esc(new URL(s.url).hostname.replace(/^www\./,''))}</span></div></div></article>`;
 }
 function forecast(){
-  const f=data.forecast,periods=f?.periods?.filter(p=>Date.parse(p.end)>Date.now()).slice(0,4);if(!periods?.length)return app();
-  return `<div class="panel"><p class="eyebrow">TIPPAH COUNTY WEATHER</p><h2>Your local forecast</h2><p class="sub">Ripley &amp; central Tippah County · National Weather Service</p><div class="forecast-grid">${periods.map(p=>`<div class="forecast-card"><h3>${esc(p.name)}</h3><strong>${esc(p.temperature)}°</strong><p>${esc(p.short)}</p><small>Wind ${esc(p.wind)}${p.rain!==null?`<br>Rain chance ${esc(p.rain)}%`:''}</small></div>`).join('')}</div><p class="forecast-detail">${esc(periods[0].detail)}</p></div>`;
+  const days=forecastDays(data.forecast?.periods);if(!days.length)return app();
+  const o=data.observation;
+  return `<div class="panel weather-main"><p class="eyebrow">TIPPAH COUNTY WEATHER</p><h2>Your seven-day forecast</h2><p class="sub">Ripley &amp; central Tippah County · National Weather Service</p>${o?`<div class="current-strip"><strong>NOW ${o.temperature}°</strong><span>${esc(o.condition)}</span>${o.feelsLike!==null?`<span>Feels like ${o.feelsLike}°</span>`:''}${o.humidity!==null?`<span>Humidity ${o.humidity}%</span>`:''}${o.wind!==null?`<span>Wind ${o.wind} mph</span>`:''}<small>${esc(o.station)} · ${time(o.observedAt)}</small></div>`:''}<div class="forecast-grid seven">${days.map(d=>`<div class="forecast-card"><h3>${esc(d.name)}</h3><strong>${d.high===null?'—':d.high+'°'}</strong><div class="low">Low ${d.low===null?'—':d.low+'°'}</div><p>${esc(d.short)}</p><small>${d.rain!==null?`Rain ${d.rain}%<br>`:''}${d.wind?esc(d.wind):''}</small></div>`).join('')}</div><p class="forecast-foot">Daily highs &amp; overnight lows · Rain chance shown for each day</p></div>`;
 }
 function games(){return (data.games||[]).filter(g=>!g.stale&&!g.conflict&&(!g.freshUntil||Date.parse(g.freshUntil)>Date.now())&&['final','result','scheduled'].includes(g.status)&&(!(g.status==='scheduled')||g.date>=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Chicago'}).format(new Date())));}
 function sports(){
@@ -67,7 +68,11 @@ function crawl(id,items){
 }
 function rails(){
   const p=data.forecast?.periods?.find(p=>Date.parse(p.end)>Date.now());
-  $('weather-rail').innerHTML=p?`<h2>TIPPAH COUNTY</h2><div class="temp">${esc(p.temperature)}°</div><p>${esc(p.name)} · ${esc(p.short)}</p><small>Ripley forecast · NWS</small>`:'<h2>RIPLEY COMMUNITY<br>TELEVISION</h2><p>Your local connection.</p><small>News • Weather • Sports</small>';
+  const o=data.observation,days=forecastDays(data.forecast?.periods);
+  const current=o?`<h2>CURRENT WEATHER</h2><div class="current-readout"><div class="temp">${o.temperature}°</div><div>${esc(o.condition)}${o.feelsLike!==null?`<br><span>Feels like ${o.feelsLike}°</span>`:''}</div></div><div class="conditions">${o.wind!==null?`Wind ${o.wind} mph`:''}${o.humidity!==null?` · Humidity ${o.humidity}%`:''}${p?.rain!==null&&p?.rain!==undefined?`<br>Rain chance ${p.rain}% (${esc(p.name)})`:''}</div><small>${esc(o.station)} · ${time(o.observedAt)} · NWS</small>`:p?`<h2>TIPPAH FORECAST</h2><div class="current-readout"><div class="temp">${esc(p.temperature)}°</div><div>${esc(p.name)}<br>${esc(p.short)}</div></div>`:'<h2>RCTV19 WEATHER</h2>';
+  const dayRows=days.map(d=>`<div class="forecast-row"><div><b>${esc(d.name)}</b><span>${esc(d.short)}</span></div><div><strong>${d.high===null?'—':d.high+'°'} / ${d.low===null?'—':d.low+'°'}</strong><small>${d.rain!==null?'Rain '+d.rain+'%':''}</small></div></div>`).join('');
+  const weatherKey=JSON.stringify([o,days]);
+  if($('weather-rail').dataset.key!==weatherKey){$('weather-rail').dataset.key=weatherKey;$('weather-rail').innerHTML=current+(days.length?`<div class="forecast-label">TIPPAH • 7-DAY FORECAST</div><div class="forecast-scroll"><div class="forecast-roll">${dayRows}${dayRows}</div></div>`:'');}
   const sponsors=[...(config.sponsors||[]),null],s=sponsors[Math.floor((Date.now()-started)/20000)%sponsors.length];
   $('sponsor-rail').innerHTML=s?.image?`<img src="${esc(url(s.image))}" alt="${esc(s.name)}">`:`<div><div class="house-title">Your ad<br>here</div><p>Reach your community<br>with RCTV19.</p><div class="house-phone">${esc(config.advertisingPhone)}</div><p>Call to advertise</p></div>`;
   crawl('headlines',data.stories?.length?data.stories.map(s=>s.title):['RCTV19 · Ripley Community Television','Download the RCTV 19 app on Roku, Amazon Fire or Apple TV']);
@@ -77,6 +82,7 @@ function rails(){
 function tick(){
   const now=Date.now();$('clock').textContent=time(now);$('date').textContent=new Date(now).toLocaleDateString('en-US',{timeZone:'America/Chicago',weekday:'long',month:'long',day:'numeric'});
   if(data.forecast?.freshUntil&&Date.parse(data.forecast.freshUntil)<now){data.forecast=null;rails();if(current?.kind==='weather')rendered='';}
+  if(data.observation&&Date.parse(data.observation.observedAt)<now-2*3600000){data.observation=null;rails();if(current?.kind==='weather')rendered='';}
   const alerts=currentWarnings(data.alerts,now),warnings=alerts.filter(a=>a.interrupt),banner=alerts.filter(a=>!a.interrupt);
   const w=$('warning');w.hidden=!warnings.length;
   if(warnings.length){

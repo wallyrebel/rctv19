@@ -12,10 +12,10 @@ The page never reloads itself to refresh content. News, ad transitions and data 
 
 ## Editorial rotation
 
-- The newest 20 unique stories from Tippah News (category IDs 7 or 2107 only), Tippah Sports, Alcorn News MS and RCTV19.
+- Twenty recent unique stories balanced across Tippah News (category IDs 7 or 2107 only), Tippah Sports, Alcorn News MS, RCTV19, Union News MS, DeSoto County News, Prentiss News, News Tupelo and Sports Mississippi. Each publisher gets a turn before taking its next-newest story; items older than 14 days do not air.
 - Original URLs, canonical URLs and normalized identical headlines remove syndicated duplicates. RCTV19 exports original source URLs from its existing article metadata. Similar stories without matching provenance are not automatically merged on guesses.
 - Featured image, source, publication date, headline and supplied excerpt; missing pictures use the station background.
-- NWS forecast for Ripley / central Tippah County. Active alerts cover Tippah County, not just the Ripley point.
+- Current NWS conditions at Corinth (KCRX), the first reporting station supplied by the Ripley NWS gridpoint. The station and observation time are displayed. Temperature, heat index/wind chill when available, wind, humidity and forecast rain chance appear in the sidebar. Missing values are not invented; observations older than two hours are withheld. A scrolling seven-day list names each weekday with highs, overnight lows and rain chance; the full seven-day board appears about every three minutes in the main rotation. Forecast represents Ripley / central Tippah County. Active alerts cover all Tippah County.
 - Varsity boys/girls high schools in Tippah and Alcorn counties, Blue Mountain Christian and Northeast Mississippi Community College.
 - Obituaries published in the past seven rolling days, with photo, dates, funeral home and original service paragraphs when available. Full notices remain linked on the website; no AI rewrites.
 - A recurring “Download the RCTV 19 app on Roku, Amazon Fire or Apple TV” promotion.
@@ -27,17 +27,18 @@ Tippah County tornado, severe thunderstorm and flash-flood warnings interrupt al
 
 | Source | Collection | Notes |
 |---|---|---|
-| Tippah News, Tippah Sports, Alcorn News MS | 10 minutes | WordPress posts and featured media |
+| All eight WordPress news/sports publishers | 10 minutes | WordPress posts and featured media |
 | RCTV19 content | 10 minutes | Includes news provenance and obituaries; site import jobs still determine when items are published |
 | Tippah Sports schedule | 12 hours | Structured SportsEvent list; reversed duplicates collapsed |
 | Existing Mississippi Sports collector | 12 hours | Local filtering, including Blue Mountain Christian; service binding avoids new statewide scraping |
 | Northeast official composite | 12 hours | Seven days back and ahead; two numerical scores plus explicit Final required |
 | NWS alerts | 1 minute | MSC139 / MSZ004 / SAME 028139; checks Mississippi active alerts |
 | NWS forecast | 15 minutes | Suppressed if collection is over two hours old or forecast issuance over 24 hours old |
+| NWS current observation | 10 minutes | Corinth KCRX; actual observation must be at most two hours old |
 
 The worker runs independently of open browsers. The channel polls stored snapshots every 30 seconds, which does not increase provider fetching. Last-success times, errors and coverage gaps belong on the status page only. Unknown, conflicting, stale and unreported scores are not presented as confirmed finals. A successful sports aggregator request is not proof that every upstream provider works; upstream health is shown separately.
 
-Known gaps: the existing cloud MaxPreps collector is blocked; complete high-school score coverage is unavailable. AlcornSportsMS.com/schedule returns 404. Tippah's schedule includes some Alcorn opponents but is not a complete Alcorn calendar. School reporting can be late. The system does not infer scores from news prose or circumvent provider blocks. Email notifications are not configured.
+Known gaps: the existing cloud MaxPreps collector and the new Northeast official calendar collector receive HTTP 403; complete high-school and Northeast score coverage is unavailable. Northeast parsing succeeded locally but is not presented as verified cloud collection. AlcornSportsMS.com/schedule returns 404. Tippah's schedule includes some Alcorn opponents but is not a complete Alcorn calendar. School reporting can be late. The system does not infer scores from news prose or circumvent provider blocks. Email notifications are not configured.
 
 ## Editing and deployment
 
