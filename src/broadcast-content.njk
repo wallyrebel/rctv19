@@ -1,0 +1,5 @@
+---
+permalink: /broadcast/content.json
+eleventyExcludeFromCollections: true
+---
+{{ collections | broadcastContent | jsonLd | safe }}

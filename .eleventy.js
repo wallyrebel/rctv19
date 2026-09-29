@@ -5,6 +5,7 @@ const { loadDimensions, imageSize, assetBytes } = require('./scripts/image-dimen
 const { validateSite } = require('./scripts/validate-site');
 const { TOPICS, MIN_POSTS_PER_TOPIC, topic } = require('./scripts/topics');
 const { metaDescription, relatedPosts, imageMimeType, encodePath, wordCount } = require('./scripts/seo');
+const { broadcastContent } = require('./broadcast/content.cjs');
 
 module.exports = function (eleventyConfig) {
   // Intrinsic image sizes are read up front so templates can reserve the right
@@ -27,6 +28,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ "src/_headers": "_headers" });
   eleventyConfig.addFilter("jsonLd", value => JSON.stringify(value ?? "").replace(/</g, "\\u003c"));
+  eleventyConfig.addFilter("broadcastContent", broadcastContent);
   eleventyConfig.addFilter("validPublisher", value => /^ca-pub-\d{16}$/.test(value || ""));
   eleventyConfig.addFilter("validSlot", value => /^\d+$/.test(value || ""));
   // Collections

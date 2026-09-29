@@ -1,0 +1,27 @@
+---
+permalink: /broadcast/index.html
+eleventyExcludeFromCollections: true
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>RCTV19 Community Channel</title>
+  <meta name="description" content="RCTV19 news, Tippah weather, local sports and community notices for television.">
+  <meta name="robots" content="noindex, nofollow, max-image-preview:large">
+  <link rel="canonical" href="https://rctv19.com/broadcast/">
+  <link rel="stylesheet" href="/assets/broadcast/channel.css">
+</head>
+<body>
+  <h1 class="sr-only">RCTV19 Community Channel</h1>
+  <div id="channel">
+    <header class="masthead"><img src="/assets/img/rctv19-logo.jpg" alt="RCTV19 Ripley Community Television"><div class="station"><strong>YOUR COMMUNITY. YOUR CHANNEL.</strong><span>Tippah &amp; Alcorn counties</span></div><div class="clock"><strong id="clock"></strong><span id="date"></span></div></header>
+    <div class="crawl top"><b>LOCAL HEADLINES</b><div class="crawl-window"><div id="headlines" class="crawl-track"></div></div></div>
+    <div id="alert-banner" hidden></div>
+    <div class="body-grid"><main id="stage"></main><aside><section id="weather-rail"></section><section id="sponsor-rail"></section><div class="rail-foot">LOCAL NEWS • LOCAL PEOPLE<br><strong>RCTV19.com</strong></div></aside></div>
+    <div class="crawl bottom"><b id="ticker-label">AROUND TOWN</b><div class="crawl-window"><div id="sports-ticker" class="crawl-track"></div></div></div>
+    <section id="warning" hidden aria-live="assertive"></section>
+    <audio id="broadcast-audio" loop preload="auto"></audio>
+  </div>
+  <script type="module" src="/assets/broadcast/client.mjs"></script>
+</body></html>

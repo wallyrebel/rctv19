@@ -21,10 +21,14 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
-    "sharp": "^0.35.4"
+    "@cloudflare/workers-types": "^5.20260929.1",
+    "sharp": "^0.35.4",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.143.1"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.95.2",
+    "cheerio": "^1.2.0",
     "dotenv": "^17.4.2",
     "rss-parser": "^3.13.0",
     "slugify": "^1.6.9"

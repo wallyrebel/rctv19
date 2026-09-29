@@ -1,0 +1,28 @@
+{
+  "apiUrl": "https://rctv19-broadcast.myersgrouponline.workers.dev/api/broadcast",
+  "advertisingPhone": "662-576-1554",
+  "sponsors": [
+    {
+      "name": "Casey Lott · Injury Law",
+      "image": "/assets/broadcast/sponsors/casey-lott-injury-law.png"
+    },
+    {
+      "name": "Steven Eaton · Modern Woodmen",
+      "image": "/assets/broadcast/sponsors/steven-eaton-modern-woodmen.jpg"
+    },
+    {
+      "name": "Pulliam Sheetrock Service",
+      "image": "/assets/broadcast/sponsors/pulliam-sheetrock.webp"
+    },
+    {
+      "name": "Mama Justice",
+      "image": "/assets/broadcast/sponsors/mama-justice.webp"
+    }
+  ],
+  "audio": {
+    "enabled": true,
+    "src": "/assets/broadcast/audio/evening-briefing.mp3",
+    "volume": 0.15,
+    "label": "Evening Briefing"
+  }
+}
