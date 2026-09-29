@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Tippah Electric storm recovery award</title>
+  <desc id="desc">RCTV 19 information graphic: FEMA announced a $3.6 million award for Tippah Electric Power Association work tied to the January 2026 winter storm.</desc>
+  <rect width="1200" height="630" fill="#10203f"/>
+  <path d="M0 0h20v630H0z" fill="#f0d000"/>
+  <path d="M80 112h1040" stroke="#f0d000" stroke-width="3"/>
+  <text x="80" y="78" fill="#f0d000" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="3">TIPPAH COUNTY  ·  SEPT. 29, 2026</text>
+  <text x="80" y="203" fill="#ffffff" font-family="Arial, sans-serif" font-size="53" font-weight="700">STORM RECOVERY FUNDING</text>
+  <text x="80" y="392" fill="#f0d000" font-family="Arial, sans-serif" font-size="170" font-weight="800">$3.6M</text>
+  <text x="80" y="455" fill="#ffffff" font-family="Arial, sans-serif" font-size="38" font-weight="700">FEMA AWARD ANNOUNCED</text>
+  <text x="80" y="508" fill="#ffffff" font-family="Arial, sans-serif" font-size="31">Tippah Electric Power Association</text>
+  <path d="M80 538h1040" stroke="#f0d000" stroke-width="2" opacity=".75"/>
+  <text x="80" y="579" fill="#ffffff" font-family="Arial, sans-serif" font-size="22">RCTV 19 INFORMATION GRAPHIC  ·  SOURCE: TIPPAH NEWS</text>
+</svg>
