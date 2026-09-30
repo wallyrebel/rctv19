@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Booneville Veterans Street water work</title>
+  <desc id="desc">RCTV 19 information graphic summarizing Booneville's planned September 30 water interruption along Veterans Street from North College East to Plumrose.</desc>
+  <rect width="1200" height="630" fill="#10203f"/>
+  <path d="M0 0h20v630H0z" fill="#f0d000"/>
+  <path d="M80 112h1040" stroke="#f0d000" stroke-width="3"/>
+  <text x="80" y="78" fill="#f0d000" font-family="Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="3">PRENTISS COUNTY  ·  SEPT. 30, 2026</text>
+  <text x="80" y="200" fill="#ffffff" font-family="Arial, sans-serif" font-size="53" font-weight="700">BOONEVILLE WATER WORK</text>
+  <text x="80" y="315" fill="#f0d000" font-family="Arial, sans-serif" font-size="61" font-weight="800">VETERANS STREET</text>
+  <text x="80" y="375" fill="#ffffff" font-family="Arial, sans-serif" font-size="36">North College East to Plumrose</text>
+  <text x="80" y="448" fill="#ffffff" font-family="Arial, sans-serif" font-size="32">Scheduled start: 7 a.m. Wednesday</text>
+  <text x="80" y="502" fill="#ffffff" font-family="Arial, sans-serif" font-size="28">Service updates: 662-728-6259</text>
+  <path d="M80 538h1040" stroke="#f0d000" stroke-width="2" opacity=".75"/>
+  <text x="80" y="579" fill="#ffffff" font-family="Arial, sans-serif" font-size="22">RCTV 19 INFORMATION GRAPHIC  ·  SOURCE: ALCORN COUNTY NEWS</text>
+</svg>
