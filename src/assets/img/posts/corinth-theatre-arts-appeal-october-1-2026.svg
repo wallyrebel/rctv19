@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Corinth Theatre-Arts eviction appeal update</title>
+  <desc id="desc">RCTV 19 information graphic: Alcorn County News reported September 30 that Corinth Theatre-Arts lost its eviction appeal.</desc>
+  <rect width="1200" height="630" fill="#13283b"/>
+  <rect x="0" y="0" width="24" height="630" fill="#e6ac44"/>
+  <text x="80" y="115" fill="#e6ac44" font-family="Arial, sans-serif" font-size="36" font-weight="700" letter-spacing="4">ALCORN COUNTY</text>
+  <text x="80" y="210" fill="#ffffff" font-family="Arial, sans-serif" font-size="66" font-weight="700">Corinth Theatre-Arts</text>
+  <text x="80" y="300" fill="#ffffff" font-family="Arial, sans-serif" font-size="62" font-weight="700">loses eviction appeal</text>
+  <line x1="80" y1="355" x2="1120" y2="355" stroke="#e6ac44" stroke-width="4"/>
+  <text x="80" y="425" fill="#dbe5eb" font-family="Arial, sans-serif" font-size="30">Reported Sept. 30, 2026 · South Fulton Drive playhouse</text>
+  <text x="80" y="552" fill="#e6ac44" font-family="Arial, sans-serif" font-size="26" font-weight="700">RCTV 19 · INFORMATION GRAPHIC</text>
+  <text x="1120" y="552" text-anchor="end" fill="#dbe5eb" font-family="Arial, sans-serif" font-size="24">Source: Alcorn County News</text>
+</svg>
