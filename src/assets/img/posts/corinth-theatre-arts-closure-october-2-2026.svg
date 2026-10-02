@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Corinth Theatre-Arts closure information graphic</title>
+  <desc id="desc">RCTV 19 summary graphic for the October 2 announcement that Corinth Theatre-Arts is closing permanently.</desc>
+  <rect width="1200" height="630" fill="#162b3b"/>
+  <rect width="24" height="630" fill="#d9a441"/>
+  <text x="80" y="116" fill="#d9a441" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="3">ALCORN COUNTY</text>
+  <text x="80" y="214" fill="#ffffff" font-family="Arial, sans-serif" font-size="63" font-weight="700">Corinth Theatre-Arts</text>
+  <text x="80" y="302" fill="#ffffff" font-family="Arial, sans-serif" font-size="61" font-weight="700">announces closure</text>
+  <line x1="80" y1="350" x2="1120" y2="350" stroke="#d9a441" stroke-width="4"/>
+  <text x="80" y="421" fill="#dce6ed" font-family="Arial, sans-serif" font-size="29">Announcement reported Friday, October 2, 2026</text>
+  <text x="80" y="548" fill="#d9a441" font-family="Arial, sans-serif" font-size="26" font-weight="700">RCTV 19 · INFORMATION GRAPHIC</text>
+  <text x="1120" y="548" text-anchor="end" fill="#dce6ed" font-family="Arial, sans-serif" font-size="23">Source: Alcorn County News</text>
+</svg>
