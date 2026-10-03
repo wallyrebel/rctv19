@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Walnut 36, Ashland 14</title>
+  <desc id="desc">RCTV 19 information graphic displaying the reported final football score for Friday, October 2, 2026.</desc>
+  <rect width="1200" height="630" fill="#102538"/>
+  <rect x="0" y="0" width="1200" height="14" fill="#f1bd45"/>
+  <text x="72" y="97" fill="#f1bd45" font-family="Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="3">RCTV 19  •  FRIDAY FOOTBALL</text>
+  <text x="72" y="170" fill="#ffffff" font-family="Arial, sans-serif" font-size="43" font-weight="700">Tippah and Benton counties</text>
+  <rect x="72" y="208" width="1056" height="260" rx="18" fill="#193a52"/>
+  <text x="118" y="301" fill="#ffffff" font-family="Arial, sans-serif" font-size="58" font-weight="700">WALNUT</text>
+  <text x="1048" y="301" text-anchor="end" fill="#ffffff" font-family="Arial, sans-serif" font-size="78" font-weight="700">36</text>
+  <line x1="118" y1="330" x2="1082" y2="330" stroke="#7190a4" stroke-width="2"/>
+  <text x="118" y="423" fill="#ffffff" font-family="Arial, sans-serif" font-size="58" font-weight="700">ASHLAND</text>
+  <text x="1048" y="423" text-anchor="end" fill="#ffffff" font-family="Arial, sans-serif" font-size="78" font-weight="700">14</text>
+  <text x="72" y="532" fill="#ffffff" font-family="Arial, sans-serif" font-size="29">Reported final • Oct. 2, 2026</text>
+  <text x="72" y="579" fill="#b8cbd7" font-family="Arial, sans-serif" font-size="24">Source: MaxPreps  |  Graphic © RCTV 19</text>
+</svg>
