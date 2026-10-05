@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Alcorn County Courthouse renovation year-end target</title>
+  <desc id="desc">RCTV 19 information graphic: the reported target for finishing the courthouse renovation is the end of 2026, not a confirmed completion date.</desc>
+  <rect width="1200" height="630" fill="#0b1f35"/>
+  <rect x="56" y="55" width="1088" height="520" rx="28" fill="#12314d" stroke="#6c9cb4" stroke-width="2"/>
+  <rect x="95" y="98" width="326" height="42" rx="21" fill="#e2b462"/>
+  <text x="258" y="126" fill="#102b43" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">ALCORN COUNTY</text>
+  <text x="95" y="208" fill="#ffffff" font-family="Arial, sans-serif" font-size="58" font-weight="700">Courthouse renovation</text>
+  <text x="95" y="280" fill="#d9e9ef" font-family="Arial, sans-serif" font-size="32">Reported completion target</text>
+  <text x="95" y="412" fill="#f4c873" font-family="Arial, sans-serif" font-size="94" font-weight="700">END OF 2026</text>
+  <line x1="95" y1="454" x2="1105" y2="454" stroke="#6c9cb4" stroke-width="2"/>
+  <text x="95" y="512" fill="#d9e9ef" font-family="Arial, sans-serif" font-size="25">Schedule remains an estimate • Not a construction photograph</text>
+  <text x="1103" y="126" fill="#ffffff" font-family="Arial, sans-serif" font-size="30" font-weight="700" text-anchor="end">RCTV 19</text>
+</svg>
