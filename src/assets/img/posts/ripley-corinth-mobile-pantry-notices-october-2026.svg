@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Reported mobile pantry stops in Ripley and Corinth</title>
+  <desc id="desc">RCTV 19 information graphic listing the reported October 9 Ripley and October 10 Corinth mobile pantry times. This is not a photograph of either distribution.</desc>
+  <rect width="1200" height="630" fill="#12334a"/>
+  <rect x="0" width="18" height="630" fill="#e5b858"/>
+  <circle cx="1110" cy="72" r="205" fill="#204b61"/>
+  <rect x="70" y="58" width="345" height="51" rx="25" fill="#e5b858"/>
+  <text x="96" y="92" fill="#12334a" font-family="Arial,sans-serif" font-size="25" font-weight="700">RCTV 19  •  LOCAL NOTICE</text>
+  <text x="70" y="190" fill="#ffffff" font-family="Arial,sans-serif" font-size="59" font-weight="700">MOBILE FOOD PANTRY</text>
+  <text x="72" y="237" fill="#cbe1ea" font-family="Arial,sans-serif" font-size="28">Mid-South Food Bank stops reported for this week</text>
+  <rect x="70" y="274" width="511" height="211" rx="22" fill="#f7f5ed"/>
+  <rect x="602" y="274" width="526" height="211" rx="22" fill="#f7f5ed"/>
+  <text x="105" y="326" fill="#315568" font-family="Arial,sans-serif" font-size="29" font-weight="700">RIPLEY</text>
+  <text x="105" y="391" fill="#12334a" font-family="Arial,sans-serif" font-size="49" font-weight="700">OCT. 9</text>
+  <text x="105" y="450" fill="#12334a" font-family="Arial,sans-serif" font-size="29">Friday • 10 a.m.</text>
+  <text x="638" y="326" fill="#315568" font-family="Arial,sans-serif" font-size="29" font-weight="700">CORINTH</text>
+  <text x="638" y="391" fill="#12334a" font-family="Arial,sans-serif" font-size="49" font-weight="700">OCT. 10</text>
+  <text x="638" y="450" fill="#12334a" font-family="Arial,sans-serif" font-size="29">Saturday • 10 a.m.</text>
+  <text x="75" y="545" fill="#f4dfb0" font-family="Arial,sans-serif" font-size="24" font-weight="700">CHECK THE FOOD BANK SCHEDULE BEFORE TRAVELING</text>
+  <text x="75" y="585" fill="#bbd1db" font-family="Arial,sans-serif" font-size="18">SOURCE: TIPPAH NEWS AND ALCORN COUNTY NEWS • RCTV 19 INFORMATION GRAPHIC</text>
+</svg>
