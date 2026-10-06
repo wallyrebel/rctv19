@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Benton County EMA director appointment</title>
+  <desc id="desc">RCTV 19 information graphic reporting that Jay Kimery was appointed Benton County EMA director. It is not a photograph of Kimery or the appointment.</desc>
+  <rect width="1200" height="630" fill="#102b3e"/>
+  <rect x="54" y="54" width="1092" height="522" rx="26" fill="#17445a" stroke="#8db6bd" stroke-width="2"/>
+  <rect x="92" y="91" width="304" height="48" rx="24" fill="#e4bd70"/>
+  <text x="244" y="123" fill="#102b3e" font-family="Arial,sans-serif" font-size="24" font-weight="700" text-anchor="middle">BENTON COUNTY</text>
+  <text x="1096" y="125" fill="#ffffff" font-family="Arial,sans-serif" font-size="30" font-weight="700" text-anchor="end">RCTV 19</text>
+  <text x="92" y="226" fill="#ffffff" font-family="Arial,sans-serif" font-size="64" font-weight="700">Emergency management</text>
+  <text x="92" y="294" fill="#cfe3e8" font-family="Arial,sans-serif" font-size="34">Director appointment reported October 6</text>
+  <text x="92" y="418" fill="#f2ce85" font-family="Arial,sans-serif" font-size="94" font-weight="700">JAY KIMERY</text>
+  <line x1="92" y1="460" x2="1098" y2="460" stroke="#8db6bd" stroke-width="2"/>
+  <text x="92" y="513" fill="#dce9ed" font-family="Arial,sans-serif" font-size="25">Transition with outgoing director is planned over coming weeks</text>
+  <text x="92" y="548" fill="#b8d2da" font-family="Arial,sans-serif" font-size="18">SOURCE: TVMO NEWS NETWORK • RCTV 19 INFORMATION GRAPHIC • NOT AN EVENT PHOTO</text>
+</svg>
