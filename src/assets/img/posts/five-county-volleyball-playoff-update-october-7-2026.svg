@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Area volleyball teams advance in state playoffs</title>
+  <desc id="desc">RCTV 19 information graphic listing New Albany, Ingomar, Myrtle, East Union, Booneville, Kossuth and Alcorn Central as advancing teams reported by WTVA on October 7, 2026. Not a game photograph.</desc>
+  <rect width="1200" height="630" fill="#172752"/>
+  <rect width="1200" height="18" fill="#efd100"/>
+  <circle cx="1010" cy="305" r="185" fill="#263b75"/>
+  <circle cx="1010" cy="305" r="140" fill="none" stroke="#efd100" stroke-width="9"/>
+  <path d="M870 305h280M1010 165c-45 85-45 195 0 280M1010 165c45 85 45 195 0 280M900 220c75 43 145 43 220 0M900 390c75-43 145-43 220 0" fill="none" stroke="#efd100" stroke-width="7"/>
+  <text x="65" y="95" fill="#efd100" font-family="Arial, sans-serif" font-size="29" font-weight="700" letter-spacing="2">RCTV 19  •  PLAYOFF UPDATE</text>
+  <text x="65" y="185" fill="white" font-family="Arial, sans-serif" font-size="62" font-weight="800">VOLLEYBALL TEAMS</text>
+  <text x="65" y="255" fill="white" font-family="Arial, sans-serif" font-size="62" font-weight="800">MOVE ON</text>
+  <path d="M65 285h675" stroke="#efd100" stroke-width="4"/>
+  <text x="65" y="343" fill="#e7ecf8" font-family="Arial, sans-serif" font-size="29">Union: New Albany, Ingomar, Myrtle, East Union</text>
+  <text x="65" y="390" fill="#e7ecf8" font-family="Arial, sans-serif" font-size="29">Prentiss: Booneville</text>
+  <text x="65" y="437" fill="#e7ecf8" font-family="Arial, sans-serif" font-size="29">Alcorn: Kossuth, Alcorn Central</text>
+  <text x="65" y="566" fill="#afbfdf" font-family="Arial, sans-serif" font-size="22">Information graphic  •  Source: WTVA, Oct. 7, 2026</text>
+</svg>
