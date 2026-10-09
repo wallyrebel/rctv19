@@ -30,6 +30,7 @@
     "@anthropic-ai/sdk": "^0.95.2",
     "cheerio": "^1.2.0",
     "dotenv": "^17.4.2",
+    "hls.js": "1.7.3",
     "rss-parser": "^3.13.0",
     "slugify": "^1.6.9"
   }

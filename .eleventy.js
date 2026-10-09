@@ -23,6 +23,7 @@ module.exports = function (eleventyConfig) {
 
   // Passthrough copy
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy({"node_modules/hls.js/dist/hls.light.min.mjs":"assets/weather/hls-1.7.3.mjs","node_modules/hls.js/LICENSE":"assets/weather/hls-LICENSE.txt"});
   eleventyConfig.addPassthroughCopy({"weather/config.mjs": "assets/weather/config.mjs", "weather/model.mjs": "assets/weather/model.mjs"});
   eleventyConfig.addPassthroughCopy({ "public/admin": "admin" });
   eleventyConfig.addPassthroughCopy({ "src/robots.txt": "robots.txt" });
