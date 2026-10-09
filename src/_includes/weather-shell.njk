@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ title }}</title><meta name="description" content="{{ description }}">
+<meta name="robots" content="{% if weatherView %}noindex, nofollow{% else %}index, follow{% endif %}, max-image-preview:large">
+<link rel="canonical" href="https://rctv19.com/weather/{% if weatherView %}broadcast/{{ weatherView }}/{% endif %}">
+<meta name="theme-color" content="#0b203a"><link rel="icon" href="/assets/img/watch-live-icon.png">
+<link rel="stylesheet" href="/assets/weather/weather.css">
+</head>
+<body data-view="{{ weatherView or 'public' }}">
+<div id="weather-app">
+<header class="masthead"><a class="brand" href="/" aria-label="RCTV19 home"><span>RCTV<b>19</b></span><small>RIPLEY COMMUNITY TELEVISION</small></a><div class="brand-divider"></div><span class="section-label">WEATHER CENTER</span><nav aria-label="Weather"><a href="#radar">Radar</a><a href="#alerts">Official alerts</a><a href="#updates">Updates</a><a href="https://watch.rctv19.com/">Watch RCTV19</a></nav><div class="clock"><strong id="clock"></strong><span id="clock-date"></span></div></header>
+<div class="intro"><div><p class="eyebrow">MISSISSIPPI FIRST. GULF COAST COVERAGE.</p><h1 id="page-title">Mississippi weather</h1></div><div class="intro-meta"><span class="coverage-tag" id="coverage-tag">OFFICIAL SOURCE COVERAGE</span><p id="transition-note">Checking official sources…</p></div></div>
+<section class="storm-stats" id="storm-stats" aria-label="Storm information"><div><small>STORM STATUS</small><strong id="storm-class">Awaiting NHC</strong></div><div><small>MAXIMUM WIND</small><strong id="storm-wind">Unavailable</strong></div><div><small>PRESSURE</small><strong id="storm-pressure">Unavailable</strong></div><div><small>MOVEMENT</small><strong id="storm-movement">Unavailable</strong></div><div class="advisory-stat"><small>NHC ADVISORY</small><strong id="storm-advisory">Unavailable</strong><span id="storm-time">Source time unavailable</span></div></section>
+<div class="weather-grid">
+<section class="radar-panel" id="radar" aria-label="Animated weather radar"><div class="panel-heading"><div><p class="eyebrow">NOAA / NATIONAL WEATHER SERVICE</p><h2>Animated radar</h2></div><span class="source-status" id="radar-status">Loading</span></div>
+<div class="radar-controls"><div role="group" aria-label="Radar region"><button class="selected" data-region="coast" aria-pressed="true">Mississippi coast & Gulf</button><button data-region="mississippi" aria-pressed="false">All Mississippi</button></div><button id="radar-play" aria-label="Pause radar animation">Pause loop</button></div>
+<div class="map-stage"><img hidden id="map-base" alt="Labeled map of Mississippi and the Gulf Coast"><div id="radar-frames"></div><div id="map-places"></div><img hidden id="map-labels" alt="Geographic labels for the radar map"><div class="map-label"><span id="map-region">MISSISSIPPI COAST & GULF</span><strong id="frame-time">Waiting for radar frames</strong></div><div class="radar-unavailable" id="radar-unavailable">Loading timestamped NOAA radar…</div><span class="map-attribution">Basemap © Esri · NOAA / NWS radar</span></div>
+<div class="radar-legend"><span>BASE REFLECTIVITY · dBZ</span><img hidden id="radar-legend-image" alt="Official NOAA radar reflectivity legend"></div><div class="radar-foot"><span id="radar-issued">Latest frame unavailable</span><a href="https://radar.weather.gov/" target="_blank" rel="noopener">Open official NWS radar</a></div><p class="radar-health" id="radar-health"></p>
+</section>
+<aside class="right-column">
+<section class="updates-panel" id="updates"><div class="panel-heading"><div><p class="eyebrow" id="panel-kicker">OFFICIAL UPDATES</p><h2 id="panel-title">Mississippi alerts</h2></div><span class="source-status" id="alerts-status">Loading</span></div><div id="complementary-panel" class="complementary"></div><div class="rotation-progress" id="rotation-progress" hidden><span></span></div></section>
+<section class="sponsors" id="sponsors" aria-label="Weather sponsors" hidden><p>WEATHER COVERAGE SUPPORTED BY</p><div id="sponsor-images"></div></section>
+</aside>
+</div>
+<section class="public-section" id="alerts"><div class="section-heading"><div><p class="eyebrow">NATIONAL WEATHER SERVICE</p><h2>Official watches, warnings & advisories</h2></div><span id="alerts-checked"></span></div><p id="alerts-explanation"></p><div id="alert-list"></div></section>
+<section class="public-section forecast-section" id="forecast"><div class="section-heading"><div><p class="eyebrow">ACROSS MISSISSIPPI</p><h2>Local forecasts</h2></div><span>National Weather Service</span></div><div id="forecast-list"></div></section>
+<section class="public-section" id="news"><div class="section-heading"><div><p class="eyebrow">MISSISSIPPI NEWS GROUP</p><h2 id="news-heading">Isaias coverage</h2></div></div><div id="news-list"></div></section>
+<section class="public-section advisory-section" id="official-advisory" hidden><details><summary>Read the official NHC public advisory</summary><a id="advisory-link" target="_blank" rel="noopener">Original NHC advisory</a><pre id="advisory-text"></pre></details></section>
+<div class="ticker"><b id="ticker-label">WEATHER UPDATE</b><div class="ticker-window"><div id="ticker-track">Official source data is loading. RCTV19 Weather Center · Mississippi & Gulf Coast</div></div></div>
+<footer class="weather-footer"><span>RCTV19.com/weather</span><span id="data-checked">Checking sources</span><span>NOAA · NWS · NHC</span></footer>
+<footer class="public-footer"><p>Follow official NWS and NHC guidance and instructions from local emergency officials. Radar shows precipitation echoes; it does not show every hazard.</p><p><a href="https://www.weather.gov/safety/hurricane">Hurricane safety</a><a href="https://www.nhc.noaa.gov/">National Hurricane Center</a><a href="https://www.weather.gov/">National Weather Service</a><a href="/broadcast/">RCTV19 community channel</a></p><p id="outage-note">Closures and outage totals are not currently verified. Check your utility and local officials for current reports.</p></footer>
+</div>
+<script type="module" src="/assets/weather/client.mjs"></script>
+</body></html>

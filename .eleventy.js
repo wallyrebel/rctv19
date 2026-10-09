@@ -23,6 +23,7 @@ module.exports = function (eleventyConfig) {
 
   // Passthrough copy
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy({"weather/config.mjs": "assets/weather/config.mjs", "weather/model.mjs": "assets/weather/model.mjs"});
   eleventyConfig.addPassthroughCopy({ "public/admin": "admin" });
   eleventyConfig.addPassthroughCopy({ "src/robots.txt": "robots.txt" });
 

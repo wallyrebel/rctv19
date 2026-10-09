@@ -1,0 +1,11 @@
+import {createServer} from 'node:http';
+import {readFile,writeFile,mkdir,stat} from 'node:fs/promises';
+import {resolve,extname} from 'node:path';
+import {WEATHER_CONFIG} from '../weather/config.mjs';
+import {SOURCES,collectWeather,assembleWeather,modeAt} from '../weather/model.mjs';
+const previewPort=Number(process.env.WEATHER_PREVIEW_PORT||4323),previewMode=process.env.WEATHER_PREVIEW_MODE==='regular'?'regular':'auto',config={...WEATHER_CONFIG,modeOverride:previewMode};
+const root=resolve('_site'),cache=resolve('.research/weather-snapshots'+(previewPort===4323?'':'-'+previewPort)+'.json');let snapshots=[],refreshing=false;
+await mkdir('.research',{recursive:true});try{snapshots=JSON.parse(await readFile(cache,'utf8'));}catch{}
+async function refresh(){if(refreshing)return;refreshing=true;try{await Promise.all(SOURCES.filter(s=>modeAt(config)!=='regular'||!['storm','news'].includes(s.id)).map(async source=>{const prev=snapshots.find(s=>s.id===source.id);if(prev&&Date.now()-Date.parse(prev.lastAttempt)<source.minutes*60000)return;const next=await collectWeather(source,prev);snapshots=snapshots.filter(s=>s.id!==source.id);snapshots.push(next);console.log(source.id,next.error||'OK');}));await writeFile(cache,JSON.stringify(snapshots,null,2));}finally{refreshing=false;}}
+const mime={'.html':'text/html','.css':'text/css','.mjs':'text/javascript','.js':'text/javascript','.json':'application/json','.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp'};
+createServer(async(req,res)=>{try{const path=decodeURIComponent(new URL(req.url,'http://localhost').pathname);if(path==='/api/weather'){res.setHeader('Content-Type','application/json');res.end(JSON.stringify(assembleWeather(snapshots,new Date(),config)));return;}let file=resolve(root,'.'+path);if(!file.startsWith(root+'/')){res.writeHead(403).end();return;}if((await stat(file)).isDirectory())file=resolve(file,'index.html');res.setHeader('Content-Type',mime[extname(file)]||'application/octet-stream');res.end(await readFile(file));}catch{res.writeHead(404).end('Not found');}}).listen(previewPort,'127.0.0.1',()=>{console.log('Weather preview: http://127.0.0.1:'+previewPort+'/weather/');void refresh();setInterval(()=>void refresh(),60000);});
