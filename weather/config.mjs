@@ -2,7 +2,7 @@
 // Keep null during development: the 48-hour clock must not start on a preview.
 export const WEATHER_CONFIG = {
   stormId: 'al092026', stormName: 'Isaias', stormYear: 2026,
-  launchAt: null, modeOverride: 'auto', stormHours: 48,
+  launchAt: '2026-10-09T16:23:30.045Z', modeOverride: 'auto', stormHours: 48,
   apiUrl: '/api/weather',
   sponsors: [
     {name:'Mama Justice', image:null, width:1000, height:450},
