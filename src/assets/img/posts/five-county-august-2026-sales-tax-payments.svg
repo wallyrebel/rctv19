@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">August 2026 city sales tax diversions in five north Mississippi counties</title>
+  <desc id="desc">Corinth $686,581; New Albany $391,574; Booneville $212,469; Ripley $155,409; Ashland $12,514. Source: Mississippi Department of Revenue.</desc>
+  <rect width="1200" height="675" fill="#10223a"/>
+  <text x="70" y="82" fill="#ffffff" font-family="Arial, sans-serif" font-size="39" font-weight="700">Five-county city tax payments</text>
+  <text x="70" y="122" fill="#bbd2e5" font-family="Arial, sans-serif" font-size="22">August 2026 sales tax diversions • Mississippi Department of Revenue</text>
+  <g font-family="Arial, sans-serif" font-size="24" fill="#ffffff">
+    <text x="70" y="209">Corinth</text><text x="960" y="209">$686,581</text>
+    <text x="70" y="288">New Albany</text><text x="960" y="288">$391,574</text>
+    <text x="70" y="367">Booneville</text><text x="960" y="367">$212,469</text>
+    <text x="70" y="446">Ripley</text><text x="960" y="446">$155,409</text>
+    <text x="70" y="525">Ashland</text><text x="960" y="525">$12,514</text>
+  </g>
+  <g fill="#58c5d8">
+    <rect x="270" y="182" width="640" height="32" rx="5"/>
+    <rect x="270" y="261" width="365" height="32" rx="5"/>
+    <rect x="270" y="340" width="198" height="32" rx="5"/>
+    <rect x="270" y="419" width="145" height="32" rx="5"/>
+    <rect x="270" y="498" width="12" height="32" rx="5"/>
+  </g>
+  <line x1="70" x2="1130" y1="580" y2="580" stroke="#52718d"/>
+  <text x="70" y="624" fill="#bbd2e5" font-family="Arial, sans-serif" font-size="20">City payments, not countywide sales. Rounded to the nearest dollar.</text>
+  <text x="1080" y="624" fill="#ffffff" font-family="Arial, sans-serif" font-size="22" font-weight="700">RCTV 19</text>
+</svg>
