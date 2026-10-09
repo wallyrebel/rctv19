@@ -6,7 +6,7 @@
 <meta name="robots" content="{% if weatherView %}noindex, nofollow{% else %}index, follow{% endif %}, max-image-preview:large">
 <link rel="canonical" href="https://rctv19.com/weather/{% if weatherView %}broadcast/{{ weatherView }}/{% endif %}">
 <meta name="theme-color" content="#0b203a"><link rel="icon" href="/assets/img/watch-live-icon.png">
-<link rel="stylesheet" href="/assets/weather/weather.css">
+<link rel="stylesheet" href="/assets/weather/weather.css?v={{ weatherBuild.commit or "local" }}">
 </head>
 <body data-view="{{ weatherView or 'public' }}">
 <div id="weather-app">
@@ -33,5 +33,5 @@
 <footer class="weather-footer"><span>RCTV19.com/weather</span><span id="data-checked">Checking sources</span><span>NOAA · NWS · NHC</span></footer>
 <footer class="public-footer"><p>Follow official NWS and NHC guidance and instructions from local emergency officials. Radar shows precipitation echoes; it does not show every hazard.</p><p><a href="https://www.weather.gov/safety/hurricane">Hurricane safety</a><a href="https://www.nhc.noaa.gov/">National Hurricane Center</a><a href="https://www.weather.gov/">National Weather Service</a><a href="/broadcast/">RCTV19 community channel</a></p><p id="outage-note">Closures and outage totals are not currently verified. Check your utility and local officials for current reports.</p></footer>
 </div>
-<script type="module" src="/assets/weather/client.mjs"></script>
+<script type="module" src="/assets/weather/client.mjs?v={{ weatherBuild.commit or "local" }}"></script>
 </body></html>
