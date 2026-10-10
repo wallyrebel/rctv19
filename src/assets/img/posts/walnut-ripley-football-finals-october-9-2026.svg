@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Friday football finals: Walnut and Ripley</title>
+  <desc id="desc">Biggersville defeated Walnut 16 to 6, and New Albany defeated Ripley 32 to 15 on October 9, 2026.</desc>
+  <rect width="1200" height="630" fill="#101c2b"/>
+  <rect x="52" y="52" width="1096" height="526" rx="22" fill="#172c40" stroke="#4d7183" stroke-width="2"/>
+  <text x="90" y="115" fill="#f5c86f" font-family="Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="3">RCTV 19 • AREA SPORTS</text>
+  <text x="90" y="180" fill="#ffffff" font-family="Arial, sans-serif" font-size="48" font-weight="700">Friday football finals</text>
+  <text x="90" y="222" fill="#bcd1dd" font-family="Arial, sans-serif" font-size="26">October 9, 2026</text>
+  <line x1="90" y1="251" x2="1110" y2="251" stroke="#4d7183" stroke-width="2"/>
+  <text x="90" y="316" fill="#ffffff" font-family="Arial, sans-serif" font-size="38" font-weight="700">Biggersville</text>
+  <text x="835" y="316" fill="#f5c86f" font-family="Arial, sans-serif" font-size="42" font-weight="700">16</text>
+  <text x="90" y="366" fill="#cbd9e2" font-family="Arial, sans-serif" font-size="34">Walnut</text>
+  <text x="835" y="366" fill="#cbd9e2" font-family="Arial, sans-serif" font-size="38">6</text>
+  <line x1="90" y1="392" x2="1110" y2="392" stroke="#4d7183" stroke-width="2"/>
+  <text x="90" y="450" fill="#ffffff" font-family="Arial, sans-serif" font-size="38" font-weight="700">New Albany</text>
+  <text x="835" y="450" fill="#f5c86f" font-family="Arial, sans-serif" font-size="42" font-weight="700">32</text>
+  <text x="90" y="500" fill="#cbd9e2" font-family="Arial, sans-serif" font-size="34">Ripley</text>
+  <text x="835" y="500" fill="#cbd9e2" font-family="Arial, sans-serif" font-size="38">15</text>
+  <text x="90" y="552" fill="#94aebc" font-family="Arial, sans-serif" font-size="17">Scores: Tippah County Sports • Graphic: RCTV 19</text>
+</svg>
