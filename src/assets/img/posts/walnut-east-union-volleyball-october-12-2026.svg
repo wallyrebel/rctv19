@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Walnut at East Union, North State volleyball final</title>
+  <desc id="desc">RCTV 19 schedule graphic: Monday, October 12, 2026, 6 p.m., East Union High School in Blue Springs.</desc>
+  <rect width="1200" height="630" fill="#10233c"/>
+  <rect x="0" y="0" width="1200" height="18" fill="#e8b853"/>
+  <path d="M0 515h1200v115H0z" fill="#173553"/>
+  <circle cx="1060" cy="106" r="186" fill="#1d4161" opacity=".55"/>
+  <circle cx="1100" cy="445" r="165" fill="#1d4161" opacity=".45"/>
+  <text x="76" y="88" fill="#e8b853" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" letter-spacing="5">NORTH STATE VOLLEYBALL FINAL</text>
+  <text x="76" y="223" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="800">WALNUT</text>
+  <text x="80" y="283" fill="#e8b853" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700">AT</text>
+  <text x="76" y="373" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="800">EAST UNION</text>
+  <text x="80" y="463" fill="#e7edf4" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="600">MONDAY, OCT. 12  ·  6 P.M.</text>
+  <text x="80" y="568" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="27">East Union High School  ·  Blue Springs, Mississippi</text>
+  <text x="1121" y="591" text-anchor="end" fill="#e8b853" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">RCTV 19</text>
+</svg>
