@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Saturday storm outages in Alcorn County</title>
+  <desc id="desc">RCTV 19 information graphic: ACE Power reported a large Glen area outage and repair work near Belk in Corinth on October 10, 2026.</desc>
+  <rect width="1200" height="630" fill="#0d2335"/>
+  <rect x="0" y="0" width="22" height="630" fill="#f2b34b"/>
+  <path d="M825 0 695 300h137l-105 330 310-386H898L1030 0Z" fill="#f2b34b" opacity=".18"/>
+  <text x="76" y="98" fill="#f2b34b" font-family="Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="5">RCTV 19  /  ALCORN COUNTY</text>
+  <text x="76" y="225" fill="#ffffff" font-family="Arial, sans-serif" font-size="74" font-weight="700">Saturday storm</text>
+  <text x="76" y="310" fill="#ffffff" font-family="Arial, sans-serif" font-size="74" font-weight="700">outages</text>
+  <rect x="76" y="366" width="850" height="3" fill="#f2b34b"/>
+  <text x="76" y="431" fill="#d9e6ef" font-family="Arial, sans-serif" font-size="34">ACE Power reported outages in Glen</text>
+  <text x="76" y="477" fill="#d9e6ef" font-family="Arial, sans-serif" font-size="34">and repair work in Corinth.</text>
+  <text x="76" y="567" fill="#a9c1d0" font-family="Arial, sans-serif" font-size="23">OCT. 10, 2026  ·  Historical report, not a live outage map</text>
+</svg>
