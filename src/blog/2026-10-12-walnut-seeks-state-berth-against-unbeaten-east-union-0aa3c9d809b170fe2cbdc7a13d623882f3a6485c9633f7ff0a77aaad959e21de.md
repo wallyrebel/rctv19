@@ -10,4 +10,4 @@ aiAssisted: true
 
 Walnut has swept three playoff opponents and will face unbeaten East Union on Monday in a match that could send the Lady Wildcats to the volleyball state championship. A fourth consecutive playoff victory would secure Walnut's spot in the state tournament.
 
-The county volleyball schedule continues with Falkner golf also on the upcoming slate of events.
+The county sports schedule continues with Falkner golf also on the upcoming slate of events.
