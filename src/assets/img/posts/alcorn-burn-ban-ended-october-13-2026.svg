@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Alcorn County burn ban ended October 13</title>
+  <desc id="desc">RCTV 19 information graphic stating that Alcorn County is no longer listed under a county burn ban as of October 13, 2026, and advising readers to check the current Forestry Commission list.</desc>
+  <rect width="1200" height="630" fill="#172c34"/>
+  <rect width="24" height="630" fill="#71b79e"/>
+  <text x="70" y="91" fill="#a9e0ce" font-family="Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="3">ALCORN COUNTY · OCT. 13 UPDATE</text>
+  <text x="70" y="193" fill="#ffffff" font-family="Arial, sans-serif" font-size="69" font-weight="700">BURN BAN ENDED</text>
+  <line x1="70" y1="222" x2="1130" y2="222" stroke="#71b79e" stroke-width="4"/>
+  <text x="70" y="314" fill="#ffffff" font-family="Arial, sans-serif" font-size="43">County ban expired after Oct. 12</text>
+  <text x="70" y="387" fill="#f1c27a" font-family="Arial, sans-serif" font-size="35" font-weight="700">Dry conditions still warrant caution</text>
+  <rect x="70" y="447" width="1060" height="105" rx="14" fill="#2b4650"/>
+  <text x="98" y="492" fill="#ffffff" font-family="Arial, sans-serif" font-size="27">Check MFC's current list and local rules</text>
+  <text x="98" y="529" fill="#cbd9dc" font-family="Arial, sans-serif" font-size="23">Status graphic for Oct. 13, 2026 · Not a live map</text>
+  <text x="70" y="606" fill="#c3d0d3" font-family="Arial, sans-serif" font-size="20">RCTV 19 ORIGINAL GRAPHIC · SOURCE: MISSISSIPPI FORESTRY COMMISSION</text>
+</svg>
