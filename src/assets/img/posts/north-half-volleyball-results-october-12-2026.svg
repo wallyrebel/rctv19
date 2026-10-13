@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Four area schools win North Half volleyball finals</title>
+  <desc id="desc">RCTV 19 information graphic listing Ingomar, East Union, Kossuth and New Albany as October 12 North Half volleyball winners, each by three sets to zero.</desc>
+  <rect width="1200" height="630" fill="#10233c"/>
+  <rect width="1200" height="17" fill="#e8b853"/>
+  <text x="64" y="82" fill="#e8b853" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" letter-spacing="3">MONDAY, OCT. 12 • NORTH HALF VOLLEYBALL</text>
+  <text x="64" y="165" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="800">Four teams reach state finals</text>
+  <line x1="64" y1="199" x2="1136" y2="199" stroke="#5b7690" stroke-width="2"/>
+  <g fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700">
+    <text x="88" y="281">INGOMAR</text><text x="640" y="281">EAST UNION</text>
+    <text x="88" y="403">KOSSUTH</text><text x="640" y="403">NEW ALBANY</text>
+  </g>
+  <g fill="#e8b853" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">
+    <text x="88" y="321">CLASS 1A • 3–0</text><text x="640" y="321">CLASS 2A • 3–0</text>
+    <text x="88" y="443">CLASS 3A • 3–0</text><text x="640" y="443">CLASS 4A • 3–0</text>
+  </g>
+  <rect x="0" y="500" width="1200" height="130" fill="#173553"/>
+  <text x="64" y="553" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="27">Results reported by WTVA • State championship matches ahead</text>
+  <text x="64" y="595" fill="#cbd8e5" font-family="Arial, Helvetica, sans-serif" font-size="23">Information graphic — no game photo shown</text>
+  <text x="1135" y="594" text-anchor="end" fill="#e8b853" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">RCTV 19</text>
+</svg>
