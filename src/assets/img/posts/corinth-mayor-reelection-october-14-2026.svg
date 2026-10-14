@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Corinth mayoral election update, October 14, 2026</title>
+  <desc id="desc">Original RCTV 19 information graphic saying Ralph Dance won reelection as Corinth mayor, based on WTVA's October 13 report.</desc>
+  <rect width="1200" height="630" fill="#172c34"/>
+  <rect width="24" height="630" fill="#71b79e"/>
+  <text x="70" y="96" fill="#a9e0ce" font-family="Arial, sans-serif" font-size="29" font-weight="700" letter-spacing="3">CORINTH · OCT. 13 MAYORAL VOTE</text>
+  <text x="70" y="201" fill="#ffffff" font-family="Arial, sans-serif" font-size="76" font-weight="700">RALPH DANCE</text>
+  <text x="70" y="292" fill="#ffffff" font-family="Arial, sans-serif" font-size="67" font-weight="700">WINS REELECTION</text>
+  <line x1="70" y1="329" x2="1130" y2="329" stroke="#71b79e" stroke-width="4"/>
+  <text x="70" y="409" fill="#f1c27a" font-family="Arial, sans-serif" font-size="35">Result reported by WTVA Tuesday night</text>
+  <rect x="70" y="456" width="1060" height="97" rx="14" fill="#2b4650"/>
+  <text x="98" y="513" fill="#ffffff" font-family="Arial, sans-serif" font-size="31">Alcorn County · October 14 morning roundup</text>
+  <text x="70" y="606" fill="#c3d0d3" font-family="Arial, sans-serif" font-size="20">RCTV 19 ORIGINAL GRAPHIC · SOURCE: WTVA ELECTION REPORT</text>
+</svg>
