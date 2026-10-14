@@ -1,16 +1,93 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { eligibility, prepare } = require('../scripts/import-browser-obituaries');
+const { eligibility, prepare, importRecords } = require('../scripts/import-browser-obituaries');
 const now = new Date('2026-09-11T17:00:00Z');
-test('24-hour filter rejects stale, future, missing and ambiguous dates', () => {
-  assert.ok(eligibility({published:'2026-09-10T17:00:00Z'}, now));
-  assert.equal(eligibility({published:'2026-09-10T16:59:59Z'}, now), null);
+test('48-hour filter rejects stale, future, missing and ambiguous dates', () => {
+  assert.ok(eligibility({published:'2026-09-09T17:00:00Z'}, now));
+  assert.equal(eligibility({published:'2026-09-09T16:59:59Z'}, now), null);
   assert.equal(eligibility({published:'2026-09-11T17:00:01Z'}, now), null);
-  assert.equal(eligibility({published:'2026-09-10'}, now), null);
+  assert.ok(eligibility({published:'2026-09-10'}, now));
+  assert.equal(eligibility({published:'2026-09-09'}, now), null);
   assert.equal(eligibility({published:'2026-09-11T10:00:00'}, now), null);
   assert.equal(eligibility({}, now), null);
   assert.equal(eligibility({deathDate:'2026-09-11'}, now).basis, 'death');
-  assert.equal(eligibility({deathDate:'2026-09-10'}, now), null);
+  assert.ok(eligibility({deathDate:'2026-09-10'}, now));
+  assert.equal(eligibility({published:'2026-09-01',deathDate:'2026-09-11'}, now), null);
+  assert.equal(eligibility({published:'invalid',deathDate:'2026-09-11'}, now), null);
+  assert.equal(eligibility({published:0,deathDate:'2026-09-11'}, now), null);
+  assert.equal(eligibility({published:false,deathDate:'2026-09-11'}, now), null);
+  assert.equal(eligibility({published:'2026-09-12T00:00:00Z',deathDate:'2026-09-11'}, now), null);
+  assert.equal(eligibility({published:'2026-02-30'}, new Date('2026-03-02T17:00:00Z')), null);
+  assert.equal(eligibility({published:'2026-02-30T12:00:00Z'}, new Date('2026-03-02T17:00:00Z')), null);
+  assert.equal(eligibility({published:'2026-09-10T24:00:00Z'}, now), null);
+  // On the fall DST transition, yesterday's earliest time can exceed 48 hours.
+  assert.equal(eligibility({published:'2026-10-31'}, new Date('2026-11-02T05:30:00Z')), null);
+  assert.ok(eligibility({published:'2026-11-01'}, new Date('2026-11-02T05:30:00Z')));
+});
+
+test('updates reuse the original URL and date, remain idempotent, and reject manual body edits', async t => {
+  const fs = require('node:fs');
+  const path = require('node:path');
+  const root = fs.mkdtempSync(path.join(require('node:os').tmpdir(), 'rctv-obituaries-'));
+  t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+  fs.mkdirSync(path.join(root, 'src/obituaries'), { recursive: true });
+  fs.mkdirSync(path.join(root, 'scripts'));
+  const record = {sourceId:'mcbride',url:'https://www.mcbridefuneralhome.com/obituaries/test-person/',name:'Test Person',published:'2026-09-10T10:00:00Z',complete:true,paragraphs:['Arrangements incomplete.']};
+  const options = { root, now, apply: true, updateExisting: true };
+  await importRecords([record], options);
+  const filename = fs.readdirSync(path.join(root, 'src/obituaries'))[0];
+  const file = path.join(root, 'src/obituaries', filename);
+  const initial = fs.readFileSync(file, 'utf8');
+  const revised = {...record,name:'Test Full Name',paragraphs:['Full original obituary.\nWith a line break.','A second paragraph & punctuation.']};
+  await importRecords([revised], {...options,apply:false});
+  assert.equal(fs.readFileSync(file, 'utf8'), initial);
+  await importRecords([revised], options);
+  const saved = fs.readFileSync(file, 'utf8');
+  assert.match(saved, /Full original obituary\.<br>With a line break\./);
+  assert.match(saved, /date: "2026-09-10T10:00:00Z"/);
+  assert.equal(fs.readdirSync(path.join(root, 'src/obituaries')).length, 1);
+  await importRecords([revised], {...options,now:new Date('2026-09-11T18:00:00Z')});
+  assert.equal(fs.readFileSync(file, 'utf8'), saved);
+  // A new source date cannot make this same notice eligible again next week.
+  await importRecords([{...revised,published:'2026-09-17T10:00:00Z',paragraphs:['Later revision.']}], {...options,now:new Date('2026-09-17T18:00:00Z')});
+  assert.equal(fs.readFileSync(file, 'utf8'), saved);
+  fs.writeFileSync(file, saved.replace('Full original obituary.', 'Manual edit.'));
+  await assert.rejects(importRecords([revised],options), /differs from publication log/);
+});
+
+test('portrait retries recover transient errors and failed retries do not rewrite unchanged notices', async t => {
+  const fs = require('node:fs');
+  const path = require('node:path');
+  const root = fs.mkdtempSync(path.join(require('node:os').tmpdir(), 'rctv-obituaries-'));
+  t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+  fs.mkdirSync(path.join(root, 'src/obituaries'), { recursive: true });
+  fs.mkdirSync(path.join(root, 'scripts'));
+  const record = {sourceId:'ripley',url:'https://www.ripleyfuneralhome.com/obituary/Test-Person',name:'Test Person',published:'2026-09-10T10:00:00Z',complete:true,paragraphs:['Full text.']};
+  const options = {root,now,apply:true,updateExisting:true};
+  await importRecords([record], options);
+  const file = path.join(root,'src/obituaries',fs.readdirSync(path.join(root,'src/obituaries'))[0]);
+  const log = path.join(root,'scripts/published_obituaries.json');
+  const initial = fs.readFileSync(file,'utf8');
+  const initialLog = fs.readFileSync(log,'utf8');
+  let calls = 0;
+  t.mock.method(globalThis,'fetch',async () => { calls++; return new Response('', {status:404}); });
+  const withImage = {...record,imageUrl:'https://d1rjyex4ui0ya6.cloudfront.net/test.png'};
+  await importRecords([withImage], options);
+  assert.equal(calls,1);
+  assert.equal(fs.readFileSync(file,'utf8'),initial);
+  assert.equal(fs.readFileSync(log,'utf8'),initialLog);
+  const image = await require('sharp')({create:{width:2,height:3,channels:3,background:'#456789'}}).png().toBuffer();
+  calls = 0;
+  globalThis.fetch.mock.mockImplementation(async () => ++calls < 3 ? new Response('',{status:503}) : new Response(image,{headers:{'content-type':'image/png'}}));
+  await importRecords([withImage], options);
+  assert.equal(calls,3);
+  const saved = fs.readFileSync(file,'utf8');
+  assert.match(saved,/featuredImage:/);
+  const portrait = JSON.parse(saved.match(/^featuredImage: (.+)$/m)[1]);
+  assert.deepEqual(fs.readFileSync(path.join(root,'src',portrait)),image);
+  await importRecords([withImage], options);
+  assert.equal(calls,3);
+  assert.equal(fs.readFileSync(file,'utf8'),saved);
 });
 test('browser capture preserves punctuation and prevents template/HTML interpretation', () => {
   const record={sourceId:'ripley',url:'https://www.ripleyfuneralhome.com/obituary/Test-Person',name:'Test Person',published:'2026-09-11T10:00:00Z',complete:true,paragraphs:['A “quote”—and an apostrophe’s.  Two spaces.','{{ unchanged }} <script> & *literal*']};
