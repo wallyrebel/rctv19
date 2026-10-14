@@ -125,5 +125,17 @@
     "file": "src/obituaries/janice-strickland-8916358985.md",
     "importedAt": "2026-10-08T23:22:49.974Z",
     "sourceTextSha256": "58873cbe0840a66a614c4afff142b41b1548063b0cb819a271a798264b3d1526"
+  },
+  "https://www.mcbridefuneralhome.com/obituaries/dixie-booker/": {
+    "name": "Mrs. Dixie Bridges Booker",
+    "file": "src/obituaries/mrs-dixie-bridges-booker-5f414f9b43.md",
+    "importedAt": "2026-10-14T03:09:27.170Z",
+    "sourceTextSha256": "da0fb0e4c92fcab1f5a6a96b8cc06cb1b776bcecaf4b212e5c5d6e530ac1e3de"
+  },
+  "https://www.mcbridefuneralhome.com/obituaries/evelyn-benefield-street/": {
+    "name": "Evelyn Jean Benefield Street",
+    "file": "src/obituaries/evelyn-jean-benefield-street-e22218ebf8.md",
+    "importedAt": "2026-10-14T03:09:27.170Z",
+    "sourceTextSha256": "20a2b64036940b10d18ec533883762bde34237de6f44f45bef74e26e3caabb4c"
   }
 }
