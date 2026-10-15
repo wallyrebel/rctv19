@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Union County Schools South Pacific performance schedule</title>
+  <desc id="desc">RCTV 19 information graphic listing October 23, 24 and 25 performance dates at Magnolia Theatre in New Albany; it is not a photograph of the production.</desc>
+  <rect width="1200" height="630" fill="#172438"/>
+  <rect width="1200" height="18" fill="#c83e47"/>
+  <rect x="62" y="54" width="1076" height="500" rx="24" fill="#202f48" stroke="#5c6d83" stroke-width="2"/>
+  <text x="105" y="123" fill="#f68b8f" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" letter-spacing="4">UNION COUNTY SCHOOLS MUSICAL THEATRE</text>
+  <text x="105" y="207" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="73" font-weight="800">SOUTH PACIFIC</text>
+  <line x1="105" y1="237" x2="1094" y2="237" stroke="#7a899b" stroke-width="2"/>
+  <text x="105" y="318" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700">FRI. OCT. 23</text>
+  <text x="730" y="318" fill="#e8edf4" font-family="Arial, Helvetica, sans-serif" font-size="41">7 P.M.</text>
+  <text x="105" y="383" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700">SAT. OCT. 24</text>
+  <text x="730" y="383" fill="#e8edf4" font-family="Arial, Helvetica, sans-serif" font-size="41">6 P.M.</text>
+  <text x="105" y="448" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="41" font-weight="700">SUN. OCT. 25</text>
+  <text x="730" y="448" fill="#e8edf4" font-family="Arial, Helvetica, sans-serif" font-size="41">2 P.M.</text>
+  <text x="105" y="515" fill="#afbdce" font-family="Arial, Helvetica, sans-serif" font-size="27">Magnolia Theatre • New Albany • Schedule: organizer ticket page</text>
+  <text x="1095" y="594" text-anchor="end" fill="#f68b8f" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700">RCTV 19</text>
+</svg>
