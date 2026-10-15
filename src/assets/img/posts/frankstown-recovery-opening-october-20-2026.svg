@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Frankstown recovery center planned opening October 20</title>
+  <desc id="desc">Original RCTV 19 information graphic with the planned opening date and ribbon-cutting time. It does not depict the center.</desc>
+  <rect width="1200" height="630" fill="#102a3a"/>
+  <rect x="0" y="0" width="22" height="630" fill="#e4b75b"/>
+  <circle cx="1027" cy="148" r="155" fill="#24485a"/>
+  <circle cx="1027" cy="148" r="102" fill="#315769"/>
+  <path d="M969 151h116M1027 93v116" stroke="#e4b75b" stroke-width="16" stroke-linecap="round" opacity=".8"/>
+  <text x="82" y="88" fill="#e4b75b" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="700" letter-spacing="5">RCTV 19  ·  PRENTISS COUNTY</text>
+  <text x="82" y="188" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="67" font-weight="700">Frankstown recovery</text>
+  <text x="82" y="268" fill="#ffffff" font-family="Arial,Helvetica,sans-serif" font-size="67" font-weight="700">center opening planned</text>
+  <rect x="82" y="330" width="705" height="2" fill="#e4b75b"/>
+  <text x="82" y="416" fill="#e4b75b" font-family="Arial,Helvetica,sans-serif" font-size="57" font-weight="700">OCTOBER 20, 2026</text>
+  <text x="82" y="485" fill="#d9e5e9" font-family="Arial,Helvetica,sans-serif" font-size="38">Ribbon cutting planned for 10:30 a.m.</text>
+  <text x="82" y="575" fill="#a9c0c9" font-family="Arial,Helvetica,sans-serif" font-size="23">Schedule graphic · not a photograph of the center or event</text>
+</svg>
