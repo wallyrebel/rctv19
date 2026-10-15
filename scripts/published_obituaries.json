@@ -130,12 +130,19 @@
     "name": "Mrs. Dixie Bridges Booker",
     "file": "src/obituaries/mrs-dixie-bridges-booker-5f414f9b43.md",
     "importedAt": "2026-10-14T03:09:27.170Z",
-    "sourceTextSha256": "da0fb0e4c92fcab1f5a6a96b8cc06cb1b776bcecaf4b212e5c5d6e530ac1e3de"
+    "sourceTextSha256": "923afbba85a5c37e323ec111347ffa0c8f872d71907ae4a366e80fd6290ffeb4",
+    "updatedAt": "2026-10-15T00:00:50.495Z"
   },
   "https://www.mcbridefuneralhome.com/obituaries/evelyn-benefield-street/": {
     "name": "Evelyn Jean Benefield Street",
     "file": "src/obituaries/evelyn-jean-benefield-street-e22218ebf8.md",
     "importedAt": "2026-10-14T03:09:27.170Z",
     "sourceTextSha256": "20a2b64036940b10d18ec533883762bde34237de6f44f45bef74e26e3caabb4c"
+  },
+  "https://www.ripleyfuneralhome.com/obituary/CarolynLanetteNett-Ray": {
+    "name": "Carolyn Lanette “Nett” Ray",
+    "file": "src/obituaries/carolyn-lanette-nett-ray-e7bf5ca2fa.md",
+    "importedAt": "2026-10-15T00:00:50.495Z",
+    "sourceTextSha256": "c30d7e07f2e701d1f7f894eb7993c717f672e049846a3329f9073a56a84973b1"
   }
 }
