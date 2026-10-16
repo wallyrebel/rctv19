@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Tippah County Archives seeks help identifying historic photos</title>
+  <desc id="desc">Original RCTV 19 information graphic with stylized blank photo frames and text asking for help identifying historic pictures; no archival photograph is reproduced.</desc>
+  <rect width="1200" height="630" fill="#1d2b36"/>
+  <rect x="0" y="0" width="1200" height="16" fill="#cfaa70"/>
+  <text x="64" y="88" fill="#cfaa70" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" letter-spacing="3">TIPPAH COUNTY · OCT. 16, 2026</text>
+  <text x="64" y="191" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="67" font-weight="800">Help identify</text>
+  <text x="64" y="274" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="67" font-weight="800">historic photos</text>
+  <text x="64" y="339" fill="#d8e1e5" font-family="Arial, Helvetica, sans-serif" font-size="29">Tippah County Historical &amp; Genealogical Society</text>
+  <g transform="translate(76 391) rotate(-5)">
+    <rect width="190" height="143" fill="#f4e8d2"/>
+    <rect x="13" y="13" width="164" height="100" fill="#a5b2ae"/>
+    <text x="95" y="88" text-anchor="middle" fill="#30464c" font-family="Arial, Helvetica, sans-serif" font-size="61">?</text>
+  </g>
+  <g transform="translate(302 396) rotate(4)">
+    <rect width="190" height="143" fill="#f4e8d2"/>
+    <rect x="13" y="13" width="164" height="100" fill="#a5b2ae"/>
+    <text x="95" y="88" text-anchor="middle" fill="#30464c" font-family="Arial, Helvetica, sans-serif" font-size="61">?</text>
+  </g>
+  <text x="565" y="469" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700">Can you recognize a place?</text>
+  <text x="565" y="512" fill="#d8e1e5" font-family="Arial, Helvetica, sans-serif" font-size="24">Visit the archives in Ripley</text>
+  <rect x="0" y="560" width="1200" height="70" fill="#263d48"/>
+  <text x="64" y="605" fill="#d8e1e5" font-family="Arial, Helvetica, sans-serif" font-size="23">Original information graphic · No archival photo shown</text>
+  <text x="1136" y="605" text-anchor="end" fill="#cfaa70" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700">RCTV 19</text>
+</svg>
