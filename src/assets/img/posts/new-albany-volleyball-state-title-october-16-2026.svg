@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">New Albany wins 2026 Class 4A volleyball championship</title>
+  <desc id="desc">RCTV 19 results graphic: New Albany defeated Choctaw Central three sets to one on October 16. This is not a match photograph.</desc>
+  <rect width="1200" height="630" fill="#10233c"/>
+  <rect width="1200" height="17" fill="#e8b853"/>
+  <text x="64" y="95" fill="#e8b853" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" letter-spacing="3">FRIDAY, OCT. 16, 2026</text>
+  <text x="64" y="200" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="75" font-weight="800">NEW ALBANY</text>
+  <text x="64" y="287" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="800">STATE CHAMPIONS</text>
+  <rect x="64" y="328" width="530" height="76" rx="9" fill="#e8b853"/>
+  <text x="90" y="381" fill="#10233c" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800">CLASS 4A VOLLEYBALL</text>
+  <text x="64" y="475" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="700">NEW ALBANY 3 · CHOCTAW CENTRAL 1</text>
+  <rect x="0" y="518" width="1200" height="112" fill="#173553"/>
+  <text x="64" y="568" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="25">Result: Mississippi High School Activities Association</text>
+  <text x="64" y="605" fill="#cbd8e5" font-family="Arial, Helvetica, sans-serif" font-size="22">Information graphic — no game photo shown</text>
+  <text x="1136" y="605" text-anchor="end" fill="#e8b853" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">RCTV 19</text>
+</svg>
