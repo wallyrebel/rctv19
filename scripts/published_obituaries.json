@@ -146,15 +146,22 @@
     "sourceTextSha256": "c30d7e07f2e701d1f7f894eb7993c717f672e049846a3329f9073a56a84973b1"
   },
   "https://www.mcbridefuneralhome.com/obituaries/joe-box/": {
-    "name": "Joe Box",
+    "name": "Joe Gene Box",
     "file": "src/obituaries/joe-box-68c7286970.md",
     "importedAt": "2026-10-15T23:59:01.477Z",
-    "sourceTextSha256": "1cd1c91dcd15bf8cd9215e3249bf03ceea27b0c7b5c8d3b37f85b8c762d4a63b"
+    "sourceTextSha256": "bfda8098e008ebc82475a6881aa423d2dfb0d0fcb0add45b0dacd9e1e5d7fc8e",
+    "updatedAt": "2026-10-17T00:03:35.542Z"
   },
   "https://www.fosterandsonfuneralhome.com/obituary/Alva-Simpson": {
     "name": "Alva H Simpson",
     "file": "src/obituaries/alva-h-simpson-b79d8f3854.md",
     "importedAt": "2026-10-16T12:08:17.711Z",
     "sourceTextSha256": "213c6d661098c1c7faa98111237201b029a0c77bd1d38f851efee29617168669"
+  },
+  "https://www.ripleyfuneralhome.com/obituary/MichaelRyan-Dulaney": {
+    "name": "Michael Ryan Dulaney",
+    "file": "src/obituaries/michael-ryan-dulaney-5b09cbe371.md",
+    "importedAt": "2026-10-17T00:03:35.542Z",
+    "sourceTextSha256": "5f16558ab6f13e045b5e01a6ad737ff07095aa64614afde244021e3795920c0a"
   }
 }
