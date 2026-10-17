@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">2026 school ratings: three area districts earn B</title>
+  <desc id="desc">Original RCTV 19 information graphic showing B grades for South Tippah, North Tippah and Benton County school districts.</desc>
+  <rect width="1200" height="630" fill="#10253d"/>
+  <rect x="0" y="0" width="16" height="630" fill="#c83f4d"/>
+  <rect x="60" y="48" width="166" height="37" rx="18" fill="#c83f4d"/>
+  <text x="143" y="73" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">RCTV 19</text>
+  <text x="60" y="145" font-family="Arial, sans-serif" font-size="45" font-weight="700" fill="#ffffff">2026 SCHOOL RATINGS</text>
+  <text x="60" y="185" font-family="Arial, sans-serif" font-size="24" fill="#c7d4e3">Tippah and Benton counties · 2025–26 school year</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="60" y="238" width="340" height="240" rx="18" fill="#ffffff"/>
+    <rect x="430" y="238" width="340" height="240" rx="18" fill="#ffffff"/>
+    <rect x="800" y="238" width="340" height="240" rx="18" fill="#ffffff"/>
+    <text x="230" y="345" text-anchor="middle" font-size="92" font-weight="700" fill="#a92738">B</text>
+    <text x="600" y="345" text-anchor="middle" font-size="92" font-weight="700" fill="#a92738">B</text>
+    <text x="970" y="345" text-anchor="middle" font-size="92" font-weight="700" fill="#a92738">B</text>
+    <text x="230" y="406" text-anchor="middle" font-size="29" font-weight="700" fill="#10253d">South Tippah</text>
+    <text x="600" y="406" text-anchor="middle" font-size="29" font-weight="700" fill="#10253d">North Tippah</text>
+    <text x="970" y="406" text-anchor="middle" font-size="29" font-weight="700" fill="#10253d">Benton County</text>
+    <text x="230" y="443" text-anchor="middle" font-size="18" fill="#41576e">School District</text>
+    <text x="600" y="443" text-anchor="middle" font-size="18" fill="#41576e">School District</text>
+    <text x="970" y="443" text-anchor="middle" font-size="18" fill="#41576e">School District</text>
+  </g>
+  <text x="60" y="550" font-family="Arial, sans-serif" font-size="19" fill="#e0e7ef">New state score thresholds apply in 2026</text>
+  <text x="60" y="581" font-family="Arial, sans-serif" font-size="16" fill="#9fb2c7">Source: Tippah News / Mississippi Department of Education · Oct. 17, 2026</text>
+</svg>
