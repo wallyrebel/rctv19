@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Corinth router assembly plan announced October 19, 2026</title>
+  <desc id="desc">Original RCTV 19 information graphic about the TP-Link and Key Tronic letter of intent. Stylized circuit pattern, not a photograph of a plant or product.</desc>
+  <rect width="1200" height="630" fill="#10233c"/>
+  <rect width="1200" height="17" fill="#e8b853"/>
+  <g fill="none" stroke="#315877" stroke-width="8" opacity=".75">
+    <path d="M850 70h110v100h130M780 145h110v110h190M800 250h125v100h160M790 340h90v90h195M835 470h120v80h130"/>
+  </g>
+  <g fill="#e8b853"><circle cx="1090" cy="170" r="12"/><circle cx="1080" cy="255" r="12"/><circle cx="1085" cy="350" r="12"/><circle cx="1075" cy="430" r="12"/><circle cx="1085" cy="550" r="12"/></g>
+  <text x="64" y="95" fill="#e8b853" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" letter-spacing="3">MONDAY, OCT. 19, 2026</text>
+  <text x="64" y="200" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="74" font-weight="800">CORINTH ROUTER</text>
+  <text x="64" y="285" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="74" font-weight="800">ASSEMBLY PLAN</text>
+  <rect x="64" y="326" width="614" height="77" rx="9" fill="#e8b853"/>
+  <text x="90" y="379" fill="#10233c" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800">LETTER OF INTENT</text>
+  <text x="64" y="476" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="600">TP-Link + Key Tronic • regulatory approval pending</text>
+  <rect x="0" y="518" width="1200" height="112" fill="#173553"/>
+  <text x="64" y="568" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="25">Source: TP-Link's October 19, 2026 announcement</text>
+  <text x="64" y="605" fill="#cbd8e5" font-family="Arial, Helvetica, sans-serif" font-size="22">Information graphic — no plant or product photo shown</text>
+  <text x="1136" y="605" text-anchor="end" fill="#e8b853" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">RCTV 19</text>
+</svg>
