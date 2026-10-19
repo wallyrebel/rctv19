@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Myrtle runner Ally Murphy ninth at Watson</title>
+  <desc id="desc">Original RCTV 19 results graphic: girls Gold 5000 meters, Watson High School XC Classic, Ally Murphy of Myrtle ninth in 18 minutes 40.2 seconds.</desc>
+  <rect width="1200" height="630" fill="#102c3b"/>
+  <path d="M0 514 C215 469 351 556 551 506 S904 425 1200 503 L1200 630 L0 630Z" fill="#1e5866"/>
+  <path d="M0 554 C214 509 370 596 559 548 S922 473 1200 542" fill="none" stroke="#e8bc63" stroke-width="7" stroke-dasharray="22 20"/>
+  <text x="70" y="80" fill="#e8bc63" font-family="Arial,sans-serif" font-size="29" font-weight="700">RCTV 19 · UNION COUNTY SPORTS</text>
+  <text x="70" y="175" fill="#ffffff" font-family="Arial,sans-serif" font-size="65" font-weight="700">MYRTLE'S ALLY MURPHY</text>
+  <text x="70" y="248" fill="#ffffff" font-family="Arial,sans-serif" font-size="65" font-weight="700">9TH AT WATSON</text>
+  <rect x="70" y="293" width="1060" height="169" rx="20" fill="#f7f3e9"/>
+  <text x="105" y="346" fill="#34566a" font-family="Arial,sans-serif" font-size="26" font-weight="700">GIRLS GOLD 5,000 METERS</text>
+  <text x="105" y="419" fill="#123647" font-family="Arial,sans-serif" font-size="56" font-weight="700">18:40.2</text>
+  <text x="656" y="419" fill="#123647" font-family="Arial,sans-serif" font-size="30">SATURDAY · OCT. 17</text>
+  <text x="70" y="595" fill="#e2edf0" font-family="Arial,sans-serif" font-size="21">RESULTS GRAPHIC · SOURCE: MILESPLIT / XPRESS TIMING</text>
+</svg>
