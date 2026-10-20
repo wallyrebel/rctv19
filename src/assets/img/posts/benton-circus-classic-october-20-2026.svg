@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Benton County circus schedule, October 20 and 21, 2026</title>
+  <desc id="desc">Original RCTV 19 information graphic listing Circus Classic at the Benton County Agri Center at 7 p.m. Tuesday and Wednesday. Not a show photograph.</desc>
+  <rect width="1200" height="630" fill="#102633"/>
+  <path d="M0 0h1200v160H0z" fill="#a53639"/>
+  <path d="M0 160h1200v12H0z" fill="#e6bd6a"/>
+  <path d="M0 630V350l170-170 170 170 170-170 170 170 170-170 170 170 170-170v450z" fill="#183b49" opacity=".6"/>
+  <circle cx="1020" cy="420" r="140" fill="none" stroke="#e6bd6a" stroke-width="2" opacity=".35"/>
+  <circle cx="1020" cy="420" r="102" fill="none" stroke="#e6bd6a" stroke-width="2" opacity=".35"/>
+  <text x="70" y="101" fill="#ffffff" font-family="Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="4">BENTON COUNTY</text>
+  <text x="70" y="254" fill="#f6e7bf" font-family="Arial, sans-serif" font-size="65" font-weight="700">CIRCUS CLASSIC</text>
+  <text x="70" y="330" fill="#ffffff" font-family="Arial, sans-serif" font-size="37">Tuesday, Oct. 20  ·  7 p.m.</text>
+  <text x="70" y="391" fill="#ffffff" font-family="Arial, sans-serif" font-size="37">Wednesday, Oct. 21  ·  7 p.m.</text>
+  <path d="M70 427h760" stroke="#e6bd6a" stroke-width="3"/>
+  <text x="70" y="481" fill="#f6e7bf" font-family="Arial, sans-serif" font-size="32">Benton County Agri Center</text>
+  <text x="70" y="529" fill="#ffffff" font-family="Arial, sans-serif" font-size="26">17136 MS-5 · Canaan, Mississippi</text>
+  <text x="70" y="589" fill="#c4d5da" font-family="Arial, sans-serif" font-size="19">RCTV 19 schedule graphic · Source: Circus Classic · Not a show photograph</text>
+</svg>
