@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Class 4A boys golf championship begins October 26</title>
+  <desc id="desc">Original RCTV 19 schedule graphic naming New Albany, Corinth and Ripley, with Dancing Rabbit Golf Club and October 26 to 27. Not a tournament photograph.</desc>
+  <rect width="1200" height="630" fill="#123d38"/>
+  <path d="M0 475 C220 430 400 485 595 455 S1000 385 1200 445 L1200 630 L0 630Z" fill="#2d765f"/>
+  <path d="M0 535 C260 495 470 550 685 518 S1030 465 1200 500 L1200 630 L0 630Z" fill="#4b9b70"/>
+  <circle cx="1030" cy="148" r="53" fill="#f4e6bd"/>
+  <path d="M930 486 L1005 340 L1050 486" fill="none" stroke="#edf5e9" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1005 340 L1005 255 L1095 282 L1005 309" fill="#f0c46c"/>
+  <text x="68" y="78" fill="#f0c46c" font-family="Arial,sans-serif" font-size="28" font-weight="700">RCTV 19 · FIVE-COUNTY ROUNDUP</text>
+  <text x="68" y="168" fill="#ffffff" font-family="Arial,sans-serif" font-size="64" font-weight="700">BOYS GOLF STATE PLAY</text>
+  <text x="68" y="242" fill="#ffffff" font-family="Arial,sans-serif" font-size="64" font-weight="700">BEGINS MONDAY</text>
+  <rect x="68" y="286" width="805" height="150" rx="18" fill="#f7f4e9"/>
+  <text x="99" y="344" fill="#123d38" font-family="Arial,sans-serif" font-size="37" font-weight="700">NEW ALBANY · CORINTH · RIPLEY</text>
+  <text x="99" y="402" fill="#315950" font-family="Arial,sans-serif" font-size="29">CLASS 4A · OCT. 26–27 · CHOCTAW</text>
+  <text x="68" y="596" fill="#e7f2e9" font-family="Arial,sans-serif" font-size="21">SCHEDULE GRAPHIC · SOURCES: UNION COUNTY SPORTS / MHSAA</text>
+</svg>
