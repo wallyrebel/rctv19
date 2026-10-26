@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Benton County burn ban status, October 26, 2026</title>
+  <desc id="desc">Original RCTV 19 information graphic for the existing Benton County burn ban listed by the Mississippi Forestry Commission through November 23, 2026. Not a wildfire photograph.</desc>
+  <rect width="1200" height="630" fill="#142d31"/>
+  <rect x="0" y="0" width="16" height="630" fill="#e69341"/>
+  <rect x="60" y="45" width="166" height="37" rx="18" fill="#be5a29"/>
+  <text x="143" y="71" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">RCTV 19</text>
+  <text x="60" y="161" font-family="Arial, sans-serif" font-size="51" font-weight="700" fill="#ffffff">BENTON COUNTY</text>
+  <text x="60" y="221" font-family="Arial, sans-serif" font-size="37" fill="#c8d6d2">Existing outdoor burn ban</text>
+  <rect x="60" y="270" width="1080" height="220" rx="22" fill="#fffaf0"/>
+  <text x="600" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="66" font-weight="700" fill="#923c21">LISTED THROUGH NOV. 23</text>
+  <text x="600" y="433" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" fill="#142d31">Check current county rules before outdoor burning</text>
+  <text x="60" y="546" font-family="Arial, sans-serif" font-size="22" fill="#e9f0ec">Status checked Monday, Oct. 26, 2026</text>
+  <text x="60" y="586" font-family="Arial, sans-serif" font-size="17" fill="#b7c9c3">Source: Mississippi Forestry Commission · Original information graphic, not a fire photo</text>
+</svg>
