@@ -182,5 +182,23 @@
     "file": "src/obituaries/helen-ruth-brady-roberts-765be5abe4.md",
     "importedAt": "2026-10-19T23:58:56.522Z",
     "sourceTextSha256": "6001f63018024193fcf8062157c84d199a347a103aa4674461849f5f43c01f93"
+  },
+  "https://www.mcbridefuneralhome.com/obituaries/bonnie-sanderson-jordan/": {
+    "name": "Bonnie Sue Sanderson Jordan",
+    "file": "src/obituaries/bonnie-sue-sanderson-jordan-b71cb984eb.md",
+    "importedAt": "2026-10-26T00:15:52.397Z",
+    "sourceTextSha256": "affbd864ccaa2024f06dea24b0751e6747371abdcbab05d200199717d6309abf"
+  },
+  "https://www.ripleyfuneralhome.com/obituary/TwillaMcCallum-Rutherford": {
+    "name": "Twilla McCallum Rutherford",
+    "file": "src/obituaries/twilla-mccallum-rutherford-2ba9c5aef5.md",
+    "importedAt": "2026-10-26T00:15:52.397Z",
+    "sourceTextSha256": "3ea5f3a85c951a84bcd665660c0b5d9071042fe1e0d74c81024a827b5ae86d40"
+  },
+  "https://www.mcbridefuneralhome.com/obituaries/james-autry-4/": {
+    "name": "James Terry Autry",
+    "file": "src/obituaries/james-terry-autry-d53c627ab4.md",
+    "importedAt": "2026-10-26T00:15:52.397Z",
+    "sourceTextSha256": "92640271f2db9438c317301a8ddc4392cd469bf29cac2f96d3271a5d25b26bab"
   }
 }
