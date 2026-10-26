@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Alcorn School District early dismissal October 26</title>
+  <desc id="desc">Original RCTV 19 information graphic showing a planned 12:30 p.m. dismissal for Alcorn School District on Monday, October 26, 2026. Not an event photograph.</desc>
+  <rect width="1200" height="630" fill="#10253d"/>
+  <rect x="0" y="0" width="16" height="630" fill="#c83f4d"/>
+  <rect x="60" y="48" width="166" height="37" rx="18" fill="#c83f4d"/>
+  <text x="143" y="73" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">RCTV 19</text>
+  <text x="60" y="158" font-family="Arial, sans-serif" font-size="43" font-weight="700" fill="#ffffff">ALCORN SCHOOL DISTRICT</text>
+  <text x="60" y="215" font-family="Arial, sans-serif" font-size="35" fill="#c7d4e3">Early dismissal planned for Monday, Oct. 26</text>
+  <rect x="60" y="265" width="1080" height="225" rx="22" fill="#ffffff"/>
+  <text x="600" y="378" text-anchor="middle" font-family="Arial, sans-serif" font-size="102" font-weight="700" fill="#a92738">12:30 P.M.</text>
+  <text x="600" y="443" text-anchor="middle" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#10253d">STUDENT DISMISSAL</text>
+  <text x="60" y="549" font-family="Arial, sans-serif" font-size="20" fill="#e0e7ef">Check district messages for later transportation instructions.</text>
+  <text x="60" y="584" font-family="Arial, sans-serif" font-size="16" fill="#9fb2c7">Source: Alcorn School District via WTVA · Oct. 24, 2026 · Information graphic, not a photo</text>
+</svg>
