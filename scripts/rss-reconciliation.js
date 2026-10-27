@@ -41,7 +41,8 @@ function reviewedDuplicate(item, blogDir, records) {
   if (!record) return null; // Changed facts/media must receive normal candidate validation.
   const published = fs.readFileSync(path.join(blogDir, record.publishedFile), 'utf8');
   const { data } = matter(published);
-  if (hash(published) !== record.publishedSha256 || data.sourceUrl !== record.publishedSourceUrl || data.permalink !== record.permalink) {
+  // Git may check out the same reviewed article with CRLF on Windows.
+  if (hash(published.replace(/\r\n/g, '\n')) !== record.publishedSha256 || data.sourceUrl !== record.publishedSourceUrl || data.permalink !== record.permalink) {
     throw new Error(`Reviewed event anchor changed: ${record.eventId}; hold for review`);
   }
   return record;

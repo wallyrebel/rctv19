@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Ripley soccer season openers, October 26</title>
+  <desc id="desc">Information graphic: Ripley boys beat Caledonia 3 to 2; Caledonia girls beat Ripley 6 to 0.</desc>
+  <rect width="1200" height="630" fill="#101d32"/>
+  <rect x="0" y="0" width="1200" height="15" fill="#e0b84f"/>
+  <text x="72" y="95" fill="#e0b84f" font-family="Arial, sans-serif" font-size="27" font-weight="700" letter-spacing="3">RCTV 19  •  TIPPAH COUNTY SPORTS</text>
+  <text x="72" y="164" fill="#ffffff" font-family="Arial, sans-serif" font-size="52" font-weight="700">Ripley soccer openers</text>
+  <text x="72" y="208" fill="#c5d0e0" font-family="Arial, sans-serif" font-size="27">Monday, October 26, 2026  •  at Caledonia</text>
+  <rect x="72" y="255" width="505" height="218" rx="16" fill="#1e3454"/>
+  <rect x="623" y="255" width="505" height="218" rx="16" fill="#1e3454"/>
+  <text x="103" y="306" fill="#e0b84f" font-family="Arial, sans-serif" font-size="25" font-weight="700">BOYS</text>
+  <text x="103" y="373" fill="#ffffff" font-family="Arial, sans-serif" font-size="43" font-weight="700">Ripley  3</text>
+  <text x="103" y="433" fill="#c5d0e0" font-family="Arial, sans-serif" font-size="37">Caledonia  2</text>
+  <text x="654" y="306" fill="#e0b84f" font-family="Arial, sans-serif" font-size="25" font-weight="700">GIRLS</text>
+  <text x="654" y="373" fill="#ffffff" font-family="Arial, sans-serif" font-size="43" font-weight="700">Caledonia  6</text>
+  <text x="654" y="433" fill="#c5d0e0" font-family="Arial, sans-serif" font-size="37">Ripley  0</text>
+  <text x="72" y="544" fill="#ffffff" font-family="Arial, sans-serif" font-size="25">Results reported by Tippah County Sports</text>
+  <text x="72" y="584" fill="#9fb1c8" font-family="Arial, sans-serif" font-size="22">Original information graphic  •  Not a match photograph</text>
+</svg>
