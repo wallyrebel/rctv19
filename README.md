@@ -247,9 +247,31 @@ Existing published URLs are preserved; the two conflicting later articles have e
 date-prefixed URLs. Do not remove those permalink overrides.
 
 The RSS workflow runs `npm test` and a complete `npm run build` before committing
-generated content. Writes refuse to overwrite existing articles, and processing errors
-fail the workflow. A separate validation workflow also checks pushes and pull requests.
+generated content. Writes refuse to overwrite existing articles. Feed fetch failures
+fail the workflow. Individual unsafe, failed or colliding candidates are reported as
+`HELD` with their source URL and reason; they remain unprocessed for review/retry,
+while unrelated valid candidates can proceed through the full validation gate.
+A separate validation workflow also checks pushes and pull requests.
 For manually added posts with repeated slugs, set a unique explicit `permalink`.
+
+`scripts/rss-reviewed-events.json` records bounded, evidence-reviewed same-event
+reconciliation. The October 26 pet costume reminder repeats the October 7 report's
+October 30, 7 p.m. event at The Cut-Off, 204 South Commerce Street ($5; leash required).
+The public RSS source snapshot is retained in `test/fixtures/rss/pet-costume-repeat.json`.
+Direct Facebook retrieval was throttled during review; the public RSS text and existing
+published attribution were available. The review applies only to that publisher,
+publication window and complete source fingerprint (text, links and media paths).
+Signed media query strings and whitespace are normalized. It is independent of the
+source GUID and rewritten title. Published anchor bytes, source and permalink must
+still match before a duplicate can be recorded as processed.
+
+New facts, dates, venues, links, media or publishers do not match the reviewed snapshot.
+They receive ordinary generation and safety validation; a material update can publish
+as a distinct article with a distinct supported title. Title collisions are held before
+images or article files are written. Neither headlines nor existing article URLs are
+changed to resolve collisions, and the site's unique-title validation remains enabled.
+Add future reviewed snapshots only after checking their source evidence and material
+differences; shared words alone are never evidence that two events are the same.
 
 Run `npm test` to verify repeated-headline pages build separately and existing articles
 cannot be overwritten. Cloudflare's deployment status must still be checked: a successful
