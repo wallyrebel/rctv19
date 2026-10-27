@@ -199,6 +199,13 @@
     "name": "James Terry Autry",
     "file": "src/obituaries/james-terry-autry-d53c627ab4.md",
     "importedAt": "2026-10-26T00:15:52.397Z",
-    "sourceTextSha256": "92640271f2db9438c317301a8ddc4392cd469bf29cac2f96d3271a5d25b26bab"
+    "sourceTextSha256": "f40a9db2847eea9608abf7c77d7fe8cd141be30d3f2cbc52846f712a014c2939",
+    "updatedAt": "2026-10-27T00:02:56.995Z"
+  },
+  "https://www.mcbridefuneralhome.com/obituaries/bonna-bonnie-hopper/": {
+    "name": "Bonna \"Bonnie\" Hopper",
+    "file": "src/obituaries/bonna-bonnie-hopper-02f6730f2c.md",
+    "importedAt": "2026-10-27T00:02:56.995Z",
+    "sourceTextSha256": "57ef721f000642ced401b7c34b684421b299fe1376fc59848fd9c0cc49dfbb89"
   }
 }

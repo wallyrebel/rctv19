@@ -12,10 +12,11 @@ deathDate: "2026-10-23"
 importedAt: "2026-10-26T00:15:52.397Z"
 eligibilityBasis: "publication"
 eligibilityDate: "2026-10-25T16:54:17Z"
-sourceTextSha256: "92640271f2db9438c317301a8ddc4392cd469bf29cac2f96d3271a5d25b26bab"
+sourceTextSha256: "f40a9db2847eea9608abf7c77d7fe8cd141be30d3f2cbc52846f712a014c2939"
 featuredImage: "/assets/img/obituaries/james-terry-autry-d53c627ab4.jpg"
 featuredImageAlt: "James Terry Autry"
 imageSourceUrl: "https://cdn.f1connect.net/photo/tributes/t/8/r/207x207/8500539/james-autry-1792947192.jpg"
+updated: "2026-10-27T00:02:56.995Z"
 ---
 
 <p>Mr. James Terry Autry passed away on October 23, 2026, at Sanctuary Hospice in Tupelo, Mississippi, at the age of 74.</p>
@@ -31,3 +32,5 @@ imageSourceUrl: "https://cdn.f1connect.net/photo/tributes/t/8/r/207x207/8500539/
 <p>Terry is survived by his mother, Ruth Miskelly Autry; his sons, James Michael Autry (Shaina) of Hickory Flat, MS, and Robert William Autry of Flowood, MS; his brother, Mark Kelley Autry of Ashland, MS; his sister, Vicki Autry Brown (David) of Red Bay, AL; his two grandchildren, AvaJo Marie Dowdy of Hickory Flat, MS and James Knox Autry of Hickory Flat, MS; and his great-granddaughter, Annsley Jo Gadd of Hickory Flat, MS.</p>
 
 <p>Bro. Joseph Hitt will officiate the service, with Bro. Bill Autry assisting.</p>
+
+<p>Pallbearers: Michael Westmoreland, Daniel Norris, Landon Gadd, Wyatt Westmoreland, Jeremy Gilliam, Kelley Autry</p>
