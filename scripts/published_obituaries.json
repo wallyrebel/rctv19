@@ -206,7 +206,8 @@
     "name": "Bonna \"Bonnie\" Hopper",
     "file": "src/obituaries/bonna-bonnie-hopper-02f6730f2c.md",
     "importedAt": "2026-10-27T00:02:56.995Z",
-    "sourceTextSha256": "57ef721f000642ced401b7c34b684421b299fe1376fc59848fd9c0cc49dfbb89"
+    "sourceTextSha256": "d12862178572aa30f3cd288d7aea654e09baac4f2253447d4e5a478a6aca1648",
+    "updatedAt": "2026-10-27T23:58:34.152Z"
   },
   "https://www.ripleyfuneralhome.com/obituary/RoyLynn-BarnesJr": {
     "name": "Roy Lynn Barnes Jr.",
@@ -218,6 +219,7 @@
     "name": "Ginger Annette Robbins Kilcrease",
     "file": "src/obituaries/ginger-annette-robbins-kilcrease-788ab13de5.md",
     "importedAt": "2026-10-27T12:05:07.780Z",
-    "sourceTextSha256": "76e1b8a1931d3212a23197f30d8090cb2275095cc7cbdcb8badfc2fe9ef09402"
+    "sourceTextSha256": "7c0b8a745901e4cce32718defb0fe55abaf53593eb643468e79574895c4a97f8",
+    "updatedAt": "2026-10-27T23:58:34.152Z"
   }
 }

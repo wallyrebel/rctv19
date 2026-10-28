@@ -12,7 +12,8 @@ deathDate: "2026-10-26"
 importedAt: "2026-10-27T00:02:56.995Z"
 eligibilityBasis: "publication"
 eligibilityDate: "2026-10-26T17:19:43Z"
-sourceTextSha256: "57ef721f000642ced401b7c34b684421b299fe1376fc59848fd9c0cc49dfbb89"
+sourceTextSha256: "d12862178572aa30f3cd288d7aea654e09baac4f2253447d4e5a478a6aca1648"
+updated: "2026-10-27T23:58:34.152Z"
 ---
 
-<p>Mr. Bonna “Bonnie” Hopper passed away at Selmer Post Acute Nursing Home in Selmer, TN on October 26, 2026.<br>Arrangements are incomplete at this time.</p>
+<p>Mr. Bonna “Bonnie” Hopper passed away at Selmer Post Acute Nursing Home in Selmer, TN on October 26, 2026.<br>Full obituary will be provided at a later time.</p>
