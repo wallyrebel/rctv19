@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Ripley boys golf wins 2026 Class 4A state title</title>
+  <desc id="desc">Original RCTV 19 text graphic celebrating Ripley High School's reported 2026 Class 4A boys golf championship. Not a photograph of the tournament or team.</desc>
+  <rect width="1200" height="630" fill="#153c37"/>
+  <path d="M0 500 C260 435 470 520 710 475 S1000 425 1200 460 L1200 630 L0 630Z" fill="#37745b"/>
+  <path d="M0 560 C200 520 450 575 690 535 S1000 485 1200 515 L1200 630 L0 630Z" fill="#56936b"/>
+  <circle cx="1020" cy="145" r="56" fill="#f1d68e"/>
+  <path d="M1005 415 L1005 238" stroke="#f4f4e8" stroke-width="8"/>
+  <path d="M1005 243 L1090 270 L1005 299Z" fill="#df4141"/>
+  <text x="68" y="82" fill="#f1d68e" font-family="Arial,sans-serif" font-size="29" font-weight="700">RCTV 19 · FIVE-COUNTY ROUNDUP</text>
+  <text x="68" y="188" fill="#ffffff" font-family="Arial,sans-serif" font-size="69" font-weight="700">RIPLEY TIGERS</text>
+  <text x="68" y="276" fill="#ffffff" font-family="Arial,sans-serif" font-size="69" font-weight="700">STATE CHAMPIONS</text>
+  <rect x="68" y="323" width="832" height="118" rx="18" fill="#f7f4e9"/>
+  <text x="100" y="374" fill="#153c37" font-family="Arial,sans-serif" font-size="35" font-weight="700">2026 BOYS GOLF · CLASS 4A</text>
+  <text x="100" y="415" fill="#326255" font-family="Arial,sans-serif" font-size="24">AS REPORTED BY TIPPAH NEWS, OCT. 27</text>
+  <text x="68" y="594" fill="#ecf5ed" font-family="Arial,sans-serif" font-size="21">ORIGINAL INFORMATION GRAPHIC · NOT A TOURNAMENT PHOTO</text>
+</svg>
