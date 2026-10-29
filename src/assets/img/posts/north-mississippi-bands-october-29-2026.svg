@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">North Mississippi Class 3A state marching results</title>
+  <desc id="desc">Original RCTV 19 information graphic: Booneville state champion, Alcorn Central third, Kossuth fifth, at the October 24, 2026 Class 3A state marching championships. Not a photograph of the contest.</desc>
+  <rect width="1200" height="630" fill="#102b4c"/>
+  <rect x="0" y="0" width="1200" height="16" fill="#f0d000"/>
+  <text x="64" y="82" fill="#f0d000" font-family="Arial,sans-serif" font-size="30" font-weight="700">RCTV 19 · FIVE-COUNTY ROUNDUP</text>
+  <text x="64" y="170" fill="#ffffff" font-family="Arial,sans-serif" font-size="60" font-weight="700">STATE MARCHING RESULTS</text>
+  <text x="64" y="220" fill="#c8d7e8" font-family="Arial,sans-serif" font-size="29">CLASS 3A · OCTOBER 24, 2026 · BRANDON, MISSISSIPPI</text>
+  <rect x="64" y="262" width="1072" height="242" rx="24" fill="#ffffff"/>
+  <path d="M421 280V486M779 280V486" stroke="#d6e0ea" stroke-width="3"/>
+  <text x="101" y="331" fill="#163b66" font-family="Arial,sans-serif" font-size="29" font-weight="700">CHAMPION</text>
+  <text x="101" y="400" fill="#102b4c" font-family="Arial,sans-serif" font-size="43" font-weight="700">BOONEVILLE</text>
+  <text x="101" y="454" fill="#3f5a73" font-family="Arial,sans-serif" font-size="24">7th straight title</text>
+  <text x="457" y="331" fill="#163b66" font-family="Arial,sans-serif" font-size="29" font-weight="700">3RD PLACE</text>
+  <text x="457" y="400" fill="#102b4c" font-family="Arial,sans-serif" font-size="39" font-weight="700">ALCORN CENTRAL</text>
+  <text x="815" y="331" fill="#163b66" font-family="Arial,sans-serif" font-size="29" font-weight="700">5TH PLACE</text>
+  <text x="815" y="400" fill="#102b4c" font-family="Arial,sans-serif" font-size="43" font-weight="700">KOSSUTH</text>
+  <text x="815" y="454" fill="#3f5a73" font-family="Arial,sans-serif" font-size="24">Color guard: 2nd</text>
+  <text x="64" y="571" fill="#dce9f5" font-family="Arial,sans-serif" font-size="25">ORIGINAL RESULTS GRAPHIC · NOT A COMPETITION PHOTO</text>
+</svg>
