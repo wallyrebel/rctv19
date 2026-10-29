@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Corinth Warrior tag pre-order deadline</title>
+  <desc id="desc">Information graphic showing the Corinth School District Foundation Warrior tag pre-order deadline of November 19, 2026.</desc>
+  <rect width="1200" height="630" fill="#0c2540"/>
+  <rect x="54" y="54" width="1092" height="522" rx="20" fill="#f7f2e8"/>
+  <rect x="54" y="54" width="22" height="522" fill="#c4994e"/>
+  <text x="116" y="134" fill="#0c2540" font-family="Arial, sans-serif" font-size="30" font-weight="700">CORINTH SCHOOL DISTRICT FOUNDATION</text>
+  <text x="116" y="241" fill="#0c2540" font-family="Arial, sans-serif" font-size="68" font-weight="700">Warrior tag</text>
+  <text x="116" y="316" fill="#0c2540" font-family="Arial, sans-serif" font-size="68" font-weight="700">pre-orders</text>
+  <line x1="116" y1="356" x2="1080" y2="356" stroke="#c4994e" stroke-width="5"/>
+  <text x="116" y="434" fill="#0c2540" font-family="Arial, sans-serif" font-size="44" font-weight="700">Deadline extended: Nov. 19</text>
+  <text x="116" y="500" fill="#35516b" font-family="Arial, sans-serif" font-size="27">300 pre-orders needed before production</text>
+  <text x="116" y="544" fill="#35516b" font-family="Arial, sans-serif" font-size="19">RCTV 19 information graphic · Not an image of the proposed plate</text>
+</svg>
