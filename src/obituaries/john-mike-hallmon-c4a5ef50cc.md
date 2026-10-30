@@ -12,10 +12,11 @@ deathDate: "2026-10-28"
 importedAt: "2026-10-30T00:04:16.020Z"
 eligibilityBasis: "publication"
 eligibilityDate: "2026-10-29T14:42:33-04:00"
-sourceTextSha256: "6d379abb870d38a4e26d651651407a17f0c5ecbf527b5ff96e10348084890afe"
+sourceTextSha256: "0f7667a2c76a63a85f6290990e0d1d2476739f74c2975e0eb2fdf01266a93d7b"
 featuredImage: "/assets/img/obituaries/john-mike-hallmon-c4a5ef50cc.jpg"
 featuredImageAlt: "John “Mike” Hallmon"
 imageSourceUrl: "https://d1rjyex4ui0ya6.cloudfront.net/obituaries/photos/3170/2936419/6ae39399385ea.jpeg"
+updated: "2026-10-30T23:56:33.033Z"
 ---
 
 <p>John “Mike” Hallmon, age 74, passed away peacefully on October 28, 2026, in the comfort of his home overlooking beautiful Snow Lake, surrounded by the love of his family and friends.</p>
@@ -34,7 +35,7 @@ imageSourceUrl: "https://d1rjyex4ui0ya6.cloudfront.net/obituaries/photos/3170/29
 
 <p>Alongside that lively spirit was a deeply spiritual man. Mike valued his faith and welcomed meaningful Bible discussions, finding joy in sharing his beliefs and hearing the thoughts of others. Those conversations offered another glimpse into his heart and the faith that held an important place in his life.</p>
 
-<p>Left behind to cherish his memory is his beloved wife of 19 years, with whom he shared a life of love and companionship. He also leaves a host of nieces and nephews who held a special place in his heart and whom he loved as if they were his own children. His love for them was an enduring part of the bond they shared.</p>
+<p>Left behind to cherish his memory is his beloved wife of 19 years, Cyndi Hallmon, with whom he shared a life of love and companionship; his brothers, Gary Hallmon of Millington and David Hallmon and his wife, Glenda, of Hernando, Mississippi; along with a host of nieces and nephews who held a special place in his heart and whom he loved as if they were his own children. His love for his family was an enduring part of his life, and the memories they shared will remain close to their hearts.</p>
 
 <p>He was preceded in death by his parents, James Glenn Hallmon and Hazel Butler Hallmon.</p>
 
