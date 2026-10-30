@@ -221,5 +221,11 @@
     "importedAt": "2026-10-27T12:05:07.780Z",
     "sourceTextSha256": "3f827babc975a2a08b08b9d6d5b47b20d39c1ebe5f7872ff045e4d5a88e61fa4",
     "updatedAt": "2026-10-29T00:08:18.213Z"
+  },
+  "https://www.ripleyfuneralhome.com/obituary/JohnMike-Hallmon": {
+    "name": "John “Mike” Hallmon",
+    "file": "src/obituaries/john-mike-hallmon-c4a5ef50cc.md",
+    "importedAt": "2026-10-30T00:04:16.020Z",
+    "sourceTextSha256": "6d379abb870d38a4e26d651651407a17f0c5ecbf527b5ff96e10348084890afe"
   }
 }
