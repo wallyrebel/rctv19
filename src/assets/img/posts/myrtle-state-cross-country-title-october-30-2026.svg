@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Myrtle wins 2026 Class 2A boys state cross-country title</title>
+  <desc id="desc">RCTV 19 information graphic: Myrtle 60 team points, Walnut 73 in the October 29 state championship.</desc>
+  <rect width="1200" height="630" fill="#11293b"/>
+  <path d="M0 490 C230 420 420 565 650 490 S1000 445 1200 525 L1200 630 L0 630Z" fill="#1e5667"/>
+  <path d="M0 560 C230 490 430 630 660 555 S1000 515 1200 585" fill="none" stroke="#e6bd65" stroke-width="8" stroke-dasharray="26 20"/>
+  <text x="70" y="82" fill="#f5ca6c" font-family="Arial,sans-serif" font-size="30" font-weight="700">RCTV 19  •  STATE CROSS-COUNTRY</text>
+  <text x="70" y="170" fill="white" font-family="Arial,sans-serif" font-size="63" font-weight="700">MYRTLE BOYS WIN</text>
+  <text x="70" y="248" fill="white" font-family="Arial,sans-serif" font-size="63" font-weight="700">CLASS 2A STATE TITLE</text>
+  <text x="70" y="298" fill="#c8d9df" font-family="Arial,sans-serif" font-size="26">Oct. 29, 2026  •  Choctaw Trails, Clinton</text>
+  <rect x="70" y="337" width="1060" height="158" rx="20" fill="#f7f4eb"/>
+  <text x="105" y="384" fill="#213649" font-family="Arial,sans-serif" font-size="25" font-weight="700">TEAM POINTS</text>
+  <text x="105" y="454" fill="#133b50" font-family="Arial,sans-serif" font-size="43" font-weight="700">1st  MYRTLE  60</text>
+  <text x="668" y="454" fill="#133b50" font-family="Arial,sans-serif" font-size="39" font-weight="700">2nd  WALNUT  73</text>
+  <text x="70" y="597" fill="#e6eef0" font-family="Arial,sans-serif" font-size="21">INFORMATION GRAPHIC  •  SOURCE: MISSISSIPPI HIGH SCHOOL ACTIVITIES ASSOCIATION</text>
+</svg>
