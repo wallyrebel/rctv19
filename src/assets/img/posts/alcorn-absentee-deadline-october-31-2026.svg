@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Mississippi in-person absentee voting deadline</title>
+  <desc id="desc">Information graphic stating that eligible voters may vote absentee in person at their circuit clerk's office until noon on Saturday, October 31, 2026.</desc>
+  <rect width="1200" height="630" fill="#102c48"/>
+  <rect x="55" y="55" width="1090" height="520" rx="22" fill="#faf6ef"/>
+  <rect x="55" y="55" width="22" height="520" fill="#b48b48"/>
+  <text x="116" y="139" fill="#102c48" font-family="Arial, sans-serif" font-size="30" font-weight="700">MISSISSIPPI GENERAL ELECTION</text>
+  <text x="116" y="253" fill="#102c48" font-family="Arial, sans-serif" font-size="62" font-weight="700">In-person absentee</text>
+  <text x="116" y="325" fill="#102c48" font-family="Arial, sans-serif" font-size="62" font-weight="700">voting deadline</text>
+  <line x1="116" y1="360" x2="1080" y2="360" stroke="#b48b48" stroke-width="5"/>
+  <text x="116" y="439" fill="#102c48" font-family="Arial, sans-serif" font-size="46" font-weight="700">Saturday, Oct. 31 · noon</text>
+  <text x="116" y="493" fill="#34536b" font-family="Arial, sans-serif" font-size="28">For eligible voters at the circuit clerk's office</text>
+  <text x="116" y="544" fill="#34536b" font-family="Arial, sans-serif" font-size="19">RCTV 19 information graphic · Not a polling-place photograph</text>
+</svg>
