@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Selected 2027–29 MHSAA basketball regions in five counties</title>
+  <desc id="desc">RCTV 19 information graphic listing Ripley, Alcorn Central and Kossuth in Class 3A Region 1; North Tippah in Class 3A Region 2; and Ashland, Hickory Flat, Blue Mountain and West Union in Class 1A Region 2, with Wheeler in Class 1A Region 1.</desc>
+  <rect width="1200" height="630" fill="#102a43"/>
+  <rect x="0" y="0" width="1200" height="13" fill="#e7b94d"/>
+  <text x="72" y="85" fill="#e7b94d" font-family="Arial,sans-serif" font-size="26" font-weight="700">RCTV 19 • FIVE-COUNTY UPDATE</text>
+  <text x="72" y="150" fill="#fff" font-family="Arial,sans-serif" font-size="48" font-weight="700">New MHSAA regions</text>
+  <text x="72" y="192" fill="#d8e5ec" font-family="Arial,sans-serif" font-size="26">Selected basketball assignments • 2027–29</text>
+  <rect x="70" y="234" width="510" height="284" rx="18" fill="#183b56"/>
+  <rect x="620" y="234" width="510" height="284" rx="18" fill="#183b56"/>
+  <text x="96" y="281" fill="#e7b94d" font-family="Arial,sans-serif" font-size="25" font-weight="700">CLASS 3A</text>
+  <text x="96" y="332" fill="#fff" font-family="Arial,sans-serif" font-size="23">Region 1: Ripley, Alcorn Central, Kossuth</text>
+  <text x="96" y="387" fill="#fff" font-family="Arial,sans-serif" font-size="23">Region 2: North Tippah</text>
+  <text x="646" y="281" fill="#e7b94d" font-family="Arial,sans-serif" font-size="25" font-weight="700">CLASS 1A</text>
+  <text x="646" y="332" fill="#fff" font-family="Arial,sans-serif" font-size="23">Region 1: Wheeler</text>
+  <text x="646" y="387" fill="#fff" font-family="Arial,sans-serif" font-size="23">Region 2: Ashland, Hickory Flat,</text>
+  <text x="646" y="422" fill="#fff" font-family="Arial,sans-serif" font-size="23">Blue Mountain, West Union</text>
+  <text x="72" y="574" fill="#d8e5ec" font-family="Arial,sans-serif" font-size="20">Future alignment begins in the 2027–28 school year • Selected schools shown</text>
+</svg>
