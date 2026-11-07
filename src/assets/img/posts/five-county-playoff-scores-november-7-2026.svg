@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Five-county Friday playoff finals</title>
+  <desc id="desc">Original RCTV 19 information graphic showing November 6, 2026 football final scores. This is not a game photograph.</desc>
+  <rect width="1200" height="630" fill="#10263b"/>
+  <rect x="45" y="40" width="1110" height="550" rx="20" fill="#173851"/>
+  <text x="85" y="105" fill="#f2d274" font-family="Arial,sans-serif" font-size="30" font-weight="700">RCTV 19  •  NORTH MISSISSIPPI</text>
+  <text x="85" y="160" fill="white" font-family="Arial,sans-serif" font-size="48" font-weight="700">Friday playoff finals</text>
+  <text x="85" y="202" fill="#c9d8e2" font-family="Arial,sans-serif" font-size="26">November 6, 2026  •  High school football</text>
+  <g fill="white" font-family="Arial,sans-serif" font-size="31">
+    <text x="85" y="270">New Albany 52  ·  Rosa Fort 14</text>
+    <text x="85" y="333">Booneville 13  ·  Yazoo County 0</text>
+    <text x="85" y="396">Corinth 42  ·  Ripley 0</text>
+    <text x="85" y="459">West Tallahatchie 48  ·  Ashland 6</text>
+    <text x="85" y="522">North Side 48  ·  Walnut 6</text>
+  </g>
+  <text x="1150" y="568" fill="#c9d8e2" text-anchor="end" font-family="Arial,sans-serif" font-size="19">Original score graphic · Not a game photograph</text>
+</svg>
