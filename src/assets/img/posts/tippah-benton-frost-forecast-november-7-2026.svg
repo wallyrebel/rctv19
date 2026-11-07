@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Sunday morning frost forecast for Ripley and Ashland</title>
+  <desc id="desc">RCTV 19 information graphic, not a weather photograph. Ripley and Ashland have lows near 35 degrees and patchy frost forecast early Sunday, November 8.</desc>
+  <rect width="1200" height="630" fill="#142b44"/>
+  <rect x="52" y="45" width="1096" height="540" rx="28" fill="#f4f8fb"/>
+  <text x="95" y="116" fill="#236184" font-family="Arial,sans-serif" font-size="29" font-weight="bold">RCTV 19  |  FIVE-COUNTY EVENING ROUNDUP</text>
+  <text x="95" y="206" fill="#142b44" font-family="Arial,sans-serif" font-size="59" font-weight="bold">Frost possible Sunday morning</text>
+  <text x="95" y="265" fill="#3a5268" font-family="Arial,sans-serif" font-size="31">November 8, 2026  •  Forecast as of Saturday afternoon</text>
+  <rect x="95" y="310" width="480" height="153" rx="18" fill="#dceaf3"/>
+  <rect x="625" y="310" width="480" height="153" rx="18" fill="#dceaf3"/>
+  <text x="128" y="370" fill="#142b44" font-family="Arial,sans-serif" font-size="38" font-weight="bold">Ripley · Tippah</text>
+  <text x="128" y="428" fill="#236184" font-family="Arial,sans-serif" font-size="35">Near 35°F · patchy frost</text>
+  <text x="658" y="370" fill="#142b44" font-family="Arial,sans-serif" font-size="38" font-weight="bold">Ashland · Benton</text>
+  <text x="658" y="428" fill="#236184" font-family="Arial,sans-serif" font-size="35">Near 35°F · frost and fog</text>
+  <text x="95" y="529" fill="#3a5268" font-family="Arial,sans-serif" font-size="25">Information graphic based on Tippah News / NWS forecast. Check for updates.</text>
+</svg>
