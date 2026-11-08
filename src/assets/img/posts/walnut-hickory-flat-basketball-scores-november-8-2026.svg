@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Five-county basketball scoreboard</title>
+  <desc id="desc">Walnut girls 77, Strayhorn 12; Walnut boys 64, Tishomingo County 60; Hickory Flat girls 70, Houlka 17; Hickory Flat boys 49, Houlka 43.</desc>
+  <rect width="1200" height="630" fill="#102a43"/>
+  <rect x="48" y="48" width="1104" height="534" rx="24" fill="#f5f2e9"/>
+  <text x="86" y="119" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#102a43">RCTV 19 • AREA BASKETBALL</text>
+  <text x="86" y="169" font-family="Arial,sans-serif" font-size="22" fill="#52606d">Results reported Nov. 8, 2026 · Games played Nov. 6–7</text>
+  <line x1="86" y1="192" x2="1114" y2="192" stroke="#c49a32" stroke-width="5"/>
+  <text x="86" y="255" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#102a43">WALNUT</text>
+  <text x="86" y="301" font-family="Arial,sans-serif" font-size="27" fill="#102a43">Girls 77–12 Strayhorn</text>
+  <text x="86" y="344" font-family="Arial,sans-serif" font-size="27" fill="#102a43">Boys 64–60 Tishomingo County</text>
+  <text x="625" y="255" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#102a43">HICKORY FLAT</text>
+  <text x="625" y="301" font-family="Arial,sans-serif" font-size="27" fill="#102a43">Girls 70–17 Houlka</text>
+  <text x="625" y="344" font-family="Arial,sans-serif" font-size="27" fill="#102a43">Boys 49–43 Houlka</text>
+  <line x1="86" y1="391" x2="1114" y2="391" stroke="#d9e2ec" stroke-width="3"/>
+  <text x="86" y="444" font-family="Arial,sans-serif" font-size="23" fill="#52606d">Score graphic • not a photograph of either game</text>
+  <text x="86" y="532" font-family="Arial,sans-serif" font-size="19" fill="#52606d">Sources: Tippah News; North Mississippi Sports Network</text>
+</svg>
