@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Ripley Veterans Day program</title>
+  <desc id="desc">Information graphic: Wednesday, November 11, 2026, 11 a.m., Ripley Sportsplex.</desc>
+  <rect width="1200" height="630" fill="#10243b"/>
+  <rect x="0" y="0" width="1200" height="18" fill="#bc343b"/>
+  <rect x="75" y="84" width="12" height="450" fill="#bc343b"/>
+  <text x="125" y="167" fill="#f5f2e8" font-family="Arial, sans-serif" font-size="34" font-weight="bold" letter-spacing="5">RCTV 19 • COMMUNITY CALENDAR</text>
+  <text x="125" y="272" fill="#ffffff" font-family="Arial, sans-serif" font-size="66" font-weight="bold">Veterans Day program</text>
+  <text x="125" y="354" fill="#dbe5f1" font-family="Arial, sans-serif" font-size="45">Ripley Sportsplex</text>
+  <text x="125" y="426" fill="#ffffff" font-family="Arial, sans-serif" font-size="48" font-weight="bold">Wednesday, Nov. 11 • 11 a.m.</text>
+  <text x="125" y="525" fill="#cbd6e2" font-family="Arial, sans-serif" font-size="24">Event notice • Based on Ripley Main Street announcement</text>
+</svg>
