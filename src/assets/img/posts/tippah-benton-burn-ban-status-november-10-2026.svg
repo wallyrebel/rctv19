@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Tippah and Benton burn-ban status</title>
+  <desc id="desc">Information card stating Tippah and Benton are not on the state burn-ban list as reported November 10, 2026.</desc>
+  <rect width="1200" height="630" fill="#123047"/>
+  <rect x="72" y="72" width="1056" height="486" rx="24" fill="#f3f6ee"/>
+  <text x="112" y="151" fill="#123047" font-family="Arial, sans-serif" font-size="30" font-weight="700">RCTV 19  |  FIVE-COUNTY ROUNDUP</text>
+  <text x="112" y="249" fill="#123047" font-family="Arial, sans-serif" font-size="63" font-weight="700">BURN-BAN STATUS</text>
+  <text x="112" y="336" fill="#165f55" font-family="Arial, sans-serif" font-size="55" font-weight="700">Tippah + Benton</text>
+  <text x="112" y="400" fill="#123047" font-family="Arial, sans-serif" font-size="34">Not on the state list, as reported Nov. 10</text>
+  <text x="112" y="483" fill="#425a64" font-family="Arial, sans-serif" font-size="24">Check Mississippi Forestry Commission before burning.</text>
+</svg>
