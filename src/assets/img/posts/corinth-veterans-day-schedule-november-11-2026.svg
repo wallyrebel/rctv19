@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Corinth Veterans Day schedule, November 11, 2026</title>
+  <desc id="desc">Information graphic: parade at 10 a.m. on Fillmore Street ending at Trailhead Park; Wednesday garbage pickup moves to Thursday.</desc>
+  <rect width="1200" height="630" fill="#10243b"/>
+  <rect x="44" y="44" width="1112" height="542" rx="24" fill="#f8f5ec"/>
+  <rect x="44" y="44" width="1112" height="18" fill="#b32e3a"/>
+  <text x="88" y="129" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#b32e3a">RCTV 19  •  COMMUNITY NOTICE</text>
+  <text x="88" y="207" font-family="Arial,sans-serif" font-size="61" font-weight="700" fill="#10243b">Corinth Veterans Day</text>
+  <text x="88" y="275" font-family="Arial,sans-serif" font-size="37" fill="#31465b">Wednesday, November 11</text>
+  <line x1="88" y1="308" x2="1112" y2="308" stroke="#b6c2ca" stroke-width="3"/>
+  <text x="88" y="377" font-family="Arial,sans-serif" font-size="39" font-weight="700" fill="#10243b">Parade: 10 a.m.</text>
+  <text x="88" y="426" font-family="Arial,sans-serif" font-size="30" fill="#31465b">Fillmore Street → Trailhead Park</text>
+  <text x="88" y="504" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#10243b">Wednesday garbage pickup → Thursday</text>
+  <text x="88" y="558" font-family="Arial,sans-serif" font-size="20" fill="#586b7d">Scheduled events and service change • Information graphic, not an event photo</text>
+</svg>
