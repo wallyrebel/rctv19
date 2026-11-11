@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Tippah County voter turnout</title>
+  <desc id="desc">Information graphic with reported Nov. 3 election turnout of 55.38 percent and 7,406 ballots cast. This is not a photograph.</desc>
+  <rect width="1200" height="630" fill="#13273d"/>
+  <rect x="56" y="54" width="1088" height="522" rx="22" fill="#f7f5ed"/>
+  <rect x="56" y="54" width="1088" height="18" fill="#b53c35"/>
+  <text x="104" y="145" fill="#284357" font-family="Arial,sans-serif" font-size="34" font-weight="700">TIPPAH COUNTY • NOV. 3 ELECTION</text>
+  <text x="104" y="332" fill="#13273d" font-family="Arial,sans-serif" font-size="154" font-weight="700">55.38%</text>
+  <text x="112" y="400" fill="#284357" font-family="Arial,sans-serif" font-size="45">reported voter turnout</text>
+  <line x1="104" y1="435" x2="1096" y2="435" stroke="#c6d0d3" stroke-width="3"/>
+  <text x="110" y="503" fill="#13273d" font-family="Arial,sans-serif" font-size="42" font-weight="700">7,406 ballots cast</text>
+  <text x="1070" y="503" text-anchor="end" fill="#596a73" font-family="Arial,sans-serif" font-size="24">Source: Tippah News / Southern Sentinel</text>
+  <text x="108" y="550" fill="#596a73" font-family="Arial,sans-serif" font-size="20">RCTV 19 information graphic • figures subject to election certification</text>
+</svg>
