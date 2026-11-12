@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Mississippi U.S. Senate race call</title>
+  <desc id="desc">Information graphic stating that the Associated Press called the Mississippi U.S. Senate race for Scott Colom on November 11, 2026. This is not a photograph.</desc>
+  <rect width="1200" height="630" fill="#13273d"/>
+  <rect x="56" y="54" width="1088" height="522" rx="22" fill="#f7f5ed"/>
+  <rect x="56" y="54" width="1088" height="18" fill="#b53c35"/>
+  <text x="104" y="145" fill="#284357" font-family="Arial,sans-serif" font-size="34" font-weight="700">MISSISSIPPI U.S. SENATE</text>
+  <text x="104" y="285" fill="#13273d" font-family="Arial,sans-serif" font-size="90" font-weight="700">Scott Colom</text>
+  <text x="108" y="357" fill="#284357" font-family="Arial,sans-serif" font-size="40">AP called race Nov. 11, 2026</text>
+  <line x1="104" y1="405" x2="1096" y2="405" stroke="#c6d0d3" stroke-width="3"/>
+  <text x="108" y="480" fill="#13273d" font-family="Arial,sans-serif" font-size="32">Statewide result</text>
+  <text x="108" y="538" fill="#596a73" font-family="Arial,sans-serif" font-size="22">RCTV 19 information graphic • Source: Associated Press</text>
+</svg>
