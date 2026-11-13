@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Blue Mountain Christian vs. Loyola volleyball result</title>
+  <desc id="desc">SSAC Volleyball Championship, November 13, 2026: Loyola 3, Blue Mountain Christian 1.</desc>
+  <rect width="1200" height="630" fill="#122b45"/>
+  <rect x="62" y="58" width="1076" height="514" rx="22" fill="#f4f5f2"/>
+  <text x="105" y="125" fill="#27435a" font-family="Arial,sans-serif" font-size="32" font-weight="700">SSAC VOLLEYBALL CHAMPIONSHIP</text>
+  <text x="105" y="185" fill="#527084" font-family="Arial,sans-serif" font-size="26">Friday, November 13, 2026 · Final</text>
+  <line x1="105" y1="215" x2="1095" y2="215" stroke="#c4d0d6" stroke-width="3"/>
+  <text x="105" y="300" fill="#122b45" font-family="Arial,sans-serif" font-size="47" font-weight="700">Loyola</text>
+  <text x="1020" y="300" text-anchor="end" fill="#122b45" font-family="Arial,sans-serif" font-size="58" font-weight="700">3</text>
+  <text x="105" y="390" fill="#122b45" font-family="Arial,sans-serif" font-size="47" font-weight="700">Blue Mountain Christian</text>
+  <text x="1020" y="390" text-anchor="end" fill="#122b45" font-family="Arial,sans-serif" font-size="58" font-weight="700">1</text>
+  <line x1="105" y1="425" x2="1095" y2="425" stroke="#c4d0d6" stroke-width="3"/>
+  <text x="105" y="475" fill="#527084" font-family="Arial,sans-serif" font-size="25">Sets: 19–25 · 25–20 · 20–25 · 20–25</text>
+  <text x="105" y="535" fill="#527084" font-family="Arial,sans-serif" font-size="21">RCTV 19 information graphic · Source: BMCU Athletics</text>
+</svg>
