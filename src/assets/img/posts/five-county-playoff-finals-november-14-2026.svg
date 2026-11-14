@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">North Mississippi Friday playoff finals</title>
+  <desc id="desc">New Albany 7, Louisville 42; Myrtle 8, North Side 34; Baldwyn 0, East Webster 26; Corinth 13, Kosciusko 27; Kossuth 7, Winona 53.</desc>
+  <rect width="1200" height="630" fill="#102b3c"/>
+  <rect x="38" y="35" width="1124" height="560" rx="22" fill="#f5f6f1"/>
+  <text x="80" y="95" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#12536a">RCTV 19 • NOV. 14, 2026</text>
+  <text x="80" y="150" font-family="Arial,sans-serif" font-size="48" font-weight="700" fill="#102b3c">Friday playoff finals</text>
+  <text x="80" y="192" font-family="Arial,sans-serif" font-size="25" fill="#45555e">Union • Prentiss • Alcorn counties</text>
+  <g font-family="Arial,sans-serif" font-size="30" fill="#102b3c">
+    <text x="85" y="265">New Albany 7</text><text x="625" y="265">Louisville 42</text>
+    <text x="85" y="330">Myrtle 8</text><text x="625" y="330">North Side 34</text>
+    <text x="85" y="395">Baldwyn 0</text><text x="625" y="395">East Webster 26</text>
+    <text x="85" y="460">Corinth 13</text><text x="625" y="460">Kosciusko 27</text>
+    <text x="85" y="525">Kossuth 7</text><text x="625" y="525">Winona 53</text>
+  </g>
+  <text x="85" y="568" font-family="Arial,sans-serif" font-size="19" fill="#58666e">Source: MaxPreps • Graphic by RCTV 19 • Not a game photograph</text>
+</svg>
