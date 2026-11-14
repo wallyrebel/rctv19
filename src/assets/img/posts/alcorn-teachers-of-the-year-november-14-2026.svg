@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title description">
+  <title id="title">Alcorn School District Teachers of the Year</title>
+  <desc id="description">Original RCTV 19 text graphic announcing eight 2026–27 Alcorn School District Teachers of the Year; no portraits are shown.</desc>
+  <rect width="1200" height="675" fill="#102b43"/>
+  <rect x="58" y="56" width="1084" height="563" rx="22" fill="#f7f4ea"/>
+  <rect x="58" y="56" width="1084" height="16" fill="#c53a30"/>
+  <text x="104" y="158" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#c53a30">ALCORN COUNTY SCHOOLS</text>
+  <text x="104" y="258" font-family="Arial, sans-serif" font-size="65" font-weight="700" fill="#102b43">Teachers of the Year</text>
+  <text x="104" y="325" font-family="Arial, sans-serif" font-size="38" fill="#102b43">Eight educators recognized for 2026–27</text>
+  <line x1="104" y1="370" x2="1096" y2="370" stroke="#c9d0d3" stroke-width="3"/>
+  <text x="104" y="435" font-family="Arial, sans-serif" font-size="31" fill="#102b43">Alcorn Central  •  Biggersville  •  Kossuth</text>
+  <text x="104" y="487" font-family="Arial, sans-serif" font-size="31" fill="#102b43">Alcorn Career &amp; Technology Center</text>
+  <text x="104" y="572" font-family="Arial, sans-serif" font-size="23" fill="#486174">Source: Alcorn School District live feed  |  RCTV 19</text>
+</svg>
