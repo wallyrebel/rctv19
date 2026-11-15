@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Five-county deer gun season opening</title>
+  <desc id="desc">RCTV 19 schedule graphic: deer gun season opens November 21, 2026, in Union, Prentiss, Alcorn, Benton and Tippah counties. No hunt or animal is shown.</desc>
+  <rect width="1200" height="630" fill="#142b2b"/>
+  <rect x="48" y="48" width="1104" height="534" rx="18" fill="#21433b" stroke="#b7c899" stroke-width="3"/>
+  <text x="88" y="128" fill="#d8e6c1" font-family="Arial,sans-serif" font-size="34" font-weight="700">RCTV 19  •  FIVE-COUNTY AREA</text>
+  <text x="88" y="235" fill="#ffffff" font-family="Arial,sans-serif" font-size="67" font-weight="700">Deer gun season</text>
+  <text x="88" y="324" fill="#f5cf78" font-family="Arial,sans-serif" font-size="73" font-weight="700">Opens Nov. 21</text>
+  <text x="88" y="402" fill="#ffffff" font-family="Arial,sans-serif" font-size="30">Union  •  Prentiss  •  Alcorn  •  Benton  •  Tippah</text>
+  <line x1="88" y1="445" x2="1112" y2="445" stroke="#b7c899" stroke-width="2"/>
+  <text x="88" y="500" fill="#d8e6c1" font-family="Arial,sans-serif" font-size="26">First gun segment: Nov. 21–Dec. 1, 2026</text>
+  <text x="88" y="548" fill="#d8e6c1" font-family="Arial,sans-serif" font-size="22">Schedule graphic • Source: Mississippi Department of Wildlife, Fisheries, and Parks</text>
+</svg>
