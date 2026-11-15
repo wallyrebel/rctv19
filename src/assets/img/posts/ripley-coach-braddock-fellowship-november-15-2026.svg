@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Ripley coach selected for fellowship</title>
+  <desc id="desc">RCTV 19 information graphic about Jamal Braddock's selection for the Tomorrow's 25 Coaching Fellowship.</desc>
+  <rect width="1200" height="630" fill="#10243d"/>
+  <rect x="0" y="0" width="20" height="630" fill="#e8b44c"/>
+  <text x="72" y="105" fill="#e8b44c" font-family="Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="4">RCTV 19  •  TIPPAH COUNTY</text>
+  <text x="72" y="235" fill="#ffffff" font-family="Arial, sans-serif" font-size="66" font-weight="700">RIPLEY COACH</text>
+  <text x="72" y="320" fill="#ffffff" font-family="Arial, sans-serif" font-size="66" font-weight="700">JAMAL BRADDOCK</text>
+  <text x="72" y="403" fill="#e8b44c" font-family="Arial, sans-serif" font-size="45" font-weight="700">SELECTED FOR FELLOWSHIP</text>
+  <line x1="72" y1="456" x2="1128" y2="456" stroke="#69819a" stroke-width="2"/>
+  <text x="72" y="525" fill="#d9e5ef" font-family="Arial, sans-serif" font-size="31">Tomorrow's 25 Coaching Fellowship</text>
+  <text x="72" y="574" fill="#a9bac9" font-family="Arial, sans-serif" font-size="23">Information graphic • Nov. 15, 2026 • Source: Tippah News</text>
+</svg>
