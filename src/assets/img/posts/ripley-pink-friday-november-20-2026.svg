@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Ripley Pink Friday, November 20</title>
+  <desc id="desc">Original event card with the date and 4 to 7 p.m. shopping hours; no event photograph.</desc>
+  <rect width="1200" height="630" fill="#172636"/>
+  <rect x="56" y="52" width="1088" height="526" rx="24" fill="#f8edf1"/>
+  <rect x="56" y="52" width="24" height="526" fill="#d84d83"/>
+  <text x="120" y="153" fill="#8b3154" font-family="Arial,sans-serif" font-size="35" font-weight="700">RIPLEY MAIN STREET · EVENT NOTICE</text>
+  <text x="120" y="275" fill="#172636" font-family="Arial,sans-serif" font-size="79" font-weight="700">PINK FRIDAY</text>
+  <text x="120" y="368" fill="#172636" font-family="Arial,sans-serif" font-size="60" font-weight="700">NOVEMBER 20</text>
+  <text x="120" y="450" fill="#8b3154" font-family="Arial,sans-serif" font-size="52" font-weight="700">4–7 P.M. · RIPLEY, MS</text>
+  <text x="120" y="533" fill="#425161" font-family="Arial,sans-serif" font-size="25">RCTV 19 INFORMATION GRAPHIC · NOT AN EVENT PHOTO</text>
+</svg>
