@@ -2,8 +2,8 @@ name: Automated RSS to Blog Pipeline
 
 on:
   schedule:
-    # Runs at 8:00 AM and 8:00 PM CDT (13:00 and 01:00 UTC)
-    - cron: '0 1,13 * * *'
+    # Four spaced editions give late-morning and afternoon announcements a same-day slot.
+    - cron: '19 1,13,17,21 * * *'
   workflow_dispatch: # Allows manual triggering from the GitHub Actions tab
 
 permissions:

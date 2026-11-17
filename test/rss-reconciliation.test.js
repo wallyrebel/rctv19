@@ -109,6 +109,40 @@ test('changed published anchors fail closed and preserve existing bytes, titles 
   assert.equal(pageTitle({ title: 'Pet Costume Contest at Spirit of Ripley Festival' }, 'RCTV19'), 'Pet Costume Contest at Spirit of Ripley Festival | RCTV19');
 });
 
+test('processed items do not hide fresh coverage and only three paid rewrites are attempted per feed', async t => {
+  const options = await setup(t);
+  const items = ['01', '02', '03', '04', '05', '06', '07'].map(id => changed(id, 'New supporting detail ' + id));
+  options.processedItems.push('01', '02', '03');
+  const attempted = [];
+  const result = await processFeeds({ ...options,
+    parseFeed: async () => ({ items }),
+    rewrite: async item => { attempted.push(item.guid); return article('New article ' + item.guid); } });
+  assert.deepEqual(attempted, ['04', '05', '06']);
+  assert.equal(result.created.length, 3);
+});
+
+test('loads the full published game report by exact link and holds a mismatched excerpt', async t => {
+  const options = await setup(t);
+  const links = ['preview', 'unconfirmed'].map(slug => 'https://tippahsports.com/sports/' + slug + '/');
+  const items = links.map((link, i) => ({ link, guid: link, title: 'Sports update ' + i, content: 'A preview.',
+    pubDate: options.now.toISOString() }));
+  const result = await processFeeds({ ...options, feeds: ['https://tippahsports.com/feed/'],
+    parseFeed: async () => ({ title: 'Tippah County Sports', items }),
+    fetchSource: async (url, opts) => {
+      assert.equal(url.origin, 'https://tippahsports.com');
+      assert.equal(url.pathname, '/wp-json/wp/v2/posts');
+      assert.equal(opts.redirect, 'error');
+      return { ok: true, json: async () => [{ link: links[0], status: 'publish', content: { rendered: '<p>Falkner hosts Ashland.</p>' } }] };
+    },
+    rewrite: async (item, name) => {
+      assert.equal(name, 'Tippah County Sports');
+      assert.equal(item['content:encoded'], '<p>Falkner hosts Ashland.</p>');
+      return article('Falkner to face Ashland');
+    } });
+  assert.equal(result.created.length, 1);
+  assert.match(result.held[0].reason, /No matching public/);
+});
+
 test('complete source fingerprint retains new facts and changed media, ignores GUID and expiring media queries', () => {
   assert.equal(sourceFingerprint(repeat), records[0].fingerprints[0]);
   assert.equal(sourceFingerprint({ ...repeat, guid: 'other', content: repeat.content.replace('.jpg"', '.jpg?expires=1"') }), sourceFingerprint(repeat));
