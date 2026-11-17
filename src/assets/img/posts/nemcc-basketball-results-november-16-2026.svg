@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">NEMCC basketball Monday results</title>
+  <desc id="desc">Information graphic showing NEMCC women's 88-53 win over Coastal Alabama-North and men's 83-74 win over East Central on November 16, 2026.</desc>
+  <rect width="1200" height="630" fill="#10243a"/>
+  <rect x="54" y="54" width="1092" height="522" rx="24" fill="#f7f7f1"/>
+  <text x="95" y="125" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#153252">NEMCC BASKETBALL</text>
+  <text x="95" y="173" font-family="Arial,sans-serif" font-size="22" fill="#4b5968">MONDAY, NOVEMBER 16 · ROAD RESULTS</text>
+  <line x1="95" y1="198" x2="1105" y2="198" stroke="#b7c2cc" stroke-width="2"/>
+  <text x="95" y="268" font-family="Arial,sans-serif" font-size="30" fill="#153252">WOMEN</text>
+  <text x="95" y="322" font-family="Arial,sans-serif" font-size="35" font-weight="700" fill="#10243a">Northeast 88 · Coastal Alabama-North 53</text>
+  <text x="95" y="407" font-family="Arial,sans-serif" font-size="30" fill="#153252">MEN</text>
+  <text x="95" y="461" font-family="Arial,sans-serif" font-size="35" font-weight="700" fill="#10243a">Northeast 83 · East Central 74</text>
+  <line x1="95" y1="495" x2="1105" y2="495" stroke="#b7c2cc" stroke-width="2"/>
+  <text x="95" y="541" font-family="Arial,sans-serif" font-size="20" fill="#4b5968">RCTV 19 · Results graphic, not a game photograph</text>
+</svg>
