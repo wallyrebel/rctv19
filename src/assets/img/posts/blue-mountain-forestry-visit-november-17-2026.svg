@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Blue Mountain K12 forestry and fire safety visit</title>
+  <desc id="desc">Original RCTV 19 information graphic with a tree and a small flame symbol, not a picture of the school visit.</desc>
+  <rect width="1200" height="630" fill="#123a32"/>
+  <rect x="44" y="44" width="1112" height="542" rx="24" fill="#f4f3e9"/>
+  <path d="M111 120h24v390h-24z" fill="#d7933f"/>
+  <text x="175" y="157" font-family="Arial,sans-serif" font-size="31" font-weight="700" fill="#346b52">TIPPAH COUNTY • NOV. 17, 2026</text>
+  <text x="175" y="263" font-family="Arial,sans-serif" font-size="66" font-weight="700" fill="#123a32">Blue Mountain K12</text>
+  <text x="175" y="344" font-family="Arial,sans-serif" font-size="60" font-weight="700" fill="#123a32">Forestry &amp; fire safety</text>
+  <text x="175" y="410" font-family="Arial,sans-serif" font-size="30" fill="#3c5049">Mississippi Forestry Commission school visit</text>
+  <path d="M955 224l-96 135h55l-66 85h208l-66-85h55z" fill="#4c8b66"/>
+  <rect x="936" y="444" width="34" height="48" fill="#79543a"/>
+  <path d="M1070 462c-21-25 4-39-12-69-2 21-28 29-26 52-12-9-13-18-13-18-15 24-4 49 18 53 18 4 31-6 33-18z" fill="#d7933f"/>
+  <text x="175" y="535" font-family="Arial,sans-serif" font-size="24" fill="#60736a">RCTV 19 • Information graphic, not an event photo</text>
+</svg>
