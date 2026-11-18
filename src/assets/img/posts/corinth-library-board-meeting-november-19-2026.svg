@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Northeast Regional Library board meeting in Corinth</title>
+  <desc id="desc">Original information graphic for the November 19, 2026 library board meeting; not a meeting photograph.</desc>
+  <rect width="1200" height="630" fill="#102c46"/>
+  <rect x="48" y="48" width="1104" height="534" rx="25" fill="#f4f0e8"/>
+  <rect x="88" y="91" width="1024" height="9" fill="#a54b34"/>
+  <text x="100" y="180" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#a54b34">CORINTH • ALCORN COUNTY</text>
+  <text x="100" y="275" font-family="Arial, sans-serif" font-size="62" font-weight="700" fill="#102c46">Library board meeting</text>
+  <text x="100" y="345" font-family="Arial, sans-serif" font-size="40" fill="#102c46">Thursday, November 19, 2026</text>
+  <text x="100" y="413" font-family="Arial, sans-serif" font-size="34" fill="#102c46">Corinth Public Library auditorium</text>
+  <line x1="100" y1="453" x2="1100" y2="453" stroke="#a54b34" stroke-width="3"/>
+  <text x="100" y="512" font-family="Arial, sans-serif" font-size="25" fill="#34536b">RCTV 19 • Information graphic based on library notice</text>
+</svg>
