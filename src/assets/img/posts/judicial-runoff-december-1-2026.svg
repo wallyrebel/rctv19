@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">December 1 judicial runoffs</title>
+  <desc id="desc">Original information graphic showing the December 1, 2026 judicial runoff date for Union, Benton and Tippah counties. Not a polling-place photograph.</desc>
+  <rect width="1200" height="630" fill="#13273d"/>
+  <rect x="56" y="54" width="1088" height="522" rx="22" fill="#f7f5ed"/>
+  <rect x="56" y="54" width="1088" height="18" fill="#b53c35"/>
+  <text x="104" y="145" fill="#284357" font-family="Arial,sans-serif" font-size="34" font-weight="700">NORTH MISSISSIPPI • JUDICIAL RUNOFFS</text>
+  <text x="104" y="324" fill="#13273d" font-family="Arial,sans-serif" font-size="104" font-weight="700">DECEMBER 1</text>
+  <text x="110" y="393" fill="#284357" font-family="Arial,sans-serif" font-size="39">Union • Benton • Tippah</text>
+  <line x1="104" y1="435" x2="1096" y2="435" stroke="#c6d0d3" stroke-width="3"/>
+  <text x="110" y="503" fill="#13273d" font-family="Arial,sans-serif" font-size="32" font-weight="700">Check your address for races and voting details</text>
+  <text x="1070" y="548" text-anchor="end" fill="#596a73" font-family="Arial,sans-serif" font-size="20">RCTV 19 • Source: MS Secretary of State / Tippah News</text>
+</svg>
