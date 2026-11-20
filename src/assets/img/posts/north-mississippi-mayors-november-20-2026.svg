@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">North Mississippi Mayors Association elects officers</title>
+  <desc id="desc">Original RCTV 19 information graphic naming Cindy Hubbard as president and Jeff Olson as vice president. Not a photograph.</desc>
+  <rect width="1200" height="630" fill="#102b3f"/>
+  <rect x="58" y="54" width="1084" height="522" rx="24" fill="#f5f0e7"/>
+  <rect x="58" y="54" width="1084" height="16" fill="#c42e30"/>
+  <text x="105" y="145" fill="#a9232b" font-family="Arial,sans-serif" font-size="27" font-weight="700" letter-spacing="3">RCTV 19  •  NOVEMBER 20, 2026</text>
+  <text x="105" y="218" fill="#102b3f" font-family="Arial,sans-serif" font-size="51" font-weight="700">North Mississippi mayors</text>
+  <text x="105" y="279" fill="#102b3f" font-family="Arial,sans-serif" font-size="51" font-weight="700">elect regional officers</text>
+  <line x1="105" y1="319" x2="1095" y2="319" stroke="#b7c1c6" stroke-width="3"/>
+  <text x="105" y="385" fill="#a9232b" font-family="Arial,sans-serif" font-size="25" font-weight="700">PRESIDENT</text>
+  <text x="105" y="438" fill="#102b3f" font-family="Arial,sans-serif" font-size="39" font-weight="700">Cindy Hubbard</text>
+  <text x="105" y="477" fill="#425e6c" font-family="Arial,sans-serif" font-size="26">Pittsboro mayor</text>
+  <text x="635" y="385" fill="#a9232b" font-family="Arial,sans-serif" font-size="25" font-weight="700">VICE PRESIDENT</text>
+  <text x="635" y="438" fill="#102b3f" font-family="Arial,sans-serif" font-size="39" font-weight="700">Jeff Olson</text>
+  <text x="635" y="477" fill="#425e6c" font-family="Arial,sans-serif" font-size="26">New Albany mayor</text>
+  <text x="105" y="543" fill="#607987" font-family="Arial,sans-serif" font-size="21">Information graphic • not a meeting photograph</text>
+</svg>
