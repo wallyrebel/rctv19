@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Fall 2026 hospital safety grades</title>
+  <desc id="desc">RCTV 19 information graphic: Magnolia Regional Health Center in Corinth received a C, and Baptist Memorial Hospital-Booneville received an A.</desc>
+  <rect width="1200" height="630" fill="#11263b"/>
+  <text x="70" y="88" fill="#a9cce7" font-family="Arial, sans-serif" font-size="30" font-weight="700">RCTV 19  •  NOVEMBER 21, 2026</text>
+  <text x="70" y="160" fill="#ffffff" font-family="Arial, sans-serif" font-size="54" font-weight="700">Fall hospital safety grades</text>
+  <rect x="70" y="210" width="510" height="285" rx="20" fill="#f1f6fa"/>
+  <rect x="620" y="210" width="510" height="285" rx="20" fill="#f1f6fa"/>
+  <text x="105" y="280" fill="#183047" font-family="Arial, sans-serif" font-size="28" font-weight="700">Magnolia Regional</text>
+  <text x="105" y="320" fill="#35536c" font-family="Arial, sans-serif" font-size="25">Corinth • Alcorn County</text>
+  <text x="105" y="445" fill="#aa5428" font-family="Arial, sans-serif" font-size="115" font-weight="700">C</text>
+  <text x="655" y="280" fill="#183047" font-family="Arial, sans-serif" font-size="28" font-weight="700">Baptist Memorial</text>
+  <text x="655" y="320" fill="#35536c" font-family="Arial, sans-serif" font-size="25">Booneville • Prentiss County</text>
+  <text x="655" y="445" fill="#267b57" font-family="Arial, sans-serif" font-size="115" font-weight="700">A</text>
+  <text x="70" y="555" fill="#c8d9e8" font-family="Arial, sans-serif" font-size="24">Source: The Leapfrog Group, via Alcorn County News • Information graphic, not a hospital photo</text>
+</svg>
