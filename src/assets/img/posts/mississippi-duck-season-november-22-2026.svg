@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Mississippi 2026–27 duck season dates</title>
+  <desc id="desc">Original RCTV 19 information graphic with the three statewide duck season segments.</desc>
+  <rect width="1200" height="630" fill="#10324a"/>
+  <rect x="50" y="48" width="1100" height="534" rx="22" fill="#f6f1e5"/>
+  <text x="94" y="130" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#17465e">RCTV 19  •  NORTH MISSISSIPPI</text>
+  <text x="94" y="220" font-family="Arial,sans-serif" font-size="55" font-weight="700" fill="#102f43">DUCK SEASON OPENS</text>
+  <text x="94" y="300" font-family="Arial,sans-serif" font-size="72" font-weight="700" fill="#a84727">NOVEMBER 27</text>
+  <line x1="94" y1="330" x2="1104" y2="330" stroke="#c3c9c3" stroke-width="3"/>
+  <text x="94" y="390" font-family="Arial,sans-serif" font-size="31" fill="#102f43">2026–27 Mississippi segments</text>
+  <text x="94" y="445" font-family="Arial,sans-serif" font-size="31" font-weight="700" fill="#102f43">Nov. 27–29     Dec. 4–6     Dec. 9–Jan. 31</text>
+  <text x="94" y="533" font-family="Arial,sans-serif" font-size="22" fill="#4a5a62">Source: Mississippi Department of Wildlife, Fisheries, and Parks</text>
+</svg>
