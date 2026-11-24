@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Seven area schools listed for TVA STEM awards</title>
+  <desc id="desc">RCTV 19 information graphic naming three Alcorn County and four Prentiss County schools on TVA's 2026-27 recipient roster. It is not a classroom photograph.</desc>
+  <rect width="1200" height="630" fill="#102c3a"/>
+  <rect x="54" y="52" width="1092" height="526" rx="24" fill="#f5f3eb"/>
+  <text x="94" y="125" font-family="Arial,sans-serif" font-size="28" font-weight="bold" fill="#b3422d">RCTV 19 • AREA NEWS</text>
+  <text x="94" y="197" font-family="Arial,sans-serif" font-size="52" font-weight="bold" fill="#102c3a">Seven schools on TVA STEM roster</text>
+  <path d="M94 225H1106" stroke="#c7d0ca" stroke-width="3"/>
+  <text x="94" y="280" font-family="Arial,sans-serif" font-size="31" font-weight="bold" fill="#102c3a">ALCORN COUNTY • 3</text>
+  <text x="94" y="326" font-family="Arial,sans-serif" font-size="25" fill="#102c3a">Alcorn Central High • Corinth High • Corinth Middle</text>
+  <text x="94" y="396" font-family="Arial,sans-serif" font-size="31" font-weight="bold" fill="#102c3a">PRENTISS COUNTY • 4</text>
+  <text x="94" y="442" font-family="Arial,sans-serif" font-size="24" fill="#102c3a">Booneville High • New Site High • Wheeler Attendance Center</text>
+  <text x="94" y="481" font-family="Arial,sans-serif" font-size="24" fill="#102c3a">Prentiss County Career and Technology Center</text>
+  <path d="M94 508H1106" stroke="#c7d0ca" stroke-width="3"/>
+  <text x="94" y="546" font-family="Arial,sans-serif" font-size="18" fill="#455c67">Source: TVA 2026–27 STEM award recipients • RCTV 19 information graphic</text>
+</svg>
