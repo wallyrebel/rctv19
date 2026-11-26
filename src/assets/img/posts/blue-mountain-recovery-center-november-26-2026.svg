@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Blue Mountain recovery home planned</title>
+  <desc id="desc">Original RCTV 19 information graphic about a planned women's recovery home in Blue Mountain, Mississippi. Not a property photograph.</desc>
+  <rect width="1200" height="630" fill="#17364a"/>
+  <rect x="60" y="60" width="1080" height="510" rx="24" fill="#f6f2e8"/>
+  <rect x="60" y="60" width="1080" height="18" fill="#c9823b"/>
+  <text x="105" y="145" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#435463">RCTV 19  |  TIPPAH COUNTY</text>
+  <text x="105" y="243" font-family="Arial, sans-serif" font-size="58" font-weight="bold" fill="#17364a">Women's recovery home</text>
+  <text x="105" y="318" font-family="Arial, sans-serif" font-size="58" font-weight="bold" fill="#17364a">planned in Blue Mountain</text>
+  <line x1="105" y1="350" x2="1095" y2="350" stroke="#c9823b" stroke-width="5"/>
+  <text x="105" y="421" font-family="Arial, sans-serif" font-size="36" fill="#17364a">Planting Seeds Recovery Center</text>
+  <text x="105" y="490" font-family="Arial, sans-serif" font-size="24" fill="#435463">Information graphic based on Tippah News reporting · Nov. 25, 2026</text>
+</svg>
