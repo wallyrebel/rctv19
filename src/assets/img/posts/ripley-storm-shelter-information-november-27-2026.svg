@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Ripley public storm shelter locations</title>
+  <desc id="desc">Information graphic listing five sites on Ripley's public storm shelter map and advising residents to check city alerts for opening status.</desc>
+  <rect width="1200" height="630" fill="#173b49"/>
+  <rect x="36" y="36" width="1128" height="558" rx="22" fill="#f5f0e4"/>
+  <rect x="75" y="72" width="10" height="480" fill="#bd7944"/>
+  <text x="118" y="123" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#52646a">RIPLEY · PUBLIC STORM SHELTER MAP</text>
+  <text x="118" y="193" font-family="Georgia,serif" font-size="56" font-weight="700" fill="#173b49">Know the five locations</text>
+  <text x="118" y="260" font-family="Arial,sans-serif" font-size="31" fill="#173b49">American Legion  ·  City Park Gym</text>
+  <text x="118" y="318" font-family="Arial,sans-serif" font-size="31" fill="#173b49">TCHS Wellness Center</text>
+  <text x="118" y="376" font-family="Arial,sans-serif" font-size="31" fill="#173b49">Good Samaritan Center</text>
+  <text x="118" y="434" font-family="Arial,sans-serif" font-size="31" fill="#173b49">West Ripley Church of Christ</text>
+  <text x="118" y="505" font-family="Arial,sans-serif" font-size="26" font-weight="700" fill="#a04f2c">Check city alerts for opening status before travel.</text>
+  <text x="118" y="551" font-family="Arial,sans-serif" font-size="20" fill="#52646a">RCTV 19 information graphic · Source: City of Ripley map via Tippah News</text>
+</svg>
